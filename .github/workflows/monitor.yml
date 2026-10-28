@@ -1,8 +1,10 @@
 name: Chrome Hearts Probe + 60s Discord Monitor
 
 on:
+  # 약 3시간마다 새로운 실행을 시작합니다. (각 실행은 최대 5시간 58분 감시 후 종료,
+  # 새 실행이 시작되면 아래 첫 단계에서 이전 schedule 실행을 취소합니다.)
   schedule:
-    - cron: "42 0-21/3 * * *"
+    - cron: "51 2-23/3 * * *"
   workflow_dispatch:
     inputs:
       probe_only:
