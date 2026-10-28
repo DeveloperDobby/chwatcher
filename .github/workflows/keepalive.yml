@@ -1,0 +1,31 @@
+name: Keep scheduled monitor enabled
+
+on:
+  schedule:
+    # 공개 저장소의 장기간 비활동에 따른 schedule 비활성화 방지
+    - cron: "31 6 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pagewatch-state
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update timestamp
+        run: |
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > state/.keepalive
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/.keepalive
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: keep schedule active [skip ci]"
+            git push
+          fi
