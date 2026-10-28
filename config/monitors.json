@@ -1,0 +1,88 @@
+{
+  "monitors": [
+    {
+      "id": "ch-scents",
+      "enabled": true,
+      "name": "Chrome Hearts Scents",
+      "url": "https://www.chromehearts.com/scents",
+      "mode": "catalog",
+      "render": "browser",
+      "settle_ms": 1500,
+      "max_load_more": 8,
+      "notify_on_first_run": false,
+      "notify_on_new": true,
+      "notify_on_restock": true,
+      "notify_on_sold_out": false
+    },
+    {
+      "id": "ch-baccarat",
+      "enabled": true,
+      "name": "Chrome Hearts Baccarat",
+      "url": "https://www.chromehearts.com/baccarat",
+      "mode": "catalog",
+      "render": "browser",
+      "settle_ms": 1500,
+      "max_load_more": 8,
+      "notify_on_first_run": false,
+      "notify_on_new": true,
+      "notify_on_restock": true,
+      "notify_on_sold_out": false
+    },
+    {
+      "id": "ch-boxers-leggings",
+      "enabled": true,
+      "name": "Chrome Hearts Boxers & Leggings",
+      "url": "https://www.chromehearts.com/boxers-leggings",
+      "mode": "catalog",
+      "render": "browser",
+      "settle_ms": 1500,
+      "max_load_more": 8,
+      "notify_on_first_run": false,
+      "notify_on_new": true,
+      "notify_on_restock": true,
+      "notify_on_sold_out": false
+    },
+    {
+      "id": "ch-intimates",
+      "enabled": true,
+      "name": "Chrome Hearts Intimates",
+      "url": "https://www.chromehearts.com/intimates",
+      "mode": "catalog",
+      "render": "browser",
+      "settle_ms": 1500,
+      "max_load_more": 8,
+      "notify_on_first_run": false,
+      "notify_on_new": true,
+      "notify_on_restock": true,
+      "notify_on_sold_out": false
+    },
+    {
+      "id": "ch-socks",
+      "enabled": true,
+      "name": "Chrome Hearts Socks",
+      "url": "https://www.chromehearts.com/socks",
+      "mode": "catalog",
+      "render": "browser",
+      "settle_ms": 1500,
+      "max_load_more": 8,
+      "notify_on_first_run": false,
+      "notify_on_new": true,
+      "notify_on_restock": true,
+      "notify_on_sold_out": false
+    },
+    {
+      "id": "ch-pdp-example-22-roll-on",
+      "enabled": false,
+      "name": "[개별 상품 예시] +22+ Roll-On Perfume (162008CRYXXX271)",
+      "url": "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
+      "mode": "availability",
+      "render": "browser",
+      "expected_pid": "162008CRYXXX271",
+      "expected_title_contains": "Roll-On Perfume",
+      "wait_selector": "h1",
+      "settle_ms": 1500,
+      "notify_on_first_run": false,
+      "notify_on_unavailable": false
+    }
+  ]
+}
