@@ -1,0 +1,88 @@
+name: Chrome Hearts Probe + 60s Discord Monitor
+
+on:
+  schedule:
+    - cron: "42 0-21/3 * * *"
+  workflow_dispatch:
+    inputs:
+      probe_only:
+        description: "chromehearts.com 접근 가능 여부만 검사하고 종료 (일반 감시 생략)"
+        type: boolean
+        default: false
+        required: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  launch:
+    # GitHub에서 제공하는 호스팅 러너만 사용합니다.
+    runs-on: ubuntu-latest
+    timeout-minutes: 359
+    steps:
+      # 접근 진단(probe_only)을 수동으로 실행하면 진행 중인 감시는 취소하지 않습니다.
+      - name: Cancel older normal monitoring runs
+        if: ${{ inputs.probe_only != true }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          CURRENT_RUN_ID: ${{ github.run_id }}
+          WORKFLOW_FILE: monitor.yml
+        run: |
+          set -euo pipefail
+          for status in queued in_progress; do
+            gh run list \
+              --repo "${GH_REPO}" \
+              --workflow "${WORKFLOW_FILE}" \
+              --status "${status}" \
+              --limit 50 \
+              --json databaseId,event \
+              --jq '.[] | select(.event == "schedule") | .databaseId' | while read -r run_id; do
+                if [ -z "${run_id}" ] || [ "${run_id}" = "${CURRENT_RUN_ID}" ]; then
+                  continue
+                fi
+                echo "Canceling older scheduled run: ${run_id}"
+                gh run cancel "${run_id}" --repo "${GH_REPO}" || true
+              done
+          done
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install --quiet -r requirements.txt
+
+      # GitHub Actions -> Run workflow -> probe_only=true 에서만 수행.
+      # HTTP 403/429가 나오면 재고 없음이 아니라 GitHub 러너에서 접근 거부된 것입니다.
+      - name: Diagnose chromehearts.com access from GitHub runner
+        if: ${{ inputs.probe_only == true }}
+        run: python monitor.py --probe-site
+
+      - name: Install browser when needed
+        if: ${{ inputs.probe_only != true }}
+        run: |
+          if python -c 'import json,sys; c=json.load(open("config/monitors.json")); sys.exit(0 if any(m.get("enabled") and m.get("render", "http")=="browser" for m in c.get("monitors", [])) else 1)'; then
+            python -m playwright install --with-deps chromium
+          fi
+
+      - name: Monitor Chrome Hearts every 60 seconds within one Actions run
+        if: ${{ inputs.probe_only != true }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
+          CHECK_INTERVAL_SECONDS: "60"
+          SITE_BLOCK_BACKOFF_SECONDS: "900"
+          RUN_DURATION_SECONDS: "21480"
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          PYTHONUNBUFFERED: "1"
+        run: python monitor.py --loop --git-sync
