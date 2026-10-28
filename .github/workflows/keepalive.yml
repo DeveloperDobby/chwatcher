@@ -3,7 +3,7 @@ name: Keep scheduled monitor enabled
 on:
   schedule:
     # 공개 저장소의 장기간 비활동에 따른 schedule 비활성화 방지
-    - cron: "31 6 1,15 * *"
+    - cron: "29 14 3,17 * *"
   workflow_dispatch:
 
 permissions:
