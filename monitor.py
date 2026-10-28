@@ -71,18 +71,19 @@ AVAILABILITY_LABELS = {
     "available": "구매 가능 (Add to Bag)",
     "coming_soon": "판매 대기 (Coming Soon)",
     "sold_out": "품절 (Sold Out)",
+    "unknown": "확인 불가",
 }
 
 # 크롬하츠 상품 URL: /<카테고리>/<슬러그>/<PID>.html  (예: /scents/22-eau-de-parfum/162006CRYXXX271.html)
 #                    /<슬러그>/<PID>.html              (예: /black-sweatpants/190372BLKLRG01W.html)
-PRODUCT_PATH = re.compile(r"/(\d{5,}[A-Za-z0-9]{4,})\.html$")
+PRODUCT_PATH = re.compile(r"/(\d{5,}[A-Za-z0-9_]{1,})\.html$")
 PRICE = re.compile(r"[$€£¥₩]\s?\d[\d,]*(?:\.\d+)?")
 STATUS_WORDS = re.compile(
     r"\b(?:sold\s+out|out\s+of\s+stock|notify\s+me|currently\s+unavailable|coming\s+soon)\b", re.I)
 REGION_BLOCK = re.compile(r"not\s+available\s+in\s+your\s+country", re.I)
 LOAD_MORE = re.compile(r"more\s+results|load\s+more|show\s+more|view\s+more", re.I)
 # 브라우저 안에서 상품 링크 수를 세는 JS (PRODUCT_PATH와 동일 규칙)
-JS_PRODUCT_LINK_SOURCE = r"\d{5,}[A-Za-z0-9]{4,}\.html(?:[?#]|$)"
+JS_PRODUCT_LINK_SOURCE = r"\d{5,}[A-Za-z0-9_]{1,}\.html(?:[?#]|$)"
 JS_PRODUCT_LINK_COUNT = (
     "() => [...document.querySelectorAll('a[href]')]"
     ".filter(a => new RegExp(" + json.dumps(JS_PRODUCT_LINK_SOURCE) + ").test(a.getAttribute('href') || '')).length")
@@ -439,7 +440,7 @@ def validate_monitor(m: dict) -> None:
     if not isinstance(m, dict) or not re.fullmatch(r"[A-Za-z0-9_-]{1,64}", str(m.get("id", ""))):
         raise ValueError("monitor id는 영문/숫자/_/- 문자 1~64자로 지정하세요")
     m["url"] = safe_url(str(m.get("url", "")))
-    if m.get("mode", "items") not in ("items", "region", "availability", "catalog"):
+    if m.get("mode", "items") not in ("items", "region", "availability", "catalog", "discovery"):
         raise ValueError(f"{m['id']}: mode는 catalog, availability, items 또는 region")
     if m.get("render", "http") not in ("http", "browser"):
         raise ValueError(f"{m['id']}: render는 http 또는 browser")
@@ -513,6 +514,7 @@ def fetch_html(m: dict, browser=None) -> str:
         if resp.status_code in (403, 429):
             raise SiteAccessDenied(url, resp.status_code)
         resp.raise_for_status()
+        m["_final_url"] = safe_url(resp.url)
         html = resp.text
     else:
         if browser is None:
@@ -525,18 +527,21 @@ def fetch_html(m: dict, browser=None) -> str:
                 raise SiteAccessDenied(url, response.status)
             if response is not None and response.status >= 400:
                 raise RuntimeError(f"HTTP {response.status}")
+            m["_final_url"] = safe_url(page.url)
             mode = m.get("mode", "items")
+            inactive = m.get("optional_catalog") and urlsplit(page.url).path.rstrip("/") == ""
+            direct_product = bool(PRODUCT_PATH.search(urlsplit(page.url).path))
             selector = m.get("wait_selector") or (m.get("item_selector") if mode == "items"
                            else "h1" if mode == "availability"
                            else "" if mode == "catalog"
                            else m.get("region_selectors", [""])[0])
-            if mode == "catalog" and not selector:
+            if mode == "catalog" and not selector and not inactive and not direct_product and not m.get("optional_catalog"):
                 # 상품 상세 링크(PID.html)가 DOM에 나타날 때까지 대기
                 page.wait_for_function("() => (" + JS_PRODUCT_LINK_COUNT + ")() > 0", timeout=20000)
-            elif selector:
+            elif selector and not inactive:
                 page.locator(selector).first.wait_for(state="visible", timeout=20000)
             page.wait_for_timeout(min(int(m.get("settle_ms", 1200)), 5000))
-            if mode == "catalog":
+            if mode == "catalog" and not inactive and not direct_product:
                 _expand_load_more(page, m)
             _mark_visibility(page, mode)
             html = page.content()
@@ -568,6 +573,61 @@ def _when() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+DISCOVERY_EXCLUDE = {"account", "cart", "checkout", "contact", "contact-us", "customer-service",
+                     "locations", "login", "magazine", "order-status", "privacy", "search",
+                     "shop", "stores", "wishlist", "general", "terms"}
+
+def extract_discovery(html: str, m: dict) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    for el in soup.select("script, style, footer, noscript, template"):
+        el.decompose()
+    found = {}
+    base_host = (urlsplit(m["url"]).hostname or "").removeprefix("www.")
+    for a in soup.select("a[href]"):
+        url = absolute_url(m["url"], str(a.get("href", "")))
+        if not url:
+            continue
+        parts = urlsplit(url)
+        if (parts.hostname or "").removeprefix("www.") != base_host:
+            continue
+        path = parts.path.rstrip("/")
+        is_product = bool(PRODUCT_PATH.search(path))
+        is_category = bool(re.fullmatch(r"/[a-z0-9][a-z0-9-]{1,60}", path, re.I))
+        if not is_product and (not is_category or path[1:].lower() in DISCOVERY_EXCLUDE):
+            continue
+        url = urlunsplit(("https", parts.netloc, path, "", ""))
+        title = normalized(a.get_text(" ", strip=True)) or (a.img.get("alt", "") if a.img else "") or path
+        key = hashlib.sha256(url.encode()).hexdigest()[:32]
+        found[key] = {"key": key, "title": str(title)[:260], "url": url}
+    return list(found.values())[:MAX_ITEMS]
+
+
+def optional_catalog_products(html: str, m: dict) -> list[dict]:
+    final = urlsplit(m.get("_final_url", m["url"]))
+    original = urlsplit(m["url"])
+    if (final.hostname or "").removeprefix("www.") != (original.hostname or "").removeprefix("www."):
+        raise ValueError("다른 도메인으로 이동했습니다")
+    if final.path.rstrip("/") == "":
+        return []
+    pid, product_url = product_pid(m["url"], m.get("_final_url", m["url"]))
+    if pid:
+        try:
+            details = detect_availability(html, dict(m, url=product_url))
+            title, status = details["title"], details["status"]
+        except ValueError:
+            soup = BeautifulSoup(html, "html.parser")
+            heading = soup.select_one("main h1") or soup.select_one("h1")
+            if not heading:
+                raise ValueError("상품 상세 제목을 찾지 못했습니다")
+            title, status = normalized(heading.get_text(" ", strip=True)), "unknown"
+        return [{"key": hashlib.sha256(("pid:" + pid).encode()).hexdigest()[:32],
+                 "pid": pid, "title": title, "url": normalized_product_url(product_url),
+                 "price": "", "image": "", "status": status}]
+    products = extract_catalog(html, m)
+    if not products:
+        raise ValueError("메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요")
+    return products
+
 def compare(m: dict, previous: dict | None, html: str) -> tuple[dict, list[dict]]:
     """(새 상태, 전송할 신규 이벤트). 부트스트랩 시 기본적으로 전송하지 않음."""
     mode = m.get("mode", "items")
@@ -576,9 +636,9 @@ def compare(m: dict, previous: dict | None, html: str) -> tuple[dict, list[dict]
     boot = previous is None or previous.get("mode") != mode or not previous.get("initialized", False)
     alert_on_first = bool(m.get("notify_on_first_run", False))
     events = []
-    if mode == "items":
-        items = extract_items(html, m)
-        if not items and not bool(m.get("allow_empty", False)):
+    if mode in ("items", "discovery"):
+        items = extract_discovery(html, m) if mode == "discovery" else extract_items(html, m)
+        if not items and (mode == "discovery" or not bool(m.get("allow_empty", False))):
             raise ValueError("상품이 0개입니다. CSS 선택자/캡차/로그인 여부를 확인하세요")
         saved = dict(previous.get("seen", {}) if previous and not boot else {})
         newcomers = [item for item in items if item["key"] not in saved]
@@ -595,8 +655,8 @@ def compare(m: dict, previous: dict | None, html: str) -> tuple[dict, list[dict]
         if not boot or alert_on_first:
             events = [{"kind": "item", **item} for item in newcomers]
     elif mode == "catalog":
-        products = extract_catalog(html, m)
-        if not products and not bool(m.get("allow_empty", False)):
+        products = optional_catalog_products(html, m) if m.get("optional_catalog") else extract_catalog(html, m)
+        if not products and not m.get("optional_catalog") and not bool(m.get("allow_empty", False)):
             raise ValueError("상품 링크가 0개입니다. 차단/캡차/페이지 구조 변경 여부를 확인하세요")
         saved = dict(previous.get("seen", {}) if previous and not boot else {})
         notify_new = bool(m.get("notify_on_new", True))
@@ -611,7 +671,7 @@ def compare(m: dict, previous: dict | None, html: str) -> tuple[dict, list[dict]
                 old_status = old.get("status", "available")
                 if p["status"] != old_status:
                     changed = {**p, "previous_status": old_status}
-                    if p["status"] == "available":
+                    if p["status"] == "available" and old_status in ("sold_out", "coming_soon"):
                         restocks.append({"kind": "restock", **changed})
                     elif p["status"] == "sold_out":
                         soldouts.append({"kind": "sold_out", **changed})
@@ -772,6 +832,22 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
     for m in active:
         validate_monitor(m)
     state = load_state(state_path)
+    known_urls = {urlsplit(m["url"]).path.rstrip("/") for m in active}
+    discovery = state["monitors"].get("ch-discovery", {})
+    for entry in discovery.get("seen", {}).values():
+        url = entry.get("url", "")
+        path = urlsplit(url).path.rstrip("/")
+        if not re.fullmatch(r"/[a-z0-9][a-z0-9-]{1,60}", path, re.I) or path in known_urls:
+            continue
+        if len(known_urls) >= 100:
+            break
+        dynamic = {"id": "discovered-" + hashlib.sha256(path.encode()).hexdigest()[:16],
+                   "name": "자동 발견 " + path, "url": url, "enabled": True,
+                   "mode": "catalog", "render": "http", "optional_catalog": True,
+                   "notify_on_first_run": True, "notify_on_new": True, "notify_on_restock": True}
+        validate_monitor(dynamic)
+        active.append(dynamic)
+        known_urls.add(path)
     errors = 0
     counts = {"events": 0, "pages": 0, "paused": 0}
 
