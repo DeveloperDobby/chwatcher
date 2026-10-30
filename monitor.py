@@ -5,6 +5,9 @@
 - catalog      : 카테고리 목록 페이지(예: /scents, /socks)를 감시. 신규 상품, 품절→구매가능
                  재입고, (옵션) 구매가능→품절 변경을 상품코드(PID) 기준으로 추적.
 - availability : 개별 상품 상세 페이지의 Add to Bag / Sold Out / Coming Soon 상태 감시.
+- 상세 자동 추적: 발견한 상품의 공개 Product-Variation 응답으로 색상/사이즈별 상태 확인.
+                 주문 수량 제한을 재고량으로 사용하지 않으며 기본 수량 표시는 '미공개'.
+- 알림 큐      : state 파일에 미전송 이벤트를 저장하고 전송 성공한 이벤트만 제거.
 - items/region : 범용 모드(선택자 기반)로 그대로 유지.
 
 로그인 쿠키를 요청하거나 외부 서버에 인증정보를 보내지 않습니다. 403/429/캡차는
@@ -13,6 +16,8 @@
 from __future__ import annotations
 
 import argparse
+from collections import deque
+import copy
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -24,6 +29,7 @@ import sys
 import time
 import unicodedata
 from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
+from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 import requests
@@ -35,6 +41,8 @@ CAPTCHA_PHRASES = (
 )
 MAX_SEEN = 10000
 MAX_ITEMS = 500
+HEALTH_CHECKPOINT_SECONDS = 900
+_LIVE_HEALTH: dict[str, dict] = {}
 
 # 도메인에서 403/429를 돌려주면 동일 환경에서 매분 재시도하지 않는다.
 # 프로세스 동안만 기억하며, 재실행 시 첫 요청부터 다시 확인한다.
@@ -72,6 +80,10 @@ AVAILABILITY_LABELS = {
     "coming_soon": "판매 대기 (Coming Soon)",
     "sold_out": "품절 (Sold Out)",
     "unknown": "확인 불가",
+    "listed": "상품 등록됨 (구매 가능 미확인)",
+    "selection_required": "옵션 선택/추가 확인 필요",
+    "restricted": "현재 조회 환경에서 구매 제한",
+    "unavailable": "현재 판매 불가",
 }
 
 # 크롬하츠 상품 URL: /<카테고리>/<슬러그>/<PID>.html  (예: /scents/22-eau-de-parfum/162006CRYXXX271.html)
@@ -195,7 +207,18 @@ def extract_regions(html: str, monitor: dict) -> list[str]:
         elements = soup.select(selector)
         if not elements:
             raise ValueError(f"페이지 영역을 찾지 못했습니다: {selector}")
-        value = normalized(" ".join(e.get_text(" ", strip=True) for e in elements))
+        parts = [normalized(e.get_text(" ", strip=True)) for e in elements]
+        # 링크의 표시 문구가 같아도 목적지가 바뀌면 감지한다.
+        for attr in monitor.get("region_attributes", ["href"]):
+            for element in elements:
+                nodes = [element, *element.find_all(attrs={attr: True})]
+                for node in nodes:
+                    value = str(node.get(attr, ""))
+                    if value and attr == "href":
+                        value = absolute_url(monitor["url"], value)
+                    if value:
+                        parts.append(f"{attr}={value}")
+        value = normalized(" ".join(dict.fromkeys(parts)))
         if len(value) < int(monitor.get("minimum_text_length", 3)):
             raise ValueError(f"영역이 비어 있거나 너무 짧습니다: {selector}")
         results.append(value[:20000])
@@ -246,14 +269,14 @@ def _tile_status(text: str) -> str:
         return "coming_soon"
     if SOLD_OUT.search(text):
         return "sold_out"
-    return "available"
+    return "listed"
 
 
 def extract_catalog(html: str, monitor: dict) -> list[dict]:
     """카테고리 목록에서 상품 링크(PID 포함 *.html)를 찾아 상품별 {pid,key,title,url,price,image,status} 반환.
 
     CSS 클래스명에 의존하지 않고 '상품 상세 링크 패턴'으로 상품을 식별하므로 사이트의
-    마크업이 조금 바뀌어도 동작한다. 타일 안에 라벨이 없으면 구매 가능으로 간주한다.
+    마크업이 조금 바뀌어도 동작한다. 라벨이 없으면 등록됨(listed)으로만 판단한다.
     """
     soup = BeautifulSoup(html, "html.parser")
     for el in soup.select("script, style, noscript, template, nav, header, footer"):
@@ -329,10 +352,13 @@ def extract_catalog(html: str, monitor: dict) -> list[dict]:
 def _visible_enough(node) -> bool:
     """명백히 숨긴 버튼/요소를 무시. 브라우저 렌더링 후 추출한 HTML에서도 사용."""
     cursor = node
-    for _ in range(5):
+    for _ in range(40):
         if cursor is None or not hasattr(cursor, "attrs"):
             break
         if cursor.has_attr("hidden") or cursor.get("aria-hidden") == "true":
+            return False
+        if cursor.get("data-pagewatch-visible") != "1" and set(cursor.get("class", [])) & {
+                "d-none", "hidden", "invisible", "sr-only", "visually-hidden"}:
             return False
         style = re.sub(r"\s+", "", str(cursor.get("style", "")).lower())
         if "display:none" in style or "visibility:hidden" in style:
@@ -343,18 +369,30 @@ def _visible_enough(node) -> bool:
     return True
 
 
+def _disabled(node) -> bool:
+    for el in [node, *list(node.parents)[:8]]:
+        if el.has_attr("disabled") or str(el.get("aria-disabled", "")).lower() == "true":
+            return True
+        if "disabled" in el.get("class", []):
+            return True
+    return False
+
+
 def _status_in_panel(panel) -> tuple[str, str] | None:
     """상품 헤더 가까이에 위치한 CTA 위주로 판단. 본문 및 다른 상품은 제외."""
     controls = panel.select("button, [role='button'], input[type='submit'], input[type='button']")
     labels = []
+    enabled_add = False
     for el in controls:
         if not _visible_enough(el):
             continue
-        label = normalized(el.get("value", "") if el.name == "input" else el.get_text(" ", strip=True))
+        label = normalized(el.get("value", "") if el.name == "input" else _visible_text(el))
         if not label:
             label = normalized(el.get("aria-label", ""))
         if label:
             labels.append(label)
+            if ADD_TO_CART.search(label) and not _disabled(el):
+                enabled_add = True
     # 실제 'Coming Soon' 버튼/표시가 있으면 이를 우선한다.
     for label in labels:
         if COMING_SOON.search(label):
@@ -366,22 +404,23 @@ def _status_in_panel(panel) -> tuple[str, str] | None:
             continue
         if len(el.find_all(["span", "p", "div", "strong", "label"])) > 8:
             continue
-        value = normalized(el.get_text(" ", strip=True))
+        value = _visible_text(el)
         if len(value) <= 90 and COMING_SOON.search(value):
             return "coming_soon", f"표시: {value[:90]}"
     for label in labels:
         if SOLD_OUT.search(label):
             return "sold_out", f"버튼: {label[:90]}"
-    for label in labels:
-        if ADD_TO_CART.search(label):
-            return "available", f"버튼: {label[:90]}"
+    if enabled_add:
+        return "available", "활성화된 Add to Bag/Cart 버튼"
     # 판매 버튼은 숨긴 템플릿/관련 상품 때문에 전체 body를 검색하지 않는다.
     for el in panel.find_all(["span", "p", "strong"], limit=90):
         if not _visible_enough(el):
             continue
-        value = normalized(el.get_text(" ", strip=True))
+        value = _visible_text(el)
         if len(value) <= 90 and SOLD_OUT.search(value):
             return "sold_out", f"표시: {value[:90]}"
+    if any(ADD_TO_CART.search(label) for label in labels):
+        return "selection_required", "구매 버튼 비활성: 옵션 선택 여부를 추가 확인해야 함"
     return None
 
 
@@ -410,8 +449,9 @@ def detect_availability(html: str, monitor: dict) -> dict:
     sku = normalized(monitor.get("expected_pid") or monitor.get("expected_sku", ""))
     if sku and sku.casefold() not in html.casefold():
         raise ValueError(f"정확한 상품코드 {sku}를 확인하지 못했습니다. 차단/다른 상품/구조 변경 가능성")
-    if REGION_BLOCK.search(normalized(soup.get_text(" ", strip=True))):
-        raise ValueError("'This product is not available in your country' 표시: 실행 환경 국가 제한 가능성")
+    if REGION_BLOCK.search(_visible_text(soup)):
+        return {"status": "restricted", "title": title[:200], "sku": sku,
+                "url": monitor["url"], "evidence": "화면에 표시된 국가 제한 안내"}
 
     # h1이 포함된 최소 조상부터 탐색해서 첫 번째로 발견되는 구매 UI를 사용.
     # body/html까지 올라가면 헤더 'Coming Soon'이나 추천상품 CTA가 섞일 수 있어 제외.
@@ -441,7 +481,7 @@ def validate_monitor(m: dict) -> None:
         raise ValueError("monitor id는 영문/숫자/_/- 문자 1~64자로 지정하세요")
     m["url"] = safe_url(str(m.get("url", "")))
     if m.get("mode", "items") not in ("items", "region", "availability", "catalog", "discovery"):
-        raise ValueError(f"{m['id']}: mode는 catalog, availability, items 또는 region")
+        raise ValueError(f"{m['id']}: mode는 catalog, discovery, availability, items 또는 region")
     if m.get("render", "http") not in ("http", "browser"):
         raise ValueError(f"{m['id']}: render는 http 또는 browser")
     if m.get("mode", "items") == "items" and not m.get("item_selector"):
@@ -465,10 +505,12 @@ def validate_monitor(m: dict) -> None:
 def _expand_load_more(page, m: dict) -> int:
     """'More Results' 류 버튼을 더 이상 상품이 늘지 않을 때까지 눌러 전체 목록을 펼친다."""
     clicks = 0
+    m["_catalog_complete"] = False
     for _ in range(int(m.get("max_load_more", 8))):
         try:
             button = page.locator("button, a, [role=button]").filter(has_text=LOAD_MORE).first
             if button.count() == 0 or not button.is_visible():
+                m["_catalog_complete"] = True
                 break
             before = page.evaluate("(" + JS_PRODUCT_LINK_COUNT + ")()")
             button.scroll_into_view_if_needed(timeout=3000)
@@ -480,7 +522,7 @@ def _expand_load_more(page, m: dict) -> int:
                 arg=[JS_PRODUCT_LINK_SOURCE, before], timeout=8000)
             page.wait_for_timeout(400)
         except Exception:
-            # 상품이 더 늘지 않았거나 버튼이 사라짐 = 목록 끝. 지금까지 불러온 목록으로 진행.
+            # 실패/시간 초과를 목록 끝으로 단정하지 않는다. 누락 판정은 생략한다.
             break
     return clicks
 
@@ -489,7 +531,7 @@ def _mark_visibility(page, mode: str) -> None:
     """CSS로 실제 감춰진 버튼/상태 문구는 판단에 쓰지 않도록 표시한다."""
     if mode == "availability":
         page.evaluate("""() => {
-          for (const el of document.querySelectorAll('button, [role=button], input[type=submit], input[type=button]')) {
+          for (const el of document.querySelectorAll('button, [role=button], input[type=submit], input[type=button], span, p, div, strong, label')) {
             const css = getComputedStyle(el);
             const visible = css.display !== 'none' && css.visibility !== 'hidden' && el.getClientRects().length > 0;
             el.setAttribute('data-pagewatch-visible', visible ? '1' : '0');
@@ -516,6 +558,9 @@ def fetch_html(m: dict, browser=None) -> str:
         resp.raise_for_status()
         m["_final_url"] = safe_url(resp.url)
         html = resp.text
+        soup = BeautifulSoup(html, "html.parser")
+        m["_catalog_complete"] = not any(
+            LOAD_MORE.search(_visible_text(el)) for el in soup.select("button, a, [role=button]"))
     else:
         if browser is None:
             raise RuntimeError("browser 감시에 Playwright Chromium이 필요합니다")
@@ -529,6 +574,14 @@ def fetch_html(m: dict, browser=None) -> str:
                 raise RuntimeError(f"HTTP {response.status}")
             m["_final_url"] = safe_url(page.url)
             mode = m.get("mode", "items")
+            if mode == "discovery":
+                # 메뉴 토글만 연다. 실제 상품/장바구니 링크는 클릭하지 않는다.
+                shop = page.locator("button, [role=button], a").filter(
+                    has_text=re.compile(r"^\s*shop\s*$", re.I)).first
+                if shop.count() and shop.is_visible():
+                    href = shop.get_attribute("href") or ""
+                    if not href or href.startswith(("#", "javascript:")):
+                        shop.click(timeout=3000)
             inactive = m.get("optional_catalog") and urlsplit(page.url).path.rstrip("/") == ""
             direct_product = bool(PRODUCT_PATH.search(urlsplit(page.url).path))
             selector = m.get("wait_selector") or (m.get("item_selector") if mode == "items"
@@ -543,6 +596,8 @@ def fetch_html(m: dict, browser=None) -> str:
             page.wait_for_timeout(min(int(m.get("settle_ms", 1200)), 5000))
             if mode == "catalog" and not inactive and not direct_product:
                 _expand_load_more(page, m)
+            elif mode == "catalog":
+                m["_catalog_complete"] = False
             _mark_visibility(page, mode)
             html = page.content()
         finally:
@@ -608,6 +663,8 @@ def optional_catalog_products(html: str, m: dict) -> list[dict]:
     if (final.hostname or "").removeprefix("www.") != (original.hostname or "").removeprefix("www."):
         raise ValueError("다른 도메인으로 이동했습니다")
     if final.path.rstrip("/") == "":
+        # 메인 이동은 품절/목록 삭제의 증거가 아니다(국가/접근 정책일 수도 있음).
+        m["_catalog_complete"] = False
         return []
     pid, product_url = product_pid(m["url"], m.get("_final_url", m["url"]))
     if pid:
@@ -628,100 +685,130 @@ def optional_catalog_products(html: str, m: dict) -> list[dict]:
         raise ValueError("메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요")
     return products
 
+def _age_seconds(stamp: str | None) -> float:
+    try:
+        return max(0.0, (datetime.now(timezone.utc) - datetime.fromisoformat(stamp or "")).total_seconds())
+    except (ValueError, TypeError):
+        return float("inf")
+
+
+def _seen_stamp(old: dict, now: str, changed: bool = False) -> str:
+    # 매분 무변경 확인만으로 Git 커밋이 생기지 않도록 15분 단위로 보존한다.
+    if changed or _age_seconds(old.get("last_seen_at")) >= HEALTH_CHECKPOINT_SECONDS:
+        return now
+    return old["last_seen_at"]
+
+
 def compare(m: dict, previous: dict | None, html: str) -> tuple[dict, list[dict]]:
-    """(새 상태, 전송할 신규 이벤트). 부트스트랩 시 기본적으로 전송하지 않음."""
+    """알림은 별도 영속 큐로 전달한다. 이전 v1 상태 파일을 그대로 읽을 수 있다."""
     mode = m.get("mode", "items")
-    new = dict(previous or {})
+    new = copy.deepcopy(previous or {})
     new["mode"] = mode
     boot = previous is None or previous.get("mode") != mode or not previous.get("initialized", False)
     alert_on_first = bool(m.get("notify_on_first_run", False))
     events = []
+    now = _when()
     if mode in ("items", "discovery"):
         items = extract_discovery(html, m) if mode == "discovery" else extract_items(html, m)
         if not items and (mode == "discovery" or not bool(m.get("allow_empty", False))):
-            raise ValueError("상품이 0개입니다. CSS 선택자/캡차/로그인 여부를 확인하세요")
+            raise ValueError("상품/링크가 0개입니다. CSS 선택자/캡차/로그인 여부를 확인하세요")
         saved = dict(previous.get("seen", {}) if previous and not boot else {})
-        newcomers = [item for item in items if item["key"] not in saved]
+        old_snapshot = (previous or {}).get("snapshot")
+        snapshot = {i["key"]: {"title": i["title"], "url": i["url"]} for i in items}
         for item in items:
-            if item["key"] not in saved:
-                saved[item["key"]] = {"title": item["title"], "url": item["url"]}
-        if len(saved) > MAX_SEEN:
-            saved = dict(list(saved.items())[-MAX_SEEN:])
-        new["seen"] = saved
-        # 조회할 때마다 커밋하는 일을 방지: 실제 감시 이력이 변할 때만 상태 갱신
-        if boot or saved != (previous or {}).get("seen", {}):
-            new["last_count"] = len(items)
-            new["updated_at"] = _when()
-        if not boot or alert_on_first:
-            events = [{"kind": "item", **item} for item in newcomers]
+            key = item["key"]
+            old = saved.get(key)
+            if not boot or alert_on_first:
+                if old is None:
+                    events.append({"kind": "item", **item})
+                elif mode == "discovery" and old_snapshot is not None:
+                    if key not in old_snapshot:
+                        events.append({"kind": "item_reappeared", **item})
+                    elif old_snapshot[key]["title"] != item["title"]:
+                        events.append({"kind": "link_changed", **item,
+                                       "before": old_snapshot[key]["title"]})
+            saved[key] = {"title": item["title"], "url": item["url"]}
+        new["seen"] = dict(list(saved.items())[-MAX_SEEN:])
+        new["snapshot"] = snapshot
+        new["last_count"] = len(items)
+        if mode == "discovery":
+            m["_products"] = []
+            for item in items:
+                pid, url = product_pid(m["url"], item["url"])
+                if pid:
+                    m["_products"].append({**item, "pid": pid, "url": url, "status": "listed"})
     elif mode == "catalog":
         products = optional_catalog_products(html, m) if m.get("optional_catalog") else extract_catalog(html, m)
+        m["_products"] = products
         if not products and not m.get("optional_catalog") and not bool(m.get("allow_empty", False)):
             raise ValueError("상품 링크가 0개입니다. 차단/캡차/페이지 구조 변경 여부를 확인하세요")
-        saved = dict(previous.get("seen", {}) if previous and not boot else {})
-        notify_new = bool(m.get("notify_on_new", True))
-        notify_restock = bool(m.get("notify_on_restock", True))
-        notify_sold_out = bool(m.get("notify_on_sold_out", False))
-        restocks, soldouts, newcomers = [], [], []
-        for p in products:
-            old = saved.get(p["key"])
-            if old is None:
-                newcomers.append({"kind": "new_product", **p})
-            else:
-                old_status = old.get("status", "available")
-                if p["status"] != old_status:
-                    changed = {**p, "previous_status": old_status}
-                    if p["status"] == "available" and old_status in ("sold_out", "coming_soon"):
-                        restocks.append({"kind": "restock", **changed})
-                    elif p["status"] == "sold_out":
-                        soldouts.append({"kind": "sold_out", **changed})
-            saved[p["key"]] = {"title": p["title"], "url": p["url"], "status": p["status"]}
-        if len(saved) > MAX_SEEN:
-            saved = dict(list(saved.items())[-MAX_SEEN:])
-        new["seen"] = saved
-        # 가격만 변하거나 순서가 바뀌는 것은 상태 변경으로 보지 않는다(불필요한 커밋 방지).
-        if boot or saved != (previous or {}).get("seen", {}):
-            new["last_count"] = len(products)
-            new["updated_at"] = _when()
-        if not boot or alert_on_first:
-            if notify_restock:
-                events += restocks
-            if notify_new:
-                events += newcomers
-            if notify_sold_out:
-                events += soldouts
+        saved = copy.deepcopy(previous.get("seen", {}) if previous and not boot else {})
+        present = set()
+        for product in products:
+            key = product["key"]
+            present.add(key)
+            old = saved.get(key, {})
+            old_status = old.get("status", "listed")
+            reappeared = bool(old) and old.get("present") is False
+            changed = product["status"] != old_status or reappeared or not old
+            saved[key] = {"title": product["title"], "url": product["url"],
+                          "status": product["status"], "present": True, "miss_count": 0,
+                          "last_seen_at": _seen_stamp(old, now, changed)}
+            if boot and not alert_on_first:
+                continue
+            if not old and m.get("notify_on_new", True):
+                events.append({"kind": "new_product", **product})
+            elif reappeared and m.get("notify_on_reappear", True):
+                events.append({"kind": "reappeared", **product})
+            elif product["status"] == "available" and old_status in ("sold_out", "coming_soon"):
+                if m.get("notify_on_restock", True):
+                    events.append({"kind": "restock", **product, "previous_status": old_status})
+            elif product["status"] == "sold_out" and old_status != "sold_out":
+                if m.get("notify_on_sold_out", False):
+                    events.append({"kind": "sold_out", **product, "previous_status": old_status})
+        # 완전하게 읽은 정상 목록에서 연속 두 번 누락되어야 사라짐으로 확정한다.
+        # 0개/리다이렉트/더 보기 실패 등은 목록 완전성이 확인될 때에만 반영한다.
+        if m.get("_catalog_complete", True):
+            for key, old in saved.items():
+                if key not in present:
+                    misses = min(2, old.get("miss_count", 0) + 1)
+                    old["miss_count"] = misses
+                    if misses >= 2:
+                        old["present"] = False
+        new["seen"] = dict(list(saved.items())[-MAX_SEEN:])
+        new["last_count"] = len(products)
     elif mode == "availability":
         result = detect_availability(html, m)
         status = result["status"]
-        old_status = previous.get("status") if previous and not boot else None
-        new["status"] = status
-        new["title"] = result["title"]
-        new["sku"] = result["sku"]
-        if boot or status != old_status:
-            new["updated_at"] = _when()
-        # 첫 실행이 이미 구매 가능하면 알림(옵션). Coming Soon에는 보내지 않는다.
-        if status == "available" and (old_status != "available") and (not boot or alert_on_first):
-            events = [{"kind": "availability", "status": status, "previous_status": old_status,
-                       "title": result["title"], "sku": result["sku"], "url": result["url"],
-                       "evidence": result["evidence"]}]
-        elif status != "available" and bool(m.get("notify_on_unavailable", False)) and \
-                old_status != status and (not boot or alert_on_first):
-            events = [{"kind": "availability", "status": status, "previous_status": old_status,
-                       "title": result["title"], "sku": result["sku"], "url": result["url"],
-                       "evidence": result["evidence"]}]
+        old_status = (previous or {}).get("last_known_status", (previous or {}).get("status"))
+        new.update(status=status, title=result["title"], sku=result["sku"])
+        if status not in ("unknown", "selection_required", "listed"):
+            new["last_known_status"] = status
+        if not boot or alert_on_first:
+            if status == "available" and old_status != "available":
+                events = [{"kind": "availability", **result, "previous_status": old_status}]
+            elif status != "available" and m.get("notify_on_unavailable", False) and status != (previous or {}).get("status"):
+                events = [{"kind": "availability", **result, "previous_status": old_status}]
+        m["_products"] = [{"pid": result["sku"], "title": result["title"],
+                           "url": m["url"], "status": status}]
     else:
         regions = extract_regions(html, m)
         old_regions = previous.get("regions", []) if previous and not boot else []
         new["regions"] = regions
-        if boot or regions != old_regions:
-            new["updated_at"] = _when()
-        if not boot or alert_on_first:
+        # 업그레이드 시 href를 처음 포함한 값은 기준선으로 저장한다.
+        baseline = previous and previous.get("region_format", 1) < 2
+        new["region_format"] = 2
+        if (not boot or alert_on_first) and not baseline:
             for index, after in enumerate(regions):
                 before = old_regions[index] if index < len(old_regions) else ""
                 if before != after:
                     events.append({"kind": "region", "selector": m["region_selectors"][index],
-                                   "before": before[:350], "after": after[:550]})
+                                   "before": before, "after": after})
     new["initialized"] = True
+    if new != previous:
+        new["updated_at"] = now
+    for event in events:
+        event["observed_at"] = now
     return new, events
 
 
@@ -735,7 +822,73 @@ def _discord_url() -> str:
     return url
 
 
-def send_discord(m: dict, events: list[dict]) -> None:
+def _discord_len(text: str) -> int:
+    return len(text.encode("utf-16-le")) // 2
+
+
+def _discord_parts(text: str, limit: int = 3800) -> list[str]:
+    # 이벤트가 길어도 뒷부분을 버리지 않는다.
+    result, current, size = [], [], 0
+    for char in text:
+        width = _discord_len(char)
+        if size + width > limit:
+            result.append("".join(current))
+            current, size = [], 0
+        current.append(char)
+        size += width
+    if current:
+        result.append("".join(current))
+    return result or [""]
+
+
+def _event_description(e: dict) -> str:
+    title = str(e.get("title", "")).replace("`", "′").replace("[", "［").replace("]", "］")
+    kind = e["kind"]
+    if kind in ("new_product", "reappeared", "restock", "sold_out"):
+        head = {"new_product": "🆕 신상품 등록", "reappeared": "👀 상품 재등장 (재입고 여부 추가 확인)",
+                "restock": "🔄 구매 가능", "sold_out": "⛔ 품절"}[kind]
+        desc = f"• {head}: **{title}**\n상품코드: `{e['pid']}`"
+        desc += "\n상태: " + AVAILABILITY_LABELS.get(e.get("status"), "확인 불가")
+        if e.get("price"):
+            desc += f"\n가격: {e['price']}"
+    elif kind in ("item", "item_reappeared", "link_changed"):
+        head = {"item": "새 링크", "item_reappeared": "링크 재등장", "link_changed": "메뉴 문구 변경"}[kind]
+        desc = f"• {head}: **{title}**"
+        if kind == "link_changed":
+            desc += f"\n이전 문구: {e.get('before', '')}"
+    elif kind in ("availability", "variant"):
+        status = AVAILABILITY_LABELS.get(e.get("status"), "확인 불가")
+        old = AVAILABILITY_LABELS.get(e.get("previous_status"), "최초 확인")
+        desc = f"• **{title}**\n상품코드: `{e.get('pid') or e.get('sku', '')}`"
+        if kind == "variant":
+            opts = " / ".join(str(v) for v in e.get("options", {}).values())
+            if opts:
+                desc += "\n옵션: " + opts
+            desc += f"\n조회 로케일: {e.get('locale', 'unknown')}"
+            qty = e.get("quantity")
+            if qty is None:
+                desc += "\n재고 수량: 미공개"
+            elif e.get("quantity_kind") == "capped":
+                desc += f"\n재고 수량: {qty}개 이상 (응답 상한)"
+            else:
+                desc += f"\n재고 수량: {qty}개 (검증된 공개 필드)"
+        desc += f"\n상태 변화: {old} → **{status}**"
+        if e.get("evidence"):
+            desc += "\n근거: " + e["evidence"]
+    elif kind == "health":
+        desc = f"• **{title}**\n{e['message']}"
+    else:
+        desc = f"• **{e['selector']}** 영역 변경\n변경 전: {e['before']}\n변경 후: {e['after']}"
+    if e.get("url"):
+        desc += "\n" + e["url"]
+    if e.get("observed_at"):
+        stamp = datetime.fromisoformat(e["observed_at"]).astimezone(ZoneInfo("Asia/Seoul"))
+        desc += "\n확인 시각(KST): " + stamp.strftime("%Y-%m-%d %H:%M:%S")
+    return desc
+
+
+def send_discord(m: dict, events: list[dict], *, on_sent=None) -> None:
+    """배치가 성공할 때마다 해당 이벤트만 확인 처리한다. 모든 내용은 분할 전송한다."""
     if not events:
         return
     url = _discord_url()
@@ -748,73 +901,394 @@ def send_discord(m: dict, events: list[dict]) -> None:
         mentions = {"parse": [], "users": [mention_id]}
         mention = f"<@{mention_id}> "
     limit = min(15, max(1, int(m.get("notify_limit", 8))))
-    for start in range(0, len(events), limit):
-        batch = events[start:start + limit]
-        descriptions = []
-        for e in batch:
-            if e["kind"] in ("new_product", "restock", "sold_out"):
-                title = e["title"].replace("`", "′").replace("[", "［").replace("]", "］")[:170]
-                head = {"new_product": "🆕 신상품 등록", "restock": "🔄 재입고/구매 가능",
-                        "sold_out": "⛔ 품절"}[e["kind"]]
-                desc = f"• {head}: **{title}**\n  상품코드: `{e['pid']}`"
-                if e.get("price"):
-                    desc += f"\n  가격: {e['price']}"
-                if e["kind"] == "new_product":
-                    desc += f"\n  상태: {AVAILABILITY_LABELS.get(e['status'], e['status'])}"
-                else:
-                    desc += (f"\n  상태 변화: {AVAILABILITY_LABELS.get(e.get('previous_status'), '확인 불가')}"
-                             f" → **{AVAILABILITY_LABELS.get(e['status'], e['status'])}**")
-                if e.get("url"):
-                    desc += f"\n  {e['url']}"
-            elif e["kind"] == "item":
-                title = e["title"].replace("`", "′").replace("[", "［").replace("]", "］")[:170]
-                product_url = e.get("url", "")
-                desc = f"• **{title}**"
-                if product_url:
-                    desc += f" — {product_url}"
-                if e.get("price"):
-                    desc += f"\n  가격: {e['price']}"
-            elif e["kind"] == "availability":
-                status_text = AVAILABILITY_LABELS.get(e["status"], e["status"])
-                prev = AVAILABILITY_LABELS.get(e.get("previous_status"), "최초 확인")
-                title = e["title"].replace("`", "′").replace("[", "［").replace("]", "］")[:160]
-                desc = (f"• **{title}**\n  상품코드: `{e['sku']}`\n"
-                        f"  상태 변화: {prev} → **{status_text}**\n"
-                        f"  근거: {e['evidence']}\n  {e['url']}")
-            else:
-                desc = f"• **{e['selector']}** 영역 변경\n  변경 전: {e['before'][:250]}\n  변경 후: {e['after'][:400]}"
-            descriptions.append(desc[:850])
-        remainder = len(events) - start - len(batch)
-        if remainder and remainder < 30 and start + limit >= len(events):
-            descriptions.append(f"추가 감지: {remainder}건")
-        embed = {"title": f"{m.get('name', m['id'])} 변경 알림"[:240],
-                 "description": "\n\n".join(descriptions)[:3900],
+    batches, fragments, completed, length = [], [], [], 0
+    for event in events:
+        parts = _discord_parts(_event_description(event))
+        for index, part in enumerate(parts):
+            addition = _discord_len(part) + (2 if fragments else 0)
+            if fragments and (length + addition > 3900 or len(completed) >= limit):
+                batches.append((fragments, completed))
+                fragments, completed, length = [], [], 0
+            length += _discord_len(part) + (2 if fragments else 0)
+            fragments.append(part)
+            if index == len(parts) - 1:
+                completed.append(event)
+    if fragments:
+        batches.append((fragments, completed))
+    for fragments, completed in batches:
+        name = str(m.get("name", m["id"]))[:100]
+        embed = {"title": name + " 변경 알림", "description": "\n\n".join(fragments),
                  "url": m["url"], "color": 0xC0C0C0}
-        thumb = next((e.get("image", "") for e in batch if str(e.get("image", "")).startswith("https://")), "")
+        thumb = next((e.get("image", "") for e in completed
+                      if str(e.get("image", "")).startswith("https://")), "")
         if thumb:
             embed["thumbnail"] = {"url": thumb}
-        payload = {
-            "content": (mention + f"🔔 {m.get('name', m['id'])}: 상태 변경/신규 물품 {len(batch)}건 감지")[:1900],
-            "embeds": [embed],
-            "allowed_mentions": mentions,
-        }
+        payload = {"content": mention + "🔔 " + name + ": 감시 알림",
+                   "embeds": [embed], "allowed_mentions": mentions}
         for retry in range(4):
-            r = requests.post(url, json=payload, timeout=20, allow_redirects=False)
-            if r.status_code in (200, 204):
+            response = requests.post(url, json=payload, timeout=20, allow_redirects=False)
+            if response.status_code in (200, 204):
+                if on_sent and completed:
+                    on_sent(completed)
                 break
-            if r.status_code == 429 and retry < 3:
+            if response.status_code == 429 and retry < 3:
                 try:
-                    wait = min(15, max(1.0, float(r.json().get("retry_after", 2))))
+                    wait = min(60, max(1.0, float(response.json().get("retry_after", 2))))
                 except (ValueError, AttributeError, TypeError):
                     wait = 2
                 time.sleep(wait)
                 continue
-            if r.status_code >= 500 and retry < 3:
+            if response.status_code >= 500 and retry < 3:
                 time.sleep(retry + 1)
                 continue
-            raise RuntimeError(f"Discord 전송 실패: HTTP {r.status_code}")
-        else:
-            raise RuntimeError("Discord 요청 한도 초과")
+            raise RuntimeError(f"Discord 전송 실패: HTTP {response.status_code}")
+
+
+def _enqueue(state: dict, m: dict, events: list[dict]) -> None:
+    queue = state.setdefault("pending_notifications", [])
+    if len(queue) + len(events) > MAX_SEEN:
+        raise ValueError("미전송 알림 한도 초과. 웹훅/상태 파일을 확인하세요")
+    info = {k: m[k] for k in ("id", "name", "url", "notify_limit") if k in m}
+    for event in events:
+        state["notification_sequence"] = state.get("notification_sequence", 0) + 1
+        queue.append({"id": state["notification_sequence"], "monitor": info,
+                      "event": {**event, "_notification_id": state["notification_sequence"]}})
+
+
+def _flush_notifications(state: dict, state_path: Path) -> None:
+    while state.get("pending_notifications"):
+        entries = state["pending_notifications"]
+        monitor = entries[0]["monitor"]
+        group = []
+        for entry in entries:
+            if entry["monitor"] != monitor:
+                break
+            group.append(entry["event"])
+
+        def acknowledged(events):
+            ids = {event["_notification_id"] for event in events}
+            state["pending_notifications"] = [entry for entry in state["pending_notifications"]
+                                               if entry["id"] not in ids]
+            save_state(state_path, state)
+
+        send_discord(monitor, group, on_sent=acknowledged)
+
+
+def _record_health(state: dict, key: str, name: str, url: str, *, error: str = "", duration: float = 0) -> list[dict]:
+    previous = copy.deepcopy(_LIVE_HEALTH.get(key) or state.get("health", {}).get(key, {}))
+    now = _when()
+    health = dict(previous, last_checked_at=now, duration_seconds=round(duration, 2))
+    if previous.get("last_checked_at"):
+        health["actual_interval_seconds"] = round(_age_seconds(previous["last_checked_at"]), 2)
+    events = []
+    if error:
+        health["consecutive_failures"] = previous.get("consecutive_failures", 0) + 1
+        health["last_error"] = error[:180]
+        if health["consecutive_failures"] >= 3 and not previous.get("alerted", False):
+            health["alerted"] = True
+            events.append({"kind": "health", "title": name + " 감시 오류",
+                           "message": f"연속 {health['consecutive_failures']}회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n{error[:180]}",
+                           "url": url, "observed_at": now})
+    else:
+        health.update(last_success_at=now, consecutive_failures=0, last_error="", alerted=False)
+        if previous.get("alerted", False):
+            events.append({"kind": "health", "title": name + " 감시 복구",
+                           "message": "정상 응답 확인을 재개했습니다.", "url": url, "observed_at": now})
+    _LIVE_HEALTH[key] = health
+    saved = state.setdefault("health", {}).get(key, {})
+    if error or previous.get("consecutive_failures", 0) or _age_seconds(saved.get("last_checked_at")) >= HEALTH_CHECKPOINT_SECONDS:
+        state["health"][key] = health
+    return events
+
+
+def _error_text(exc: Exception) -> str:
+    msg = str(exc)
+    webhook = os.getenv("DISCORD_WEBHOOK_URL", "").strip()
+    if webhook:
+        msg = msg.replace(webhook, "<redacted-webhook>")
+        path = urlsplit(webhook).path
+        if path:
+            msg = msg.replace(path, "<redacted-webhook-path>")
+    return re.sub(r"(/api(?:/v\d+)?/webhooks/\d+/)[A-Za-z0-9_-]+", r"\1<redacted>", msg)[:180]
+
+
+# 사이즈 감시는 기존 config에도 기본 활성화된다. 실행 주기/Actions 설정은 바꾸지 않는다.
+# 한 순회에서 최대 8개 상품/48개 읽기 요청을 처리하고 나머지는 다음 순회로 넘긴다.
+# 선택 설정(각 monitor): track_variants=false, notify_on_first_variant_check=true,
+# inventory_quantity_path="inventory.ats", inventory_quantity_verified=true,
+# inventory_quantity_cap=100. 수량 필드의 의미/상한이 검증된 경우에만 설정한다.
+
+
+def _variation_url(base: str, raw: str) -> str:
+    url = absolute_url(base, raw)
+    if not url:
+        return ""
+    parts = urlsplit(url)
+    if (parts.scheme, parts.netloc) != (urlsplit(base).scheme, urlsplit(base).netloc):
+        return ""
+    if not parts.path.endswith("/Product-Variation"):
+        return ""
+    pairs = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True) if k]
+    params = dict(pairs)
+    if not re.fullmatch(r"[A-Za-z0-9_-]{6,60}", params.get("pid", "")):
+        return ""
+    # 선택된 옵션을 다시 누르는 URL은 선택 해제 요청이다. 수량 탐색도 하지 않는다.
+    if any(k.startswith("dwvar_") and not v for k, v in pairs):
+        return ""
+    if params.get("quantity", "1") != "1":
+        return ""
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(sorted(pairs)), ""))
+
+
+def _variation_seeds(html: str, base: str, allowed_pids: set[str] | None = None) -> list[str]:
+    soup = BeautifulSoup(html, "html.parser")
+    urls = []
+    # 기본 옵션 URL을 먼저 조회한다. 실제 HTML에 존재하는 URL만 사용한다.
+    for node in [*soup.select("[data-defaultvariant-url]"), *soup.find_all(True)]:
+        for value in node.attrs.values():
+            if isinstance(value, str) and "Product-Variation?" in value:
+                url = _variation_url(base, value)
+                pid = dict(parse_qsl(urlsplit(url).query)).get("pid", "")
+                if url and url not in urls and (allowed_pids is None or pid in allowed_pids):
+                    urls.append(url)
+    return urls
+
+
+def _quantity(product: dict, options: dict) -> tuple[int | None, str, str]:
+    path = options.get("inventory_quantity_path", "")
+    if not path or options.get("inventory_quantity_verified") is not True:
+        return None, "undisclosed", ""
+    if not isinstance(path, str) or any(part.lower() in {
+            "maxorderquantity", "minorderquantity", "selectedquantity", "quantities"
+    } for part in path.split(".")):
+        return None, "undisclosed", ""
+    value = product
+    for part in path.split("."):
+        value = value.get(part) if isinstance(value, dict) else None
+    if isinstance(value, bool) or not isinstance(value, (int, float)) or value < 0:
+        return None, "undisclosed", ""
+    # NaN/무한대/소수/플랫폼 기본 센티널은 정확한 상품 수량으로 해석하지 않는다.
+    if not value < 999999 or int(value) != value:
+        return None, "undisclosed", ""
+    cap = options.get("inventory_quantity_cap")
+    kind = "capped" if isinstance(cap, (int, float)) and cap > 0 and value >= cap else "exact"
+    return int(cap if kind == "capped" else value), kind, path
+
+
+def _parse_variant(data: dict, lookup_url: str, target: dict) -> tuple[dict | None, list[str]]:
+    if not isinstance(data, dict) or not isinstance(data.get("product"), dict):
+        raise ValueError("옵션 응답에 product 객체가 없습니다")
+    product = data["product"]
+    pid = str(product.get("id", ""))
+    family = str(product.get("masterProductId", ""))
+    allowed = {target["pid"], target.get("master_pid", "")}
+    if not ({pid, family} & (allowed - {""})):
+        raise ValueError("옵션 응답이 요청한 상품과 일치하지 않습니다")
+    attrs = product.get("variationAttributes", [])
+    if not isinstance(attrs, list):
+        raise ValueError("옵션 목록 형식이 올바르지 않습니다")
+    selected = {}
+    links = []
+    for attr in attrs:
+        name = str(attr.get("id") or attr.get("attributeId", ""))
+        values = attr.get("values", [])
+        for value in values:
+            if value.get("selected") is True:
+                selected[name] = {"id": str(value.get("id") or value.get("value", "")),
+                                  "label": str(value.get("displayValue") or value.get("value", ""))}
+            url = _variation_url(target["url"], str(value.get("url", "")))
+            if url and url not in links:
+                links.append(url)
+    if attrs and (len(selected) != len(attrs) or product.get("productType") != "variant"):
+        return None, links
+    for attr, selection in selected.items():
+        requested = [v for k, v in parse_qsl(urlsplit(lookup_url).query)
+                     if k.startswith("dwvar_") and k.endswith("_" + attr)]
+        if requested and any(v != selection["id"] for v in requested):
+            raise ValueError("선택한 옵션과 응답 옵션이 다릅니다")
+    messages = " ".join(str(x) for x in product.get("availability", {}).get("messages", []))
+    if product.get("isProductRestricted") is True:
+        status = "restricted"
+    elif product.get("online") is False:
+        status = "unavailable"
+    elif COMING_SOON.search(messages):
+        status = "coming_soon"
+    elif product.get("readyToOrder") is not True:
+        status = "selection_required"
+    elif product.get("available") is True:
+        status = "available"
+    elif product.get("available") is False:
+        status = "sold_out"
+    else:
+        status = "unknown"
+    qty, kind, source = _quantity(product, target.get("options", {}))
+    url = absolute_url(target["url"], str(product.get("selectedProductUrl", ""))) or target["url"]
+    if not product_pid(target["url"], url)[0]:
+        url = target["url"]
+    locale = str(data.get("locale", "unknown"))
+    return {"pid": pid, "master_pid": family or target["pid"],
+            "title": str(product.get("productName") or target["title"])[:260],
+            "color": selected.get("color", {}).get("label", ""),
+            "size": selected.get("size", {}).get("label", ""),
+            "options": {k: v["label"] for k, v in selected.items()},
+            "status": status, "quantity": qty, "quantity_kind": kind,
+            "quantity_source": source, "locale": locale,
+            "url": url, "lookup_url": lookup_url}, links
+
+
+class _BudgetExhausted(Exception):
+    pass
+
+
+def _detail_get(session, url: str, budget: list[int], *, referer: str = ""):
+    host = urlsplit(url).hostname or ""
+    if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
+        raise _BudgetExhausted("사이트 접근 차단 후 대기 중")
+    if budget[0] <= 0:
+        raise _BudgetExhausted("이번 순회의 상세 조회 요청 한도")
+    budget[0] -= 1
+    headers = {"User-Agent": "PageWatch/1.0 (read-only personal monitor)",
+               "Accept-Language": "en-US,en;q=0.9"}
+    if referer:
+        headers.update({"Referer": referer, "Accept": "application/json"})
+    response = session.get(url, headers=headers, timeout=25)
+    if response.status_code in (403, 429):
+        _SITE_BLOCKED_UNTIL[host] = time.monotonic() + _block_backoff_seconds()
+        raise SiteAccessDenied(url, response.status_code)
+    response.raise_for_status()
+    if (urlsplit(response.url).hostname or "") != host:
+        raise ValueError("상품 조회가 다른 도메인으로 이동했습니다")
+    return response
+
+
+def _register_products(state: dict, m: dict, previous: dict | None, events: list[dict]) -> None:
+    if not m.get("track_variants", True):
+        return
+    targets = state.setdefault("tracked_products", {})
+    announce_urls = {e.get("url") for e in events if e["kind"] in
+                     ("new_product", "reappeared", "item", "item_reappeared")}
+    for product in m.get("_products", []):
+        pid, url = product_pid(m["url"], product["url"])
+        if not pid:
+            continue
+        key = (urlsplit(url).hostname or "") + ":" + pid
+        if key not in targets:
+            if len(targets) >= MAX_SEEN:
+                raise ValueError("상세 감시 상품 한도 초과: 상태 파일 확인 필요")
+            targets[key] = {"pid": pid, "url": url, "title": product["title"],
+                            "variants": {}, "sources": {}, "baseline_complete": False,
+                            "notify_initial": bool(m.get("notify_on_first_variant_check", False)
+                                                   or url in announce_urls),
+                            "last_checked_at": "", "options": {}}
+        target = targets[key]
+        target["sources"][m["id"]] = True
+        target["title"] = product["title"]
+        target["url"] = url
+        if url in announce_urls:
+            target["priority"] = True
+        for option in ("inventory_quantity_path", "inventory_quantity_verified", "inventory_quantity_cap",
+                       "notify_on_sold_out", "notify_on_unavailable", "notify_on_restock"):
+            if option in m:
+                target["options"][option] = m[option]
+    if m.get("mode") == "catalog" and m.get("_catalog_complete", True):
+        current = state["monitors"].get(m["id"], {}).get("seen", {})
+        absent = {x["url"] for x in current.values() if x.get("present") is False}
+        for target in targets.values():
+            if target["url"] in absent and m["id"] in target["sources"]:
+                target["sources"][m["id"]] = False
+
+
+def _merge_variant(target: dict, row: dict) -> list[dict]:
+    key = row["pid"] + ":" + row["locale"]
+    previous = target.setdefault("variants", {}).get(key)
+    old_status = (previous or {}).get("last_known_status", (previous or {}).get("status"))
+    known = row["status"] not in ("unknown", "selection_required", "listed")
+    row["last_known_status"] = row["status"] if known else old_status
+    row["last_seen_at"] = _seen_stamp(previous or {}, _when(), previous is None or row["status"] != (previous or {}).get("status"))
+    target["variants"][key] = row
+    options = target.get("options", {})
+    initial_alert = target.get("notify_initial", False) or target.get("baseline_complete", False)
+    notify = row["status"] == "available" and old_status != "available" and (previous is not None or initial_alert)
+    if notify and not options.get("notify_on_restock", True):
+        notify = False
+    if previous is not None and known and old_status != row["status"]:
+        notify |= row["status"] == "sold_out" and bool(options.get("notify_on_sold_out", False))
+        notify |= row["status"] in ("restricted", "unavailable") and bool(options.get("notify_on_unavailable", False))
+    if not notify:
+        return []
+    return [{"kind": "variant", **row, "previous_status": old_status, "observed_at": _when()}]
+
+
+def check_product_variants(session, target: dict, budget: list[int]) -> tuple[dict, list[dict]]:
+    """실제 페이지/응답의 GET 링크만 읽는다. 장바구니/주문/추정 수량 요청은 하지 않는다."""
+    target = copy.deepcopy(target)
+    response = _detail_get(session, target["url"], budget)
+    pid, _ = product_pid(target["url"], response.url)
+    if not pid or pid not in {target["pid"], target.get("master_pid")}:
+        raise ValueError("상품 페이지가 메인/다른 상품으로 이동했습니다")
+    html = response.text
+    soup = BeautifulSoup(html, "html.parser")
+    if not soup.find("h1") or any(p in _visible_text(soup).lower()[:3000] for p in CAPTCHA_PHRASES):
+        raise ValueError("상품 페이지가 아니거나 접근 확인이 필요합니다")
+    seeds = _variation_seeds(html, target["url"], {target["pid"], target.get("master_pid", "")})
+    if not seeds and not any(v.get("lookup_url") for v in target.get("variants", {}).values()):
+        result = detect_availability(html, {"url": target["url"], "expected_pid": target["pid"]})
+        # 옵션을 선택하지 않은 PDP의 CTA를 사이즈별 재고로 확대 해석하지 않는다.
+        if soup.select("[data-attr], [class*=size-selector], [class*=swatch]"):
+            raise ValueError("옵션이 있지만 공개 옵션 조회 URL을 찾지 못했습니다")
+        row = {"pid": target["pid"], "title": result["title"], "color": "", "size": "",
+               "options": {}, "status": result["status"], "quantity": None,
+               "quantity_kind": "undisclosed", "quantity_source": "", "locale": "page",
+               "url": target["url"], "lookup_url": ""}
+        events = _merge_variant(target, row)
+        target.update(baseline_complete=True, notify_initial=False, priority=False, last_checked_at=_when())
+        return target, events
+    seen = set(target.get("scan_seen", []))
+    queue = deque()
+    queued = set()
+
+    def add_url(raw):
+        url = _variation_url(target["url"], raw)
+        if url and url not in seen and url not in queued:
+            # 매우 큰/비정상 옵션 그래프가 상태 파일을 무한히 키우지 않게 중단한다.
+            if len(seen) + len(queued) >= 500:
+                raise ValueError("상품 옵션 URL 한도 초과")
+            queue.append(url)
+            queued.add(url)
+
+    for raw in [*target.get("scan_queue", []),
+                *(v.get("lookup_url", "") for v in target["variants"].values()), *seeds]:
+        add_url(raw)
+    if not queue:
+        raise ValueError("검증 가능한 상품 옵션 조회 URL이 없습니다")
+    events = []
+    requests_used = 0
+    observed = 0
+    while queue and budget[0] > 0 and requests_used < 12:
+        url = queue[0]
+        response = _detail_get(session, url, budget, referer=target["url"])
+        requests_used += 1
+        # JSON이 아닌 로그인/차단 응답 또는 다른 상품 응답은 기존 정상 상태를 보존한다.
+        row, links = _parse_variant(response.json(), url, target)
+        queue.popleft()
+        queued.discard(url)
+        seen.add(url)
+        if row:
+            observed += 1
+            target["master_pid"] = row.get("master_pid", target["pid"])
+            events += _merge_variant(target, row)
+        for link in links:
+            add_url(link)
+    if not observed and not queue:
+        raise ValueError("완전히 선택된 상품 옵션 응답을 확인하지 못했습니다")
+    target["scan_queue"] = list(queue)
+    target["scan_seen"] = sorted(seen) if queue else []
+    if not queue:
+        target["baseline_complete"] = True
+        target["notify_initial"] = False
+    target["last_checked_at"] = _when()
+    target["priority"] = False
+    return target, events
 
 
 def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
@@ -822,9 +1296,9 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
     monitors = config.get("monitors", [])
     if not isinstance(monitors, list):
         raise ValueError("config의 monitors는 배열이어야 합니다")
-    active = [m for m in monitors if m.get("enabled", False)]
+    active = [dict(m) for m in monitors if m.get("enabled", False)]
     if not active:
-        print("[설정 필요] enabled=true인 감시 대상이 없습니다. config/monitors.json을 편집하세요.")
+        print("[설정 필요] enabled=true인 감시 대상이 없습니다.")
         return 2
     ids = [m.get("id") for m in active]
     if len(set(ids)) != len(ids):
@@ -849,50 +1323,62 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
         active.append(dynamic)
         known_urls.add(path)
     errors = 0
-    counts = {"events": 0, "pages": 0, "paused": 0}
+    counts = {"events": 0, "pages": 0, "paused": 0, "details": 0}
+
+    def persist():
+        if not dry_run:
+            save_state(state_path, state)
+
+    def record_events(m, events):
+        counts["events"] += len(events)
+        _enqueue(state, m, events)
+
+    def failed(m, key, exc, started):
+        nonlocal errors
+        errors += 1
+        msg = _error_text(exc)
+        if isinstance(exc, SiteAccessDenied):
+            host = urlsplit(m["url"]).hostname or ""
+            backoff = _block_backoff_seconds()
+            _SITE_BLOCKED_UNTIL[host] = time.monotonic() + backoff
+            print(f"[BLOCKED] {key}: HTTP {exc.status}, 같은 도메인 {backoff}초 대기", file=sys.stderr)
+        else:
+            print(f"[ERROR] {key}: {type(exc).__name__}: {msg}", file=sys.stderr)
+        record_events(m, _record_health(state, key, m.get("name", key), m["url"],
+                                       error=msg, duration=time.monotonic() - started))
+        persist()
+
+    if not dry_run and state.get("pending_notifications"):
+        try:
+            _flush_notifications(state, state_path)
+        except Exception as exc:
+            errors += 1
+            print(f"[NOTIFY] 이전 알림 재전송 실패: {_error_text(exc)}", file=sys.stderr)
 
     def check_all(browser=None):
-        nonlocal errors
         for m in active:
             host = urlsplit(m["url"]).hostname or ""
             if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
                 counts["paused"] += 1
                 continue
+            started = time.monotonic()
             try:
                 html = fetch_html(m, browser)
                 previous = state["monitors"].get(m["id"])
                 current, events = compare(m, previous, html)
-                if events and not dry_run:
-                    send_discord(m, events)
-                if not dry_run and current != previous:
-                    state["monitors"][m["id"]] = current
-                    save_state(state_path, state)
+                # 이벤트를 큐에 넣은 뒤 상태를 저장한다. 웹훅 오류로 이벤트가 사라지지 않는다.
+                record_events(m, events)
+                state["monitors"][m["id"]] = current
+                _register_products(state, m, previous, events)
+                record_events(m, _record_health(state, m["id"], m.get("name", m["id"]), m["url"],
+                                               duration=time.monotonic() - started))
+                persist()
                 counts["pages"] += 1
-                counts["events"] += len(events)
-                summary = (f"판매 상태={current.get('status')}" if m.get("mode") == "availability"
-                           else f"{current.get('last_count',len(current.get('regions', [])))}개 확인")
-                print(f"[OK] {m['id']}: {summary} / 새 알림 {len(events)}건"
-                      + (" (dry run, 미전송)" if dry_run else ""))
-            except SiteAccessDenied as exc:
-                errors += 1
-                backoff = _block_backoff_seconds()
-                _SITE_BLOCKED_UNTIL[host] = time.monotonic() + backoff
-                print(f"[BLOCKED] {m['id']}: HTTP {exc.status}, {host} 접속 거부. "
-                      f"같은 도메인 재요청을 {backoff}초 중단합니다. "
-                      "다른 실행 환경/허용된 공식 접근 방법을 확인하세요.",
-                      file=sys.stderr, flush=True)
+                print(f"[OK] {m['id']}: {current.get('status', str(current.get('last_count', len(current.get('regions', [])))))}"
+                      f" / 새 알림 {len(events)}건 / {time.monotonic() - started:.1f}초"
+                      + (" (dry run, 미전송/미저장)" if dry_run else ""))
             except Exception as exc:
-                errors += 1
-                # 특히 웹훅 토큰은 네트워크 예외 메시지에 섞일 수 있으므로 로그에서 제거.
-                msg = str(exc)
-                webhook = os.getenv("DISCORD_WEBHOOK_URL", "").strip()
-                if webhook:
-                    msg = msg.replace(webhook, "<redacted-webhook>")
-                    path = urlsplit(webhook).path
-                    if path:
-                        msg = msg.replace(path, "<redacted-webhook-path>")
-                msg = re.sub(r"(/api(?:/v\d+)?/webhooks/\d+/)[A-Za-z0-9_-]+", r"\1<redacted>", msg)
-                print(f"[ERROR] {m.get('id', '?')}: {type(exc).__name__}: {msg[:180]}", file=sys.stderr)
+                failed(m, m["id"], exc, started)
 
     if any(m.get("render", "http") == "browser" for m in active):
         try:
@@ -904,15 +1390,59 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
                 finally:
                     browser.close()
         except Exception as exc:
-            print(f"[ERROR] 브라우저 시작 실패: {type(exc).__name__}: {str(exc)[:180]}", file=sys.stderr)
-            return 1
+            # 브라우저 설치/시작 실패도 알림 큐 및 상태를 보존한다.
+            failed(active[0], "browser", exc, time.monotonic())
     else:
         check_all()
-    print(f"총 {counts['pages']}개 페이지 확인, {counts['events']}건 감지, "
-          f"실패 {errors}개, 접근차단 대기 {counts['paused']}개")
-    # 대기 상태를 성공으로 취급하지 않는다. 알림 감시가 정상 작동 중이라는 착각을 방지.
-    return 1 if errors or counts["paused"] else 0
 
+    # 최근 새 상품 우선, 이후 오래 확인하지 않은 상품 순으로 조회한다.
+    # 모든 옵션을 한 순회에서 읽지 못하면 scan_queue를 보존하여 이어서 진행한다.
+    enabled_sources = {m["id"] for m in active if m.get("track_variants", True)}
+    targets = state.get("tracked_products", {})
+    candidates = [(key, target) for key, target in targets.items()
+                  if any(present and source in enabled_sources
+                         for source, present in target.get("sources", {}).items())]
+    candidates.sort(key=lambda pair: (not pair[1].get("priority", False),
+                                      pair[1].get("last_attempt_at", ""), pair[0]))
+    budget = [48]
+    with requests.Session() as session:
+        for key, target in candidates[:8]:
+            if budget[0] < 2:
+                break
+            host = urlsplit(target["url"]).hostname or ""
+            if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
+                counts["paused"] += 1
+                continue
+            m = {"id": "variant-" + hashlib.sha256(key.encode()).hexdigest()[:16],
+                 "name": "Chrome Hearts 사이즈 " + target["title"], "url": target["url"]}
+            started = time.monotonic()
+            target["last_attempt_at"] = _when()
+            target["priority"] = False
+            try:
+                current, events = check_product_variants(session, target, budget)
+                record_events(m, events)
+                targets[key] = current
+                record_events(m, _record_health(state, m["id"], m["name"], m["url"],
+                                               duration=time.monotonic() - started))
+                persist()
+                counts["details"] += 1
+                print(f"[VARIANT] {target['pid']}: 저장된 옵션 {len(current['variants'])}개, "
+                      f"다음 순회로 넘긴 URL {len(current.get('scan_queue', []))}개 / 새 알림 {len(events)}건")
+            except _BudgetExhausted:
+                persist()
+                break
+            except Exception as exc:
+                failed(m, m["id"], exc, started)
+    if not dry_run:
+        try:
+            _flush_notifications(state, state_path)
+        except Exception as exc:
+            errors += 1
+            print(f"[NOTIFY] 알림 전송 실패, 미전송 항목 보존: {_error_text(exc)}", file=sys.stderr)
+    print(f"총 {counts['pages']}개 페이지 / {counts['details']}개 상세 확인, "
+          f"{counts['events']}건 감지, 실패 {errors}개, 접근차단 대기 {counts['paused']}개, "
+          f"대기 알림 {len(state.get('pending_notifications', []))}건")
+    return 1 if errors or counts["paused"] else 0
 
 
 def git_checkpoint(state_path: Path) -> bool:
