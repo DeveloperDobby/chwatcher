@@ -768,33 +768,71 @@
       "pid": "179527XXXXXX273",
       "url": "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
       "title": "Soap on a Rope",
-      "variants": {},
+      "variants": {
+        "179527XXXXXX273:page": {
+          "pid": "179527XXXXXX273",
+          "title": "Soap on a Rope",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:05+00:00"
+        }
+      },
       "sources": {
         "ch-scents": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:05+00:00",
+      "priority": false
     },
     "www.chromehearts.com:179527XXXXXX274": {
       "pid": "179527XXXXXX274",
       "url": "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html",
       "title": "Soap on a Rope",
-      "variants": {},
+      "variants": {
+        "179527XXXXXX274:page": {
+          "pid": "179527XXXXXX274",
+          "title": "Soap on a Rope",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:05+00:00"
+        }
+      },
       "sources": {
         "ch-scents": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:05+00:00",
+      "priority": false
     },
     "www.chromehearts.com:162045CRYXXX273": {
       "pid": "162045CRYXXX273",
@@ -1112,17 +1150,36 @@
       "pid": "177734CRYXXX042",
       "url": "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html",
       "title": "MARTINI SET OF TWO",
-      "variants": {},
+      "variants": {
+        "177734CRYXXX042:page": {
+          "pid": "177734CRYXXX042",
+          "title": "MARTINI",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:05+00:00"
+        }
+      },
       "sources": {
         "ch-baccarat": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:04+00:00",
+      "priority": false
     },
     "www.chromehearts.com:177731CRYXXX042": {
       "pid": "177731CRYXXX042",
@@ -1198,17 +1255,36 @@
       "pid": "177733CRYXXX042",
       "url": "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html",
       "title": "WINE SET OF TWO",
-      "variants": {},
+      "variants": {
+        "177733CRYXXX042:page": {
+          "pid": "177733CRYXXX042",
+          "title": "WINE",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html",
+          "lookup_url": "",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:12:04+00:00"
+        }
+      },
       "sources": {
         "ch-baccarat": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:04+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:04+00:00",
+      "priority": false
     },
     "www.chromehearts.com:177730CRYXXX013": {
       "pid": "177730CRYXXX013",
@@ -2446,17 +2522,99 @@
       "pid": "201583AFWXXX033",
       "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=XSM",
       "title": "LACE HIGH-WAISTED BRIEF",
-      "variants": {},
+      "variants": {
+        "201583AFWSML033:en_US": {
+          "pid": "201583AFWSML033",
+          "master_pid": "201583AFWXXX033",
+          "title": "LACE HIGH-WAISTED BRIEF",
+          "color": "",
+          "size": "S",
+          "options": {
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=SML&pid=201583AFWXXX033&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:07+00:00"
+        },
+        "201583AFWMED033:en_US": {
+          "pid": "201583AFWMED033",
+          "master_pid": "201583AFWXXX033",
+          "title": "LACE HIGH-WAISTED BRIEF",
+          "color": "",
+          "size": "M",
+          "options": {
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=MED&pid=201583AFWXXX033&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:07+00:00"
+        },
+        "201583AFWLRG033:en_US": {
+          "pid": "201583AFWLRG033",
+          "master_pid": "201583AFWXXX033",
+          "title": "LACE HIGH-WAISTED BRIEF",
+          "color": "",
+          "size": "L",
+          "options": {
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=LRG&pid=201583AFWXXX033&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:07+00:00"
+        },
+        "201583AFWXSM033:en_US": {
+          "pid": "201583AFWXSM033",
+          "master_pid": "201583AFWXXX033",
+          "title": "LACE HIGH-WAISTED BRIEF",
+          "color": "",
+          "size": "XS",
+          "options": {
+            "size": "XS"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=XSM&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:07+00:00"
+        }
+      },
       "sources": {
         "ch-intimates": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:07+00:00",
+      "priority": false,
+      "master_pid": "201583AFWXXX033",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201584AFWXXX030": {
       "pid": "201584AFWXXX030",
@@ -2877,49 +3035,223 @@
       "pid": "191715D5DXXX408",
       "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=SML",
       "title": "WOMENS SPORT",
-      "variants": {},
+      "variants": {
+        "191715D5DMED408:en_US": {
+          "pid": "191715D5DMED408",
+          "master_pid": "191715D5DXXX408",
+          "title": "WOMENS SPORT",
+          "color": "",
+          "size": "M",
+          "options": {
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:06+00:00"
+        },
+        "191715D5DSML408:en_US": {
+          "pid": "191715D5DSML408",
+          "master_pid": "191715D5DXXX408",
+          "title": "WOMENS SPORT",
+          "color": "",
+          "size": "S",
+          "options": {
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=SML&pid=191715D5DXXX408&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:06+00:00"
+        }
+      },
       "sources": {
         "ch-socks": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:06+00:00",
+      "priority": false,
+      "master_pid": "191715D5DXXX408",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:191716ADLXXX406": {
       "pid": "191716ADLXXX406",
       "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=MED",
       "title": "EXECUTIVE SOCKS",
-      "variants": {},
+      "variants": {
+        "191716ADLLRG406:en_US": {
+          "pid": "191716ADLLRG406",
+          "master_pid": "191716ADLXXX406",
+          "title": "EXECUTIVE SOCKS",
+          "color": "",
+          "size": "L",
+          "options": {
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191716ADLXXX406_size=LRG&pid=191716ADLXXX406&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:07+00:00"
+        },
+        "191716ADLMED406:en_US": {
+          "pid": "191716ADLMED406",
+          "master_pid": "191716ADLXXX406",
+          "title": "EXECUTIVE SOCKS",
+          "color": "",
+          "size": "M",
+          "options": {
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191716ADLXXX406_size=MED&pid=191716ADLXXX406&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:07+00:00"
+        }
+      },
       "sources": {
         "ch-socks": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:06+00:00",
+      "priority": false,
+      "master_pid": "191716ADLXXX406",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:180459XXXXXX389": {
       "pid": "180459XXXXXX389",
       "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=MED&quantity=1",
       "title": "FOTI SOCKS",
-      "variants": {},
+      "variants": {
+        "180459MB7MED389:en_US": {
+          "pid": "180459MB7MED389",
+          "master_pid": "180459XXXXXX389",
+          "title": "FOTI SOCKS",
+          "color": "Blue Purple Red",
+          "size": "M",
+          "options": {
+            "color": "Blue Purple Red",
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&pid=180459XXXXXX389&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:06+00:00"
+        },
+        "180459MB3LRG389:en_US": {
+          "pid": "180459MB3LRG389",
+          "master_pid": "180459XXXXXX389",
+          "title": "FOTI SOCKS",
+          "color": "Black White Red",
+          "size": "L",
+          "options": {
+            "color": "Black White Red",
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&pid=180459XXXXXX389&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:06+00:00"
+        },
+        "180459MB3MED389:en_US": {
+          "pid": "180459MB3MED389",
+          "master_pid": "180459XXXXXX389",
+          "title": "FOTI SOCKS",
+          "color": "Black White Red",
+          "size": "M",
+          "options": {
+            "color": "Black White Red",
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=MED&pid=180459XXXXXX389&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:06+00:00"
+        },
+        "180459MB7LRG389:en_US": {
+          "pid": "180459MB7LRG389",
+          "master_pid": "180459XXXXXX389",
+          "title": "FOTI SOCKS",
+          "color": "Blue Purple Red",
+          "size": "L",
+          "options": {
+            "color": "Blue Purple Red",
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=LRG&pid=180459XXXXXX389&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:12:06+00:00"
+        }
+      },
       "sources": {
         "ch-socks": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:12:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:12:05+00:00",
+      "priority": false,
+      "master_pid": "180459XXXXXX389",
+      "scan_queue": [],
+      "scan_seen": []
     }
   },
   "health": {
@@ -3044,11 +3376,11 @@
       "alerted": false
     },
     "ch-extra-eyewear-accessories": {
-      "last_checked_at": "2026-10-30T23:10:58+00:00",
-      "duration_seconds": 0.2,
-      "consecutive_failures": 3,
+      "last_checked_at": "2026-10-30T23:11:58+00:00",
+      "duration_seconds": 0.17,
+      "consecutive_failures": 4,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/eyewear-accessories",
-      "actual_interval_seconds": 60.96,
+      "actual_interval_seconds": 60.35,
       "alerted": true
     },
     "ch-extra-bag": {
@@ -3092,11 +3424,11 @@
       "alerted": false
     },
     "ch-extra-t-shirts": {
-      "last_checked_at": "2026-10-30T23:11:00+00:00",
-      "duration_seconds": 0.18,
-      "consecutive_failures": 3,
+      "last_checked_at": "2026-10-30T23:12:00+00:00",
+      "duration_seconds": 0.16,
+      "consecutive_failures": 4,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/t-shirts",
-      "actual_interval_seconds": 60.6,
+      "actual_interval_seconds": 60.1,
       "alerted": true
     },
     "ch-extra-shirt": {
@@ -3415,6 +3747,70 @@
       "last_checked_at": "2026-10-30T23:11:10+00:00",
       "duration_seconds": 0.3,
       "last_success_at": "2026-10-30T23:11:10+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-75875761cebe3f56": {
+      "last_checked_at": "2026-10-30T23:12:04+00:00",
+      "duration_seconds": 0.28,
+      "last_success_at": "2026-10-30T23:12:04+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-dac4715b98de2868": {
+      "last_checked_at": "2026-10-30T23:12:05+00:00",
+      "duration_seconds": 0.23,
+      "last_success_at": "2026-10-30T23:12:05+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-8f12a11effb27d85": {
+      "last_checked_at": "2026-10-30T23:12:05+00:00",
+      "duration_seconds": 0.28,
+      "last_success_at": "2026-10-30T23:12:05+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-d3d0a7c35955c6c2": {
+      "last_checked_at": "2026-10-30T23:12:05+00:00",
+      "duration_seconds": 0.22,
+      "last_success_at": "2026-10-30T23:12:05+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-0ecd87f6b3bab6f1": {
+      "last_checked_at": "2026-10-30T23:12:06+00:00",
+      "duration_seconds": 0.65,
+      "last_success_at": "2026-10-30T23:12:06+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-719bf406f4287fcc": {
+      "last_checked_at": "2026-10-30T23:12:06+00:00",
+      "duration_seconds": 0.41,
+      "last_success_at": "2026-10-30T23:12:06+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-2689d9ae00e00b11": {
+      "last_checked_at": "2026-10-30T23:12:07+00:00",
+      "duration_seconds": 0.43,
+      "last_success_at": "2026-10-30T23:12:07+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-c470b9e19737a400": {
+      "last_checked_at": "2026-10-30T23:12:07+00:00",
+      "duration_seconds": 0.58,
+      "last_success_at": "2026-10-30T23:12:07+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false
