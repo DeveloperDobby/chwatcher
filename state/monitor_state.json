@@ -1118,33 +1118,71 @@
       "pid": "207468CRYXXX055",
       "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
       "title": "TRIPLE OLD FASHION SET OF TWO",
-      "variants": {},
+      "variants": {
+        "207468CRYXXX055:page": {
+          "pid": "207468CRYXXX055",
+          "title": "TRIPLE OLD FASHION",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:10+00:00"
+        }
+      },
       "sources": {
         "ch-baccarat": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:10+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:10+00:00",
+      "priority": false
     },
     "www.chromehearts.com:207467CRYXXX054": {
       "pid": "207467CRYXXX054",
       "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
       "title": "SHOT GLASS SET OF TWO",
-      "variants": {},
+      "variants": {
+        "207467CRYXXX054:page": {
+          "pid": "207467CRYXXX054",
+          "title": "SHOT GLASS",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:10+00:00"
+        }
+      },
       "sources": {
         "ch-baccarat": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:10+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:09+00:00",
+      "priority": false
     },
     "www.chromehearts.com:177734CRYXXX042": {
       "pid": "177734CRYXXX042",
@@ -1918,33 +1956,432 @@
       "pid": "209670XXXXXXXXX",
       "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=SML&quantity=1",
       "title": "BOXER BRIEF - CLASSIC RIB",
-      "variants": {},
+      "variants": {
+        "209670I3ISML00C:en_US": {
+          "pid": "209670I3ISML00C",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Red",
+          "size": "S",
+          "options": {
+            "color": "Red",
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:12+00:00"
+        },
+        "209670BUYSML00A:en_US": {
+          "pid": "209670BUYSML00A",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Baby Blue",
+          "size": "S",
+          "options": {
+            "color": "Baby Blue",
+            "size": "S"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:12+00:00"
+        },
+        "209670BLKSML044:en_US": {
+          "pid": "209670BLKSML044",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Multi Black Stencil",
+          "size": "S",
+          "options": {
+            "color": "Multi Black Stencil",
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:12+00:00"
+        },
+        "209670WHTSML044:en_US": {
+          "pid": "209670WHTSML044",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Multi White Stencil",
+          "size": "S",
+          "options": {
+            "color": "Multi White Stencil",
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:13+00:00"
+        },
+        "209670BLKMED00E:en_US": {
+          "pid": "209670BLKMED00E",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Black Stencil",
+          "size": "M",
+          "options": {
+            "color": "Black Stencil",
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=MED&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:13+00:00"
+        },
+        "209670BLKLRG00E:en_US": {
+          "pid": "209670BLKLRG00E",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Black Stencil",
+          "size": "L",
+          "options": {
+            "color": "Black Stencil",
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=LRG&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:13+00:00"
+        },
+        "209670BLK1XL00E:en_US": {
+          "pid": "209670BLK1XL00E",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Black Stencil",
+          "size": "XL",
+          "options": {
+            "color": "Black Stencil",
+            "size": "XL"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=1XL&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=1XL&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:13+00:00"
+        },
+        "209670BLK2XL00E:en_US": {
+          "pid": "209670BLK2XL00E",
+          "master_pid": "209670XXXXXXXXX",
+          "title": "BOXER BRIEF - CLASSIC RIB",
+          "color": "Black Stencil",
+          "size": "XXL",
+          "options": {
+            "color": "Black Stencil",
+            "size": "XXL"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=2XL&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=2XL&pid=209670XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:13+00:00"
+        }
+      },
       "sources": {
         "ch-boxers-leggings": true
       },
       "baseline_complete": false,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:13+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:12+00:00",
+      "priority": false,
+      "master_pid": "209670XXXXXXXXX",
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=MED&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=LRG&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=1XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=2XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=MED&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=LRG&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=1XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=2XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=MED&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=LRG&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=1XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=2XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=MED&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=LRG&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=1XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=2XL&pid=209670XXXXXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=1XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=2XL&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=LRG&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=MED&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BMS&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=BUY&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=I3I&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_209670XXXXXXXXX_color=WMS&dwvar_209670XXXXXXXXX_size=SML&pid=209670XXXXXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:208280XXXXXXXXX": {
       "pid": "208280XXXXXXXXX",
       "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=SML&quantity=1",
       "title": "FOTI BOXER BRIEF - LONG",
-      "variants": {},
+      "variants": {
+        "208280AYOSML036:en_US": {
+          "pid": "208280AYOSML036",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Multi Color",
+          "size": "S",
+          "options": {
+            "color": "Multi Color",
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYNMED035:en_US": {
+          "pid": "208280AYNMED035",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Black",
+          "size": "M",
+          "options": {
+            "color": "Black",
+            "size": "M"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=MED&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYNLRG035:en_US": {
+          "pid": "208280AYNLRG035",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Black",
+          "size": "L",
+          "options": {
+            "color": "Black",
+            "size": "L"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=LRG&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYN1XL035:en_US": {
+          "pid": "208280AYN1XL035",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Black",
+          "size": "XL",
+          "options": {
+            "color": "Black",
+            "size": "XL"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=1XL&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=1XL&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYN2XL035:en_US": {
+          "pid": "208280AYN2XL035",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Black",
+          "size": "XXL",
+          "options": {
+            "color": "Black",
+            "size": "XXL"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=2XL&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=2XL&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYNSML035:en_US": {
+          "pid": "208280AYNSML035",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Black",
+          "size": "S",
+          "options": {
+            "color": "Black",
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=SML&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYOMED036:en_US": {
+          "pid": "208280AYOMED036",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Multi Color",
+          "size": "M",
+          "options": {
+            "color": "Multi Color",
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=MED&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYOLRG036:en_US": {
+          "pid": "208280AYOLRG036",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Multi Color",
+          "size": "L",
+          "options": {
+            "color": "Multi Color",
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=LRG&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:11+00:00"
+        },
+        "208280AYO1XL036:en_US": {
+          "pid": "208280AYO1XL036",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Multi Color",
+          "size": "XL",
+          "options": {
+            "color": "Multi Color",
+            "size": "XL"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=1XL&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=1XL&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:12+00:00"
+        },
+        "208280AYO2XL036:en_US": {
+          "pid": "208280AYO2XL036",
+          "master_pid": "208280XXXXXXXXX",
+          "title": "FOTI BOXER BRIEF - LONG",
+          "color": "Multi Color",
+          "size": "XXL",
+          "options": {
+            "color": "Multi Color",
+            "size": "XXL"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=2XL&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=2XL&pid=208280XXXXXXXXX&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:12+00:00"
+        }
+      },
       "sources": {
         "ch-boxers-leggings": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:12+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:10+00:00",
+      "priority": false,
+      "master_pid": "208280XXXXXXXXX",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:165064XXXXXX140": {
       "pid": "165064XXXXXX140",
@@ -2490,33 +2927,292 @@
       "pid": "201585AFWXXX030",
       "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=MED",
       "title": "LACE TEDDY",
-      "variants": {},
+      "variants": {
+        "201585AFWXSM030:en_US": {
+          "pid": "201585AFWXSM030",
+          "master_pid": "201585AFWXXX030",
+          "title": "LACE TEDDY",
+          "color": "",
+          "size": "XS",
+          "options": {
+            "size": "XS"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=XSM&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:07+00:00"
+        },
+        "201585AFWSML030:en_US": {
+          "pid": "201585AFWSML030",
+          "master_pid": "201585AFWXXX030",
+          "title": "LACE TEDDY",
+          "color": "",
+          "size": "S",
+          "options": {
+            "size": "S"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=SML&pid=201585AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:07+00:00"
+        },
+        "201585AFWLRG030:en_US": {
+          "pid": "201585AFWLRG030",
+          "master_pid": "201585AFWXXX030",
+          "title": "LACE TEDDY",
+          "color": "",
+          "size": "L",
+          "options": {
+            "size": "L"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:07+00:00"
+        },
+        "201585AFWMED030:en_US": {
+          "pid": "201585AFWMED030",
+          "master_pid": "201585AFWXXX030",
+          "title": "LACE TEDDY",
+          "color": "",
+          "size": "M",
+          "options": {
+            "size": "M"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:07+00:00"
+        }
+      },
       "sources": {
         "ch-intimates": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:06+00:00",
+      "priority": false,
+      "master_pid": "201585AFWXXX030",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:202334AFWXXX030": {
       "pid": "202334AFWXXX030",
       "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=34C",
       "title": "LACE UNDERWIRE BRA",
-      "variants": {},
+      "variants": {
+        "202334AFW32B030:en_US": {
+          "pid": "202334AFW32B030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "32B",
+          "options": {
+            "size": "32B"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32B&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:08+00:00"
+        },
+        "202334AFW32C030:en_US": {
+          "pid": "202334AFW32C030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "32C",
+          "options": {
+            "size": "32C"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32C&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32C&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:08+00:00"
+        },
+        "202334AFW32D030:en_US": {
+          "pid": "202334AFW32D030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "32D",
+          "options": {
+            "size": "32D"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32D&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32D&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        },
+        "202334AFW34B030:en_US": {
+          "pid": "202334AFW34B030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "34B",
+          "options": {
+            "size": "34B"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=34B&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34B&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        },
+        "202334AFW34D030:en_US": {
+          "pid": "202334AFW34D030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "34D",
+          "options": {
+            "size": "34D"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=34D&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34D&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        },
+        "202334AFW36B030:en_US": {
+          "pid": "202334AFW36B030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "36B",
+          "options": {
+            "size": "36B"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36B&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36B&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        },
+        "202334AFW36C030:en_US": {
+          "pid": "202334AFW36C030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "36C",
+          "options": {
+            "size": "36C"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36C&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36C&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        },
+        "202334AFW36D030:en_US": {
+          "pid": "202334AFW36D030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "36D",
+          "options": {
+            "size": "36D"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36D&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36D&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        },
+        "202334AFW34C030:en_US": {
+          "pid": "202334AFW34C030",
+          "master_pid": "202334AFWXXX030",
+          "title": "LACE UNDERWIRE BRA",
+          "color": "",
+          "size": "34C",
+          "options": {
+            "size": "34C"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=34C&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34C&pid=202334AFWXXX030&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:09+00:00"
+        }
+      },
       "sources": {
         "ch-intimates": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:08+00:00",
+      "priority": false,
+      "master_pid": "202334AFWXXX030",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201583AFWXXX033": {
       "pid": "201583AFWXXX033",
@@ -2620,33 +3316,197 @@
       "pid": "201584AFWXXX030",
       "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM",
       "title": "LACE G-STRING",
-      "variants": {},
+      "variants": {
+        "201584AFWSML030:en_US": {
+          "pid": "201584AFWSML030",
+          "master_pid": "201584AFWXXX030",
+          "title": "LACE G-STRING",
+          "color": "",
+          "size": "S",
+          "options": {
+            "size": "S"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=SML&pid=201584AFWXXX030&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:06+00:00"
+        },
+        "201584AFWMED030:en_US": {
+          "pid": "201584AFWMED030",
+          "master_pid": "201584AFWXXX030",
+          "title": "LACE G-STRING",
+          "color": "",
+          "size": "M",
+          "options": {
+            "size": "M"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=MED&pid=201584AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:06+00:00"
+        },
+        "201584AFWLRG030:en_US": {
+          "pid": "201584AFWLRG030",
+          "master_pid": "201584AFWXXX030",
+          "title": "LACE G-STRING",
+          "color": "",
+          "size": "L",
+          "options": {
+            "size": "L"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=LRG&pid=201584AFWXXX030&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:06+00:00"
+        },
+        "201584AFWXSM030:en_US": {
+          "pid": "201584AFWXSM030",
+          "master_pid": "201584AFWXXX030",
+          "title": "LACE G-STRING",
+          "color": "",
+          "size": "XS",
+          "options": {
+            "size": "XS"
+          },
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=XSM&pid=201584AFWXXX030&quantity=1",
+          "last_known_status": "available",
+          "last_seen_at": "2026-10-30T23:13:06+00:00"
+        }
+      },
       "sources": {
         "ch-intimates": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:05+00:00",
+      "priority": false,
+      "master_pid": "201584AFWXXX030",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201635AFWXXX033": {
       "pid": "201635AFWXXX033",
       "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html",
       "title": "LACE THONG",
-      "variants": {},
+      "variants": {
+        "201635AFWXSM033:en_US": {
+          "pid": "201635AFWXSM033",
+          "master_pid": "201635AFWXXX033",
+          "title": "LACE THONG",
+          "color": "",
+          "size": "XS",
+          "options": {
+            "size": "XS"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html?dwvar_201635AFWXXX033_size=XSM&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201635AFWXXX033_size=XSM&pid=201635AFWXXX033&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:08+00:00"
+        },
+        "201635AFWSML033:en_US": {
+          "pid": "201635AFWSML033",
+          "master_pid": "201635AFWXXX033",
+          "title": "LACE THONG",
+          "color": "",
+          "size": "S",
+          "options": {
+            "size": "S"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html?dwvar_201635AFWXXX033_size=SML&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201635AFWXXX033_size=SML&pid=201635AFWXXX033&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:08+00:00"
+        },
+        "201635AFWMED033:en_US": {
+          "pid": "201635AFWMED033",
+          "master_pid": "201635AFWXXX033",
+          "title": "LACE THONG",
+          "color": "",
+          "size": "M",
+          "options": {
+            "size": "M"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html?dwvar_201635AFWXXX033_size=MED&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201635AFWXXX033_size=MED&pid=201635AFWXXX033&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:08+00:00"
+        },
+        "201635AFWLRG033:en_US": {
+          "pid": "201635AFWLRG033",
+          "master_pid": "201635AFWXXX033",
+          "title": "LACE THONG",
+          "color": "",
+          "size": "L",
+          "options": {
+            "size": "L"
+          },
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "en_US",
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html?dwvar_201635AFWXXX033_size=LRG&quantity=1",
+          "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201635AFWXXX033_size=LRG&pid=201635AFWXXX033&quantity=1",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-10-30T23:13:08+00:00"
+        }
+      },
       "sources": {
         "ch-intimates": true
       },
-      "baseline_complete": false,
+      "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "",
+      "last_checked_at": "2026-10-30T23:13:08+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
-      }
+      },
+      "last_attempt_at": "2026-10-30T23:13:07+00:00",
+      "priority": false,
+      "master_pid": "201635AFWXXX033",
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:176354XXXXXX349": {
       "pid": "176354XXXXXX349",
@@ -3376,11 +4236,11 @@
       "alerted": false
     },
     "ch-extra-eyewear-accessories": {
-      "last_checked_at": "2026-10-30T23:11:58+00:00",
+      "last_checked_at": "2026-10-30T23:12:59+00:00",
       "duration_seconds": 0.17,
-      "consecutive_failures": 4,
+      "consecutive_failures": 5,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/eyewear-accessories",
-      "actual_interval_seconds": 60.35,
+      "actual_interval_seconds": 61.53,
       "alerted": true
     },
     "ch-extra-bag": {
@@ -3424,11 +4284,11 @@
       "alerted": false
     },
     "ch-extra-t-shirts": {
-      "last_checked_at": "2026-10-30T23:12:00+00:00",
-      "duration_seconds": 0.16,
-      "consecutive_failures": 4,
+      "last_checked_at": "2026-10-30T23:13:01+00:00",
+      "duration_seconds": 0.18,
+      "consecutive_failures": 5,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/t-shirts",
-      "actual_interval_seconds": 60.1,
+      "actual_interval_seconds": 61.1,
       "alerted": true
     },
     "ch-extra-shirt": {
@@ -3811,6 +4671,70 @@
       "last_checked_at": "2026-10-30T23:12:07+00:00",
       "duration_seconds": 0.58,
       "last_success_at": "2026-10-30T23:12:07+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-ac3206ad3eca4fde": {
+      "last_checked_at": "2026-10-30T23:13:06+00:00",
+      "duration_seconds": 0.8,
+      "last_success_at": "2026-10-30T23:13:06+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-49a2cfa73ac49733": {
+      "last_checked_at": "2026-10-30T23:13:07+00:00",
+      "duration_seconds": 0.74,
+      "last_success_at": "2026-10-30T23:13:07+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-65c0db576057c5dc": {
+      "last_checked_at": "2026-10-30T23:13:08+00:00",
+      "duration_seconds": 0.86,
+      "last_success_at": "2026-10-30T23:13:08+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-c4d4dbc9cdf0e19d": {
+      "last_checked_at": "2026-10-30T23:13:09+00:00",
+      "duration_seconds": 1.31,
+      "last_success_at": "2026-10-30T23:13:09+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-ae69f9c9aaefbd47": {
+      "last_checked_at": "2026-10-30T23:13:10+00:00",
+      "duration_seconds": 0.36,
+      "last_success_at": "2026-10-30T23:13:10+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-9a74d9ee5ffcee1c": {
+      "last_checked_at": "2026-10-30T23:13:10+00:00",
+      "duration_seconds": 0.27,
+      "last_success_at": "2026-10-30T23:13:10+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-a4e2f598fc79f5b9": {
+      "last_checked_at": "2026-10-30T23:13:12+00:00",
+      "duration_seconds": 1.78,
+      "last_success_at": "2026-10-30T23:13:12+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false
+    },
+    "variant-f35e547dffa7f8c7": {
+      "last_checked_at": "2026-10-30T23:13:13+00:00",
+      "duration_seconds": 1.44,
+      "last_success_at": "2026-10-30T23:13:13+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false
