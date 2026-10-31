@@ -931,12 +931,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:05+00:00",
+      "last_checked_at": "2026-10-31T00:06:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:05+00:00",
+      "last_attempt_at": "2026-10-31T00:06:05+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX274": {
@@ -966,12 +966,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:06+00:00",
+      "last_checked_at": "2026-10-31T00:06:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:05+00:00",
+      "last_attempt_at": "2026-10-31T00:06:05+00:00",
       "priority": false
     },
     "www.chromehearts.com:172571CRYXXX273": {
@@ -1246,12 +1246,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:09+00:00",
+      "last_checked_at": "2026-10-31T00:06:08+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:09+00:00",
+      "last_attempt_at": "2026-10-31T00:06:07+00:00",
       "priority": false
     },
     "www.chromehearts.com:177732CRYXXX042": {
@@ -1281,12 +1281,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:09+00:00",
+      "last_checked_at": "2026-10-31T00:06:08+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:09+00:00",
+      "last_attempt_at": "2026-10-31T00:06:08+00:00",
       "priority": false
     },
     "www.chromehearts.com:177733CRYXXX042": {
@@ -1351,12 +1351,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:09+00:00",
+      "last_checked_at": "2026-10-31T00:06:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:09+00:00",
+      "last_attempt_at": "2026-10-31T00:06:07+00:00",
       "priority": false
     },
     "www.chromehearts.com:174310CRYXXX005": {
@@ -4168,12 +4168,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:08+00:00",
+      "last_checked_at": "2026-10-31T00:06:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:06+00:00",
+      "last_attempt_at": "2026-10-31T00:06:06+00:00",
       "priority": false,
       "master_pid": "176354XXXXXX349",
       "scan_queue": [],
@@ -4247,12 +4247,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:06+00:00",
+      "last_checked_at": "2026-10-31T00:06:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:06+00:00",
+      "last_attempt_at": "2026-10-31T00:06:05+00:00",
       "priority": false,
       "master_pid": "176354MB3XXX465",
       "scan_queue": [],
@@ -4349,12 +4349,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-10-31T00:01:09+00:00",
+      "last_checked_at": "2026-10-31T00:06:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-10-31T00:01:08+00:00",
+      "last_attempt_at": "2026-10-31T00:06:07+00:00",
       "priority": false,
       "master_pid": "176354XXXXXXXXX",
       "scan_queue": [],
@@ -4720,11 +4720,11 @@
       "actual_interval_seconds": 61.3
     },
     "ch-extra-eyewear-accessories": {
-      "last_checked_at": "2026-10-31T00:04:58+00:00",
-      "duration_seconds": 0.19,
-      "consecutive_failures": 57,
+      "last_checked_at": "2026-10-31T00:05:58+00:00",
+      "duration_seconds": 0.2,
+      "consecutive_failures": 58,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/eyewear-accessories",
-      "actual_interval_seconds": 54.87,
+      "actual_interval_seconds": 60.84,
       "alerted": true
     },
     "ch-extra-bag": {
@@ -4773,11 +4773,11 @@
       "actual_interval_seconds": 60.98
     },
     "ch-extra-t-shirts": {
-      "last_checked_at": "2026-10-31T00:05:00+00:00",
-      "duration_seconds": 0.18,
-      "consecutive_failures": 57,
+      "last_checked_at": "2026-10-31T00:06:00+00:00",
+      "duration_seconds": 0.24,
+      "consecutive_failures": 58,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/t-shirts",
-      "actual_interval_seconds": 55.63,
+      "actual_interval_seconds": 60.51,
       "alerted": true
     },
     "ch-extra-shirt": {
