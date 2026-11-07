@@ -850,12 +850,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:16:31+00:00",
+      "last_checked_at": "2026-11-07T14:23:29+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:16:31+00:00",
+      "last_attempt_at": "2026-11-07T14:23:29+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX271": {
@@ -886,12 +886,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:16:33+00:00",
+      "last_checked_at": "2026-11-07T14:23:30+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:16:33+00:00",
+      "last_attempt_at": "2026-11-07T14:23:30+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX272": {
@@ -1534,12 +1534,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:16:42+00:00",
+      "last_checked_at": "2026-11-07T14:23:39+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:16:42+00:00",
+      "last_attempt_at": "2026-11-07T14:23:39+00:00",
       "priority": false
     },
     "www.chromehearts.com:174310CRYXXX005": {
@@ -3624,12 +3624,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:16:09+00:00",
+      "last_checked_at": "2026-11-07T14:23:27+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:16:09+00:00",
+      "last_attempt_at": "2026-11-07T14:23:27+00:00",
       "priority": false,
       "master_pid": "092826AI6XXXXXX",
       "scan_queue": [],
@@ -4569,7 +4569,7 @@
           "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=LRG&pid=176354XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T14:01:44+00:00"
+          "last_seen_at": "2026-11-07T14:23:35+00:00"
         },
         "176354AEJMED435:en_US": {
           "pid": "176354AEJMED435",
@@ -4618,12 +4618,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:16:40+00:00",
+      "last_checked_at": "2026-11-07T14:23:38+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:16:40+00:00",
+      "last_attempt_at": "2026-11-07T14:23:38+00:00",
       "priority": false,
       "master_pid": "176354XXXXXXXXX",
       "scan_queue": [],
@@ -5571,23 +5571,23 @@
       "status": "ok"
     },
     "ch-extra-shirts": {
-      "last_checked_at": "2026-11-07T14:08:16+00:00",
+      "last_checked_at": "2026-11-07T14:23:18+00:00",
       "duration_seconds": 2.84,
-      "last_success_at": "2026-11-07T14:08:16+00:00",
+      "last_success_at": "2026-11-07T14:23:18+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.29,
+      "actual_interval_seconds": 902.84,
       "status": "ok"
     },
     "ch-extra-hoodies": {
-      "last_checked_at": "2026-11-07T14:08:19+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-07T14:08:19+00:00",
+      "last_checked_at": "2026-11-07T14:23:21+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-07T14:23:21+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.28,
+      "actual_interval_seconds": 902.84,
       "status": "ok"
     },
     "ch-extra-sweatshirt": {
@@ -9336,7 +9336,7 @@
           "at": "2026-11-07T14:20:21+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T14:20:21+00:00"
     }
   },
@@ -9357,8 +9357,8 @@
     "ch-extra-t-shirt": "2026-11-07T14:21:48+00:00",
     "ch-extra-t-shirts": "2026-11-07T14:22:31+00:00",
     "ch-extra-shirt": "2026-11-07T14:22:32+00:00",
-    "ch-extra-shirts": "2026-11-07T14:08:13+00:00",
-    "ch-extra-hoodies": "2026-11-07T14:08:16+00:00",
+    "ch-extra-shirts": "2026-11-07T14:23:15+00:00",
+    "ch-extra-hoodies": "2026-11-07T14:23:18+00:00",
     "ch-extra-sweatshirt": "2026-11-07T14:08:58+00:00",
     "ch-extra-sweatshirts": "2026-11-07T14:09:01+00:00",
     "ch-extra-sweater": "2026-11-07T14:09:43+00:00",
