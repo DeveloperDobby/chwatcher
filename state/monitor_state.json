@@ -3733,7 +3733,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32B&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T19:46:30+00:00"
+          "last_seen_at": "2026-11-07T20:08:47+00:00"
         },
         "202334AFW32C030:en_US": {
           "pid": "202334AFW32C030",
@@ -3894,12 +3894,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:01:21+00:00",
+      "last_checked_at": "2026-11-07T20:08:59+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:01:21+00:00",
+      "last_attempt_at": "2026-11-07T20:08:59+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -4196,7 +4196,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:01:16+00:00",
+      "last_attempt_at": "2026-11-07T20:08:44+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5423,23 +5423,23 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-07T19:53:37+00:00",
-      "duration_seconds": 2.53,
-      "last_success_at": "2026-11-07T19:53:37+00:00",
+      "last_checked_at": "2026-11-07T20:08:38+00:00",
+      "duration_seconds": 2.68,
+      "last_success_at": "2026-11-07T20:08:38+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.84,
+      "actual_interval_seconds": 901.85,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-07T19:53:40+00:00",
-      "duration_seconds": 3.01,
-      "last_success_at": "2026-11-07T19:53:40+00:00",
+      "last_checked_at": "2026-11-07T20:08:41+00:00",
+      "duration_seconds": 3.04,
+      "last_success_at": "2026-11-07T20:08:41+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.86,
+      "actual_interval_seconds": 901.89,
       "status": "ok"
     },
     "ch-extra-goggles": {
@@ -6043,13 +6043,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-07T20:01:16+00:00",
-      "duration_seconds": 2.87,
+      "last_checked_at": "2026-11-07T20:08:44+00:00",
+      "duration_seconds": 2.86,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 41,
+      "consecutive_failures": 42,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 357.96,
+      "actual_interval_seconds": 448.77,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10116,7 +10116,7 @@
           "at": "2026-11-07T20:02:42+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-07T20:01:14+00:00"
     }
   },
@@ -10125,8 +10125,8 @@
     "ch-extra-sports-mesh": "2026-11-07T20:07:08+00:00",
     "ch-extra-eyewear": "2026-11-07T20:07:50+00:00",
     "ch-extra-hat": "2026-11-07T20:07:53+00:00",
-    "ch-extra-hoodie": "2026-11-07T19:53:35+00:00",
-    "ch-extra-rib-tank": "2026-11-07T19:53:37+00:00",
+    "ch-extra-hoodie": "2026-11-07T20:08:36+00:00",
+    "ch-extra-rib-tank": "2026-11-07T20:08:38+00:00",
     "ch-extra-goggles": "2026-11-07T19:54:20+00:00",
     "ch-extra-sunglasses": "2026-11-07T19:54:22+00:00",
     "ch-extra-eyewear-accessories": "2026-11-07T19:55:05+00:00",
