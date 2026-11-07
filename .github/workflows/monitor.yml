@@ -1,8 +1,7 @@
-name: Chrome Hearts Probe + 60s Discord Monitor
+name: Chrome Hearts Catalog and Discord Monitor
 
 on:
-  # 약 3시간마다 새로운 실행을 시작합니다. (각 실행은 최대 5시간 58분 감시 후 종료,
-  # 새 실행이 시작되면 아래 첫 단계에서 이전 schedule 실행을 취소합니다.)
+  # 3시간마다 예약합니다. 진행 중인 감시는 종료 목표까지 실행하고 다음 감시는 대기합니다.
   schedule:
     - cron: "35 1-22/3 * * *"
   workflow_dispatch:
@@ -15,7 +14,11 @@ on:
 
 permissions:
   contents: write
-  actions: write
+
+# 예약 감시와 수동 진단이 한 사이트의 요청 예산을 동시에 소비하지 않도록 대기시킵니다.
+concurrency:
+  group: chwatcher-monitor
+  cancel-in-progress: false
 
 jobs:
   launch:
@@ -23,37 +26,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 359
     steps:
-      # 접근 진단(probe_only)을 수동으로 실행하면 진행 중인 감시는 취소하지 않습니다.
-      - name: Cancel older normal monitoring runs
-        if: ${{ inputs.probe_only != true }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-          CURRENT_RUN_ID: ${{ github.run_id }}
-          WORKFLOW_FILE: monitor.yml
-        run: |
-          set -euo pipefail
-          for status in queued in_progress; do
-            gh run list \
-              --repo "${GH_REPO}" \
-              --workflow "${WORKFLOW_FILE}" \
-              --status "${status}" \
-              --limit 50 \
-              --json databaseId,event \
-              --jq '.[] | select(.event == "schedule") | .databaseId' | while read -r run_id; do
-                if [ -z "${run_id}" ] || [ "${run_id}" = "${CURRENT_RUN_ID}" ]; then
-                  continue
-                fi
-                echo "Canceling older scheduled run: ${run_id}"
-                gh run cancel "${run_id}" --repo "${GH_REPO}" || true
-              done
-          done
+      - name: Reserve time for the final state checkpoint
+        run: echo "MONITOR_STOP_EPOCH=$(( $(date +%s) + 359 * 60 - 180 ))" >> "$GITHUB_ENV"
 
       - name: Checkout
         uses: actions/checkout@v4
         with:
           persist-credentials: true
           fetch-depth: 0
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -73,18 +54,21 @@ jobs:
       - name: Install browser when needed
         if: ${{ inputs.probe_only != true }}
         run: |
-          if python -c 'import json,sys; c=json.load(open("config/monitors.json")); sys.exit(0 if any(m.get("enabled") and m.get("render", "http")=="browser" for m in c.get("monitors", [])) else 1)'; then
+          if python -c 'import json,sys; c=json.load(open("config/monitors.json")); sys.exit(0 if any(m.get("enabled") and m.get("render", "http") in ("auto", "browser") for m in c.get("monitors", [])) else 1)'; then
             python -m playwright install --with-deps chromium
           fi
 
-      - name: Monitor Chrome Hearts every 60 seconds within one Actions run
+      - name: Monitor catalog and variants with adaptive pacing
         if: ${{ inputs.probe_only != true }}
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_USER_ID: ${{ secrets.DISCORD_USER_ID }}
-          CHECK_INTERVAL_SECONDS: "60"
+          # 30회 기준 × 요청 시작 간격 1.5초. 느린 응답이면 순회 간격을 늘립니다.
+          SITE_REQUESTS_PER_MINUTE: "40"
+          CHECK_INTERVAL_SECONDS: "45"
           SITE_BLOCK_BACKOFF_SECONDS: "900"
-          RUN_DURATION_SECONDS: "21480"
+          # 전체 job 제한 359분에서 설치/마지막 순회/상태 저장 시간을 확보합니다.
+          RUN_DURATION_SECONDS: "21000"
           GITHUB_REF_NAME: ${{ github.ref_name }}
           PYTHONUNBUFFERED: "1"
-        run: python monitor.py --loop --git-sync
+        run: exec python monitor.py --loop --git-sync
