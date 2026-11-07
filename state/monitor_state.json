@@ -99,10 +99,82 @@
           "present": true,
           "miss_count": 0,
           "last_seen_at": "2026-11-07T05:49:30+00:00"
+        },
+        "09b962daa04051fd1da3ef4c7b598551": {
+          "title": "Scented Candle Set 35G",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "b618ed104e950c43c6180483d00c2807": {
+          "title": "Scented Candle Set 35G",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "07829d9aafc481d05895109553cd1d5e": {
+          "title": "Incense Set with Holder",
+          "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "ab6a8a0a18afa07cdc62a7b19e165947": {
+          "title": "Incense Set Refill",
+          "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "ae630bf99ffb3ec2ed35db69bc8db6a1": {
+          "title": "Incense Set with Holder",
+          "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "539600ecf5ac112928201391b8577cc6": {
+          "title": "Incense Set Refill",
+          "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "259dfe4ba8cd561b12feac82bdac9008": {
+          "title": "Perfumed Hand Spray",
+          "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "1b4639eeb8ea39bd2f0a3d8f12e44b37": {
+          "title": "Perfumed Hand Spray",
+          "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
+          "status": "listed",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
+        },
+        "7939429dd256dd38ed93b7366173962b": {
+          "title": "Matchstick Holder",
+          "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+          "status": "sold_out",
+          "present": true,
+          "miss_count": 0,
+          "last_seen_at": "2026-11-07T06:01:56+00:00"
         }
       },
-      "last_count": 12,
-      "updated_at": "2026-11-07T05:49:30+00:00",
+      "last_count": 21,
+      "updated_at": "2026-11-07T06:01:56+00:00",
       "initialized": true
     },
     "ch-baccarat": {
@@ -656,12 +728,249 @@
       "initialized": true
     }
   },
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "id": 20,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "09b962daa04051fd1da3ef4c7b598551",
+        "pid": "214141D7BXXX01T",
+        "title": "Scented Candle Set 35G",
+        "url": "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html",
+        "price": "$150",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw59422a4a/img_products/hi-res/511214141D7BXXX01T_0475-2.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 20
+      }
+    },
+    {
+      "id": 21,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "b618ed104e950c43c6180483d00c2807",
+        "pid": "214141D7BXXX01S",
+        "title": "Scented Candle Set 35G",
+        "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
+        "price": "$150",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dwf83d7130/img_products/hi-res/511214141D7BXXX01S_0475-2.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 21
+      }
+    },
+    {
+      "id": 22,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "07829d9aafc481d05895109553cd1d5e",
+        "pid": "146053XXXXXX142",
+        "title": "Incense Set with Holder",
+        "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+        "price": "$200",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw15925e5b/img_products/hi-res/146053XXXXXX142_1.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 22
+      }
+    },
+    {
+      "id": 23,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "ab6a8a0a18afa07cdc62a7b19e165947",
+        "pid": "151407XXXXXX169",
+        "title": "Incense Set Refill",
+        "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
+        "price": "$100",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw64d9efff/img_products/hi-res/151407XXXXXX169_1.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 23
+      }
+    },
+    {
+      "id": 24,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "ae630bf99ffb3ec2ed35db69bc8db6a1",
+        "pid": "146053XXXXXX00R",
+        "title": "Incense Set with Holder",
+        "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+        "price": "$200",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw15925e5b/img_products/hi-res/146053XXXXXX142_1.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 24
+      }
+    },
+    {
+      "id": 25,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "539600ecf5ac112928201391b8577cc6",
+        "pid": "151407XXXXXX00S",
+        "title": "Incense Set Refill",
+        "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
+        "price": "$100",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw64d9efff/img_products/hi-res/151407XXXXXX169_1.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 25
+      }
+    },
+    {
+      "id": 26,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "259dfe4ba8cd561b12feac82bdac9008",
+        "pid": "208531PNKXXX751",
+        "title": "Perfumed Hand Spray",
+        "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
+        "price": "$110",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dwd89c28bc/img_products/hi-res/511208531PNKXXX751_0287.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 26
+      }
+    },
+    {
+      "id": 27,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "1b4639eeb8ea39bd2f0a3d8f12e44b37",
+        "pid": "208531BLUXXX752",
+        "title": "Perfumed Hand Spray",
+        "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
+        "price": "$110",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw85653ba2/img_products/hi-res/511208531BLUXXX752_2431.png?sw=800&sh=1000",
+        "status": "listed",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 27
+      }
+    },
+    {
+      "id": 28,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "new_product",
+        "key": "7939429dd256dd38ed93b7366173962b",
+        "pid": "148310SLVXXX186",
+        "title": "Matchstick Holder",
+        "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+        "price": "$1,500",
+        "image": "https://www.chromehearts.com/dw/image/v2/bfbv_prd/on/demandware.static/-/Sites-ch-master-catalog/default/dw9d7b3726/img_products/hi-res/148310SLVXXX186_1.png?sw=800&sh=1000",
+        "status": "sold_out",
+        "observed_at": "2026-11-07T06:01:56+00:00",
+        "_notification_id": 28
+      }
+    },
+    {
+      "id": 29,
+      "monitor": {
+        "id": "variant-0bcc2debb017897d",
+        "name": "Chrome Hearts 사이즈 $200",
+        "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html"
+      },
+      "event": {
+        "kind": "variant",
+        "pid": "146053XXXXXX00R",
+        "title": "Incense Set with Holder",
+        "color": "",
+        "size": "",
+        "options": {},
+        "status": "available",
+        "quantity": null,
+        "quantity_kind": "undisclosed",
+        "quantity_source": "",
+        "locale": "page",
+        "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+        "lookup_url": "",
+        "last_known_status": "available",
+        "last_seen_at": "2026-11-07T06:02:18+00:00",
+        "previous_status": null,
+        "observed_at": "2026-11-07T06:02:18+00:00",
+        "_notification_id": 29
+      }
+    },
+    {
+      "id": 30,
+      "monitor": {
+        "id": "variant-1463705a2e9f7c5d",
+        "name": "Chrome Hearts 사이즈 $200",
+        "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html"
+      },
+      "event": {
+        "kind": "variant",
+        "pid": "146053XXXXXX142",
+        "title": "Incense Set with Holder",
+        "color": "",
+        "size": "",
+        "options": {},
+        "status": "available",
+        "quantity": null,
+        "quantity_kind": "undisclosed",
+        "quantity_source": "",
+        "locale": "page",
+        "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+        "lookup_url": "",
+        "last_known_status": "available",
+        "last_seen_at": "2026-11-07T06:02:30+00:00",
+        "previous_status": null,
+        "observed_at": "2026-11-07T06:02:30+00:00",
+        "_notification_id": 30
+      }
+    }
+  ],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
       "url": "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
-      "title": "Eau de Parfum",
+      "title": "$500",
       "variants": {
         "162006CRYXXX271:page": {
           "pid": "162006CRYXXX271",
@@ -681,7 +990,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -696,7 +1006,7 @@
     "www.chromehearts.com:162006CRYXXX272": {
       "pid": "162006CRYXXX272",
       "url": "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html",
-      "title": "Eau de Parfum",
+      "title": "$500",
       "variants": {
         "162006CRYXXX272:page": {
           "pid": "162006CRYXXX272",
@@ -716,7 +1026,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -731,7 +1042,7 @@
     "www.chromehearts.com:162008CRYXXX271": {
       "pid": "162008CRYXXX271",
       "url": "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
-      "title": "Roll-On Perfume",
+      "title": "$220",
       "variants": {
         "162008CRYXXX271:page": {
           "pid": "162008CRYXXX271",
@@ -751,7 +1062,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -766,7 +1078,7 @@
     "www.chromehearts.com:162008CRYXXX272": {
       "pid": "162008CRYXXX272",
       "url": "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html",
-      "title": "Roll-On Perfume",
+      "title": "$220",
       "variants": {
         "162008CRYXXX272:page": {
           "pid": "162008CRYXXX272",
@@ -786,7 +1098,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -801,7 +1114,7 @@
     "www.chromehearts.com:179527XXXXXX273": {
       "pid": "179527XXXXXX273",
       "url": "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
-      "title": "Soap on a Rope",
+      "title": "$90",
       "variants": {
         "179527XXXXXX273:page": {
           "pid": "179527XXXXXX273",
@@ -821,7 +1134,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -836,7 +1150,7 @@
     "www.chromehearts.com:179527XXXXXX274": {
       "pid": "179527XXXXXX274",
       "url": "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html",
-      "title": "Soap on a Rope",
+      "title": "$90",
       "variants": {
         "179527XXXXXX274:page": {
           "pid": "179527XXXXXX274",
@@ -856,7 +1170,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -871,7 +1186,7 @@
     "www.chromehearts.com:162045CRYXXX273": {
       "pid": "162045CRYXXX273",
       "url": "https://www.chromehearts.com/scents/22-scented-candle-220g/162045CRYXXX273.html",
-      "title": "Scented Candle 220g",
+      "title": "$500",
       "variants": {
         "162045CRYXXX273:page": {
           "pid": "162045CRYXXX273",
@@ -891,7 +1206,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -906,7 +1222,7 @@
     "www.chromehearts.com:162045CRYXXX274": {
       "pid": "162045CRYXXX274",
       "url": "https://www.chromehearts.com/scents/33-scented-candle-220g/162045CRYXXX274.html",
-      "title": "Scented Candle 220g",
+      "title": "$500",
       "variants": {
         "162045CRYXXX274:page": {
           "pid": "162045CRYXXX274",
@@ -926,7 +1242,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -941,7 +1258,7 @@
     "www.chromehearts.com:175740XXXXXX273": {
       "pid": "175740XXXXXX273",
       "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
-      "title": "Scented Candle Refill 200g",
+      "title": "$150",
       "variants": {
         "175740XXXXXX273:page": {
           "pid": "175740XXXXXX273",
@@ -961,7 +1278,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -976,7 +1294,7 @@
     "www.chromehearts.com:175740XXXXXX274": {
       "pid": "175740XXXXXX274",
       "url": "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html",
-      "title": "Scented Candle Refill 200g",
+      "title": "$150",
       "variants": {
         "175740XXXXXX274:page": {
           "pid": "175740XXXXXX274",
@@ -996,7 +1314,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1011,7 +1330,7 @@
     "www.chromehearts.com:172571CRYXXX273": {
       "pid": "172571CRYXXX273",
       "url": "https://www.chromehearts.com/scents/22-scented-candle-100g/172571CRYXXX273.html",
-      "title": "Scented Candle 100g",
+      "title": "$180",
       "variants": {
         "172571CRYXXX273:page": {
           "pid": "172571CRYXXX273",
@@ -1031,7 +1350,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1046,7 +1366,7 @@
     "www.chromehearts.com:172571CRYXXX274": {
       "pid": "172571CRYXXX274",
       "url": "https://www.chromehearts.com/scents/33-scented-candle-100g/172571CRYXXX274.html",
-      "title": "Scented Candle 100g",
+      "title": "$180",
       "variants": {
         "172571CRYXXX274:page": {
           "pid": "172571CRYXXX274",
@@ -1066,7 +1386,8 @@
         }
       },
       "sources": {
-        "ch-scents": true
+        "ch-scents": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1081,7 +1402,7 @@
     "www.chromehearts.com:174132CRYXXX015": {
       "pid": "174132CRYXXX015",
       "url": "https://www.chromehearts.com/baccarat/tumbler/174132CRYXXX015.html",
-      "title": "TUMBLER SET OF TWO",
+      "title": "$2,625",
       "variants": {
         "174132CRYXXX015:page": {
           "pid": "174132CRYXXX015",
@@ -1101,7 +1422,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1116,7 +1438,7 @@
     "www.chromehearts.com:174131CRYXXX013": {
       "pid": "174131CRYXXX013",
       "url": "https://www.chromehearts.com/baccarat/decanter/174131CRYXXX013.html",
-      "title": "DECANTER",
+      "title": "$4,275",
       "variants": {
         "174131CRYXXX013:page": {
           "pid": "174131CRYXXX013",
@@ -1136,7 +1458,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1151,7 +1474,7 @@
     "www.chromehearts.com:207468CRYXXX055": {
       "pid": "207468CRYXXX055",
       "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
-      "title": "TRIPLE OLD FASHION SET OF TWO",
+      "title": "$3,850",
       "variants": {
         "207468CRYXXX055:page": {
           "pid": "207468CRYXXX055",
@@ -1167,26 +1490,27 @@
           "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T05:46:52+00:00"
+          "last_seen_at": "2026-11-07T06:02:34+00:00"
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T05:52:51+00:00",
+      "last_checked_at": "2026-11-07T06:02:34+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T05:52:50+00:00",
+      "last_attempt_at": "2026-11-07T06:02:34+00:00",
       "priority": false
     },
     "www.chromehearts.com:207467CRYXXX054": {
       "pid": "207467CRYXXX054",
       "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
-      "title": "SHOT GLASS SET OF TWO",
+      "title": "$2,400",
       "variants": {
         "207467CRYXXX054:page": {
           "pid": "207467CRYXXX054",
@@ -1202,26 +1526,27 @@
           "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T05:46:52+00:00"
+          "last_seen_at": "2026-11-07T06:02:31+00:00"
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T05:51:54+00:00",
+      "last_checked_at": "2026-11-07T06:02:31+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T05:51:53+00:00",
+      "last_attempt_at": "2026-11-07T06:02:31+00:00",
       "priority": false
     },
     "www.chromehearts.com:177734CRYXXX042": {
       "pid": "177734CRYXXX042",
       "url": "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html",
-      "title": "MARTINI SET OF TWO",
+      "title": "$2,625",
       "variants": {
         "177734CRYXXX042:page": {
           "pid": "177734CRYXXX042",
@@ -1241,7 +1566,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1256,7 +1582,7 @@
     "www.chromehearts.com:177731CRYXXX042": {
       "pid": "177731CRYXXX042",
       "url": "https://www.chromehearts.com/baccarat/champagne-flute/177731CRYXXX042.html",
-      "title": "CHAMPAGNE FLUTE SET OF TWO",
+      "title": "OUT OF STOCK",
       "variants": {
         "177731CRYXXX042:page": {
           "pid": "177731CRYXXX042",
@@ -1276,7 +1602,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1291,7 +1618,7 @@
     "www.chromehearts.com:177732CRYXXX042": {
       "pid": "177732CRYXXX042",
       "url": "https://www.chromehearts.com/baccarat/water/177732CRYXXX042.html",
-      "title": "WATER SET OF TWO",
+      "title": "$2,200",
       "variants": {
         "177732CRYXXX042:page": {
           "pid": "177732CRYXXX042",
@@ -1311,7 +1638,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1326,7 +1654,7 @@
     "www.chromehearts.com:177733CRYXXX042": {
       "pid": "177733CRYXXX042",
       "url": "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html",
-      "title": "WINE SET OF TWO",
+      "title": "OUT OF STOCK",
       "variants": {
         "177733CRYXXX042:page": {
           "pid": "177733CRYXXX042",
@@ -1346,7 +1674,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1361,7 +1690,7 @@
     "www.chromehearts.com:177730CRYXXX013": {
       "pid": "177730CRYXXX013",
       "url": "https://www.chromehearts.com/baccarat/ashtray/177730CRYXXX013.html",
-      "title": "ASHTRAY",
+      "title": "$3,150",
       "variants": {
         "177730CRYXXX013:page": {
           "pid": "177730CRYXXX013",
@@ -1381,7 +1710,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1396,7 +1726,7 @@
     "www.chromehearts.com:174310CRYXXX005": {
       "pid": "174310CRYXXX005",
       "url": "https://www.chromehearts.com/baccarat/coffee-set/174310CRYXXX005.html",
-      "title": "COFFEE SET SET OF TWO",
+      "title": "$1,650",
       "variants": {
         "174310CRYXXX005:page": {
           "pid": "174310CRYXXX005",
@@ -1416,7 +1746,8 @@
         }
       },
       "sources": {
-        "ch-baccarat": true
+        "ch-baccarat": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1430,8 +1761,8 @@
     },
     "www.chromehearts.com:158552BLKXXXXXX": {
       "pid": "158552BLKXXXXXX",
-      "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=SML&quantity=1",
-      "title": "BOXER BRIEF - SHORTS",
+      "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html",
+      "title": "$95",
       "variants": {
         "158552BLKSML125:en_US": {
           "pid": "158552BLKSML125",
@@ -1735,7 +2066,8 @@
         }
       },
       "sources": {
-        "ch-boxers-leggings": true
+        "ch-boxers-leggings": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -1752,8 +2084,8 @@
     },
     "www.chromehearts.com:158553XXXXXXXXX": {
       "pid": "158553XXXXXXXXX",
-      "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html?dwvar_158553XXXXXXXXX_color=WNB&dwvar_158553XXXXXXXXX_size=SML&quantity=1",
-      "title": "BOXER BRIEF - LONG",
+      "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html",
+      "title": "$100",
       "variants": {
         "158553BLKSML125:en_US": {
           "pid": "158553BLKSML125",
@@ -2057,7 +2389,8 @@
         }
       },
       "sources": {
-        "ch-boxers-leggings": true
+        "ch-boxers-leggings": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -2091,8 +2424,8 @@
     },
     "www.chromehearts.com:209670XXXXXXXXX": {
       "pid": "209670XXXXXXXXX",
-      "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html?dwvar_209670XXXXXXXXX_color=00E&dwvar_209670XXXXXXXXX_size=SML&quantity=1",
-      "title": "BOXER BRIEF - CLASSIC RIB",
+      "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html",
+      "title": "$130",
       "variants": {
         "209670I3ISML00C:en_US": {
           "pid": "209670I3ISML00C",
@@ -2596,7 +2929,8 @@
         }
       },
       "sources": {
-        "ch-boxers-leggings": true
+        "ch-boxers-leggings": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -2613,8 +2947,8 @@
     },
     "www.chromehearts.com:208280XXXXXXXXX": {
       "pid": "208280XXXXXXXXX",
-      "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=SML&quantity=1",
-      "title": "FOTI BOXER BRIEF - LONG",
+      "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html",
+      "title": "$110",
       "variants": {
         "208280AYOSML036:en_US": {
           "pid": "208280AYOSML036",
@@ -2818,7 +3152,8 @@
         }
       },
       "sources": {
-        "ch-boxers-leggings": true
+        "ch-boxers-leggings": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -2835,8 +3170,8 @@
     },
     "www.chromehearts.com:165064XXXXXX140": {
       "pid": "165064XXXXXX140",
-      "url": "https://www.chromehearts.com/boxers-leggings/leggings/165064XXXXXX140.html?dwvar_165064XXXXXX140_color=BLK&dwvar_165064XXXXXX140_size=XSM&quantity=1",
-      "title": "LEGGINGS",
+      "url": "https://www.chromehearts.com/boxers-leggings/leggings/165064XXXXXX140.html",
+      "title": "$275",
       "variants": {
         "165064ACBXSM140:en_US": {
           "pid": "165064ACBXSM140",
@@ -3140,7 +3475,8 @@
         }
       },
       "sources": {
-        "ch-boxers-leggings": true
+        "ch-boxers-leggings": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3157,8 +3493,8 @@
     },
     "www.chromehearts.com:164943XXXXXX140": {
       "pid": "164943XXXXXX140",
-      "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html?dwvar_164943XXXXXX140_color=BLK&dwvar_164943XXXXXX140_size=SML&quantity=1",
-      "title": "LONG JOHNS",
+      "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html",
+      "title": "$275",
       "variants": {
         "164943F0KSML140:en_US": {
           "pid": "164943F0KSML140",
@@ -3322,7 +3658,8 @@
         }
       },
       "sources": {
-        "ch-boxers-leggings": true
+        "ch-boxers-leggings": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3339,8 +3676,8 @@
     },
     "www.chromehearts.com:092826AI6XXXXXX": {
       "pid": "092826AI6XXXXXX",
-      "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html?dwvar_092826AI6XXXXXX_size=SZ2",
-      "title": "CH PLUS TIGHTS",
+      "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html",
+      "title": "$255",
       "variants": {
         "092826AI6SZ3002:en_US": {
           "pid": "092826AI6SZ3002",
@@ -3401,7 +3738,8 @@
         }
       },
       "sources": {
-        "ch-intimates": true
+        "ch-intimates": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3418,8 +3756,8 @@
     },
     "www.chromehearts.com:201585AFWXXX030": {
       "pid": "201585AFWXXX030",
-      "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=LRG",
-      "title": "LACE TEDDY",
+      "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html",
+      "title": "$990",
       "variants": {
         "201585AFWXSM030:en_US": {
           "pid": "201585AFWXSM030",
@@ -3499,7 +3837,8 @@
         }
       },
       "sources": {
-        "ch-intimates": true
+        "ch-intimates": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3516,8 +3855,8 @@
     },
     "www.chromehearts.com:202334AFWXXX030": {
       "pid": "202334AFWXXX030",
-      "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32B",
-      "title": "LACE UNDERWIRE BRA",
+      "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html",
+      "title": "$385",
       "variants": {
         "202334AFW32B030:en_US": {
           "pid": "202334AFW32B030",
@@ -3692,7 +4031,8 @@
         }
       },
       "sources": {
-        "ch-intimates": true
+        "ch-intimates": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3709,8 +4049,8 @@
     },
     "www.chromehearts.com:201583AFWXXX033": {
       "pid": "201583AFWXXX033",
-      "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=XSM",
-      "title": "LACE HIGH-WAISTED BRIEF",
+      "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html",
+      "title": "$385",
       "variants": {
         "201583AFWSML033:en_US": {
           "pid": "201583AFWSML033",
@@ -3790,7 +4130,8 @@
         }
       },
       "sources": {
-        "ch-intimates": true
+        "ch-intimates": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3807,8 +4148,8 @@
     },
     "www.chromehearts.com:201584AFWXXX030": {
       "pid": "201584AFWXXX030",
-      "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM",
-      "title": "LACE G-STRING",
+      "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html",
+      "title": "$220",
       "variants": {
         "201584AFWSML030:en_US": {
           "pid": "201584AFWSML030",
@@ -3888,7 +4229,8 @@
         }
       },
       "sources": {
-        "ch-intimates": true
+        "ch-intimates": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -3906,7 +4248,7 @@
     "www.chromehearts.com:201635AFWXXX033": {
       "pid": "201635AFWXXX033",
       "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html",
-      "title": "LACE THONG",
+      "title": "Sold Out",
       "variants": {
         "201635AFWXSM033:en_US": {
           "pid": "201635AFWXSM033",
@@ -3986,7 +4328,8 @@
         }
       },
       "sources": {
-        "ch-intimates": true
+        "ch-intimates": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4003,8 +4346,8 @@
     },
     "www.chromehearts.com:176354XXXXXX349": {
       "pid": "176354XXXXXX349",
-      "url": "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html?dwvar_176354XXXXXX349_color=BLK&dwvar_176354XXXXXX349_size=SML&quantity=1",
-      "title": "CH LOGO SOCKS",
+      "url": "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html",
+      "title": "$255",
       "variants": {
         "176354WHTSML434:en_US": {
           "pid": "176354WHTSML434",
@@ -4188,7 +4531,8 @@
         }
       },
       "sources": {
-        "ch-socks": true
+        "ch-socks": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4205,8 +4549,8 @@
     },
     "www.chromehearts.com:176354MB3XXX465": {
       "pid": "176354MB3XXX465",
-      "url": "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html?dwvar_176354MB3XXX465_size=SML",
-      "title": "STENCIL SOCKS",
+      "url": "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html",
+      "title": "$255",
       "variants": {
         "176354MB3MED465:en_US": {
           "pid": "176354MB3MED465",
@@ -4267,7 +4611,8 @@
         }
       },
       "sources": {
-        "ch-socks": true
+        "ch-socks": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4284,8 +4629,8 @@
     },
     "www.chromehearts.com:176354XXXXXXXXX": {
       "pid": "176354XXXXXXXXX",
-      "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=MED&quantity=1",
-      "title": "SPORT",
+      "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html",
+      "title": "$255",
       "variants": {
         "176354D5BMED405:en_US": {
           "pid": "176354D5BMED405",
@@ -4369,7 +4714,8 @@
         }
       },
       "sources": {
-        "ch-socks": true
+        "ch-socks": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4386,8 +4732,8 @@
     },
     "www.chromehearts.com:191715D5DXXX408": {
       "pid": "191715D5DXXX408",
-      "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=SML",
-      "title": "WOMENS SPORT",
+      "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html",
+      "title": "$255",
       "variants": {
         "191715D5DMED408:en_US": {
           "pid": "191715D5DMED408",
@@ -4429,7 +4775,8 @@
         }
       },
       "sources": {
-        "ch-socks": true
+        "ch-socks": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4446,8 +4793,8 @@
     },
     "www.chromehearts.com:191716ADLXXX406": {
       "pid": "191716ADLXXX406",
-      "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=MED",
-      "title": "EXECUTIVE SOCKS",
+      "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html",
+      "title": "$255",
       "variants": {
         "191716ADLLRG406:en_US": {
           "pid": "191716ADLLRG406",
@@ -4489,7 +4836,8 @@
         }
       },
       "sources": {
-        "ch-socks": true
+        "ch-socks": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4506,8 +4854,8 @@
     },
     "www.chromehearts.com:180459XXXXXX389": {
       "pid": "180459XXXXXX389",
-      "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=MED&quantity=1",
-      "title": "FOTI SOCKS",
+      "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html",
+      "title": "$255",
       "variants": {
         "180459MB7MED389:en_US": {
           "pid": "180459MB7MED389",
@@ -4591,7 +4939,8 @@
         }
       },
       "sources": {
-        "ch-socks": true
+        "ch-socks": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4609,7 +4958,7 @@
     "www.chromehearts.com:222575AEGXXX059": {
       "pid": "222575AEGXXX059",
       "url": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
-      "title": "MATH PLUS SCARF",
+      "title": "Korea",
       "variants": {
         "222575AEGXXX059:page": {
           "pid": "222575AEGXXX059",
@@ -4629,7 +4978,8 @@
         }
       },
       "sources": {
-        "ch-extra-scarf": true
+        "ch-extra-scarf": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
@@ -4643,8 +4993,8 @@
     },
     "www.chromehearts.com:204651B2UXXX07M": {
       "pid": "204651B2UXXX07M",
-      "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
-      "title": "HOTEL SLIPPERS",
+      "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html",
+      "title": "Korea",
       "variants": {
         "204651B2UXSM07M:en_US": {
           "pid": "204651B2UXSM07M",
@@ -4663,7 +5013,7 @@
           "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=XSM&pid=204651B2UXXX07M&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-07T05:46:51+00:00"
+          "last_seen_at": "2026-11-07T06:02:21+00:00"
         },
         "204651B2USML07M:en_US": {
           "pid": "204651B2USML07M",
@@ -4682,7 +5032,7 @@
           "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=SML&pid=204651B2UXXX07M&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-07T05:46:52+00:00"
+          "last_seen_at": "2026-11-07T06:02:22+00:00"
         },
         "204651B2UMED07M:en_US": {
           "pid": "204651B2UMED07M",
@@ -4701,7 +5051,7 @@
           "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=MED&pid=204651B2UXXX07M&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T05:46:52+00:00"
+          "last_seen_at": "2026-11-07T06:02:24+00:00"
         },
         "204651B2ULRG07M:en_US": {
           "pid": "204651B2ULRG07M",
@@ -4720,7 +5070,7 @@
           "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=LRG&pid=204651B2UXXX07M&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T05:46:52+00:00"
+          "last_seen_at": "2026-11-07T06:02:25+00:00"
         },
         "204651B2U1XL07M:en_US": {
           "pid": "204651B2U1XL07M",
@@ -4739,98 +5089,323 @@
           "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=1XL&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=1XL&pid=204651B2UXXX07M&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T05:46:52+00:00"
+          "last_seen_at": "2026-11-07T06:02:27+00:00"
         }
       },
       "sources": {
-        "ch-extra-slippers": true
+        "ch-extra-slippers": true,
+        "ch-discovery": true
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T05:51:53+00:00",
+      "last_checked_at": "2026-11-07T06:02:28+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-07T05:51:53+00:00",
+      "last_attempt_at": "2026-11-07T06:02:28+00:00",
       "master_pid": "204651B2UXXX07M",
       "scan_queue": [],
       "scan_seen": []
+    },
+    "www.chromehearts.com:214141D7BXXX01T": {
+      "pid": "214141D7BXXX01T",
+      "url": "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html",
+      "title": "$150",
+      "variants": {},
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": false,
+      "notify_initial": true,
+      "last_checked_at": "",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": true
+    },
+    "www.chromehearts.com:214141D7BXXX01S": {
+      "pid": "214141D7BXXX01S",
+      "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
+      "title": "$150",
+      "variants": {},
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": false,
+      "notify_initial": true,
+      "last_checked_at": "",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": true
+    },
+    "www.chromehearts.com:146053XXXXXX142": {
+      "pid": "146053XXXXXX142",
+      "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+      "title": "$200",
+      "variants": {
+        "146053XXXXXX142:page": {
+          "pid": "146053XXXXXX142",
+          "title": "Incense Set with Holder",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-11-07T06:02:30+00:00"
+        }
+      },
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": true,
+      "notify_initial": false,
+      "last_checked_at": "2026-11-07T06:02:30+00:00",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": false,
+      "last_attempt_at": "2026-11-07T06:02:30+00:00"
+    },
+    "www.chromehearts.com:151407XXXXXX169": {
+      "pid": "151407XXXXXX169",
+      "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
+      "title": "$100",
+      "variants": {},
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": false,
+      "notify_initial": true,
+      "last_checked_at": "",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": true
+    },
+    "www.chromehearts.com:146053XXXXXX00R": {
+      "pid": "146053XXXXXX00R",
+      "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+      "title": "$200",
+      "variants": {
+        "146053XXXXXX00R:page": {
+          "pid": "146053XXXXXX00R",
+          "title": "Incense Set with Holder",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "available",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+          "lookup_url": "",
+          "last_known_status": "available",
+          "last_seen_at": "2026-11-07T06:02:18+00:00"
+        }
+      },
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": true,
+      "notify_initial": false,
+      "last_checked_at": "2026-11-07T06:02:18+00:00",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": false,
+      "last_attempt_at": "2026-11-07T06:02:18+00:00"
+    },
+    "www.chromehearts.com:151407XXXXXX00S": {
+      "pid": "151407XXXXXX00S",
+      "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
+      "title": "$100",
+      "variants": {},
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": false,
+      "notify_initial": true,
+      "last_checked_at": "",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": true
+    },
+    "www.chromehearts.com:208531PNKXXX751": {
+      "pid": "208531PNKXXX751",
+      "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
+      "title": "$110",
+      "variants": {},
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": false,
+      "notify_initial": true,
+      "last_checked_at": "",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": true
+    },
+    "www.chromehearts.com:208531BLUXXX752": {
+      "pid": "208531BLUXXX752",
+      "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
+      "title": "$110",
+      "variants": {},
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": false,
+      "notify_initial": true,
+      "last_checked_at": "",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": true
+    },
+    "www.chromehearts.com:148310SLVXXX186": {
+      "pid": "148310SLVXXX186",
+      "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+      "title": "OUT OF STOCK",
+      "variants": {
+        "148310SLVXXX186:page": {
+          "pid": "148310SLVXXX186",
+          "title": "Matchstick Holder",
+          "color": "",
+          "size": "",
+          "options": {},
+          "status": "sold_out",
+          "quantity": null,
+          "quantity_kind": "undisclosed",
+          "quantity_source": "",
+          "locale": "page",
+          "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+          "lookup_url": "",
+          "last_known_status": "sold_out",
+          "last_seen_at": "2026-11-07T06:02:33+00:00"
+        }
+      },
+      "sources": {
+        "ch-scents": true,
+        "ch-discovery": true
+      },
+      "baseline_complete": true,
+      "notify_initial": false,
+      "last_checked_at": "2026-11-07T06:02:33+00:00",
+      "options": {
+        "notify_on_sold_out": false,
+        "notify_on_restock": true
+      },
+      "priority": false,
+      "last_attempt_at": "2026-11-07T06:02:33+00:00"
     }
   },
   "health": {
     "ch-scents": {
-      "last_checked_at": "2026-11-07T05:52:31+00:00",
-      "duration_seconds": 3.29,
-      "last_success_at": "2026-11-07T05:52:31+00:00",
+      "last_checked_at": "2026-11-07T06:01:56+00:00",
+      "duration_seconds": 3.06,
+      "last_success_at": "2026-11-07T06:01:56+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 61.39
+      "actual_interval_seconds": 565.25,
+      "status": "ok"
     },
     "ch-baccarat": {
-      "last_checked_at": "2026-11-07T05:52:33+00:00",
-      "duration_seconds": 2.4,
-      "last_success_at": "2026-11-07T05:52:33+00:00",
+      "last_checked_at": "2026-11-07T06:01:57+00:00",
+      "duration_seconds": 1.44,
+      "last_success_at": "2026-11-07T06:01:57+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 60.8
+      "actual_interval_seconds": 564.7,
+      "status": "ok"
     },
     "ch-boxers-leggings": {
-      "last_checked_at": "2026-11-07T05:49:35+00:00",
-      "duration_seconds": 2.12,
-      "last_success_at": "2026-11-07T05:49:35+00:00",
+      "last_checked_at": "2026-11-07T06:01:59+00:00",
+      "duration_seconds": 1.35,
+      "last_success_at": "2026-11-07T06:01:59+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 60.05
+      "actual_interval_seconds": 744.05,
+      "status": "ok"
     },
     "ch-intimates": {
-      "last_checked_at": "2026-11-07T05:50:37+00:00",
-      "duration_seconds": 2.11,
-      "last_success_at": "2026-11-07T05:50:37+00:00",
+      "last_checked_at": "2026-11-07T06:02:00+00:00",
+      "duration_seconds": 1.46,
+      "last_success_at": "2026-11-07T06:02:00+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 60.32
+      "actual_interval_seconds": 683.51,
+      "status": "ok"
     },
     "ch-socks": {
-      "last_checked_at": "2026-11-07T05:52:40+00:00",
-      "duration_seconds": 2.16,
-      "last_success_at": "2026-11-07T05:52:40+00:00",
+      "last_checked_at": "2026-11-07T06:02:02+00:00",
+      "duration_seconds": 1.5,
+      "last_success_at": "2026-11-07T06:02:02+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 61.24
+      "actual_interval_seconds": 562.02,
+      "status": "ok"
     },
     "ch-discovery": {
-      "last_checked_at": "2026-11-07T05:52:42+00:00",
-      "duration_seconds": 1.96,
-      "last_success_at": "2026-11-07T05:52:42+00:00",
+      "last_checked_at": "2026-11-07T06:01:53+00:00",
+      "duration_seconds": 0.4,
+      "last_success_at": "2026-11-07T06:01:53+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 61.21
+      "actual_interval_seconds": 551.19,
+      "status": "ok"
     },
     "ch-extra-silichrome": {
-      "last_checked_at": "2026-11-07T05:53:41+00:00",
-      "duration_seconds": 0.22,
-      "last_success_at": "2026-11-07T05:53:41+00:00",
+      "last_checked_at": "2026-11-07T06:02:04+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-07T06:02:04+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 59.51
+      "actual_interval_seconds": 503.91,
+      "status": "ok"
     },
     "ch-extra-sports-mesh": {
-      "last_checked_at": "2026-11-07T05:52:42+00:00",
-      "duration_seconds": 0.32,
-      "last_success_at": "2026-11-07T05:52:42+00:00",
+      "last_checked_at": "2026-11-07T06:02:07+00:00",
+      "duration_seconds": 3.0,
+      "last_success_at": "2026-11-07T06:02:07+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 61.77
+      "actual_interval_seconds": 565.91,
+      "status": "ok"
     },
     "ch-extra-eyewear": {
       "last_checked_at": "2026-11-07T05:50:42+00:00",
@@ -4878,13 +5453,14 @@
       "actual_interval_seconds": 61.09
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-07T05:52:44+00:00",
-      "duration_seconds": 0.45,
-      "last_success_at": "2026-11-07T05:52:44+00:00",
+      "last_checked_at": "2026-11-07T06:02:10+00:00",
+      "duration_seconds": 3.05,
+      "last_success_at": "2026-11-07T06:02:10+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 61.55
+      "actual_interval_seconds": 566.96,
+      "status": "ok"
     },
     "ch-extra-sunglasses": {
       "last_checked_at": "2026-11-07T05:52:44+00:00",
@@ -5065,13 +5641,14 @@
       "actual_interval_seconds": 60.62
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-07T05:52:49+00:00",
-      "duration_seconds": 0.35,
-      "last_success_at": "2026-11-07T05:52:49+00:00",
+      "last_checked_at": "2026-11-07T06:02:13+00:00",
+      "duration_seconds": 3.03,
+      "last_success_at": "2026-11-07T06:02:13+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 61.98
+      "actual_interval_seconds": 565.0,
+      "status": "ok"
     },
     "ch-extra-home": {
       "last_checked_at": "2026-11-07T05:52:50+00:00",
@@ -5425,22 +6002,24 @@
       "actual_interval_seconds": 301.13
     },
     "variant-ae69f9c9aaefbd47": {
-      "last_checked_at": "2026-11-07T05:46:52+00:00",
-      "duration_seconds": 0.22,
-      "last_success_at": "2026-11-07T05:46:52+00:00",
+      "last_checked_at": "2026-11-07T06:02:31+00:00",
+      "duration_seconds": 1.48,
+      "last_success_at": "2026-11-07T06:02:31+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 300.56
+      "actual_interval_seconds": 939.98,
+      "status": "ok"
     },
     "variant-9a74d9ee5ffcee1c": {
-      "last_checked_at": "2026-11-07T05:46:52+00:00",
-      "duration_seconds": 0.21,
-      "last_success_at": "2026-11-07T05:46:52+00:00",
+      "last_checked_at": "2026-11-07T06:02:34+00:00",
+      "duration_seconds": 1.5,
+      "last_success_at": "2026-11-07T06:02:34+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 300.99
+      "actual_interval_seconds": 942.98,
+      "status": "ok"
     },
     "variant-a4e2f598fc79f5b9": {
       "last_checked_at": "2026-11-07T05:47:51+00:00",
@@ -5461,13 +6040,14 @@
       "actual_interval_seconds": 301.56
     },
     "variant-041436f097b4bc19": {
-      "last_checked_at": "2026-11-07T05:46:52+00:00",
-      "duration_seconds": 0.78,
-      "last_success_at": "2026-11-07T05:46:52+00:00",
+      "last_checked_at": "2026-11-07T06:02:28+00:00",
+      "duration_seconds": 10.35,
+      "last_success_at": "2026-11-07T06:02:28+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 301.34
+      "actual_interval_seconds": 936.86,
+      "status": "ok"
     },
     "variant-b67c3ca4bc132fcc": {
       "last_checked_at": "2026-11-07T05:52:51+00:00",
@@ -5477,7 +6057,1733 @@
       "last_error": "",
       "alerted": false,
       "actual_interval_seconds": 359.43
+    },
+    "variant-0bcc2debb017897d": {
+      "last_checked_at": "2026-11-07T06:02:18+00:00",
+      "duration_seconds": 1.56,
+      "last_success_at": "2026-11-07T06:02:18+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false,
+      "status": "ok"
+    },
+    "variant-1463705a2e9f7c5d": {
+      "last_checked_at": "2026-11-07T06:02:30+00:00",
+      "duration_seconds": 1.63,
+      "last_success_at": "2026-11-07T06:02:30+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false,
+      "status": "ok"
+    },
+    "variant-06ad55485bbabb6e": {
+      "last_checked_at": "2026-11-07T06:02:33+00:00",
+      "duration_seconds": 1.49,
+      "last_success_at": "2026-11-07T06:02:33+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false,
+      "status": "ok"
     }
   },
-  "notification_sequence": 19
+  "notification_sequence": 30,
+  "site_backoffs": {},
+  "discovery_audit": {
+    "ch-discovery": {
+      "initialized": true,
+      "candidates": {
+        "https://www.chromehearts.com/baccarat": {
+          "url": "https://www.chromehearts.com/baccarat",
+          "title": "Baccarat",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/baccarat",
+            "https://www.chromehearts.com/baccarat/tumbler/174132CRYXXX015.html",
+            "https://www.chromehearts.com/baccarat/decanter/174131CRYXXX013.html",
+            "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
+            "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
+            "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents": {
+          "url": "https://www.chromehearts.com/scents",
+          "title": "Scents",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
+            "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html",
+            "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
+            "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html",
+            "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
+            "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings": {
+          "url": "https://www.chromehearts.com/boxers-leggings",
+          "title": "BOXERS & LEGGINGS",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/baccarat",
+            "https://www.chromehearts.com/boxers-leggings",
+            "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html",
+            "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html",
+            "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html",
+            "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates": {
+          "url": "https://www.chromehearts.com/intimates",
+          "title": "INTIMATES",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/baccarat",
+            "https://www.chromehearts.com/boxers-leggings",
+            "https://www.chromehearts.com/intimates",
+            "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html",
+            "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html",
+            "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks": {
+          "url": "https://www.chromehearts.com/socks",
+          "title": "Socks",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/baccarat",
+            "https://www.chromehearts.com/boxers-leggings",
+            "https://www.chromehearts.com/intimates",
+            "https://www.chromehearts.com/socks",
+            "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html",
+            "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scarf": {
+          "url": "https://www.chromehearts.com/scarf",
+          "title": "scarf",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/baccarat",
+            "https://www.chromehearts.com/boxers-leggings",
+            "https://www.chromehearts.com/intimates",
+            "https://www.chromehearts.com/socks",
+            "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+            "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/slippers": {
+          "url": "https://www.chromehearts.com/slippers",
+          "title": "Slippers",
+          "kind": "category",
+          "status": "configured",
+          "sources": [
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/scents",
+            "https://www.chromehearts.com/baccarat",
+            "https://www.chromehearts.com/boxers-leggings",
+            "https://www.chromehearts.com/intimates",
+            "https://www.chromehearts.com/socks",
+            "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+            "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html"
+          ],
+          "first_seen_at": "2026-11-07T06:01:52+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html": {
+          "url": "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
+          "title": "$500",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html": {
+          "url": "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html",
+          "title": "$500",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html": {
+          "url": "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
+          "title": "$220",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html": {
+          "url": "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html",
+          "title": "$220",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html": {
+          "url": "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
+          "title": "$90",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html": {
+          "url": "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html",
+          "title": "$90",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-scented-candle-220g/162045CRYXXX273.html": {
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-220g/162045CRYXXX273.html",
+          "title": "$500",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-scented-candle-220g/162045CRYXXX274.html": {
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-220g/162045CRYXXX274.html",
+          "title": "$500",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html": {
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
+          "title": "$150",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html": {
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html",
+          "title": "$150",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-scented-candle-100g/172571CRYXXX273.html": {
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-100g/172571CRYXXX273.html",
+          "title": "$180",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-scented-candle-100g/172571CRYXXX274.html": {
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-100g/172571CRYXXX274.html",
+          "title": "$180",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html": {
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html",
+          "title": "$150",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html": {
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
+          "title": "$150",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html": {
+          "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+          "title": "$200",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html": {
+          "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
+          "title": "$100",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html": {
+          "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+          "title": "$200",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html": {
+          "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
+          "title": "$100",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html": {
+          "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
+          "title": "$110",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html": {
+          "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
+          "title": "$110",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html": {
+          "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+          "title": "OUT OF STOCK",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scents"
+          ],
+          "first_seen_at": "2026-11-07T06:01:56+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/tumbler/174132CRYXXX015.html": {
+          "url": "https://www.chromehearts.com/baccarat/tumbler/174132CRYXXX015.html",
+          "title": "$2,625",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/decanter/174131CRYXXX013.html": {
+          "url": "https://www.chromehearts.com/baccarat/decanter/174131CRYXXX013.html",
+          "title": "$4,275",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html": {
+          "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
+          "title": "$3,850",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html": {
+          "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
+          "title": "$2,400",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html": {
+          "url": "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html",
+          "title": "$2,625",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/champagne-flute/177731CRYXXX042.html": {
+          "url": "https://www.chromehearts.com/baccarat/champagne-flute/177731CRYXXX042.html",
+          "title": "OUT OF STOCK",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/water/177732CRYXXX042.html": {
+          "url": "https://www.chromehearts.com/baccarat/water/177732CRYXXX042.html",
+          "title": "$2,200",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html": {
+          "url": "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html",
+          "title": "OUT OF STOCK",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/ashtray/177730CRYXXX013.html": {
+          "url": "https://www.chromehearts.com/baccarat/ashtray/177730CRYXXX013.html",
+          "title": "$3,150",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/baccarat/coffee-set/174310CRYXXX005.html": {
+          "url": "https://www.chromehearts.com/baccarat/coffee-set/174310CRYXXX005.html",
+          "title": "$1,650",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/baccarat"
+          ],
+          "first_seen_at": "2026-11-07T06:01:57+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html": {
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html",
+          "title": "$95",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/boxers-leggings"
+          ],
+          "first_seen_at": "2026-11-07T06:01:59+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html": {
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html",
+          "title": "$100",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/boxers-leggings"
+          ],
+          "first_seen_at": "2026-11-07T06:01:59+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html": {
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html",
+          "title": "$130",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/boxers-leggings"
+          ],
+          "first_seen_at": "2026-11-07T06:01:59+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html": {
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html",
+          "title": "$110",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/boxers-leggings"
+          ],
+          "first_seen_at": "2026-11-07T06:01:59+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings/leggings/165064XXXXXX140.html": {
+          "url": "https://www.chromehearts.com/boxers-leggings/leggings/165064XXXXXX140.html",
+          "title": "$275",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/boxers-leggings"
+          ],
+          "first_seen_at": "2026-11-07T06:01:59+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html": {
+          "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html",
+          "title": "$275",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/boxers-leggings"
+          ],
+          "first_seen_at": "2026-11-07T06:01:59+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html": {
+          "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/intimates"
+          ],
+          "first_seen_at": "2026-11-07T06:02:00+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html": {
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html",
+          "title": "$990",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/intimates"
+          ],
+          "first_seen_at": "2026-11-07T06:02:00+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html": {
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html",
+          "title": "$385",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/intimates"
+          ],
+          "first_seen_at": "2026-11-07T06:02:00+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html": {
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html",
+          "title": "$385",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/intimates"
+          ],
+          "first_seen_at": "2026-11-07T06:02:00+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html": {
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html",
+          "title": "$220",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/intimates"
+          ],
+          "first_seen_at": "2026-11-07T06:02:00+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html": {
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html",
+          "title": "Sold Out",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/intimates"
+          ],
+          "first_seen_at": "2026-11-07T06:02:00+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html": {
+          "url": "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/socks"
+          ],
+          "first_seen_at": "2026-11-07T06:02:01+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html": {
+          "url": "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/socks"
+          ],
+          "first_seen_at": "2026-11-07T06:02:01+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html": {
+          "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/socks"
+          ],
+          "first_seen_at": "2026-11-07T06:02:01+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html": {
+          "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/socks"
+          ],
+          "first_seen_at": "2026-11-07T06:02:01+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html": {
+          "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/socks"
+          ],
+          "first_seen_at": "2026-11-07T06:02:01+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html": {
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html",
+          "title": "$255",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/socks"
+          ],
+          "first_seen_at": "2026-11-07T06:02:01+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html": {
+          "url": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+          "title": "Korea",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html"
+          ],
+          "first_seen_at": "2026-11-07T06:02:10+00:00",
+          "last_checked_at": "",
+          "notify": true
+        },
+        "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html": {
+          "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html",
+          "title": "Korea",
+          "kind": "product",
+          "status": "tracked",
+          "sources": [
+            "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED"
+          ],
+          "first_seen_at": "2026-11-07T06:02:13+00:00",
+          "last_checked_at": "",
+          "notify": true
+        }
+      },
+      "sources": {
+        "https://www.chromehearts.com/robots.txt": {
+          "kind": "robots",
+          "last_attempt_at": "2026-11-07T06:02:14+00:00",
+          "status": "ok",
+          "last_success_at": "2026-11-07T06:02:15+00:00",
+          "error": ""
+        },
+        "https://www.chromehearts.com/sitemap_index.xml": {
+          "kind": "sitemap",
+          "last_attempt_at": "2026-11-07T06:02:15+00:00",
+          "status": "ok",
+          "last_success_at": "2026-11-07T06:02:16+00:00",
+          "error": ""
+        },
+        "https://www.chromehearts.com/sitemap_0.xml": {
+          "kind": "sitemap",
+          "last_attempt_at": "",
+          "status": "pending"
+        }
+      },
+      "excluded": {
+        "52f689c246fbbc26f947c599ac7e07cc": {
+          "url": "https://www.chromehearts.com/locations.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "cc4acf85948f963bab500dfda46eb3cf": {
+          "url": "https://www.chromehearts.com/magazine.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "65ec9c579bdd4c86f8d1df14448df5a7": {
+          "url": "https://www.chromehearts.com/login",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "55bec330a1f464b1d3c99940de58ce15": {
+          "url": "https://www.chromehearts.com/cart",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "a986f73fc2b77c8fed95f33c49293f3c": {
+          "url": "https://instagram.com/chromeheartsofficial/",
+          "reason": "external_host",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "97068b2fc164dcdff3e98652f318d4fe": {
+          "url": "https://www.chromehearts.com/terms.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "7c974812337943b0c682626914ee6dab": {
+          "url": "https://www.chromehearts.com/disclosure.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "3327de8e7e9e08f0cbf43d344bfdab35": {
+          "url": "https://www.chromehearts.com/privacy.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "9a24a70dc2f3a8e9b722ec80fe43e0a7": {
+          "url": "https://www.chromehearts.com/general.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        "2f5fa04a03e5795ad2f17b6dc87ad94e": {
+          "url": "https://www.chromehearts.com/contact",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        }
+      },
+      "history": [
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scarf",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/slippers",
+          "reason": "category",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:52+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/locations.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/magazine.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/login",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/cart",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://instagram.com/chromeheartsofficial/",
+          "reason": "external_host",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/terms.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/disclosure.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/privacy.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/general.html",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "excluded",
+          "url": "https://www.chromehearts.com/contact",
+          "reason": "non_catalog_path",
+          "source": "https://www.chromehearts.com/",
+          "at": "2026-11-07T06:01:53+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-220g/162045CRYXXX273.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-220g/162045CRYXXX274.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-100g/172571CRYXXX273.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-100g/172571CRYXXX274.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:01:56+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/tumbler/174132CRYXXX015.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/decanter/174131CRYXXX013.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/champagne-flute/177731CRYXXX042.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/water/177732CRYXXX042.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/ashtray/177730CRYXXX013.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/baccarat/coffee-set/174310CRYXXX005.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:01:57+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:01:59+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:01:59+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:01:59+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:01:59+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings/leggings/165064XXXXXX140.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:01:59+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:01:59+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:00+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:00+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:00+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:00+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:00+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:00+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:01+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:01+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:01+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:01+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:01+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:01+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+          "at": "2026-11-07T06:02:10+00:00"
+        },
+        {
+          "code": "candidate_found",
+          "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html",
+          "reason": "product",
+          "source": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
+          "at": "2026-11-07T06:02:13+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/robots.txt",
+          "reason": "robots",
+          "source": "",
+          "at": "2026-11-07T06:02:15+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_index.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-soap-on-a-rope/179527XXXXXX273.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-soap-on-a-rope/179527XXXXXX274.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-220g/162045CRYXXX273.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-220g/162045CRYXXX274.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-100g/172571CRYXXX273.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-100g/172571CRYXXX274.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-scented-candle-set-35g/214141D7BXXX01T.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scents",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/tumbler/174132CRYXXX015.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/decanter/174131CRYXXX013.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/martini/177734CRYXXX042.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/champagne-flute/177731CRYXXX042.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/water/177732CRYXXX042.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/wine/177733CRYXXX042.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/ashtray/177730CRYXXX013.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/baccarat/coffee-set/174310CRYXXX005.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/baccarat",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---long/158553XXXXXXXXX.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---classic-rib/209670XXXXXXXXX.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/boxers-leggings/leggings/165064XXXXXX140.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/boxers-leggings",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/intimates",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/socks/ch-logo-socks/176354XXXXXX349.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/socks/stencil-socks/176354MB3XXX465.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/socks",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "product_registered",
+          "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html",
+          "reason": "상품 상세 감시 등록",
+          "source": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
+          "at": "2026-11-07T06:02:16+00:00"
+        },
+        {
+          "code": "coverage",
+          "url": "https://www.chromehearts.com/",
+          "reason": "{\"configured\": 7, \"tracked\": 51}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
+          "source": "",
+          "at": "2026-11-07T06:02:16+00:00"
+        }
+      ],
+      "source_first": false,
+      "last_summary_at": "2026-11-07T06:02:16+00:00"
+    }
+  },
+  "optional_probes": {
+    "ch-extra-silichrome": "2026-11-07T06:02:02+00:00",
+    "ch-extra-sports-mesh": "2026-11-07T06:02:04+00:00"
+  },
+  "detail_next_new": true
 }
