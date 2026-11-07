@@ -3726,12 +3726,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:30:03+00:00",
+      "last_checked_at": "2026-11-07T11:37:01+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:30:03+00:00",
+      "last_attempt_at": "2026-11-07T11:37:01+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4019,22 +4019,16 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:29:33+00:00",
+      "last_checked_at": "2026-11-07T11:36:46+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:29:33+00:00",
+      "last_attempt_at": "2026-11-07T11:36:46+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
-      "scan_queue": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1"
-      ],
-      "scan_seen": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=LRG&pid=201583AFWXXX033&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=MED&pid=201583AFWXXX033&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=SML&pid=201583AFWXXX033&quantity=1"
-      ]
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201584AFWXXX030": {
       "pid": "201584AFWXXX030",
@@ -4124,12 +4118,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:30:00+00:00",
+      "last_checked_at": "2026-11-07T11:36:54+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:30:00+00:00",
+      "last_attempt_at": "2026-11-07T11:36:54+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -5516,23 +5510,23 @@
       "status": "ok"
     },
     "ch-extra-earring": {
-      "last_checked_at": "2026-11-07T11:21:40+00:00",
-      "duration_seconds": 2.76,
-      "last_success_at": "2026-11-07T11:21:40+00:00",
+      "last_checked_at": "2026-11-07T11:36:40+00:00",
+      "duration_seconds": 2.8,
+      "last_success_at": "2026-11-07T11:36:40+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 3575.44,
+      "actual_interval_seconds": 900.88,
       "status": "ok"
     },
     "ch-extra-t-shirt": {
-      "last_checked_at": "2026-11-07T11:21:43+00:00",
-      "duration_seconds": 2.97,
-      "last_success_at": "2026-11-07T11:21:43+00:00",
+      "last_checked_at": "2026-11-07T11:36:43+00:00",
+      "duration_seconds": 3.02,
+      "last_success_at": "2026-11-07T11:36:43+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 3575.41,
+      "actual_interval_seconds": 900.91,
       "status": "ok"
     },
     "ch-extra-t-shirts": {
@@ -8840,7 +8834,7 @@
           "at": "2026-11-07T11:33:45+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T11:33:04+00:00"
     }
   },
@@ -8857,8 +8851,8 @@
     "ch-extra-bag": "2026-11-07T11:35:09+00:00",
     "ch-extra-bags": "2026-11-07T11:35:53+00:00",
     "ch-extra-belt": "2026-11-07T11:35:55+00:00",
-    "ch-extra-earring": "2026-11-07T11:21:37+00:00",
-    "ch-extra-t-shirt": "2026-11-07T11:21:40+00:00",
+    "ch-extra-earring": "2026-11-07T11:36:38+00:00",
+    "ch-extra-t-shirt": "2026-11-07T11:36:40+00:00",
     "ch-extra-t-shirts": "2026-11-07T11:22:22+00:00",
     "ch-extra-shirt": "2026-11-07T11:22:23+00:00",
     "ch-extra-shirts": "2026-11-07T11:23:07+00:00",
