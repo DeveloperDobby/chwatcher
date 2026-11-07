@@ -1102,12 +1102,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T12:41:32+00:00",
+      "last_checked_at": "2026-11-07T12:48:19+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T12:41:32+00:00",
+      "last_attempt_at": "2026-11-07T12:48:19+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX274": {
@@ -1570,12 +1570,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T12:41:17+00:00",
+      "last_checked_at": "2026-11-07T12:48:04+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T12:41:17+00:00",
+      "last_attempt_at": "2026-11-07T12:48:04+00:00",
       "priority": false
     },
     "www.chromehearts.com:158552BLKXXXXXX": {
@@ -3544,12 +3544,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T12:41:30+00:00",
+      "last_checked_at": "2026-11-07T12:48:17+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T12:41:30+00:00",
+      "last_attempt_at": "2026-11-07T12:48:17+00:00",
       "priority": false,
       "master_pid": "164943XXXXXX140",
       "scan_queue": [],
@@ -5419,23 +5419,23 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-07T12:32:57+00:00",
-      "duration_seconds": 3.01,
-      "last_success_at": "2026-11-07T12:32:57+00:00",
+      "last_checked_at": "2026-11-07T12:47:58+00:00",
+      "duration_seconds": 2.77,
+      "last_success_at": "2026-11-07T12:47:58+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.8,
+      "actual_interval_seconds": 901.4,
       "status": "ok"
     },
     "ch-extra-hat": {
-      "last_checked_at": "2026-11-07T12:33:00+00:00",
-      "duration_seconds": 2.8,
-      "last_success_at": "2026-11-07T12:33:00+00:00",
+      "last_checked_at": "2026-11-07T12:48:01+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-07T12:48:01+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.61,
+      "actual_interval_seconds": 901.41,
       "status": "ok"
     },
     "ch-extra-hoodie": {
@@ -7048,9 +7048,9 @@
       "sources": {
         "https://www.chromehearts.com/robots.txt": {
           "kind": "robots",
-          "last_attempt_at": "2026-11-07T12:33:00+00:00",
+          "last_attempt_at": "2026-11-07T12:48:01+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-07T12:33:02+00:00",
+          "last_success_at": "2026-11-07T12:48:02+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
@@ -9026,17 +9026,24 @@
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
           "source": "https://www.chromehearts.com/sitemap_0.xml",
           "at": "2026-11-07T12:47:19+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/robots.txt",
+          "reason": "robots",
+          "source": "",
+          "at": "2026-11-07T12:48:02+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-07T12:35:15+00:00"
     }
   },
   "optional_probes": {
     "ch-extra-silichrome": "2026-11-07T12:47:10+00:00",
     "ch-extra-sports-mesh": "2026-11-07T12:47:13+00:00",
-    "ch-extra-eyewear": "2026-11-07T12:32:54+00:00",
-    "ch-extra-hat": "2026-11-07T12:32:57+00:00",
+    "ch-extra-eyewear": "2026-11-07T12:47:55+00:00",
+    "ch-extra-hat": "2026-11-07T12:47:58+00:00",
     "ch-extra-hoodie": "2026-11-07T12:33:39+00:00",
     "ch-extra-rib-tank": "2026-11-07T12:33:42+00:00",
     "ch-extra-goggles": "2026-11-07T12:34:24+00:00",
