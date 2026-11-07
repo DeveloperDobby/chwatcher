@@ -3762,7 +3762,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32B&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T14:18:25+00:00"
+          "last_seen_at": "2026-11-07T14:40:43+00:00"
         },
         "202334AFW32C030:en_US": {
           "pid": "202334AFW32C030",
@@ -3923,12 +3923,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:32:41+00:00",
+      "last_checked_at": "2026-11-07T14:40:55+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:32:41+00:00",
+      "last_attempt_at": "2026-11-07T14:40:55+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -4225,7 +4225,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:32:35+00:00",
+      "last_attempt_at": "2026-11-07T14:40:40+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5620,23 +5620,23 @@
       "status": "ok"
     },
     "ch-extra-denim": {
-      "last_checked_at": "2026-11-07T14:25:33+00:00",
-      "duration_seconds": 2.83,
-      "last_success_at": "2026-11-07T14:25:33+00:00",
+      "last_checked_at": "2026-11-07T14:40:34+00:00",
+      "duration_seconds": 2.78,
+      "last_success_at": "2026-11-07T14:40:34+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.93,
+      "actual_interval_seconds": 901.44,
       "status": "ok"
     },
     "ch-extra-pants": {
-      "last_checked_at": "2026-11-07T14:25:36+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-07T14:25:36+00:00",
+      "last_checked_at": "2026-11-07T14:40:37+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-07T14:40:37+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.93,
+      "actual_interval_seconds": 901.43,
       "status": "ok"
     },
     "ch-extra-shorts": {
@@ -6050,23 +6050,23 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-07T14:32:35+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-07T14:40:40+00:00",
+      "duration_seconds": 2.93,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 6,
+      "consecutive_failures": 7,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 408.52,
+      "actual_interval_seconds": 485.38,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
-      "last_checked_at": "2026-11-07T14:18:25+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-07T14:18:25+00:00",
+      "last_checked_at": "2026-11-07T14:40:55+00:00",
+      "duration_seconds": 14.99,
+      "last_success_at": "2026-11-07T14:40:55+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 330.94,
+      "actual_interval_seconds": 494.38,
       "status": "ok"
     },
     "variant-ae69f9c9aaefbd47": {
@@ -9367,7 +9367,7 @@
           "at": "2026-11-07T14:35:22+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-07T14:35:22+00:00"
     }
   },
@@ -9394,8 +9394,8 @@
     "ch-extra-sweatshirts": "2026-11-07T14:39:04+00:00",
     "ch-extra-sweater": "2026-11-07T14:39:46+00:00",
     "ch-extra-jacket": "2026-11-07T14:39:49+00:00",
-    "ch-extra-denim": "2026-11-07T14:25:31+00:00",
-    "ch-extra-pants": "2026-11-07T14:25:33+00:00",
+    "ch-extra-denim": "2026-11-07T14:40:31+00:00",
+    "ch-extra-pants": "2026-11-07T14:40:34+00:00",
     "ch-extra-shorts": "2026-11-07T14:26:16+00:00",
     "ch-extra-shoes": "2026-11-07T14:26:18+00:00",
     "ch-extra-boots": "2026-11-07T14:27:01+00:00",
