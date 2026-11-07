@@ -850,12 +850,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:43:24+00:00",
+      "last_checked_at": "2026-11-07T11:51:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:43:24+00:00",
+      "last_attempt_at": "2026-11-07T11:51:06+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX271": {
@@ -886,12 +886,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:43:26+00:00",
+      "last_checked_at": "2026-11-07T11:51:08+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:43:26+00:00",
+      "last_attempt_at": "2026-11-07T11:51:08+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX272": {
@@ -1534,12 +1534,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:43:35+00:00",
+      "last_checked_at": "2026-11-07T11:51:17+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:43:35+00:00",
+      "last_attempt_at": "2026-11-07T11:51:17+00:00",
       "priority": false
     },
     "www.chromehearts.com:174310CRYXXX005": {
@@ -3592,7 +3592,7 @@
           "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html?dwvar_092826AI6XXXXXX_size=SZ3&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ3&pid=092826AI6XXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T11:20:29+00:00"
+          "last_seen_at": "2026-11-07T11:51:02+00:00"
         },
         "092826AI6SZ4003:en_US": {
           "pid": "092826AI6SZ4003",
@@ -3639,12 +3639,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:43:03+00:00",
+      "last_checked_at": "2026-11-07T11:51:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:43:03+00:00",
+      "last_attempt_at": "2026-11-07T11:51:05+00:00",
       "priority": false,
       "master_pid": "092826AI6XXXXXX",
       "scan_queue": [],
@@ -4615,12 +4615,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:43:33+00:00",
+      "last_checked_at": "2026-11-07T11:51:15+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:43:33+00:00",
+      "last_attempt_at": "2026-11-07T11:51:15+00:00",
       "priority": false,
       "master_pid": "176354XXXXXXXXX",
       "scan_queue": [],
@@ -5508,23 +5508,23 @@
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-07T11:35:55+00:00",
-      "duration_seconds": 2.73,
-      "last_success_at": "2026-11-07T11:35:55+00:00",
+      "last_checked_at": "2026-11-07T11:50:56+00:00",
+      "duration_seconds": 2.82,
+      "last_success_at": "2026-11-07T11:50:56+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.91,
+      "actual_interval_seconds": 901.36,
       "status": "ok"
     },
     "ch-extra-belt": {
-      "last_checked_at": "2026-11-07T11:35:58+00:00",
-      "duration_seconds": 2.95,
-      "last_success_at": "2026-11-07T11:35:58+00:00",
+      "last_checked_at": "2026-11-07T11:50:59+00:00",
+      "duration_seconds": 2.97,
+      "last_success_at": "2026-11-07T11:50:59+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.87,
+      "actual_interval_seconds": 901.34,
       "status": "ok"
     },
     "ch-extra-earring": {
@@ -8894,7 +8894,7 @@
           "at": "2026-11-07T11:48:50+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-07T11:48:50+00:00"
     }
   },
@@ -8909,8 +8909,8 @@
     "ch-extra-sunglasses": "2026-11-07T11:49:26+00:00",
     "ch-extra-eyewear-accessories": "2026-11-07T11:50:08+00:00",
     "ch-extra-bag": "2026-11-07T11:50:09+00:00",
-    "ch-extra-bags": "2026-11-07T11:35:53+00:00",
-    "ch-extra-belt": "2026-11-07T11:35:55+00:00",
+    "ch-extra-bags": "2026-11-07T11:50:53+00:00",
+    "ch-extra-belt": "2026-11-07T11:50:56+00:00",
     "ch-extra-earring": "2026-11-07T11:36:38+00:00",
     "ch-extra-t-shirt": "2026-11-07T11:36:40+00:00",
     "ch-extra-t-shirts": "2026-11-07T11:37:23+00:00",
