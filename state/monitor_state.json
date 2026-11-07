@@ -3729,7 +3729,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-07T11:30:03+00:00"
+          "last_seen_at": "2026-11-07T11:53:21+00:00"
         }
       },
       "sources": {
@@ -3738,12 +3738,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:45:00+00:00",
+      "last_checked_at": "2026-11-07T11:53:21+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:45:00+00:00",
+      "last_attempt_at": "2026-11-07T11:53:21+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -3771,7 +3771,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32B&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T11:23:25+00:00"
+          "last_seen_at": "2026-11-07T11:53:33+00:00"
         },
         "202334AFW32C030:en_US": {
           "pid": "202334AFW32C030",
@@ -3932,16 +3932,27 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:45:14+00:00",
+      "last_checked_at": "2026-11-07T11:53:33+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:45:14+00:00",
+      "last_attempt_at": "2026-11-07T11:53:33+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32C&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32D&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34B&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34D&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36B&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36C&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36D&pid=202334AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34C&pid=202334AFWXXX030&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1"
+      ]
     },
     "www.chromehearts.com:201583AFWXXX033": {
       "pid": "201583AFWXXX033",
@@ -4229,12 +4240,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:45:09+00:00",
+      "last_checked_at": "2026-11-07T11:53:30+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:45:09+00:00",
+      "last_attempt_at": "2026-11-07T11:53:30+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [],
@@ -5562,23 +5573,23 @@
       "status": "ok"
     },
     "ch-extra-shirts": {
-      "last_checked_at": "2026-11-07T11:38:10+00:00",
-      "duration_seconds": 2.79,
-      "last_success_at": "2026-11-07T11:38:10+00:00",
+      "last_checked_at": "2026-11-07T11:53:11+00:00",
+      "duration_seconds": 2.83,
+      "last_success_at": "2026-11-07T11:53:11+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.98,
+      "actual_interval_seconds": 901.34,
       "status": "ok"
     },
     "ch-extra-hoodies": {
-      "last_checked_at": "2026-11-07T11:38:13+00:00",
-      "duration_seconds": 3.01,
-      "last_success_at": "2026-11-07T11:38:13+00:00",
+      "last_checked_at": "2026-11-07T11:53:14+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-07T11:53:14+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.99,
+      "actual_interval_seconds": 901.33,
       "status": "ok"
     },
     "ch-extra-sweatshirt": {
@@ -8888,7 +8899,7 @@
           "at": "2026-11-07T11:48:50+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T11:48:50+00:00"
     }
   },
@@ -8909,8 +8920,8 @@
     "ch-extra-t-shirt": "2026-11-07T11:51:41+00:00",
     "ch-extra-t-shirts": "2026-11-07T11:52:23+00:00",
     "ch-extra-shirt": "2026-11-07T11:52:24+00:00",
-    "ch-extra-shirts": "2026-11-07T11:38:08+00:00",
-    "ch-extra-hoodies": "2026-11-07T11:38:10+00:00",
+    "ch-extra-shirts": "2026-11-07T11:53:08+00:00",
+    "ch-extra-hoodies": "2026-11-07T11:53:11+00:00",
     "ch-extra-sweatshirt": "2026-11-07T11:38:53+00:00",
     "ch-extra-sweatshirts": "2026-11-07T11:38:56+00:00",
     "ch-extra-sweater": "2026-11-07T11:39:38+00:00",
