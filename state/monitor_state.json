@@ -958,12 +958,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:21:45+00:00",
+      "last_checked_at": "2026-11-07T11:29:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:21:45+00:00",
+      "last_attempt_at": "2026-11-07T11:29:09+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX274": {
@@ -994,12 +994,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:21:46+00:00",
+      "last_checked_at": "2026-11-07T11:29:10+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:21:46+00:00",
+      "last_attempt_at": "2026-11-07T11:29:10+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX273": {
@@ -4016,16 +4016,22 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:22:34+00:00",
+      "last_checked_at": "2026-11-07T11:29:33+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:22:34+00:00",
+      "last_attempt_at": "2026-11-07T11:29:33+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=LRG&pid=201583AFWXXX033&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=MED&pid=201583AFWXXX033&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=SML&pid=201583AFWXXX033&quantity=1"
+      ]
     },
     "www.chromehearts.com:201584AFWXXX030": {
       "pid": "201584AFWXXX030",
@@ -4644,7 +4650,7 @@
           "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T10:24:43+00:00"
+          "last_seen_at": "2026-11-07T11:29:21+00:00"
         },
         "191715D5DSML408:en_US": {
           "pid": "191715D5DSML408",
@@ -4672,12 +4678,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:21:56+00:00",
+      "last_checked_at": "2026-11-07T11:29:22+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:21:56+00:00",
+      "last_attempt_at": "2026-11-07T11:29:22+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4733,12 +4739,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:22:01+00:00",
+      "last_checked_at": "2026-11-07T11:29:27+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:22:01+00:00",
+      "last_attempt_at": "2026-11-07T11:29:27+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -4836,12 +4842,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T11:21:53+00:00",
+      "last_checked_at": "2026-11-07T11:29:18+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T11:21:53+00:00",
+      "last_attempt_at": "2026-11-07T11:29:18+00:00",
       "priority": false,
       "master_pid": "180459XXXXXX389",
       "scan_queue": [],
@@ -8800,7 +8806,7 @@
           "at": "2026-11-07T11:17:59+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T11:17:22+00:00"
     }
   },
