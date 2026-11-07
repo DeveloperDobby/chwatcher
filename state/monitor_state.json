@@ -3711,12 +3711,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:22:20+00:00",
+      "last_checked_at": "2026-11-07T20:29:14+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:22:20+00:00",
+      "last_attempt_at": "2026-11-07T20:29:14+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4006,7 +4006,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T20:08:03+00:00"
+          "last_seen_at": "2026-11-07T20:28:59+00:00"
         }
       },
       "sources": {
@@ -4015,12 +4015,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:21:39+00:00",
+      "last_checked_at": "2026-11-07T20:28:59+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:21:39+00:00",
+      "last_attempt_at": "2026-11-07T20:28:59+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4114,12 +4114,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:21:47+00:00",
+      "last_checked_at": "2026-11-07T20:29:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:21:47+00:00",
+      "last_attempt_at": "2026-11-07T20:29:07+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4218,7 +4218,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:22:23+00:00",
+      "last_attempt_at": "2026-11-07T20:29:18+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -6019,13 +6019,13 @@
       "status": "ok"
     },
     "variant-c470b9e19737a400": {
-      "last_checked_at": "2026-11-07T20:08:03+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-07T20:08:03+00:00",
+      "last_checked_at": "2026-11-07T20:28:59+00:00",
+      "duration_seconds": 7.06,
+      "last_success_at": "2026-11-07T20:28:59+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 483.98,
+      "actual_interval_seconds": 441.0,
       "status": "ok"
     },
     "variant-ac3206ad3eca4fde": {
@@ -6039,23 +6039,23 @@
       "status": "ok"
     },
     "variant-49a2cfa73ac49733": {
-      "last_checked_at": "2026-11-07T20:08:15+00:00",
-      "duration_seconds": 4.49,
-      "last_success_at": "2026-11-07T20:08:15+00:00",
+      "last_checked_at": "2026-11-07T20:29:14+00:00",
+      "duration_seconds": 7.47,
+      "last_success_at": "2026-11-07T20:29:14+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 452.97,
+      "actual_interval_seconds": 415.0,
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-07T20:22:23+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-07T20:29:18+00:00",
+      "duration_seconds": 3.0,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 44,
+      "consecutive_failures": 45,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 445.48,
+      "actual_interval_seconds": 415.0,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10164,7 +10164,7 @@
           "at": "2026-11-07T20:17:43+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T20:16:15+00:00"
     }
   },
