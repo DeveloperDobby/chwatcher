@@ -1,7 +1,7 @@
 name: Chrome Hearts Catalog and Discord Monitor
 
 on:
-  # 3시간마다 예약합니다. 진행 중인 감시는 종료 목표까지 실행하고 다음 감시는 대기합니다.
+  # 3시간마다 새 예약이 이전 감시를 교체합니다. 한 실행의 감시 루프 상한은 5시간 50분입니다.
   schedule:
     - cron: "35 1-22/3 * * *"
   workflow_dispatch:
@@ -15,10 +15,10 @@ on:
 permissions:
   contents: write
 
-# 예약 감시와 수동 진단이 한 사이트의 요청 예산을 동시에 소비하지 않도록 대기시킵니다.
+# 수동 감시, 수동 진단, 기존 실행의 재시도는 같은 그룹에서 차례를 기다립니다.
 concurrency:
   group: chwatcher-monitor
-  cancel-in-progress: false
+  cancel-in-progress: ${{ github.event_name == 'schedule' && github.run_attempt == '1' }}
 
 jobs:
   launch:
