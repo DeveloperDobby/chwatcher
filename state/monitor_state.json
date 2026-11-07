@@ -3733,7 +3733,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=32B&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T20:08:47+00:00"
+          "last_seen_at": "2026-11-07T20:37:19+00:00"
         },
         "202334AFW32C030:en_US": {
           "pid": "202334AFW32C030",
@@ -3894,12 +3894,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:29:43+00:00",
+      "last_checked_at": "2026-11-07T20:37:31+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:29:43+00:00",
+      "last_attempt_at": "2026-11-07T20:37:31+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -4196,7 +4196,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:29:18+00:00",
+      "last_attempt_at": "2026-11-07T20:37:16+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5361,23 +5361,23 @@
       "status": "ok"
     },
     "ch-extra-silichrome": {
-      "last_checked_at": "2026-11-07T20:22:10+00:00",
-      "duration_seconds": 2.66,
-      "last_success_at": "2026-11-07T20:22:10+00:00",
+      "last_checked_at": "2026-11-07T20:37:10+00:00",
+      "duration_seconds": 2.67,
+      "last_success_at": "2026-11-07T20:37:10+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.05,
+      "actual_interval_seconds": 900.93,
       "status": "ok"
     },
     "ch-extra-sports-mesh": {
-      "last_checked_at": "2026-11-07T20:22:13+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-07T20:22:13+00:00",
+      "last_checked_at": "2026-11-07T20:37:13+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-07T20:37:13+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.05,
+      "actual_interval_seconds": 900.93,
       "status": "ok"
     },
     "ch-extra-eyewear": {
@@ -6021,23 +6021,23 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-07T20:29:18+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-07T20:37:16+00:00",
+      "duration_seconds": 2.9,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 45,
+      "consecutive_failures": 46,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 415.0,
+      "actual_interval_seconds": 478.84,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
-      "last_checked_at": "2026-11-07T20:15:01+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-07T20:15:01+00:00",
+      "last_checked_at": "2026-11-07T20:37:31+00:00",
+      "duration_seconds": 15.0,
+      "last_success_at": "2026-11-07T20:37:31+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 362.65,
+      "actual_interval_seconds": 468.85,
       "status": "ok"
     },
     "variant-ae69f9c9aaefbd47": {
@@ -10178,13 +10178,13 @@
           "at": "2026-11-07T20:32:45+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-07T20:31:16+00:00"
     }
   },
   "optional_probes": {
-    "ch-extra-silichrome": "2026-11-07T20:22:07+00:00",
-    "ch-extra-sports-mesh": "2026-11-07T20:22:10+00:00",
+    "ch-extra-silichrome": "2026-11-07T20:37:08+00:00",
+    "ch-extra-sports-mesh": "2026-11-07T20:37:10+00:00",
     "ch-extra-eyewear": "2026-11-07T20:22:52+00:00",
     "ch-extra-hat": "2026-11-07T20:22:55+00:00",
     "ch-extra-hoodie": "2026-11-07T20:23:37+00:00",
