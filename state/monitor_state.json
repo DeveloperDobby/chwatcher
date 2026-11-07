@@ -784,24 +784,7 @@
       "updated_at": "2026-11-07T14:02:13+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 44,
-      "monitor": {
-        "id": "variant-65c0db576057c5dc",
-        "name": "Chrome Hearts 사이즈 LACE THONG",
-        "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts 사이즈 LACE THONG 감시 오류",
-        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
-        "url": "https://www.chromehearts.com/intimates/lace-thong/201635AFWXXX033.html",
-        "observed_at": "2026-11-07T14:12:52+00:00",
-        "_notification_id": 44
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
