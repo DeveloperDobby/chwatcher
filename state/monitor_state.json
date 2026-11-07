@@ -106,7 +106,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "b618ed104e950c43c6180483d00c2807": {
           "title": "Scented Candle Set 35G",
@@ -114,7 +114,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "07829d9aafc481d05895109553cd1d5e": {
           "title": "Incense Set with Holder",
@@ -122,7 +122,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "ab6a8a0a18afa07cdc62a7b19e165947": {
           "title": "Incense Set Refill",
@@ -130,7 +130,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "ae630bf99ffb3ec2ed35db69bc8db6a1": {
           "title": "Incense Set with Holder",
@@ -138,7 +138,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "539600ecf5ac112928201391b8577cc6": {
           "title": "Incense Set Refill",
@@ -146,7 +146,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "259dfe4ba8cd561b12feac82bdac9008": {
           "title": "Perfumed Hand Spray",
@@ -154,7 +154,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "1b4639eeb8ea39bd2f0a3d8f12e44b37": {
           "title": "Perfumed Hand Spray",
@@ -162,7 +162,7 @@
           "status": "listed",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         },
         "7939429dd256dd38ed93b7366173962b": {
           "title": "Matchstick Holder",
@@ -170,11 +170,11 @@
           "status": "sold_out",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-07T09:47:17+00:00"
+          "last_seen_at": "2026-11-07T10:02:17+00:00"
         }
       },
       "last_count": 21,
-      "updated_at": "2026-11-07T09:50:17+00:00",
+      "updated_at": "2026-11-07T10:02:17+00:00",
       "initialized": true
     },
     "ch-baccarat": {
@@ -3647,7 +3647,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-07T09:47:58+00:00"
+          "last_seen_at": "2026-11-07T10:02:58+00:00"
         },
         "201585AFWSML030:en_US": {
           "pid": "201585AFWSML030",
@@ -3713,16 +3713,22 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T09:55:59+00:00",
+      "last_checked_at": "2026-11-07T10:02:58+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T09:55:59+00:00",
+      "last_attempt_at": "2026-11-07T10:02:58+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=SML&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1"
+      ]
     },
     "www.chromehearts.com:202334AFWXXX030": {
       "pid": "202334AFWXXX030",
@@ -4017,12 +4023,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T09:55:20+00:00",
+      "last_checked_at": "2026-11-07T10:02:47+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T09:55:20+00:00",
+      "last_attempt_at": "2026-11-07T10:02:47+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4116,12 +4122,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T09:55:28+00:00",
+      "last_checked_at": "2026-11-07T10:02:55+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T09:55:28+00:00",
+      "last_attempt_at": "2026-11-07T10:02:55+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -5323,83 +5329,83 @@
   },
   "health": {
     "ch-scents": {
-      "last_checked_at": "2026-11-07T09:47:17+00:00",
-      "duration_seconds": 3.33,
-      "last_success_at": "2026-11-07T09:47:17+00:00",
+      "last_checked_at": "2026-11-07T10:02:17+00:00",
+      "duration_seconds": 3.35,
+      "last_success_at": "2026-11-07T10:02:17+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.91,
+      "actual_interval_seconds": 45.95,
       "status": "ok"
     },
     "ch-baccarat": {
-      "last_checked_at": "2026-11-07T09:47:19+00:00",
-      "duration_seconds": 1.46,
-      "last_success_at": "2026-11-07T09:47:19+00:00",
+      "last_checked_at": "2026-11-07T10:02:19+00:00",
+      "duration_seconds": 1.44,
+      "last_success_at": "2026-11-07T10:02:19+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.38,
+      "actual_interval_seconds": 45.4,
       "status": "ok"
     },
     "ch-boxers-leggings": {
-      "last_checked_at": "2026-11-07T09:47:20+00:00",
-      "duration_seconds": 1.35,
-      "last_success_at": "2026-11-07T09:47:20+00:00",
+      "last_checked_at": "2026-11-07T10:02:20+00:00",
+      "duration_seconds": 1.32,
+      "last_success_at": "2026-11-07T10:02:20+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.73,
+      "actual_interval_seconds": 45.72,
       "status": "ok"
     },
     "ch-intimates": {
-      "last_checked_at": "2026-11-07T09:47:22+00:00",
-      "duration_seconds": 1.43,
-      "last_success_at": "2026-11-07T09:47:22+00:00",
+      "last_checked_at": "2026-11-07T10:02:22+00:00",
+      "duration_seconds": 1.5,
+      "last_success_at": "2026-11-07T10:02:22+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.18,
+      "actual_interval_seconds": 45.23,
       "status": "ok"
     },
     "ch-socks": {
-      "last_checked_at": "2026-11-07T09:47:23+00:00",
-      "duration_seconds": 1.51,
-      "last_success_at": "2026-11-07T09:47:23+00:00",
+      "last_checked_at": "2026-11-07T10:02:23+00:00",
+      "duration_seconds": 1.47,
+      "last_success_at": "2026-11-07T10:02:23+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.69,
+      "actual_interval_seconds": 45.7,
       "status": "ok"
     },
     "ch-discovery": {
-      "last_checked_at": "2026-11-07T09:47:14+00:00",
-      "duration_seconds": 0.12,
-      "last_success_at": "2026-11-07T09:47:14+00:00",
+      "last_checked_at": "2026-11-07T10:02:14+00:00",
+      "duration_seconds": 0.11,
+      "last_success_at": "2026-11-07T10:02:14+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.58,
+      "actual_interval_seconds": 45.59,
       "status": "ok"
     },
     "ch-extra-silichrome": {
-      "last_checked_at": "2026-11-07T09:47:35+00:00",
-      "duration_seconds": 2.86,
-      "last_success_at": "2026-11-07T09:47:35+00:00",
+      "last_checked_at": "2026-11-07T10:02:35+00:00",
+      "duration_seconds": 2.84,
+      "last_success_at": "2026-11-07T10:02:35+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.57,
+      "actual_interval_seconds": 900.58,
       "status": "ok"
     },
     "ch-extra-sports-mesh": {
-      "last_checked_at": "2026-11-07T09:47:38+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-07T09:47:38+00:00",
+      "last_checked_at": "2026-11-07T10:02:38+00:00",
+      "duration_seconds": 3.01,
+      "last_success_at": "2026-11-07T10:02:38+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.56,
+      "actual_interval_seconds": 900.6,
       "status": "ok"
     },
     "ch-extra-eyewear": {
@@ -5453,13 +5459,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-07T09:47:26+00:00",
-      "duration_seconds": 2.91,
-      "last_success_at": "2026-11-07T09:47:26+00:00",
+      "last_checked_at": "2026-11-07T10:02:26+00:00",
+      "duration_seconds": 2.93,
+      "last_success_at": "2026-11-07T10:02:26+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.61,
+      "actual_interval_seconds": 45.64,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5663,13 +5669,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-07T09:47:29+00:00",
-      "duration_seconds": 3.02,
-      "last_success_at": "2026-11-07T09:47:29+00:00",
+      "last_checked_at": "2026-11-07T10:02:29+00:00",
+      "duration_seconds": 3.08,
+      "last_success_at": "2026-11-07T10:02:29+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 45.64,
+      "actual_interval_seconds": 45.72,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6033,13 +6039,13 @@
       "status": "ok"
     },
     "variant-49a2cfa73ac49733": {
-      "last_checked_at": "2026-11-07T09:47:58+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-07T09:47:58+00:00",
+      "last_checked_at": "2026-11-07T10:02:58+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-07T10:02:58+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 419.02,
+      "actual_interval_seconds": 419.04,
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
@@ -6269,7 +6275,7 @@
         },
         "https://www.chromehearts.com/boxers-leggings": {
           "url": "https://www.chromehearts.com/boxers-leggings",
-          "title": "Korea",
+          "title": "BOXERS & LEGGINGS",
           "kind": "category",
           "status": "configured",
           "sources": [
@@ -7032,9 +7038,9 @@
       "sources": {
         "https://www.chromehearts.com/robots.txt": {
           "kind": "robots",
-          "last_attempt_at": "2026-11-07T09:47:38+00:00",
+          "last_attempt_at": "2026-11-07T10:02:38+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-07T09:47:40+00:00",
+          "last_success_at": "2026-11-07T10:02:40+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
@@ -8667,15 +8673,29 @@
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
           "source": "https://www.chromehearts.com/sitemap_0.xml",
           "at": "2026-11-07T09:49:56+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/robots.txt",
+          "reason": "robots",
+          "source": "",
+          "at": "2026-11-07T10:02:40+00:00"
+        },
+        {
+          "code": "coverage",
+          "url": "https://www.chromehearts.com/",
+          "reason": "{\"configured\": 8, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
+          "source": "",
+          "at": "2026-11-07T10:02:40+00:00"
         }
       ],
-      "source_first": true,
-      "last_summary_at": "2026-11-07T09:47:40+00:00"
+      "source_first": false,
+      "last_summary_at": "2026-11-07T10:02:40+00:00"
     }
   },
   "optional_probes": {
-    "ch-extra-silichrome": "2026-11-07T09:47:32+00:00",
-    "ch-extra-sports-mesh": "2026-11-07T09:47:35+00:00",
+    "ch-extra-silichrome": "2026-11-07T10:02:32+00:00",
+    "ch-extra-sports-mesh": "2026-11-07T10:02:35+00:00",
     "ch-extra-eyewear": "2026-11-07T09:48:17+00:00",
     "ch-extra-hat": "2026-11-07T09:48:20+00:00",
     "ch-extra-hoodie": "2026-11-07T09:49:02+00:00",
