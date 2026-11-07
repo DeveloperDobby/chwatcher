@@ -5460,13 +5460,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-07T17:02:18+00:00",
-      "duration_seconds": 2.92,
-      "last_success_at": "2026-11-07T17:02:18+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "last_checked_at": "2026-11-07T17:06:48+00:00",
+      "duration_seconds": 2.78,
+      "last_success_at": "2026-11-07T17:06:04+00:00",
+      "consecutive_failures": 1,
+      "last_error": "HTTPSConnectionPool(host='www.chromehearts.com', port=443): Read timed out. (read timeout=0.0835166759970889)",
       "alerted": false,
-      "actual_interval_seconds": 45.99,
+      "actual_interval_seconds": 44.97,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -6314,7 +6314,7 @@
         },
         "https://www.chromehearts.com/socks": {
           "url": "https://www.chromehearts.com/socks",
-          "title": "Socks",
+          "title": "Korea",
           "kind": "category",
           "status": "configured",
           "sources": [
