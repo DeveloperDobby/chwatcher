@@ -7,6 +7,8 @@
 - availability : 개별 상품 상세 페이지의 Add to Bag / Sold Out / Coming Soon 상태 감시.
 - 상세 자동 추적: 발견한 상품의 공개 Product-Variation 응답으로 색상/사이즈별 상태 확인.
                  주문 수량 제한을 재고량으로 사용하지 않으며 기본 수량 표시는 '미공개'.
+- 카테고리 탐색: 다단계 링크, robots.txt, sitemap/index와 중간 분류 페이지를 확인.
+                  후보/출처/제외/실패/범위 제한은 state의 discovery_audit에 기록.
 - 알림 큐      : state 파일에 미전송 이벤트를 저장하고 전송 성공한 이벤트만 제거.
 - items/region : 범용 모드(선택자 기반)로 그대로 유지.
 
@@ -17,18 +19,26 @@ from __future__ import annotations
 
 import argparse
 from collections import deque
+from contextlib import ExitStack
+from contextvars import ContextVar
 import copy
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+import gzip
 import hashlib
+import io
 import json
+import math
 import os
 from pathlib import Path
 import re
+import signal
 import subprocess
 import sys
 import time
 import unicodedata
-from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
+from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode, unquote
+import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
@@ -42,20 +52,38 @@ CAPTCHA_PHRASES = (
 MAX_SEEN = 10000
 MAX_ITEMS = 500
 HEALTH_CHECKPOINT_SECONDS = 900
+DISCOVERY_MAX_BYTES = 8 * 1024 * 1024
 _LIVE_HEALTH: dict[str, dict] = {}
 
-# 도메인에서 403/429를 돌려주면 동일 환경에서 매분 재시도하지 않는다.
-# 프로세스 동안만 기억하며, 재실행 시 첫 요청부터 다시 확인한다.
+# 빠른 경로는 단조 시계를 사용하고 교체 러너용 대기 만료 시각은 state에 저장한다.
 _SITE_BLOCKED_UNTIL: dict[str, float] = {}
+_TRAFFIC = ContextVar("storefront_traffic", default=None)
+DEFAULT_INTERVAL = 45
+DEFAULT_DURATION = 21000
+OPTIONAL_RECHECK = 900
 
 
 class SiteAccessDenied(RuntimeError):
     """쇼핑몰에서 요청을 거절한 경우(상태 403/429). Discord 오류와 구분."""
 
-    def __init__(self, url: str, status: int):
+    def __init__(self, url: str, status: int, retry_after: str = ""):
         self.status = status
         self.host = urlsplit(url).hostname or "unknown"
-        super().__init__(f"HTTP {status}: {self.host} 사이트가 자동 요청을 거부했습니다")
+        self.delay = _block_backoff_seconds()
+        try:
+            value = str(retry_after).strip()
+            seconds = int(value) if value.isascii() and value.isdigit() else (
+                parsedate_to_datetime(value).timestamp() - time.time())
+            self.delay = max(2, math.ceil(seconds))
+        except (ValueError, TypeError, OverflowError, OSError):
+            pass
+        super().__init__(f"HTTP {status}: {self.host} 응답으로 사이트 조회 대기 ({self.delay}초)")
+
+
+class CatalogNotFound(RuntimeError):
+    def __init__(self, status: int):
+        self.status = status
+        super().__init__(f"HTTP {status}: 카테고리 주소가 존재하지 않습니다")
 
 
 def _block_backoff_seconds() -> int:
@@ -65,6 +93,111 @@ def _block_backoff_seconds() -> int:
         return min(3600, max(60, int(raw)))
     except ValueError:
         return 900
+
+
+class ScanDeadline(Exception):
+    """종료 시각에 도달하여 미착수 요청을 다음 실행에 넘긴다."""
+
+
+class SiteTraffic:
+    """하나의 동기식 순회가 사용하는 요청 시작 간격, 표본, 작업 종료 시각."""
+
+    def __init__(self, interval=DEFAULT_INTERVAL, *, clock=None, sleep=None, get=None):
+        self.clock = clock or time.monotonic
+        self.sleep = sleep or time.sleep
+        self.get = get
+        self.interval = interval
+        rpm = int(os.getenv("SITE_REQUESTS_PER_MINUTE", "40"))
+        if rpm <= 0:
+            raise ValueError("SITE_REQUESTS_PER_MINUTE는 양수여야 합니다")
+        self.floor = 60 / rpm
+        self.round_size = max(1, math.floor(interval / self.floor))
+        self.samples = deque(maxlen=40)
+        self.last_start = -math.inf
+        self.deadline = math.inf
+        self.count = 0
+        self.recovery = {}
+
+    @property
+    def gap(self):
+        floor = self.floor
+        if self.recovery.get("until", 0) > time.time():
+            floor *= self.recovery["factor"]
+        if len(self.samples) < 8:
+            return floor
+        ordered = sorted(self.samples)
+        return max(floor, 1.25 * ordered[math.ceil(0.95 * len(ordered)) - 1])
+
+    @property
+    def cycle_interval(self):
+        return max(self.interval, math.ceil(self.round_size * self.gap))
+
+    def admit(self, url):
+        host = urlsplit(url).hostname
+        if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
+            raise SiteAccessDenied(url, 429)
+        start = max(self.clock(), self.last_start + self.gap)
+        if start >= self.deadline:
+            raise ScanDeadline()
+        delay = start - self.clock()
+        if delay > 0:
+            self.sleep(delay)
+        now = self.clock()
+        if now >= self.deadline:
+            raise ScanDeadline()
+        self.last_start = now
+        self.count += 1
+        return now
+
+    def timeout(self, requested):
+        remaining = self.deadline - self.clock()
+        if remaining <= 0:
+            raise ScanDeadline()
+        if isinstance(requested, tuple):
+            return tuple(min(t, remaining) for t in requested)
+        return min(requested, remaining)
+
+
+def _site_status(url, status, headers):
+    if status in (403, 429, 503):
+        raise SiteAccessDenied(url, status, headers.get("Retry-After", ""))
+
+
+def _site_get(getter, url, *, follow=True, timeout=25, budget=None, **kwargs):
+    """공개 GET의 리다이렉트 각 단계도 같은 예산으로 계산한다."""
+    traffic = _TRAFFIC.get()
+    origin = urlsplit(url)
+    for _ in range(5):
+        if budget is not None and budget[0] <= 0:
+            raise _BudgetExhausted()
+        if traffic:
+            started = traffic.admit(url)
+        if budget is not None:
+            budget[0] -= 1
+        try:
+            response = (traffic.get if traffic and traffic.get else getter)(
+                url, timeout=traffic.timeout(timeout) if traffic else timeout,
+                allow_redirects=False, **kwargs)
+        finally:
+            if traffic:
+                traffic.samples.append(max(0, traffic.clock() - started))
+        try:
+            _site_status(url, response.status_code, response.headers)
+            if not follow or response.status_code not in (301, 302, 303, 307, 308):
+                return response
+            new = absolute_url(url, response.headers.get("Location", ""))
+            dest = urlsplit(new)
+            if (not new or dest.scheme != origin.scheme or dest.port != origin.port or
+                    dest.hostname.removeprefix("www.") != origin.hostname.removeprefix("www.")):
+                raise ValueError("다른 출처 또는 잘못된 리다이렉트입니다")
+            url = new
+            kwargs.pop("params", None)
+        except Exception:
+            if hasattr(response, "close"):
+                response.close()
+            raise
+        response.close()
+    raise ValueError("사이트 리다이렉트 한도 초과")
 
 # 판매 버튼은 반드시 상품 상세 영역 안에 있어야 한다. 전역 메뉴 및 추천상품 오탐 방지.
 ADD_TO_CART = re.compile(r"\badd\s+to\s+(?:bag|cart)\b", re.I)
@@ -482,8 +615,8 @@ def validate_monitor(m: dict) -> None:
     m["url"] = safe_url(str(m.get("url", "")))
     if m.get("mode", "items") not in ("items", "region", "availability", "catalog", "discovery"):
         raise ValueError(f"{m['id']}: mode는 catalog, discovery, availability, items 또는 region")
-    if m.get("render", "http") not in ("http", "browser"):
-        raise ValueError(f"{m['id']}: render는 http 또는 browser")
+    if m.get("render", "http") not in ("http", "auto", "browser"):
+        raise ValueError(f"{m['id']}: render는 http, auto 또는 browser")
     if m.get("mode", "items") == "items" and not m.get("item_selector"):
         raise ValueError(f"{m['id']}: item_selector를 지정하세요")
     if m.get("mode") == "region" and not m.get("region_selectors"):
@@ -509,8 +642,11 @@ def _expand_load_more(page, m: dict) -> int:
     for _ in range(int(m.get("max_load_more", 8))):
         try:
             button = page.locator("button, a, [role=button]").filter(has_text=LOAD_MORE).first
-            if button.count() == 0 or not button.is_visible():
+            if button.count() == 0:
                 m["_catalog_complete"] = True
+                break
+            if not button.is_visible():
+                m["_catalog_complete"] = not button.get_attribute("data-url")
                 break
             before = page.evaluate("(" + JS_PRODUCT_LINK_COUNT + ")()")
             button.scroll_into_view_if_needed(timeout=3000)
@@ -549,30 +685,152 @@ def _mark_visibility(page, mode: str) -> None:
         }""")
 
 
+def _catalog_pages(soup, m, headers):
+    """SFRA가 게시한 다음 조각만 읽는다. 숨겨진 스크롤 버튼도 실제 다음 페이지다."""
+    base = m["_final_url"]
+    origin = urlsplit(base)
+    footer = soup.select_one(".grid-footer")
+    category = footer.select_one("input.category-id") if footer else None
+    cgid = category.get("value") if category else None
+    seen_pids = {product_pid(base, a["href"])[0] for a in soup.select(".product-tile a[href]")}
+    position = 0
+    pages = 0
+    m["_catalog_complete"] = False
+    while footer:
+        button = footer.select_one(".show-more [data-url], #showMore[data-url]")
+        if not button:
+            break
+        url = absolute_url(base, str(button.get("data-url", "")))
+        dest = urlsplit(url)
+        query = dict(parse_qsl(dest.query))
+        offset = query.get("start", "")
+        if (dest[:2] != origin[:2] or not dest.path.endswith("/Search-UpdateGrid")
+                or not cgid or query.get("cgid") != cgid or not re.fullmatch(r"[0-9]{1,8}", offset)
+                or int(offset) <= position or pages >= int(m.get("max_load_more", 8))):
+            print(f"[PARTIAL] {m['url']} 다음 목록 주소/페이지 한도 확인 필요", file=sys.stderr)
+            return str(soup)
+        response = _site_get(requests.get, url, params={"selectedUrl": url},
+                             headers=dict(headers, Referer=base, **{"X-Requested-With": "XMLHttpRequest"}))
+        response.raise_for_status()
+        fragment = BeautifulSoup(response.text, "html.parser")
+        next_footer = fragment.select_one(".grid-footer")
+        marker = next_footer.select_one("input.category-id") if next_footer else None
+        received = {pid for a in fragment.select(".product-tile a[href]")
+                    if (pid := product_pid(base, a["href"])[0])}
+        if (fragment.find("html") or marker is None or marker.get("value") != cgid
+                or not received.difference(seen_pids)):
+            raise ValueError("다음 상품 목록 조각을 검증하지 못했습니다")
+        seen_pids.update(received)
+        # 사이트의 search.js와 같은 위치에 조각을 합쳐 메뉴·발견 링크도 유지한다.
+        footer.replace_with(fragment)
+        footer = next_footer
+        position = int(offset)
+        pages += 1
+    unresolved = any(LOAD_MORE.search(el.get_text(" ", strip=True))
+                     for el in soup.select("button, a, [role=button]"))
+    m["_catalog_complete"] = not unresolved and len(seen_pids) <= int(m.get("max_items", MAX_ITEMS))
+    if unresolved:
+        print(f"[PARTIAL] {m['url']} 남은 페이지를 확인할 수 없습니다", file=sys.stderr)
+    return str(soup)
+
+
+def _pace_browser(context, traffic, base):
+    """대체 렌더링의 같은 출처 GET도 순차 처리한다. 리다이렉트를 숨겨서 보내지 않는다."""
+    outcome = {"error": None, "document_url": base}
+    origin = urlsplit(base)[:2]
+
+    def route_request(route):
+        request = route.request
+        url = request.url
+        if (outcome["error"] or request.method != "GET" or urlsplit(url)[:2] != origin
+                or request.resource_type in ("image", "media", "font")):
+            route.abort()
+            return
+        try:
+            for _ in range(5):
+                started = traffic.admit(url)
+                try:
+                    response = route.fetch(url=url, max_redirects=0, max_retries=0,
+                                           timeout=max(1, int(1000 * traffic.timeout(25))))
+                finally:
+                    traffic.samples.append(max(0, traffic.clock() - started))
+                try:
+                    headers = {k.title(): v for k, v in response.headers.items()}
+                    _site_status(url, response.status, headers)
+                    if response.status not in (301, 302, 303, 307, 308):
+                        if outcome["error"]:
+                            route.abort()
+                            return
+                        if request.is_navigation_request() and request.url == base:
+                            outcome["document_url"] = url
+                        route.fulfill(response=response)
+                        return
+                    url = absolute_url(url, headers.get("Location", ""))
+                    if urlsplit(url)[:2] != origin:
+                        raise ValueError("브라우저 요청이 다른 출처로 이동했습니다")
+                finally:
+                    response.dispose()
+            raise ValueError("브라우저 리다이렉트 한도 초과")
+        except Exception as exc:
+            old = outcome["error"]
+            if old is None or (isinstance(exc, SiteAccessDenied) and exc.delay > getattr(old, "delay", 0)):
+                outcome["error"] = exc
+            route.abort()
+
+    context.route("**/*", route_request)
+    return outcome
+
+
 def fetch_html(m: dict, browser=None) -> str:
     url = m["url"]
-    if m.get("render", "http") == "http":
-        resp = requests.get(url, timeout=25, headers={"User-Agent": "PageWatch/1.0 (read-only personal monitor)"})
-        if resp.status_code in (403, 429):
-            raise SiteAccessDenied(url, resp.status_code)
+    render = m.get("render", "http")
+    mode = m.get("mode", "items")
+    if render in ("http", "auto"):
+        headers = {"User-Agent": "PageWatch/1.0 (read-only personal monitor)"}
+        resp = _site_get(requests.get, url, headers=headers)
+        if resp.status_code in (404, 410) and m.get("optional_catalog"):
+            raise CatalogNotFound(resp.status_code)
         resp.raise_for_status()
         m["_final_url"] = safe_url(resp.url)
         html = resp.text
         soup = BeautifulSoup(html, "html.parser")
-        m["_catalog_complete"] = not any(
-            LOAD_MORE.search(_visible_text(el)) for el in soup.select("button, a, [role=button]"))
-    else:
+        if any(p in soup.get_text(" ", strip=True).lower()[:3000] for p in CAPTCHA_PHRASES):
+            raise SiteAccessDenied(url, resp.status_code)
+        if mode == "catalog":
+            html = _catalog_pages(soup, m, headers)
+        if render == "auto":
+            path = urlsplit(m["_final_url"]).path
+            if mode == "discovery":
+                needs_browser = not any(discovery_url(url, a["href"])[1] == "category"
+                                        for a in soup.select("header .b-dropdown-menu a[href], nav a[href]"))
+            else:
+                links = soup.select("main a[href], .product-grid a[href]")
+                needs_browser = (mode == "catalog" and path.rstrip("/") and not PRODUCT_PATH.search(path)
+                                 and not any(product_pid(url, a["href"])[0] or discovery_url(url, a["href"])[1]
+                                             for a in links))
+            if needs_browser:
+                render = "browser"
+    if render == "browser":
         if browser is None:
             raise RuntimeError("browser 감시에 Playwright Chromium이 필요합니다")
-        context = browser.new_context(locale="en-US", viewport={"width": 1440, "height": 900})
+        if callable(browser):
+            browser = browser()
+        context = browser.new_context(locale="en-US", viewport={"width": 1440, "height": 900},
+                                      service_workers="block")
+        outcome = {}
         try:
             page = context.new_page()
-            response = page.goto(url, wait_until="domcontentloaded", timeout=35000)
-            if response is not None and response.status in (403, 429):
-                raise SiteAccessDenied(url, response.status)
+            traffic = _TRAFFIC.get()
+            if traffic:
+                outcome = _pace_browser(context, traffic, m.get("_final_url", url))
+            response = page.goto(m.get("_final_url", url), wait_until="domcontentloaded", timeout=35000)
+            if response is not None:
+                _site_status(url, response.status, {k.title(): v for k, v in response.headers.items()})
+            if response is not None and response.status in (404, 410) and m.get("optional_catalog"):
+                raise CatalogNotFound(response.status)
             if response is not None and response.status >= 400:
                 raise RuntimeError(f"HTTP {response.status}")
-            m["_final_url"] = safe_url(page.url)
+            m["_final_url"] = safe_url(outcome.get("document_url", page.url))
             mode = m.get("mode", "items")
             if mode == "discovery":
                 # 메뉴 토글만 연다. 실제 상품/장바구니 링크는 클릭하지 않는다.
@@ -582,8 +840,8 @@ def fetch_html(m: dict, browser=None) -> str:
                     href = shop.get_attribute("href") or ""
                     if not href or href.startswith(("#", "javascript:")):
                         shop.click(timeout=3000)
-            inactive = m.get("optional_catalog") and urlsplit(page.url).path.rstrip("/") == ""
-            direct_product = bool(PRODUCT_PATH.search(urlsplit(page.url).path))
+            inactive = m.get("optional_catalog") and urlsplit(m["_final_url"]).path.rstrip("/") == ""
+            direct_product = bool(PRODUCT_PATH.search(urlsplit(m["_final_url"]).path))
             selector = m.get("wait_selector") or (m.get("item_selector") if mode == "items"
                            else "h1" if mode == "availability"
                            else "" if mode == "catalog"
@@ -600,11 +858,19 @@ def fetch_html(m: dict, browser=None) -> str:
                 m["_catalog_complete"] = False
             _mark_visibility(page, mode)
             html = page.content()
+            if outcome.get("error"):
+                raise outcome["error"]
+            if mode == "catalog" and not m.get("_catalog_complete") and not inactive and not direct_product:
+                rendered = BeautifulSoup(html, "html.parser")
+                if rendered.select_one(".grid-footer .show-more [data-url]"):
+                    html = _catalog_pages(rendered, m, {"User-Agent": "PageWatch/1.0 (read-only personal monitor)"})
         finally:
             context.close()
+            if outcome.get("error"):
+                raise outcome["error"]
     plain = BeautifulSoup(html, "html.parser").get_text(" ", strip=True).lower()
     if any(phrase in plain[:3000] for phrase in CAPTCHA_PHRASES):
-        raise RuntimeError("접근 차단/캡차 페이지입니다. 우회하지 않고 감시를 중단합니다")
+        raise SiteAccessDenied(url, 200)
     return html
 
 
@@ -628,32 +894,83 @@ def _when() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-DISCOVERY_EXCLUDE = {"account", "cart", "checkout", "contact", "contact-us", "customer-service",
-                     "locations", "login", "magazine", "order-status", "privacy", "search",
-                     "shop", "stores", "wishlist", "general", "terms"}
+DISCOVERY_EXCLUDE = {"account", "cart", "checkout", "contact", "contact-us", "customer-service", "disclosure",
+                     "locations", "login", "logout", "magazine", "order-status", "privacy",
+                     "stores", "wishlist", "general", "terms", "register", "api"}
+
+
+def discovery_url(base: str, raw: str) -> tuple[str, str, str]:
+    """다단계/HTML 카테고리와 cgid 링크를 허용하되 조회 동작/파일/외부 링크는 구분한다."""
+    url = absolute_url(base, raw)
+    if not url:
+        return "", "", "invalid_url"
+    parts, origin = urlsplit(url), urlsplit(base)
+    if (parts.hostname or "").removeprefix("www.") != (origin.hostname or "").removeprefix("www."):
+        return "", "", "external_host"
+    try:
+        port = parts.port
+    except ValueError:
+        return "", "", "unsupported_port"
+    if port not in (None, 80, 443):
+        return "", "", "unsupported_port"
+    path = parts.path.rstrip("/") or "/"
+    segments = unquote(path).lower().strip("/").split("/")
+    if any(s.removesuffix(".html").removesuffix(".htm") in DISCOVERY_EXCLUDE
+           or re.match(r"^(cart|checkout|account|login|logout)[-.]", s)
+           for s in segments):
+        return "", "", "non_catalog_path"
+    # 실제 sitemap은 별칭이 없는 분류도 Search-Show?cgid=... 형태로 공개한다.
+    controller = re.fullmatch(r"/on/demandware\.store/Sites-[\w-]+/[\w-]+/Search-Show", path)
+    if controller:
+        params = parse_qsl(parts.query, keep_blank_values=True)
+        if len(params) == 1 and params[0][0] == "cgid" and re.fullmatch(r"[\w.-]{1,100}", params[0][1]):
+            return urlunsplit((origin.scheme, origin.netloc, path, urlencode(params), "")), "category", ""
+        return "", "", "unsupported_query"
+    if "/on/demandware.store/" in path.lower():
+        return "", "", "application_endpoint"
+    kept = []
+    for key, value in parse_qsl(parts.query, keep_blank_values=True):
+        name = key.lower()
+        if PRODUCT_PATH.search(path) and (re.fullmatch(r"dwvar_[a-z0-9_-]+", name)
+                                          or (name == "quantity" and value == "1")):
+            # 옵션 선택은 상품의 존재 식별과 분리한다. 실제 옵션 조회는 상세 감시가 담당한다.
+            continue
+        elif name == "cgid" and value:
+            kept.append((name, value))
+        elif name.startswith("utm_") or name in {
+                "fbclid", "gclid", "igshid", "ref", "source", "start", "sz", "page", "sort", "srule"}:
+            continue
+        else:
+            return "", "", "unsupported_query"
+    if path == "/" and not kept:
+        return "", "", "home"
+    if "search" in segments and not kept:
+        return "", "", "search_without_category"
+    if not re.fullmatch(r"/[\w%~./-]+", path) or any(s in (".", "..") for s in segments):
+        return "", "", "unsupported_path"
+    if "." in segments[-1] and not segments[-1].endswith((".html", ".htm")):
+        return "", "", "asset_or_document"
+    canonical = urlunsplit((origin.scheme, origin.netloc, path, urlencode(sorted(set(kept))), ""))
+    return canonical, "product" if PRODUCT_PATH.search(path) else "category", ""
+
+
+def discovery_links(html: str, base: str):
+    soup = BeautifulSoup(html, "html.parser")
+    for el in soup.select("script, style, noscript, template"):
+        el.decompose()
+    for a in soup.select("a[href]"):
+        raw = str(a.get("href", ""))
+        title = normalized(a.get_text(" ", strip=True)) or (a.img.get("alt", "") if a.img else "")
+        yield raw, str(title)[:260]
 
 def extract_discovery(html: str, m: dict) -> list[dict]:
-    soup = BeautifulSoup(html, "html.parser")
-    for el in soup.select("script, style, footer, noscript, template"):
-        el.decompose()
     found = {}
-    base_host = (urlsplit(m["url"]).hostname or "").removeprefix("www.")
-    for a in soup.select("a[href]"):
-        url = absolute_url(m["url"], str(a.get("href", "")))
+    for raw, title in discovery_links(html, m["url"]):
+        url, _kind, _reason = discovery_url(m["url"], raw)
         if not url:
             continue
-        parts = urlsplit(url)
-        if (parts.hostname or "").removeprefix("www.") != base_host:
-            continue
-        path = parts.path.rstrip("/")
-        is_product = bool(PRODUCT_PATH.search(path))
-        is_category = bool(re.fullmatch(r"/[a-z0-9][a-z0-9-]{1,60}", path, re.I))
-        if not is_product and (not is_category or path[1:].lower() in DISCOVERY_EXCLUDE):
-            continue
-        url = urlunsplit(("https", parts.netloc, path, "", ""))
-        title = normalized(a.get_text(" ", strip=True)) or (a.img.get("alt", "") if a.img else "") or path
         key = hashlib.sha256(url.encode()).hexdigest()[:32]
-        found[key] = {"key": key, "title": str(title)[:260], "url": url}
+        found[key] = {"key": key, "title": title or urlsplit(url).path, "url": url}
     return list(found.values())[:MAX_ITEMS]
 
 
@@ -697,6 +1014,317 @@ def _seen_stamp(old: dict, now: str, changed: bool = False) -> str:
     if changed or _age_seconds(old.get("last_seen_at")) >= HEALTH_CHECKPOINT_SECONDS:
         return now
     return old["last_seen_at"]
+
+
+class DiscoveryAudit:
+    """관측한 페이지 + robots/sitemap + 후보 페이지를 제한된 예산으로 순회한다.
+
+    URL 목록/재시도 시각/판정 사유를 state에 보존한다. 어디에도 공개되지 않은 URL의
+    존재는 판단할 수 없으며, 크기/개수 제한과 조회 실패를 성공으로 숨기지 않는다.
+    """
+
+    def __init__(self, state: dict, monitor: dict, active: list[dict]):
+        self.state, self.monitor, self.active = state, monitor, active
+        self.base = monitor["url"]
+        self.interval = max(60, int(monitor.get("discovery_interval_seconds", 900)))
+        self.limit = min(MAX_SEEN, max(100, int(monitor.get("discovery_max_candidates", 2000))))
+        self.max_monitors = max(len(active), min(200, int(monitor.get("discovery_max_monitors", 100))))
+        self.data = state.setdefault("discovery_audit", {}).setdefault(monitor["id"], {
+            "initialized": bool(state["monitors"].get(monitor["id"], {}).get("initialized")),
+            "candidates": {}, "sources": {}, "excluded": {}, "history": [],
+        })
+        self.known = {self.canonical(m["url"]): m for m in active}
+        self.limits_reported: set[str] = set()
+        root = urlunsplit((*urlsplit(self.base)[:2], "/", "", ""))
+        self.add_source(urljoin(root, "robots.txt"), "robots")
+        for url in monitor.get("discovery_sitemap_urls", [urljoin(root, "sitemap.xml"),
+                                                        urljoin(root, "sitemap_index.xml")]):
+            self.add_source(url, "sitemap")
+        for url in monitor.get("discovery_seed_urls", []):
+            self.remember(url, "", self.base)
+        # v1의 홈페이지 seen 목록도 그대로 이어받는다. 한 단계 경로 제한은 없다.
+        for item in state["monitors"].get(monitor["id"], {}).get("seen", {}).values():
+            self.remember(item["url"], item.get("title", ""), self.base)
+
+    def canonical(self, url: str) -> str:
+        return discovery_url(self.base, url)[0] or normalized_product_url(url)
+
+    def log(self, code: str, url: str, reason: str, source: str = "") -> None:
+        entry = {"code": code, "url": url[:2000], "reason": reason[:300], "source": source[:2000]}
+        history = self.data["history"]
+        for old in reversed(history):
+            if all(old.get(k) == v for k, v in entry.items()):
+                if _age_seconds(old.get("at")) < self.interval:
+                    return
+                break
+        entry["at"] = _when()
+        history.append(entry)
+        del history[:-500]
+        print("[DISCOVERY] " + json.dumps(entry, ensure_ascii=False), flush=True)
+
+    def limit_notice(self, code: str, reason: str) -> None:
+        if code not in self.limits_reported:
+            self.limits_reported.add(code)
+            self.log(code, self.base, reason)
+
+    def exclude(self, raw: str, reason: str, source: str) -> None:
+        if reason in ("home", "invalid_url"):
+            return
+        key = hashlib.sha256((raw + reason).encode()).hexdigest()[:32]
+        excluded = self.data["excluded"]
+        if key in excluded:
+            return
+        if len(excluded) >= 200:
+            self.limit_notice("exclusion_log_limit", "제외 URL 상세 기록 200개 한도. 이후 제외 내역은 생략됩니다.")
+            return
+        excluded[key] = {"url": raw[:2000], "reason": reason, "source": source, "at": _when()}
+        self.log("excluded", raw, reason, source)
+
+    def remember(self, raw: str, title: str, source: str) -> None:
+        absolute = absolute_url(source, raw)
+        url, kind, reason = discovery_url(self.base, absolute)
+        if not url:
+            self.exclude(absolute or raw, reason, source)
+            return
+        candidates = self.data["candidates"]
+        if url not in candidates:
+            if len(candidates) >= self.limit:
+                self.limit_notice("candidate_limit", f"후보 {self.limit}개 한도. 이후 URL을 등록하지 못했습니다. 설정/목록 검토 필요.")
+                return
+            candidates[url] = {"url": url, "title": title or (_title_from_slug(url) if kind == "product" else urlsplit(url).path),
+                               "kind": kind, "status": "pending", "sources": [],
+                               "first_seen_at": _when(), "last_checked_at": "",
+                               "notify": self.data["initialized"] or self.monitor.get("notify_on_first_run", False)}
+            self.log("candidate_found", url, kind, source)
+        candidate = candidates[url]
+        if source not in candidate["sources"] and len(candidate["sources"]) < 8:
+            candidate["sources"].append(source)
+        if title:
+            candidate["title"] = title
+        if url in self.known:
+            candidate["status"] = ("monitoring" if self.known[url]["id"].startswith("discovered-")
+                                   else "configured")
+        elif kind == "product":
+            # 상품 sitemap만 있는 경우 /category/slug/PID.html의 상위 분류도 검증한다.
+            parent_parts = urlsplit(url).path.strip("/").split("/")[:-2]
+            if parent_parts:
+                parent = urlunsplit((*urlsplit(url)[:2], "/" + "/".join(parent_parts), "", ""))
+                self.remember(parent, "", url)
+
+    def register_products(self, record_events) -> None:
+        # 기본 목록의 compare/_register_products가 끝난 뒤 처리하여 알림 중복을 막는다.
+        for candidate in list(self.data["candidates"].values()):
+            if candidate["kind"] != "product" or candidate["status"] != "pending":
+                continue
+            url, title = candidate["url"], candidate["title"]
+            pid, _ = product_pid(self.base, url)
+            key = (urlsplit(url).hostname or "") + ":" + pid
+            product = {"pid": pid, "title": title or _title_from_slug(url), "url": url, "status": "listed"}
+            events = []
+            if key not in self.state.get("tracked_products", {}) and candidate["notify"]:
+                events = [{"kind": "new_product", **product, "observed_at": _when()}]
+            source_monitor = dict(self.monitor, _products=[product])
+            _accept_observation(self.state, source_monitor, None, events, record_events)
+            candidate["status"] = "tracked"
+            self.log("product_registered", url, "상품 상세 감시 등록", candidate["sources"][0])
+
+    def observe(self, html: str, source: str) -> None:
+        for raw, title in discovery_links(html, source):
+            self.remember(raw, title, source)
+
+    def add_source(self, raw: str, kind: str, parent: str = "") -> None:
+        url = absolute_url(parent or self.base, raw)
+        if not url:
+            self.exclude(raw, "invalid_sitemap", parent)
+            return
+        if (urlsplit(url).hostname or "").removeprefix("www.") != (urlsplit(self.base).hostname or "").removeprefix("www."):
+            self.exclude(url, "external_sitemap_not_scanned", parent)
+            return
+        sources = self.data["sources"]
+        if url not in sources:
+            if len(sources) >= 100:
+                self.limit_notice("source_limit", "robots/sitemap 100개 한도. 나머지 소스는 읽지 못했습니다.")
+                return
+            sources[url] = {"kind": kind, "last_attempt_at": "", "status": "pending"}
+
+    def read_source(self, url: str) -> tuple[bytes, str]:
+        """리다이렉트도 같은 호스트만 허용하고 압축 전후 크기를 제한한다."""
+        for _ in range(4):
+            with _site_get(requests.get, url, follow=False, timeout=(5, 15), stream=True,
+                              headers={"User-Agent": "PageWatch/1.0 (read-only personal monitor)"}) as response:
+                if response.status_code in (301, 302, 303, 307, 308):
+                    next_url = absolute_url(url, response.headers.get("Location", ""))
+                    if not next_url or (urlsplit(next_url).hostname or "").removeprefix("www.") != (urlsplit(self.base).hostname or "").removeprefix("www."):
+                        raise ValueError("sitemap이 외부/알 수 없는 주소로 이동했습니다")
+                    url = next_url
+                    continue
+                response.raise_for_status()
+                payload = bytearray()
+                started = time.monotonic()
+                for chunk in response.iter_content(65536):
+                    payload.extend(chunk)
+                    if len(payload) > DISCOVERY_MAX_BYTES or time.monotonic() - started > 20:
+                        raise ValueError("sitemap 크기/읽기 시간 한도 초과: 완전한 탐색이 아닙니다")
+                data = bytes(payload)
+                if data.startswith(b"\x1f\x8b"):
+                    with gzip.GzipFile(fileobj=io.BytesIO(data)) as zipped:
+                        data = zipped.read(DISCOVERY_MAX_BYTES + 1)
+                if len(data) > DISCOVERY_MAX_BYTES:
+                    raise ValueError("압축 해제 sitemap 크기 한도 초과: 완전한 탐색이 아닙니다")
+                return data, url
+        raise ValueError("sitemap 리다이렉트 한도 초과")
+
+    def scan_source(self, url: str, info: dict) -> None:
+        previous_attempt = info.get("last_attempt_at", "")
+        info["last_attempt_at"] = _when()
+        try:
+            data, final_url = self.read_source(url)
+            if info["kind"] == "robots":
+                if b"<html" in data.lower() or b"<!doctype" in data.lower():
+                    raise ValueError("robots.txt 대신 HTML 페이지가 반환되었습니다")
+                for line in data.decode("utf-8-sig", errors="replace").splitlines():
+                    match = re.match(r"\s*Sitemap\s*:\s*(\S+)", line, re.I)
+                    if match:
+                        self.add_source(match.group(1), "sitemap", final_url)
+            else:
+                if re.search(br"<!\s*(DOCTYPE|ENTITY)\b", data, re.I):
+                    raise ValueError("외부 선언이 있는 XML은 읽지 않습니다")
+                text = data.decode("utf-8-sig")
+                if text.lstrip().startswith("<"):
+                    root = ET.fromstring(text)
+                    tag = root.tag.rsplit("}", 1)[-1]
+                    if tag not in ("sitemapindex", "urlset"):
+                        raise ValueError("sitemap XML이 아닙니다: " + tag)
+                    for child in root:
+                        loc = child.find("{*}loc")
+                        if loc is None or not loc.text:
+                            continue
+                        if tag == "sitemapindex":
+                            self.add_source(loc.text.strip(), "sitemap", final_url)
+                        else:
+                            self.remember(loc.text.strip(), "", final_url)
+                else:
+                    lines = [line.strip() for line in text.splitlines() if line.strip()]
+                    if not lines or any(not line.startswith(("http://", "https://")) for line in lines):
+                        raise ValueError("sitemap XML 또는 URL 목록이 아닙니다")
+                    for line in lines:
+                        self.remember(line, "", final_url)
+            info.update(status="ok", last_success_at=_when(), error="")
+            self.log("source_checked", url, info["kind"])
+        except ScanDeadline:
+            info["last_attempt_at"] = previous_attempt
+            raise
+        except Exception as exc:
+            info.update(status="error", error=_error_text(exc))
+            self.log("source_error", url, info["error"])
+            if isinstance(exc, SiteAccessDenied):
+                raise
+
+    def dynamic_monitor(self, candidate: dict) -> dict:
+        url = candidate["url"]
+        parts = urlsplit(url)
+        identity = parts.path.rstrip("/") + ("?" + parts.query if parts.query else "")
+        render = candidate.get("render", "http")
+        if render == "browser" and self.monitor.get("render") == "auto":
+            render = "auto"
+        return {"id": "discovered-" + hashlib.sha256(identity.encode()).hexdigest()[:16],
+                "name": "자동 발견 " + identity, "url": url, "enabled": True,
+                "mode": "catalog", "render": render, "optional_catalog": True,
+                "settle_ms": 1500, "max_load_more": 8,
+                "notify_on_first_run": candidate.get("notify", True),
+                "notify_on_new": True, "notify_on_restock": True}
+
+    def restore(self) -> None:
+        for candidate in self.data["candidates"].values():
+            if candidate["status"] != "monitoring" or candidate["url"] in self.known:
+                continue
+            if len(self.active) >= self.max_monitors:
+                self.limit_notice("monitor_limit", "감시 대상 한도로 일부 자동 카테고리를 활성화하지 못했습니다")
+                break
+            dynamic = self.dynamic_monitor(candidate)
+            validate_monitor(dynamic)
+            self.active.append(dynamic)
+            self.known[candidate["url"]] = dynamic
+
+    def scan(self, browser, record_events, record_health) -> None:
+        deadline = time.monotonic() + 25
+        host = urlsplit(self.base).hostname or ""
+        if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
+            self.log("paused", self.base, "403/429 도메인 대기 중: 추가 탐색을 건너뜁니다")
+            return
+        sources = sorted(list(self.data["sources"].items()), key=lambda pair: pair[1]["last_attempt_at"])
+        due = [(url, info) for url, info in sources if _age_seconds(info["last_attempt_at"]) >= self.interval]
+
+        def scan_sources():
+            for url, info in due[:2]:
+                if time.monotonic() >= deadline:
+                    break
+                self.scan_source(url, info)
+
+        # 느린 sitemap이 계속 예산을 소진해도 후보 검증이 굶지 않도록 순서를 교대한다.
+        source_first = self.data.get("source_first", True)
+        self.data["source_first"] = not source_first
+        if source_first:
+            scan_sources()
+        pending = [c for c in self.data["candidates"].values()
+                   if c["kind"] == "category" and c["status"] not in ("monitoring", "configured")
+                   and _age_seconds(c["last_checked_at"]) >= self.interval]
+        pending.sort(key=lambda c: c["last_checked_at"])
+        for candidate in pending[:2]:
+            if time.monotonic() >= deadline:
+                break
+            previous_check = candidate["last_checked_at"]
+            candidate["last_checked_at"] = _when()
+            candidate["render"] = "auto" if callable(browser) else "browser" if browser is not None else "http"
+            dynamic = self.dynamic_monitor(candidate)
+            started = time.monotonic()
+            try:
+                validate_monitor(dynamic)
+                html = fetch_html(dynamic, browser)
+                final = dynamic.get("_final_url", dynamic["url"])
+                if (urlsplit(final).hostname or "").removeprefix("www.") != host.removeprefix("www."):
+                    raise ValueError("후보 페이지가 다른 도메인으로 이동했습니다")
+                # 상품이 없는 중간 분류 페이지도 자식 링크를 먼저 수집한다.
+                self.observe(html, final)
+                current, events = compare(dynamic, self.state["monitors"].get(dynamic["id"]), html)
+                if not dynamic.get("_products"):
+                    raise ValueError("상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인")
+                if len(self.active) >= self.max_monitors:
+                    raise ValueError("감시 대상 한도 초과: 발견한 카테고리 등록 보류")
+                if candidate.get("notify"):
+                    events.append({"kind": "health", "title": "새 카테고리 자동 감시 추가",
+                                   "message": candidate["title"], "url": candidate["url"], "observed_at": _when()})
+                _accept_observation(self.state, dynamic, current, events, record_events)
+                self.active.append(dynamic)
+                self.known[candidate["url"]] = dynamic
+                candidate.update(status="monitoring", reason="상품 목록 확인 후 감시 등록")
+                self.log("category_registered", candidate["url"], candidate["reason"], candidate["sources"][0])
+                record_health(dynamic, time.monotonic() - started)
+            except ScanDeadline:
+                candidate["last_checked_at"] = previous_check
+                raise
+            except Exception as exc:
+                if candidate["status"] == "monitoring":
+                    self.log("monitor_health_error", candidate["url"], _error_text(exc))
+                else:
+                    candidate.update(status="needs_review", reason=_error_text(exc))
+                    self.log("needs_review", candidate["url"], candidate["reason"], candidate["sources"][0])
+                if isinstance(exc, SiteAccessDenied):
+                    raise
+        if not source_first:
+            scan_sources()
+        self.register_products(record_events)
+        if not any(c["status"] == "pending" for c in self.data["candidates"].values()) and not any(
+                s["status"] == "pending" for s in self.data["sources"].values()):
+            self.data["initialized"] = True
+        if _age_seconds(self.data.get("last_summary_at")) >= self.interval:
+            counts = {}
+            for c in self.data["candidates"].values():
+                counts[c["status"]] = counts.get(c["status"], 0) + 1
+            self.log("coverage", self.base, json.dumps(counts, ensure_ascii=False)
+                     + f"; source_errors={sum(s['status'] == 'error' for s in self.data['sources'].values())}"
+                     + "; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.")
+            self.data["last_summary_at"] = _when()
 
 
 def compare(m: dict, previous: dict | None, html: str) -> tuple[dict, list[dict]]:
@@ -925,8 +1553,10 @@ def send_discord(m: dict, events: list[dict], *, on_sent=None) -> None:
             embed["thumbnail"] = {"url": thumb}
         payload = {"content": mention + "🔔 " + name + ": 감시 알림",
                    "embeds": [embed], "allowed_mentions": mentions}
+        traffic = _TRAFFIC.get()
         for retry in range(4):
-            response = requests.post(url, json=payload, timeout=20, allow_redirects=False)
+            timeout = traffic.timeout(20) if traffic else 20
+            response = requests.post(url, json=payload, timeout=timeout, allow_redirects=False)
             if response.status_code in (200, 204):
                 if on_sent and completed:
                     on_sent(completed)
@@ -936,9 +1566,13 @@ def send_discord(m: dict, events: list[dict], *, on_sent=None) -> None:
                     wait = min(60, max(1.0, float(response.json().get("retry_after", 2))))
                 except (ValueError, AttributeError, TypeError):
                     wait = 2
+                if traffic and traffic.clock() + wait >= traffic.deadline:
+                    raise ScanDeadline()
                 time.sleep(wait)
                 continue
             if response.status_code >= 500 and retry < 3:
+                if traffic and traffic.clock() + retry + 1 >= traffic.deadline:
+                    raise ScanDeadline()
                 time.sleep(retry + 1)
                 continue
             raise RuntimeError(f"Discord 전송 실패: HTTP {response.status_code}")
@@ -955,7 +1589,12 @@ def _enqueue(state: dict, m: dict, events: list[dict]) -> None:
                       "event": {**event, "_notification_id": state["notification_sequence"]}})
 
 
-def _flush_notifications(state: dict, state_path: Path) -> None:
+def _flush_notifications(state: dict, state_path: Path, *, checkpoint=None) -> None:
+    if state.get("pending_notifications"):
+        save_state(state_path, state)
+        if checkpoint:
+            # 다음 runner가 복구할 큐를 먼저 저장한다. 저장 실패 시 외부 전송을 시작하지 않는다.
+            checkpoint()
     while state.get("pending_notifications"):
         entries = state["pending_notifications"]
         monitor = entries[0]["monitor"]
@@ -967,9 +1606,11 @@ def _flush_notifications(state: dict, state_path: Path) -> None:
 
         def acknowledged(events):
             ids = {event["_notification_id"] for event in events}
-            state["pending_notifications"] = [entry for entry in state["pending_notifications"]
-                                               if entry["id"] not in ids]
-            save_state(state_path, state)
+            remaining = [entry for entry in state["pending_notifications"] if entry["id"] not in ids]
+            save_state(state_path, dict(state, pending_notifications=remaining))
+            state["pending_notifications"] = remaining
+            if checkpoint:
+                checkpoint()
 
         send_discord(monitor, group, on_sent=acknowledged)
 
@@ -990,13 +1631,15 @@ def _record_health(state: dict, key: str, name: str, url: str, *, error: str = "
                            "message": f"연속 {health['consecutive_failures']}회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n{error[:180]}",
                            "url": url, "observed_at": now})
     else:
-        health.update(last_success_at=now, consecutive_failures=0, last_error="", alerted=False)
+        health.update(last_success_at=now, consecutive_failures=0, last_error="", alerted=False, status="ok")
+        health.pop("expected_missing_status", None)
         if previous.get("alerted", False):
             events.append({"kind": "health", "title": name + " 감시 복구",
                            "message": "정상 응답 확인을 재개했습니다.", "url": url, "observed_at": now})
     _LIVE_HEALTH[key] = health
     saved = state.setdefault("health", {}).get(key, {})
-    if error or previous.get("consecutive_failures", 0) or _age_seconds(saved.get("last_checked_at")) >= HEALTH_CHECKPOINT_SECONDS:
+    if (error or previous.get("consecutive_failures", 0) or saved.get("status") != health.get("status")
+            or _age_seconds(saved.get("last_checked_at")) >= HEALTH_CHECKPOINT_SECONDS):
         state["health"][key] = health
     return events
 
@@ -1013,7 +1656,7 @@ def _error_text(exc: Exception) -> str:
 
 
 # 사이즈 감시는 기존 config에도 기본 활성화된다. 실행 주기/Actions 설정은 바꾸지 않는다.
-# 한 순회에서 최대 8개 상품/48개 읽기 요청을 처리하고 나머지는 다음 순회로 넘긴다.
+# 목록·탐색 후 남은 요청 예산으로 상세 상품을 순환 확인한다.
 # 선택 설정(각 monitor): track_variants=false, notify_on_first_variant_check=true,
 # inventory_quantity_path="inventory.ats", inventory_quantity_verified=true,
 # inventory_quantity_cap=100. 수량 필드의 의미/상한이 검증된 경우에만 설정한다.
@@ -1146,15 +1789,11 @@ def _detail_get(session, url: str, budget: list[int], *, referer: str = ""):
         raise _BudgetExhausted("사이트 접근 차단 후 대기 중")
     if budget[0] <= 0:
         raise _BudgetExhausted("이번 순회의 상세 조회 요청 한도")
-    budget[0] -= 1
     headers = {"User-Agent": "PageWatch/1.0 (read-only personal monitor)",
                "Accept-Language": "en-US,en;q=0.9"}
     if referer:
         headers.update({"Referer": referer, "Accept": "application/json"})
-    response = session.get(url, headers=headers, timeout=25)
-    if response.status_code in (403, 429):
-        _SITE_BLOCKED_UNTIL[host] = time.monotonic() + _block_backoff_seconds()
-        raise SiteAccessDenied(url, response.status_code)
+    response = _site_get(session.get, url, headers=headers, budget=budget)
     response.raise_for_status()
     if (urlsplit(response.url).hostname or "") != host:
         raise ValueError("상품 조회가 다른 도메인으로 이동했습니다")
@@ -1198,6 +1837,21 @@ def _register_products(state: dict, m: dict, previous: dict | None, events: list
                 target["sources"][m["id"]] = False
 
 
+def _accept_observation(state: dict, monitor: dict, current: dict | None,
+                        events: list[dict], record_events) -> None:
+    """등록 검증과 큐 수락이 끝난 관측만 적용한다. 실패 시 신규 판단의 기준을 유지한다."""
+    staged = dict(state, monitors=dict(state["monitors"]),
+                  tracked_products=copy.deepcopy(state.get("tracked_products", {})))
+    previous = state["monitors"].get(monitor["id"])
+    if current is not None:
+        staged["monitors"][monitor["id"]] = current
+    _register_products(staged, monitor, previous, events)
+    record_events(monitor, events)
+    state["tracked_products"] = staged["tracked_products"]
+    if current is not None:
+        state["monitors"][monitor["id"]] = current
+
+
 def _merge_variant(target: dict, row: dict) -> list[dict]:
     key = row["pid"] + ":" + row["locale"]
     previous = target.setdefault("variants", {}).get(key)
@@ -1231,7 +1885,8 @@ def check_product_variants(session, target: dict, budget: list[int]) -> tuple[di
     if not soup.find("h1") or any(p in _visible_text(soup).lower()[:3000] for p in CAPTCHA_PHRASES):
         raise ValueError("상품 페이지가 아니거나 접근 확인이 필요합니다")
     seeds = _variation_seeds(html, target["url"], {target["pid"], target.get("master_pid", "")})
-    if not seeds and not any(v.get("lookup_url") for v in target.get("variants", {}).values()):
+    if not seeds and not target.get("scan_queue") and not any(
+            v.get("lookup_url") for v in target.get("variants", {}).values()):
         result = detect_availability(html, {"url": target["url"], "expected_pid": target["pid"]})
         # 옵션을 선택하지 않은 PDP의 CTA를 사이즈별 재고로 확대 해석하지 않는다.
         if soup.select("[data-attr], [class*=size-selector], [class*=swatch]"):
@@ -1266,7 +1921,10 @@ def check_product_variants(session, target: dict, budget: list[int]) -> tuple[di
     observed = 0
     while queue and budget[0] > 0 and requests_used < 12:
         url = queue[0]
-        response = _detail_get(session, url, budget, referer=target["url"])
+        try:
+            response = _detail_get(session, url, budget, referer=target["url"])
+        except _BudgetExhausted:
+            break
         requests_used += 1
         # JSON이 아닌 로그인/차단 응답 또는 다른 상품 응답은 기존 정상 상태를 보존한다.
         row, links = _parse_variant(response.json(), url, target)
@@ -1291,7 +1949,17 @@ def check_product_variants(session, target: dict, budget: list[int]) -> tuple[di
     return target, events
 
 
-def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
+def run(config_path: Path, state_path: Path, *, dry_run: bool = False, checkpoint=None, traffic=None) -> int:
+    traffic = traffic or SiteTraffic()
+    traffic.count = 0
+    token = _TRAFFIC.set(traffic)
+    try:
+        return _run_checks(config_path, state_path, dry_run=dry_run, checkpoint=checkpoint, traffic=traffic)
+    finally:
+        _TRAFFIC.reset(token)
+
+
+def _run_checks(config_path, state_path, *, dry_run, checkpoint, traffic):
     config = json.loads(config_path.read_text(encoding="utf-8"))
     monitors = config.get("monitors", [])
     if not isinstance(monitors, list):
@@ -1306,41 +1974,42 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
     for m in active:
         validate_monitor(m)
     state = load_state(state_path)
-    known_urls = {urlsplit(m["url"]).path.rstrip("/") for m in active}
-    discovery = state["monitors"].get("ch-discovery", {})
-    for entry in discovery.get("seen", {}).values():
-        url = entry.get("url", "")
-        path = urlsplit(url).path.rstrip("/")
-        if not re.fullmatch(r"/[a-z0-9][a-z0-9-]{1,60}", path, re.I) or path in known_urls:
-            continue
-        if len(known_urls) >= 100:
-            break
-        dynamic = {"id": "discovered-" + hashlib.sha256(path.encode()).hexdigest()[:16],
-                   "name": "자동 발견 " + path, "url": url, "enabled": True,
-                   "mode": "catalog", "render": "http", "optional_catalog": True,
-                   "notify_on_first_run": True, "notify_on_new": True, "notify_on_restock": True}
-        validate_monitor(dynamic)
-        active.append(dynamic)
-        known_urls.add(path)
+    traffic.recovery = state.get("site_recovery", {})
+    if traffic.recovery.get("until", 0) <= time.time():
+        traffic.recovery = {}
+        state.pop("site_recovery", None)
+    backoffs = state.setdefault("site_backoffs", {})
+    for host, until in list(backoffs.items()):
+        if until <= time.time():
+            del backoffs[host]
+        elif host not in _SITE_BLOCKED_UNTIL:
+            _SITE_BLOCKED_UNTIL[host] = time.monotonic() + until - time.time()
+    discovery_audits = [DiscoveryAudit(state, m, active) for m in list(active) if m.get("mode") == "discovery"]
+    for audit in discovery_audits:
+        audit.restore()
     errors = 0
-    counts = {"events": 0, "pages": 0, "paused": 0, "details": 0}
+    counts = {"events": 0, "pages": 0, "paused": 0, "details": 0, "inactive": 0, "deferred": 0}
 
     def persist():
         if not dry_run:
             save_state(state_path, state)
 
     def record_events(m, events):
-        counts["events"] += len(events)
         _enqueue(state, m, events)
+        counts["events"] += len(events)
 
     def failed(m, key, exc, started):
         nonlocal errors
         errors += 1
         msg = _error_text(exc)
         if isinstance(exc, SiteAccessDenied):
-            host = urlsplit(m["url"]).hostname or ""
-            backoff = _block_backoff_seconds()
-            _SITE_BLOCKED_UNTIL[host] = time.monotonic() + backoff
+            host, backoff = exc.host, exc.delay
+            _SITE_BLOCKED_UNTIL[host] = max(_SITE_BLOCKED_UNTIL.get(host, 0), time.monotonic() + backoff)
+            backoffs[host] = max(backoffs.get(host, 0), time.time() + backoff)
+            traffic.recovery = {"factor": min(8, 2 * traffic.recovery.get("factor", 1)),
+                                "until": backoffs[host] + OPTIONAL_RECHECK}
+            state["site_recovery"] = traffic.recovery
+            persist()
             print(f"[BLOCKED] {key}: HTTP {exc.status}, 같은 도메인 {backoff}초 대기", file=sys.stderr)
         else:
             print(f"[ERROR] {key}: {type(exc).__name__}: {msg}", file=sys.stderr)
@@ -1350,26 +2019,52 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
 
     if not dry_run and state.get("pending_notifications"):
         try:
-            _flush_notifications(state, state_path)
+            _flush_notifications(state, state_path, checkpoint=checkpoint)
+        except ScanDeadline:
+            counts["deferred"] += 1
         except Exception as exc:
             errors += 1
             print(f"[NOTIFY] 이전 알림 재전송 실패: {_error_text(exc)}", file=sys.stderr)
 
     def check_all(browser=None):
-        for m in active:
+        trials = state.setdefault("optional_probes", {})
+        visible = {v["url"] for audit in discovery_audits
+                   for v in state["monitors"].get(audit.monitor["id"], {}).get("snapshot", {}).values()}
+        # 홈페이지를 먼저 읽으면 새 메뉴가 대기 중인 후보라도 이 순회에서 확인할 수 있다.
+        ordered = sorted(active, key=lambda m: (m.get("mode") != "discovery",
+                         bool(m.get("optional_catalog")), trials.get(m["id"], "")))
+        speculative = 0
+        for m in ordered:
             host = urlsplit(m["url"]).hostname or ""
             if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
                 counts["paused"] += 1
                 continue
+            previous = state["monitors"].get(m["id"])
+            prior_trial = trials.get(m["id"])
+            if m.get("optional_catalog") and not (previous or {}).get("seen") and m["url"] not in visible:
+                health = state.get("health", {}).get(m["id"], {})
+                unlisted = (health.get("status") == "inactive" or (previous or {}).get("last_count") == 0)
+                if speculative >= 2 or (unlisted and not health.get("consecutive_failures")
+                                        and _age_seconds(prior_trial) < OPTIONAL_RECHECK):
+                    counts["deferred"] += 1
+                    continue
+                speculative += 1
+                trials[m["id"]] = _when()
             started = time.monotonic()
             try:
                 html = fetch_html(m, browser)
-                previous = state["monitors"].get(m["id"])
+                # 파싱 실패한 페이지의 자식 분류도 관측한다. 중간 분류 페이지를 버리지 않는다.
+                for audit in discovery_audits:
+                    if (urlsplit(m["url"]).hostname or "").removeprefix("www.") == (urlsplit(audit.base).hostname or "").removeprefix("www."):
+                        audit.observe(html, m.get("_final_url", m["url"]))
+                if (m.get("optional_catalog") and not urlsplit(m.get("_final_url", m["url"])).path.strip("/")
+                        and (previous or {}).get("seen")):
+                    raise ValueError("게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다")
                 current, events = compare(m, previous, html)
+                if m.get("mode") == "discovery":
+                    visible.update(item["url"] for item in current.get("snapshot", {}).values())
                 # 이벤트를 큐에 넣은 뒤 상태를 저장한다. 웹훅 오류로 이벤트가 사라지지 않는다.
-                record_events(m, events)
-                state["monitors"][m["id"]] = current
-                _register_products(state, m, previous, events)
+                _accept_observation(state, m, current, events, record_events)
                 record_events(m, _record_health(state, m["id"], m.get("name", m["id"]), m["url"],
                                                duration=time.monotonic() - started))
                 persist()
@@ -1377,38 +2072,74 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
                 print(f"[OK] {m['id']}: {current.get('status', str(current.get('last_count', len(current.get('regions', [])))))}"
                       f" / 새 알림 {len(events)}건 / {time.monotonic() - started:.1f}초"
                       + (" (dry run, 미전송/미저장)" if dry_run else ""))
+            except ScanDeadline:
+                if prior_trial is None:
+                    trials.pop(m["id"], None)
+                else:
+                    trials[m["id"]] = prior_trial
+                counts["deferred"] += 1
+                return
+            except CatalogNotFound as exc:
+                previous = state["monitors"].get(m["id"], {})
+                if not m.get("optional_catalog") or previous.get("seen"):
+                    # 이전에 상품이 있던 실제 카테고리의 404/410은 계속 오류로 알린다.
+                    failed(m, m["id"], exc, started)
+                    continue
+                counts["inactive"] += 1
+                old = state.setdefault("health", {}).get(m["id"], {})
+                health = dict(old, last_checked_at=_when(), status="inactive", consecutive_failures=0,
+                              alerted=False, last_error=str(exc), expected_missing_status=exc.status)
+                _LIVE_HEALTH[m["id"]] = health
+                if old.get("status") != "inactive" or _age_seconds(old.get("last_checked_at")) >= HEALTH_CHECKPOINT_SECONDS:
+                    state["health"][m["id"]] = health
+                    print(f"[INACTIVE] {m['id']}: HTTP {exc.status}; 아직 게시되지 않은 선택적 후보, 계속 재확인")
+                    persist()
             except Exception as exc:
                 failed(m, m["id"], exc, started)
 
-    if any(m.get("render", "http") == "browser" for m in active):
-        try:
-            from playwright.sync_api import sync_playwright
-            with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
-                try:
-                    check_all(browser)
-                finally:
-                    browser.close()
-        except Exception as exc:
-            # 브라우저 설치/시작 실패도 알림 큐 및 상태를 보존한다.
-            failed(active[0], "browser", exc, time.monotonic())
-    else:
-        check_all()
+        for audit in discovery_audits:
+            try:
+                audit.scan(browser, record_events, lambda m, duration: record_events(
+                    m, _record_health(state, m["id"], m["name"], m["url"], duration=duration)))
+            except ScanDeadline:
+                counts["deferred"] += 1
+                return
+            except Exception as exc:
+                failed(audit.monitor, audit.monitor["id"] + "-extra-discovery", exc, time.monotonic())
+            persist()
 
-    # 최근 새 상품 우선, 이후 오래 확인하지 않은 상품 순으로 조회한다.
+    with ExitStack() as stack:
+        browser = None
+
+        def get_browser():
+            nonlocal browser
+            if browser is not None:
+                return browser
+            from playwright.sync_api import sync_playwright
+            playwright = stack.enter_context(sync_playwright())
+            browser = playwright.chromium.launch(headless=True)
+            stack.callback(browser.close)
+            return browser
+
+        check_all(get_browser if any(m.get("render") in ("browser", "auto") for m in active) else None)
+
+    # 신상품과 기존 상품 중 가장 오래 기다린 항목을 교대로 처리한다.
     # 모든 옵션을 한 순회에서 읽지 못하면 scan_queue를 보존하여 이어서 진행한다.
     enabled_sources = {m["id"] for m in active if m.get("track_variants", True)}
     targets = state.get("tracked_products", {})
     candidates = [(key, target) for key, target in targets.items()
                   if any(present and source in enabled_sources
                          for source, present in target.get("sources", {}).items())]
-    candidates.sort(key=lambda pair: (not pair[1].get("priority", False),
-                                      pair[1].get("last_attempt_at", ""), pair[0]))
-    budget = [48]
+    candidates.sort(key=lambda pair: (pair[1].get("last_attempt_at", ""), pair[0]))
+    new_products = deque(pair for pair in candidates if pair[1].get("priority"))
+    regular = deque(pair for pair in candidates if not pair[1].get("priority"))
+    # 목록/탐색이 소비한 실제 요청을 빼고, 목록이 급증해도 상세 조회에 최소 4회를 배정한다.
+    budget = [min(48, max(4, traffic.round_size - traffic.count))]
     with requests.Session() as session:
-        for key, target in candidates[:8]:
-            if budget[0] < 2:
-                break
+        while (new_products or regular) and budget[0] >= 2 and traffic.clock() < traffic.deadline:
+            both = bool(new_products and regular)
+            prefer_new = state.get("detail_next_new", True) if both else bool(new_products)
+            key, target = (new_products if prefer_new else regular).popleft()
             host = urlsplit(target["url"]).hostname or ""
             if time.monotonic() < _SITE_BLOCKED_UNTIL.get(host, 0):
                 counts["paused"] += 1
@@ -1416,33 +2147,41 @@ def run(config_path: Path, state_path: Path, *, dry_run: bool = False) -> int:
             m = {"id": "variant-" + hashlib.sha256(key.encode()).hexdigest()[:16],
                  "name": "Chrome Hearts 사이즈 " + target["title"], "url": target["url"]}
             started = time.monotonic()
-            target["last_attempt_at"] = _when()
-            target["priority"] = False
             try:
                 current, events = check_product_variants(session, target, budget)
+                current["last_attempt_at"] = _when()
                 record_events(m, events)
                 targets[key] = current
+                if both:
+                    state["detail_next_new"] = not prefer_new
                 record_events(m, _record_health(state, m["id"], m["name"], m["url"],
                                                duration=time.monotonic() - started))
                 persist()
                 counts["details"] += 1
                 print(f"[VARIANT] {target['pid']}: 저장된 옵션 {len(current['variants'])}개, "
                       f"다음 순회로 넘긴 URL {len(current.get('scan_queue', []))}개 / 새 알림 {len(events)}건")
-            except _BudgetExhausted:
+            except (ScanDeadline, _BudgetExhausted):
+                counts["deferred"] += 1
                 persist()
                 break
             except Exception as exc:
+                target.update(last_attempt_at=_when(), priority=False)
+                if both:
+                    state["detail_next_new"] = not prefer_new
                 failed(m, m["id"], exc, started)
     if not dry_run:
         try:
-            _flush_notifications(state, state_path)
+            _flush_notifications(state, state_path, checkpoint=checkpoint)
+        except ScanDeadline:
+            counts["deferred"] += 1
         except Exception as exc:
             errors += 1
             print(f"[NOTIFY] 알림 전송 실패, 미전송 항목 보존: {_error_text(exc)}", file=sys.stderr)
     print(f"총 {counts['pages']}개 페이지 / {counts['details']}개 상세 확인, "
           f"{counts['events']}건 감지, 실패 {errors}개, 접근차단 대기 {counts['paused']}개, "
+          f"미게시 후보 {counts['inactive']}개, 다음 확인으로 넘김 {counts['deferred']}개, "
           f"대기 알림 {len(state.get('pending_notifications', []))}건")
-    return 1 if errors or counts["paused"] else 0
+    return 1 if errors or counts["paused"] or not any(counts[k] for k in ("pages", "details", "inactive", "deferred")) else 0
 
 
 def git_checkpoint(state_path: Path) -> bool:
@@ -1481,7 +2220,15 @@ def git_checkpoint(state_path: Path) -> bool:
     ahead = git("rev-list", "--count", "HEAD", "--not", f"origin/{branch}").stdout.strip()
     if int(ahead or "0") == 0:
         return bool(changed)
-    git("pull", "--rebase", "origin", branch)
+    try:
+        git("pull", "--rebase", "origin", branch)
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired, KeyboardInterrupt):
+        # 충돌/중단된 rebase를 다음 순회에 넘기지 않는다. 로컬 커밋은 보존한다.
+        try:
+            subprocess.run(["git", "rebase", "--abort"], capture_output=True, timeout=10, check=False)
+        except subprocess.SubprocessError:
+            print("[STATE] rebase 정리 실패: 저장소 상태 확인이 필요합니다.", file=sys.stderr)
+        raise
     git("push", "origin", f"HEAD:refs/heads/{branch}")
     print("[STATE] 감시 상태를 GitHub 저장소에 저장했습니다.", flush=True)
     return True
@@ -1512,49 +2259,98 @@ def run_loop(
         raise ValueError("--dry-run 및 --git-sync는 함께 사용할 수 없습니다")
     clock = clock or time.monotonic
     sleep = sleep or time.sleep
-    check = check or (lambda: run(config_path, state_path, dry_run=dry_run))
     checkpoint = checkpoint or (lambda: git_checkpoint(state_path))
     started = clock()
     deadline = started + duration_seconds
+    if os.getenv("MONITOR_STOP_EPOCH"):
+        deadline = min(deadline, started + max(0, int(os.environ["MONITOR_STOP_EPOCH"]) - time.time()))
+    session = requests.Session()
+    traffic = SiteTraffic(interval_seconds, clock=clock, sleep=sleep, get=session.get)
+    traffic.deadline = deadline
+    check = check or (lambda: run(config_path, state_path, dry_run=dry_run, traffic=traffic,
+                                  checkpoint=checkpoint if git_sync else None))
     iteration = failures = successes = 0
-    print(f"[LOOP] 감시 시작: {interval_seconds}초 간격, 최대 {duration_seconds}초, "
-          f"Git 동기화={'사용' if git_sync else '미사용'}", flush=True)
-    while clock() < deadline:
-        iteration += 1
-        tick_start = clock()
+    sync_failed = cancelled = False
+
+    def sync_state():
+        nonlocal sync_failed
+        if not git_sync:
+            return
         try:
-            status = check()
-            if status == 0:
-                successes += 1
-            else:
-                failures += 1
-                print(f"[LOOP] #{iteration} 일부 감시 오류(코드 {status}) — 다음 주기 재시도", flush=True)
+            checkpoint()
+            sync_failed = False
         except Exception as exc:
-            failures += 1
-            print(f"[LOOP] #{iteration} 감시 오류: {type(exc).__name__}: {str(exc)[:180]}",
+            sync_failed = True
+            print(f"[STATE] 저장소 동기화 실패 ({type(exc).__name__}). 로컬 상태를 보존하고 재시도합니다.",
                   file=sys.stderr, flush=True)
-        # Push state even after partial monitor errors: other monitors may have succeeded.
-        if git_sync:
+
+    def terminate(_signum, _frame):
+        raise KeyboardInterrupt()
+
+    previous_term = None
+    try:
+        previous_term = signal.signal(signal.SIGTERM, terminate)
+    except ValueError:
+        # 라이브러리로 다른 스레드에서 호출된 경우 신호 소유권은 호출자에게 있다.
+        pass
+    print(f"[LOOP] 감시 시작: 기본 {interval_seconds}초, 이번 실행 예산 {deadline-started:.0f}초, "
+          f"Git 동기화={'사용' if git_sync else '미사용'}", flush=True)
+    try:
+        while clock() < deadline:
+            iteration += 1
+            tick_start = clock()
             try:
-                checkpoint()
+                status = check()
+                if status == 0:
+                    successes += 1
+                else:
+                    failures += 1
+                    print(f"[LOOP] #{iteration} 일부 감시 오류(코드 {status}) — 다음 주기 재시도", flush=True)
             except Exception as exc:
-                # subprocess output intentionally omitted; avoid logging access tokens.
-                print(f"[STATE] 저장소 동기화 실패 ({type(exc).__name__}). 다음 주기에 재시도합니다.",
+                failures += 1
+                print(f"[LOOP] #{iteration} 감시 오류: {type(exc).__name__}: {_error_text(exc)}",
                       file=sys.stderr, flush=True)
-        remaining = deadline - clock()
-        if remaining <= 0:
-            break
-        next_tick = tick_start + interval_seconds
-        pause = min(remaining, max(0.0, next_tick - clock()))
-        if pause > 0:
-            sleep(pause)
-    print(f"[LOOP] 종료: 확인 {iteration}회, 성공 {successes}회, 오류 {failures}회", flush=True)
-    return 0 if successes else 1
+            sync_state()
+            remaining = deadline - clock()
+            if remaining <= 0:
+                break
+            interval = traffic.cycle_interval
+            print(f"[PACE] 사이트 요청 {traffic.count}회, 요청 시작 간격 {traffic.gap:.2f}초, "
+                  f"순회 목표 {interval}초, 이번 순회 {clock()-tick_start:.1f}초", flush=True)
+            next_tick = tick_start + interval
+            pause = min(remaining, max(0.0, next_tick - clock()))
+            if pause > 0:
+                sleep(pause)
+    except KeyboardInterrupt:
+        cancelled = True
+        print("[LOOP] 종료 요청: 보존된 상태의 최종 동기화를 시도합니다.", flush=True)
+    finally:
+        try:
+            sync_state()
+        finally:
+            session.close()
+            if previous_term is not None:
+                signal.signal(signal.SIGTERM, previous_term)
+    print(f"[LOOP] 종료: 확인 {iteration}회, 성공 {successes}회, 오류 {failures}회, "
+          f"동기화 실패={sync_failed}, 취소={cancelled}", flush=True)
+    if cancelled:
+        return 130
+    return 0 if successes and not sync_failed else 1
 
 
 
 
-def probe_site(config_path: Path) -> int:
+def probe_site(config_path: Path, state_path: Path | None = None) -> int:
+    with requests.Session() as session:
+        token = _TRAFFIC.set(SiteTraffic(get=session.get))
+        try:
+            backoffs = load_state(state_path).get("site_backoffs", {}) if state_path else {}
+            return _probe_targets(config_path, backoffs)
+        finally:
+            _TRAFFIC.reset(token)
+
+
+def _probe_targets(config_path, backoffs):
     """GitHub 실행 환경에서 chromehearts.com에 접근 가능한지 진단(알림/상태 변경 없음).
 
     403/429는 '재고 없음'이 아니라 사이트가 이 실행 환경의 접근을 거부한 것이다.
@@ -1575,7 +2371,10 @@ def probe_site(config_path: Path) -> int:
     for m in targets:
         try:
             url = safe_url(str(m["url"]))
-            response = requests.get(url, timeout=20, allow_redirects=True,
+            if backoffs.get(urlsplit(url).hostname, 0) > time.time():
+                print(f"[PROBE] {m['id']}: 저장된 사이트 대기 시각까지 조회 보류")
+                break
+            response = _site_get(requests.get, url, timeout=20,
                                     headers={"User-Agent": "PageWatch/1.0 (read-only personal monitor)",
                                              "Accept-Language": "en-US,en;q=0.9"})
             status = response.status_code
@@ -1589,9 +2388,10 @@ def probe_site(config_path: Path) -> int:
                 line += f" | 상품 링크 {len(products)}개 (품절 표기 {sold}개)"
                 if m.get("mode") == "catalog" and not products:
                     line += " — 정적 HTML에 상품이 없으면 render=browser 사용"
-            elif status in (403, 429):
-                line += " | 접근 거부/요청 제한 — 품절이 아니라 차단입니다"
             print(line, flush=True)
+        except SiteAccessDenied as exc:
+            print(f"[PROBE] {exc}; 진단 종료", flush=True)
+            break
         except (requests.RequestException, ValueError) as exc:
             # 응답 본문/쿠키/인증정보는 출력하지 않는다.
             print(f"[PROBE] {m.get('id', '?')}: 요청 실패 ({type(exc).__name__})", flush=True)
@@ -1610,12 +2410,12 @@ def main() -> int:
     parser.add_argument("--loop", action="store_true", help="GitHub Actions 실행 중 반복 감시")
     parser.add_argument("--git-sync", action="store_true", help="상태 변경 즉시 GitHub에 커밋/푸시(Actions 전용)")
     parser.add_argument("--interval-seconds", type=int,
-                        default=int(os.getenv("CHECK_INTERVAL_SECONDS", "60")))
+                        default=int(os.getenv("CHECK_INTERVAL_SECONDS", str(DEFAULT_INTERVAL))))
     parser.add_argument("--duration-seconds", type=int,
-                        default=int(os.getenv("RUN_DURATION_SECONDS", "21480")))
+                        default=int(os.getenv("RUN_DURATION_SECONDS", str(DEFAULT_DURATION))))
     args = parser.parse_args()
     if args.probe_site:
-        return probe_site(Path(args.config))
+        return probe_site(Path(args.config), Path(args.state))
     if args.test_webhook:
         _discord_url()
         m = {"id": "test", "name": "크롬하츠 쪽감시자 연결 테스트", "url": "https://example.com", "notify_limit": 1}
