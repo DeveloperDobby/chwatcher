@@ -4027,12 +4027,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:17:40+00:00",
+      "last_checked_at": "2026-11-07T14:25:03+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:17:40+00:00",
+      "last_attempt_at": "2026-11-07T14:25:03+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4126,12 +4126,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:18:15+00:00",
+      "last_checked_at": "2026-11-07T14:25:11+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:18:15+00:00",
+      "last_attempt_at": "2026-11-07T14:25:11+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4740,12 +4740,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T14:17:33+00:00",
+      "last_checked_at": "2026-11-07T14:24:56+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T14:17:33+00:00",
+      "last_attempt_at": "2026-11-07T14:24:56+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5605,23 +5605,23 @@
       "status": "ok"
     },
     "ch-extra-sweater": {
-      "last_checked_at": "2026-11-07T14:09:46+00:00",
-      "duration_seconds": 2.77,
-      "last_success_at": "2026-11-07T14:09:46+00:00",
+      "last_checked_at": "2026-11-07T14:24:48+00:00",
+      "duration_seconds": 2.83,
+      "last_success_at": "2026-11-07T14:24:48+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.34,
+      "actual_interval_seconds": 902.85,
       "status": "ok"
     },
     "ch-extra-jacket": {
-      "last_checked_at": "2026-11-07T14:09:49+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-07T14:09:49+00:00",
+      "last_checked_at": "2026-11-07T14:24:51+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-07T14:24:51+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.35,
+      "actual_interval_seconds": 902.85,
       "status": "ok"
     },
     "ch-extra-denim": {
@@ -9330,7 +9330,7 @@
           "at": "2026-11-07T14:20:21+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T14:20:21+00:00"
     }
   },
@@ -9355,8 +9355,8 @@
     "ch-extra-hoodies": "2026-11-07T14:23:18+00:00",
     "ch-extra-sweatshirt": "2026-11-07T14:24:01+00:00",
     "ch-extra-sweatshirts": "2026-11-07T14:24:03+00:00",
-    "ch-extra-sweater": "2026-11-07T14:09:43+00:00",
-    "ch-extra-jacket": "2026-11-07T14:09:46+00:00",
+    "ch-extra-sweater": "2026-11-07T14:24:46+00:00",
+    "ch-extra-jacket": "2026-11-07T14:24:48+00:00",
     "ch-extra-denim": "2026-11-07T14:10:28+00:00",
     "ch-extra-pants": "2026-11-07T14:10:31+00:00",
     "ch-extra-shorts": "2026-11-07T14:11:13+00:00",
