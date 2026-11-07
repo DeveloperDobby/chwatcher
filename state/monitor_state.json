@@ -3694,12 +3694,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T18:41:38+00:00",
+      "last_checked_at": "2026-11-07T18:47:10+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T18:41:38+00:00",
+      "last_attempt_at": "2026-11-07T18:47:10+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4086,12 +4086,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T18:41:11+00:00",
+      "last_checked_at": "2026-11-07T18:47:02+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T18:41:11+00:00",
+      "last_attempt_at": "2026-11-07T18:47:02+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -5537,23 +5537,23 @@
       "status": "ok"
     },
     "ch-extra-shirts": {
-      "last_checked_at": "2026-11-07T18:31:48+00:00",
-      "duration_seconds": 2.69,
-      "last_success_at": "2026-11-07T18:31:48+00:00",
+      "last_checked_at": "2026-11-07T18:46:49+00:00",
+      "duration_seconds": 2.58,
+      "last_success_at": "2026-11-07T18:46:49+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.18,
+      "actual_interval_seconds": 901.24,
       "status": "ok"
     },
     "ch-extra-hoodies": {
-      "last_checked_at": "2026-11-07T18:31:51+00:00",
+      "last_checked_at": "2026-11-07T18:46:52+00:00",
       "duration_seconds": 2.99,
-      "last_success_at": "2026-11-07T18:31:51+00:00",
+      "last_success_at": "2026-11-07T18:46:52+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.18,
+      "actual_interval_seconds": 901.24,
       "status": "ok"
     },
     "ch-extra-sweatshirt": {
@@ -7035,16 +7035,16 @@
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-07T18:31:06+00:00",
+          "last_attempt_at": "2026-11-07T18:46:52+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-07T18:31:07+00:00",
+          "last_success_at": "2026-11-07T18:46:53+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-07T18:31:51+00:00",
+          "last_attempt_at": "2026-11-07T18:46:53+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-07T18:31:52+00:00",
+          "last_success_at": "2026-11-07T18:46:55+00:00",
           "error": ""
         }
       },
@@ -9874,9 +9874,23 @@
           "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
           "source": "",
           "at": "2026-11-07T18:46:10+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_index.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-07T18:46:53+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_0.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-07T18:46:55+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T18:46:10+00:00"
     }
   },
@@ -9897,8 +9911,8 @@
     "ch-extra-t-shirt": "2026-11-07T18:45:19+00:00",
     "ch-extra-t-shirts": "2026-11-07T18:46:01+00:00",
     "ch-extra-shirt": "2026-11-07T18:46:02+00:00",
-    "ch-extra-shirts": "2026-11-07T18:31:45+00:00",
-    "ch-extra-hoodies": "2026-11-07T18:31:48+00:00",
+    "ch-extra-shirts": "2026-11-07T18:46:46+00:00",
+    "ch-extra-hoodies": "2026-11-07T18:46:49+00:00",
     "ch-extra-sweatshirt": "2026-11-07T18:32:30+00:00",
     "ch-extra-sweatshirts": "2026-11-07T18:32:33+00:00",
     "ch-extra-sweater": "2026-11-07T18:33:15+00:00",
