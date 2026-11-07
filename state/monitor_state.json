@@ -1570,12 +1570,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T12:26:17+00:00",
+      "last_checked_at": "2026-11-07T12:33:50+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T12:26:17+00:00",
+      "last_attempt_at": "2026-11-07T12:33:50+00:00",
       "priority": false
     },
     "www.chromehearts.com:158552BLKXXXXXX": {
@@ -3551,7 +3551,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html?dwvar_164943XXXXXX140_color=F0K&dwvar_164943XXXXXX140_size=1XL&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_164943XXXXXX140_color=F0K&dwvar_164943XXXXXX140_size=1XL&pid=164943XXXXXX140&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T12:19:03+00:00"
+          "last_seen_at": "2026-11-07T12:34:03+00:00"
         }
       },
       "sources": {
@@ -3561,12 +3561,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T12:26:30+00:00",
+      "last_checked_at": "2026-11-07T12:34:03+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T12:26:30+00:00",
+      "last_attempt_at": "2026-11-07T12:34:03+00:00",
       "priority": false,
       "master_pid": "164943XXXXXX140",
       "scan_queue": [],
@@ -5456,23 +5456,23 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-07T12:18:42+00:00",
-      "duration_seconds": 2.83,
-      "last_success_at": "2026-11-07T12:18:42+00:00",
+      "last_checked_at": "2026-11-07T12:33:42+00:00",
+      "duration_seconds": 2.79,
+      "last_success_at": "2026-11-07T12:33:42+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.28,
+      "actual_interval_seconds": 900.64,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-07T12:18:45+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-07T12:18:45+00:00",
+      "last_checked_at": "2026-11-07T12:33:45+00:00",
+      "duration_seconds": 2.96,
+      "last_success_at": "2026-11-07T12:33:45+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.28,
+      "actual_interval_seconds": 900.61,
       "status": "ok"
     },
     "ch-extra-goggles": {
@@ -5826,13 +5826,13 @@
       "status": "ok"
     },
     "variant-b9dec48f792dedb1": {
-      "last_checked_at": "2026-11-07T12:19:03+00:00",
-      "duration_seconds": 13.28,
-      "last_success_at": "2026-11-07T12:19:03+00:00",
+      "last_checked_at": "2026-11-07T12:34:03+00:00",
+      "duration_seconds": 13.31,
+      "last_success_at": "2026-11-07T12:34:03+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 460.24,
+      "actual_interval_seconds": 453.55,
       "status": "ok"
     },
     "variant-f83a3503e0cbd3aa": {
@@ -7042,7 +7042,7 @@
             "https://www.chromehearts.com/sitemap_0.xml"
           ],
           "first_seen_at": "2026-11-07T06:03:05+00:00",
-          "last_checked_at": "2026-11-07T12:18:45+00:00",
+          "last_checked_at": "2026-11-07T12:33:45+00:00",
           "notify": true,
           "render": "auto",
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인"
@@ -9008,9 +9008,16 @@
           "reason": "robots",
           "source": "",
           "at": "2026-11-07T12:33:02+00:00"
+        },
+        {
+          "code": "needs_review",
+          "url": "https://www.chromehearts.com/shop",
+          "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
+          "source": "https://www.chromehearts.com/sitemap_0.xml",
+          "at": "2026-11-07T12:33:48+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T12:19:33+00:00"
     }
   },
@@ -9019,8 +9026,8 @@
     "ch-extra-sports-mesh": "2026-11-07T12:32:12+00:00",
     "ch-extra-eyewear": "2026-11-07T12:32:54+00:00",
     "ch-extra-hat": "2026-11-07T12:32:57+00:00",
-    "ch-extra-hoodie": "2026-11-07T12:18:39+00:00",
-    "ch-extra-rib-tank": "2026-11-07T12:18:42+00:00",
+    "ch-extra-hoodie": "2026-11-07T12:33:39+00:00",
+    "ch-extra-rib-tank": "2026-11-07T12:33:42+00:00",
     "ch-extra-goggles": "2026-11-07T12:19:24+00:00",
     "ch-extra-sunglasses": "2026-11-07T12:19:27+00:00",
     "ch-extra-eyewear-accessories": "2026-11-07T12:20:09+00:00",
