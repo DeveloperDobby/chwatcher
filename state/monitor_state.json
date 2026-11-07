@@ -3993,12 +3993,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:14:43+00:00",
+      "last_checked_at": "2026-11-07T20:21:39+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:14:43+00:00",
+      "last_attempt_at": "2026-11-07T20:21:39+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4083,7 +4083,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=XSM&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T20:00:36+00:00"
+          "last_seen_at": "2026-11-07T20:21:47+00:00"
         }
       },
       "sources": {
@@ -4092,12 +4092,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:14:51+00:00",
+      "last_checked_at": "2026-11-07T20:21:47+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:14:51+00:00",
+      "last_attempt_at": "2026-11-07T20:21:47+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4721,12 +4721,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T20:14:16+00:00",
+      "last_checked_at": "2026-11-07T20:21:32+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T20:14:16+00:00",
+      "last_attempt_at": "2026-11-07T20:21:32+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5676,23 +5676,23 @@
       "status": "ok"
     },
     "ch-extra-gloves": {
-      "last_checked_at": "2026-11-07T20:06:23+00:00",
-      "duration_seconds": 2.66,
-      "last_success_at": "2026-11-07T20:06:23+00:00",
+      "last_checked_at": "2026-11-07T20:21:25+00:00",
+      "duration_seconds": 2.65,
+      "last_success_at": "2026-11-07T20:21:25+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.48,
+      "actual_interval_seconds": 902.04,
       "status": "ok"
     },
     "ch-extra-tie": {
-      "last_checked_at": "2026-11-07T20:06:26+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-07T20:06:26+00:00",
+      "last_checked_at": "2026-11-07T20:21:28+00:00",
+      "duration_seconds": 2.95,
+      "last_success_at": "2026-11-07T20:21:28+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.48,
+      "actual_interval_seconds": 902.05,
       "status": "ok"
     },
     "variant-da7fa697bf3d5517": {
@@ -10151,7 +10151,7 @@
           "at": "2026-11-07T20:17:43+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-07T20:16:15+00:00"
     }
   },
@@ -10184,8 +10184,8 @@
     "ch-extra-shoes": "2026-11-07T20:19:54+00:00",
     "ch-extra-boots": "2026-11-07T20:20:37+00:00",
     "ch-extra-home": "2026-11-07T20:20:39+00:00",
-    "ch-extra-gloves": "2026-11-07T20:06:20+00:00",
-    "ch-extra-tie": "2026-11-07T20:06:23+00:00"
+    "ch-extra-gloves": "2026-11-07T20:21:22+00:00",
+    "ch-extra-tie": "2026-11-07T20:21:25+00:00"
   },
   "detail_next_new": false
 }
