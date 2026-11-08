@@ -922,12 +922,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:23:27+00:00",
+      "last_checked_at": "2026-11-08T10:31:59+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:23:27+00:00",
+      "last_attempt_at": "2026-11-08T10:31:59+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX273": {
@@ -1030,12 +1030,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:23:29+00:00",
+      "last_checked_at": "2026-11-08T10:32:00+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:23:29+00:00",
+      "last_attempt_at": "2026-11-08T10:32:00+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX274": {
@@ -1066,12 +1066,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:23:30+00:00",
+      "last_checked_at": "2026-11-08T10:32:02+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:23:30+00:00",
+      "last_attempt_at": "2026-11-08T10:32:02+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX273": {
@@ -3862,7 +3862,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36B&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36B&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T10:08:01+00:00"
+          "last_seen_at": "2026-11-08T10:31:53+00:00"
         },
         "202334AFW36C030:en_US": {
           "pid": "202334AFW36C030",
@@ -3928,27 +3928,16 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:23:06+00:00",
+      "last_checked_at": "2026-11-08T10:31:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:23:06+00:00",
+      "last_attempt_at": "2026-11-08T10:31:57+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
-      "scan_queue": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36B&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36C&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36D&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34C&pid=202334AFWXXX030&quantity=1"
-      ],
-      "scan_seen": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32B&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32C&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=32D&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34B&pid=202334AFWXXX030&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34D&pid=202334AFWXXX030&quantity=1"
-      ]
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201583AFWXXX033": {
       "pid": "201583AFWXXX033",
@@ -4241,7 +4230,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:22:57+00:00",
+      "last_attempt_at": "2026-11-08T10:31:50+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5023,16 +5012,23 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:23:41+00:00",
+      "last_checked_at": "2026-11-08T10:32:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T10:23:41+00:00",
+      "last_attempt_at": "2026-11-08T10:32:06+00:00",
       "master_pid": "204651B2UXXX07M",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=SML&pid=204651B2UXXX07M&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=MED&pid=204651B2UXXX07M&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=LRG&pid=204651B2UXXX07M&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=1XL&pid=204651B2UXXX07M&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_204651B2UXXX07M_size=XSM&pid=204651B2UXXX07M&quantity=1"
+      ]
     },
     "www.chromehearts.com:214141D7BXXX01T": {
       "pid": "214141D7BXXX01T",
@@ -5206,13 +5202,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:23:32+00:00",
+      "last_checked_at": "2026-11-08T10:32:03+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T10:23:32+00:00"
+      "last_attempt_at": "2026-11-08T10:32:03+00:00"
     },
     "www.chromehearts.com:151407XXXXXX00S": {
       "pid": "151407XXXXXX00S",
@@ -5461,23 +5457,23 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-08T10:16:44+00:00",
-      "duration_seconds": 2.78,
-      "last_success_at": "2026-11-08T10:16:44+00:00",
+      "last_checked_at": "2026-11-08T10:31:44+00:00",
+      "duration_seconds": 2.8,
+      "last_success_at": "2026-11-08T10:31:44+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.02,
+      "actual_interval_seconds": 900.39,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-08T10:16:47+00:00",
-      "duration_seconds": 3.02,
-      "last_success_at": "2026-11-08T10:16:47+00:00",
+      "last_checked_at": "2026-11-08T10:31:47+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-08T10:31:47+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.05,
+      "actual_interval_seconds": 900.38,
       "status": "ok"
     },
     "ch-extra-goggles": {
@@ -6081,13 +6077,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-08T10:22:57+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-08T10:31:50+00:00",
+      "duration_seconds": 2.94,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 133,
+      "consecutive_failures": 134,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 368.74,
+      "actual_interval_seconds": 533.34,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10672,7 +10668,7 @@
           "at": "2026-11-08T10:28:03+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-08T10:28:03+00:00"
     }
   },
@@ -10681,8 +10677,8 @@
     "ch-extra-sports-mesh": "2026-11-08T10:30:14+00:00",
     "ch-extra-eyewear": "2026-11-08T10:30:56+00:00",
     "ch-extra-hat": "2026-11-08T10:30:59+00:00",
-    "ch-extra-hoodie": "2026-11-08T10:16:41+00:00",
-    "ch-extra-rib-tank": "2026-11-08T10:16:44+00:00",
+    "ch-extra-hoodie": "2026-11-08T10:31:41+00:00",
+    "ch-extra-rib-tank": "2026-11-08T10:31:44+00:00",
     "ch-extra-goggles": "2026-11-08T10:17:26+00:00",
     "ch-extra-sunglasses": "2026-11-08T10:18:11+00:00",
     "ch-extra-eyewear-accessories": "2026-11-08T10:18:14+00:00",
