@@ -3723,12 +3723,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T04:35:35+00:00",
+      "last_checked_at": "2026-11-08T04:43:15+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T04:35:35+00:00",
+      "last_attempt_at": "2026-11-08T04:43:15+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4016,12 +4016,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T04:34:55+00:00",
+      "last_checked_at": "2026-11-08T04:43:00+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T04:34:55+00:00",
+      "last_attempt_at": "2026-11-08T04:43:00+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4115,12 +4115,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T04:35:02+00:00",
+      "last_checked_at": "2026-11-08T04:43:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T04:35:02+00:00",
+      "last_attempt_at": "2026-11-08T04:43:07+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4219,7 +4219,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T04:35:38+00:00",
+      "last_attempt_at": "2026-11-08T04:43:18+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -6044,13 +6044,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-08T04:35:38+00:00",
+      "last_checked_at": "2026-11-08T04:43:18+00:00",
       "duration_seconds": 2.99,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 111,
+      "consecutive_failures": 112,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 403.83,
+      "actual_interval_seconds": 460.36,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10635,7 +10635,7 @@
           "at": "2026-11-08T04:33:14+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T04:31:46+00:00"
     }
   },
