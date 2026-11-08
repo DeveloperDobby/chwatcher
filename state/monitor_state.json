@@ -7104,13 +7104,6 @@
       },
       "history": [
         {
-          "code": "coverage",
-          "url": "https://www.chromehearts.com/",
-          "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
-          "source": "",
-          "at": "2026-11-07T15:20:24+00:00"
-        },
-        {
           "code": "needs_review",
           "url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Search-Show?cgid=SWEATPANTS",
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
@@ -10602,6 +10595,13 @@
           "reason": "403/429 도메인 대기 중: 추가 탐색을 건너뜁니다",
           "source": "",
           "at": "2026-11-08T19:11:46+00:00"
+        },
+        {
+          "code": "paused",
+          "url": "https://www.chromehearts.com/",
+          "reason": "403/429 도메인 대기 중: 추가 탐색을 건너뜁니다",
+          "source": "",
+          "at": "2026-11-08T19:26:46+00:00"
         }
       ],
       "source_first": false,
