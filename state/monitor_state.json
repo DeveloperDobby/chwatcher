@@ -3970,12 +3970,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T13:22:24+00:00",
+      "last_checked_at": "2026-11-08T13:28:26+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T13:22:24+00:00",
+      "last_attempt_at": "2026-11-08T13:28:26+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4639,12 +4639,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T13:22:12+00:00",
+      "last_checked_at": "2026-11-08T13:28:14+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T13:22:12+00:00",
+      "last_attempt_at": "2026-11-08T13:28:14+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4700,12 +4700,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T13:22:17+00:00",
+      "last_checked_at": "2026-11-08T13:28:19+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T13:22:17+00:00",
+      "last_attempt_at": "2026-11-08T13:28:19+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5612,23 +5612,23 @@
       "status": "ok"
     },
     "ch-extra-shorts": {
-      "last_checked_at": "2026-11-08T13:13:05+00:00",
-      "duration_seconds": 2.84,
-      "last_success_at": "2026-11-08T13:13:05+00:00",
+      "last_checked_at": "2026-11-08T13:28:05+00:00",
+      "duration_seconds": 2.83,
+      "last_success_at": "2026-11-08T13:28:05+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.1,
+      "actual_interval_seconds": 900.58,
       "status": "ok"
     },
     "ch-extra-shoes": {
-      "last_checked_at": "2026-11-08T13:13:08+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-08T13:13:08+00:00",
+      "last_checked_at": "2026-11-08T13:28:08+00:00",
+      "duration_seconds": 2.97,
+      "last_success_at": "2026-11-08T13:28:08+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.11,
+      "actual_interval_seconds": 900.56,
       "status": "ok"
     },
     "ch-extra-boots": {
@@ -7037,9 +7037,9 @@
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-08T13:13:08+00:00",
+          "last_attempt_at": "2026-11-08T13:28:08+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-08T13:13:09+00:00",
+          "last_success_at": "2026-11-08T13:28:09+00:00",
           "error": ""
         }
       },
@@ -7112,20 +7112,6 @@
         }
       },
       "history": [
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_index.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-07T12:34:32+00:00"
-        },
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_0.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-07T12:35:15+00:00"
-        },
         {
           "code": "coverage",
           "url": "https://www.chromehearts.com/",
@@ -10611,10 +10597,24 @@
           "reason": "sitemap",
           "source": "",
           "at": "2026-11-08T13:27:25+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_0.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-08T13:28:09+00:00"
+        },
+        {
+          "code": "coverage",
+          "url": "https://www.chromehearts.com/",
+          "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
+          "source": "",
+          "at": "2026-11-08T13:28:09+00:00"
         }
       ],
-      "source_first": false,
-      "last_summary_at": "2026-11-08T13:13:09+00:00"
+      "source_first": true,
+      "last_summary_at": "2026-11-08T13:28:09+00:00"
     }
   },
   "optional_probes": {
@@ -10642,8 +10642,8 @@
     "ch-extra-jacket": "2026-11-08T13:26:35+00:00",
     "ch-extra-denim": "2026-11-08T13:27:17+00:00",
     "ch-extra-pants": "2026-11-08T13:27:20+00:00",
-    "ch-extra-shorts": "2026-11-08T13:13:02+00:00",
-    "ch-extra-shoes": "2026-11-08T13:13:05+00:00",
+    "ch-extra-shorts": "2026-11-08T13:28:02+00:00",
+    "ch-extra-shoes": "2026-11-08T13:28:05+00:00",
     "ch-extra-boots": "2026-11-08T13:13:47+00:00",
     "ch-extra-home": "2026-11-08T13:13:50+00:00",
     "ch-extra-gloves": "2026-11-08T13:14:32+00:00",
