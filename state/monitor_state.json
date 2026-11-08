@@ -4010,12 +4010,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T07:58:11+00:00",
+      "last_checked_at": "2026-11-08T08:05:40+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T07:58:11+00:00",
+      "last_attempt_at": "2026-11-08T08:05:40+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4109,12 +4109,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T07:58:19+00:00",
+      "last_checked_at": "2026-11-08T08:05:47+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T07:58:19+00:00",
+      "last_attempt_at": "2026-11-08T08:05:47+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4723,12 +4723,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T07:58:04+00:00",
+      "last_checked_at": "2026-11-08T08:05:32+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T07:58:04+00:00",
+      "last_attempt_at": "2026-11-08T08:05:32+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5528,7 +5528,7 @@
       "status": "ok"
     },
     "ch-extra-t-shirts": {
-      "last_checked_at": "2026-11-08T04:46:39+00:00",
+      "last_checked_at": "2026-11-08T08:05:25+00:00",
       "duration_seconds": 0.16,
       "consecutive_failures": 0,
       "last_error": "HTTP 404: 카테고리 주소가 존재하지 않습니다",
@@ -5538,13 +5538,13 @@
       "expected_missing_status": 404
     },
     "ch-extra-shirt": {
-      "last_checked_at": "2026-11-08T04:46:42+00:00",
-      "duration_seconds": 3.04,
-      "last_success_at": "2026-11-08T04:46:42+00:00",
+      "last_checked_at": "2026-11-08T08:05:28+00:00",
+      "duration_seconds": 3.03,
+      "last_success_at": "2026-11-08T08:05:28+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.47,
+      "actual_interval_seconds": 11926.51,
       "status": "ok"
     },
     "ch-extra-shirts": {
@@ -10629,7 +10629,7 @@
           "at": "2026-11-08T07:55:46+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T07:55:08+00:00"
     }
   },
@@ -10648,8 +10648,8 @@
     "ch-extra-belt": "2026-11-08T08:03:57+00:00",
     "ch-extra-earring": "2026-11-08T08:04:39+00:00",
     "ch-extra-t-shirt": "2026-11-08T08:04:42+00:00",
-    "ch-extra-t-shirts": "2026-11-08T04:46:38+00:00",
-    "ch-extra-shirt": "2026-11-08T04:46:39+00:00",
+    "ch-extra-t-shirts": "2026-11-08T08:05:24+00:00",
+    "ch-extra-shirt": "2026-11-08T08:05:25+00:00",
     "ch-extra-shirts": "2026-11-08T07:54:54+00:00",
     "ch-extra-hoodies": "2026-11-08T07:54:56+00:00",
     "ch-extra-sweatshirt": "2026-11-08T07:55:39+00:00",
