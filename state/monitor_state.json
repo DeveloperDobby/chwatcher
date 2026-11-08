@@ -1570,12 +1570,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T12:49:53+00:00",
+      "last_checked_at": "2026-11-08T12:56:42+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T12:49:53+00:00",
+      "last_attempt_at": "2026-11-08T12:56:42+00:00",
       "priority": false
     },
     "www.chromehearts.com:158552BLKXXXXXX": {
@@ -3527,12 +3527,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T12:50:07+00:00",
+      "last_checked_at": "2026-11-08T12:56:55+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T12:50:07+00:00",
+      "last_attempt_at": "2026-11-08T12:56:55+00:00",
       "priority": false,
       "master_pid": "164943XXXXXX140",
       "scan_queue": [],
@@ -5594,23 +5594,23 @@
       "status": "ok"
     },
     "ch-extra-sweater": {
-      "last_checked_at": "2026-11-08T12:41:33+00:00",
-      "duration_seconds": 2.8,
-      "last_success_at": "2026-11-08T12:41:33+00:00",
+      "last_checked_at": "2026-11-08T12:56:34+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-08T12:56:34+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.84,
+      "actual_interval_seconds": 901.49,
       "status": "ok"
     },
     "ch-extra-jacket": {
-      "last_checked_at": "2026-11-08T12:41:36+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-08T12:41:36+00:00",
+      "last_checked_at": "2026-11-08T12:56:37+00:00",
+      "duration_seconds": 2.97,
+      "last_success_at": "2026-11-08T12:56:37+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.84,
+      "actual_interval_seconds": 901.47,
       "status": "ok"
     },
     "ch-extra-denim": {
@@ -6984,7 +6984,7 @@
             "https://www.chromehearts.com/sitemap_0.xml"
           ],
           "first_seen_at": "2026-11-07T06:03:05+00:00",
-          "last_checked_at": "2026-11-08T12:41:36+00:00",
+          "last_checked_at": "2026-11-08T12:56:37+00:00",
           "notify": true,
           "render": "auto",
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인"
@@ -7134,13 +7134,6 @@
         }
       },
       "history": [
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/robots.txt",
-          "reason": "robots",
-          "source": "",
-          "at": "2026-11-07T12:03:00+00:00"
-        },
         {
           "code": "needs_review",
           "url": "https://www.chromehearts.com/shop",
@@ -10633,9 +10626,16 @@
           "reason": "robots",
           "source": "",
           "at": "2026-11-08T12:55:53+00:00"
+        },
+        {
+          "code": "needs_review",
+          "url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Search-Show?cgid=SWEATPANTS",
+          "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
+          "source": "https://www.chromehearts.com/sitemap_0.xml",
+          "at": "2026-11-08T12:56:40+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T12:43:08+00:00"
     }
   },
@@ -10660,8 +10660,8 @@
     "ch-extra-hoodies": "2026-11-08T12:55:04+00:00",
     "ch-extra-sweatshirt": "2026-11-08T12:55:46+00:00",
     "ch-extra-sweatshirts": "2026-11-08T12:55:49+00:00",
-    "ch-extra-sweater": "2026-11-08T12:41:31+00:00",
-    "ch-extra-jacket": "2026-11-08T12:41:33+00:00",
+    "ch-extra-sweater": "2026-11-08T12:56:31+00:00",
+    "ch-extra-jacket": "2026-11-08T12:56:34+00:00",
     "ch-extra-denim": "2026-11-08T12:42:15+00:00",
     "ch-extra-pants": "2026-11-08T12:42:18+00:00",
     "ch-extra-shorts": "2026-11-08T12:43:01+00:00",
