@@ -958,12 +958,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:25:57+00:00",
+      "last_checked_at": "2026-11-08T00:33:16+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:25:57+00:00",
+      "last_attempt_at": "2026-11-08T00:33:16+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX274": {
@@ -994,12 +994,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:26:25+00:00",
+      "last_checked_at": "2026-11-08T00:33:18+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:26:25+00:00",
+      "last_attempt_at": "2026-11-08T00:33:18+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX273": {
@@ -1390,12 +1390,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:25:55+00:00",
+      "last_checked_at": "2026-11-08T00:33:15+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:25:55+00:00",
+      "last_attempt_at": "2026-11-08T00:33:15+00:00",
       "priority": false
     },
     "www.chromehearts.com:177731CRYXXX042": {
@@ -1462,12 +1462,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:25:52+00:00",
+      "last_checked_at": "2026-11-08T00:33:12+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:25:52+00:00",
+      "last_attempt_at": "2026-11-08T00:33:12+00:00",
       "priority": false
     },
     "www.chromehearts.com:177733CRYXXX042": {
@@ -1498,12 +1498,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:25:54+00:00",
+      "last_checked_at": "2026-11-08T00:33:13+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:25:54+00:00",
+      "last_attempt_at": "2026-11-08T00:33:13+00:00",
       "priority": false
     },
     "www.chromehearts.com:177730CRYXXX013": {
@@ -4624,7 +4624,7 @@
           "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T00:18:25+00:00"
+          "last_seen_at": "2026-11-08T00:33:28+00:00"
         },
         "191715D5DSML408:en_US": {
           "pid": "191715D5DSML408",
@@ -4652,16 +4652,20 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:26:37+00:00",
+      "last_checked_at": "2026-11-08T00:33:28+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:26:37+00:00",
+      "last_attempt_at": "2026-11-08T00:33:28+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=SML&pid=191715D5DXXX408&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1"
+      ]
     },
     "www.chromehearts.com:191716ADLXXX406": {
       "pid": "191716ADLXXX406",
@@ -4747,7 +4751,7 @@
           "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&pid=180459XXXXXX389&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T00:18:17+00:00"
+          "last_seen_at": "2026-11-08T00:33:21+00:00"
         },
         "180459MB3LRG389:en_US": {
           "pid": "180459MB3LRG389",
@@ -4767,7 +4771,7 @@
           "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&pid=180459XXXXXX389&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T00:18:19+00:00"
+          "last_seen_at": "2026-11-08T00:33:22+00:00"
         },
         "180459MB3MED389:en_US": {
           "pid": "180459MB3MED389",
@@ -4816,12 +4820,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T00:26:33+00:00",
+      "last_checked_at": "2026-11-08T00:33:25+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T00:26:33+00:00",
+      "last_attempt_at": "2026-11-08T00:33:25+00:00",
       "priority": false,
       "master_pid": "180459XXXXXX389",
       "scan_queue": [],
@@ -5558,23 +5562,23 @@
       "status": "ok"
     },
     "ch-extra-sweatshirt": {
-      "last_checked_at": "2026-11-08T00:18:05+00:00",
-      "duration_seconds": 2.67,
-      "last_success_at": "2026-11-08T00:18:05+00:00",
+      "last_checked_at": "2026-11-08T00:33:06+00:00",
+      "duration_seconds": 2.82,
+      "last_success_at": "2026-11-08T00:33:06+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.97,
+      "actual_interval_seconds": 901.14,
       "status": "ok"
     },
     "ch-extra-sweatshirts": {
-      "last_checked_at": "2026-11-08T00:18:08+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-08T00:18:08+00:00",
+      "last_checked_at": "2026-11-08T00:33:09+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-08T00:33:09+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.98,
+      "actual_interval_seconds": 901.14,
       "status": "ok"
     },
     "ch-extra-sweater": {
@@ -5978,13 +5982,13 @@
       "status": "ok"
     },
     "variant-719bf406f4287fcc": {
-      "last_checked_at": "2026-11-08T00:18:26+00:00",
-      "duration_seconds": 4.49,
-      "last_success_at": "2026-11-08T00:18:26+00:00",
+      "last_checked_at": "2026-11-08T00:33:28+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-08T00:33:28+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 448.91,
+      "actual_interval_seconds": 411.56,
       "status": "ok"
     },
     "variant-2689d9ae00e00b11": {
@@ -7043,9 +7047,9 @@
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-08T00:18:08+00:00",
+          "last_attempt_at": "2026-11-08T00:33:09+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-08T00:18:10+00:00",
+          "last_success_at": "2026-11-08T00:33:10+00:00",
           "error": ""
         }
       },
@@ -7118,13 +7122,6 @@
         }
       },
       "history": [
-        {
-          "code": "candidate_found",
-          "url": "https://www.chromehearts.com/scents/22-incense-set-with-holder/146053XXXXXX00R.html",
-          "reason": "product",
-          "source": "https://www.chromehearts.com/scents",
-          "at": "2026-11-07T06:01:56+00:00"
-        },
         {
           "code": "candidate_found",
           "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
@@ -10617,9 +10614,16 @@
           "reason": "sitemap",
           "source": "",
           "at": "2026-11-08T00:32:25+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_0.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-08T00:33:10+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-08T00:31:42+00:00"
     }
   },
@@ -10642,8 +10646,8 @@
     "ch-extra-shirt": "2026-11-08T00:31:34+00:00",
     "ch-extra-shirts": "2026-11-08T00:32:18+00:00",
     "ch-extra-hoodies": "2026-11-08T00:32:21+00:00",
-    "ch-extra-sweatshirt": "2026-11-08T00:18:03+00:00",
-    "ch-extra-sweatshirts": "2026-11-08T00:18:05+00:00",
+    "ch-extra-sweatshirt": "2026-11-08T00:33:03+00:00",
+    "ch-extra-sweatshirts": "2026-11-08T00:33:06+00:00",
     "ch-extra-sweater": "2026-11-08T00:18:48+00:00",
     "ch-extra-jacket": "2026-11-08T00:18:50+00:00",
     "ch-extra-denim": "2026-11-08T00:19:33+00:00",
