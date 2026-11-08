@@ -850,12 +850,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T11:10:51+00:00",
+      "last_checked_at": "2026-11-08T11:19:11+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T11:10:51+00:00",
+      "last_attempt_at": "2026-11-08T11:19:11+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX271": {
@@ -886,12 +886,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T11:10:52+00:00",
+      "last_checked_at": "2026-11-08T11:19:12+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T11:10:52+00:00",
+      "last_attempt_at": "2026-11-08T11:19:12+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX272": {
@@ -1534,12 +1534,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T11:11:01+00:00",
+      "last_checked_at": "2026-11-08T11:19:21+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T11:11:01+00:00",
+      "last_attempt_at": "2026-11-08T11:19:21+00:00",
       "priority": false
     },
     "www.chromehearts.com:174310CRYXXX005": {
@@ -3595,12 +3595,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T11:10:21+00:00",
+      "last_checked_at": "2026-11-08T11:19:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T11:10:21+00:00",
+      "last_attempt_at": "2026-11-08T11:19:09+00:00",
       "priority": false,
       "master_pid": "092826AI6XXXXXX",
       "scan_queue": [],
@@ -4595,12 +4595,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T11:11:00+00:00",
+      "last_checked_at": "2026-11-08T11:19:20+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T11:11:00+00:00",
+      "last_attempt_at": "2026-11-08T11:19:20+00:00",
       "priority": false,
       "master_pid": "176354XXXXXXXXX",
       "scan_queue": [],
@@ -5472,23 +5472,23 @@
       "expected_missing_status": 404
     },
     "ch-extra-bag": {
-      "last_checked_at": "2026-11-08T11:04:00+00:00",
-      "duration_seconds": 2.79,
-      "last_success_at": "2026-11-08T11:04:00+00:00",
+      "last_checked_at": "2026-11-08T11:19:00+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-08T11:19:00+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.02,
+      "actual_interval_seconds": 900.6,
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-08T11:04:03+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-08T11:04:03+00:00",
+      "last_checked_at": "2026-11-08T11:19:03+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-08T11:19:03+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.03,
+      "actual_interval_seconds": 900.6,
       "status": "ok"
     },
     "ch-extra-belt": {
@@ -10623,7 +10623,7 @@
           "at": "2026-11-08T11:13:04+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T11:13:04+00:00"
     }
   },
@@ -10637,8 +10637,8 @@
     "ch-extra-goggles": "2026-11-08T11:17:27+00:00",
     "ch-extra-sunglasses": "2026-11-08T11:18:12+00:00",
     "ch-extra-eyewear-accessories": "2026-11-08T11:18:15+00:00",
-    "ch-extra-bag": "2026-11-08T11:03:57+00:00",
-    "ch-extra-bags": "2026-11-08T11:04:00+00:00",
+    "ch-extra-bag": "2026-11-08T11:18:57+00:00",
+    "ch-extra-bags": "2026-11-08T11:19:00+00:00",
     "ch-extra-belt": "2026-11-08T11:04:42+00:00",
     "ch-extra-earring": "2026-11-08T11:04:45+00:00",
     "ch-extra-t-shirt": "2026-11-08T11:05:27+00:00",
