@@ -3677,7 +3677,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T20:56:31+00:00"
+          "last_seen_at": "2026-11-08T21:19:40+00:00"
         },
         "201585AFWMED030:en_US": {
           "pid": "201585AFWMED030",
@@ -3696,7 +3696,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-08T20:56:33+00:00"
+          "last_seen_at": "2026-11-08T21:19:42+00:00"
         }
       },
       "sources": {
@@ -3705,12 +3705,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T21:10:55+00:00",
+      "last_checked_at": "2026-11-08T21:19:42+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T21:10:55+00:00",
+      "last_attempt_at": "2026-11-08T21:19:42+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -3899,12 +3899,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T21:11:40+00:00",
+      "last_checked_at": "2026-11-08T21:20:00+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T21:11:40+00:00",
+      "last_attempt_at": "2026-11-08T21:20:00+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -4207,7 +4207,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T21:10:58+00:00",
+      "last_attempt_at": "2026-11-08T21:19:45+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5453,10 +5453,10 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-08T21:18:43+00:00",
-      "duration_seconds": 2.89,
+      "last_checked_at": "2026-11-08T21:19:28+00:00",
+      "duration_seconds": 2.85,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 237,
+      "consecutive_failures": 238,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.72,
@@ -5663,13 +5663,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-08T21:18:46+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-08T21:19:31+00:00",
+      "duration_seconds": 2.98,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 235,
+      "consecutive_failures": 236,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.7,
+      "actual_interval_seconds": 45.71,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6033,33 +6033,33 @@
       "status": "ok"
     },
     "variant-49a2cfa73ac49733": {
-      "last_checked_at": "2026-11-08T20:56:33+00:00",
-      "duration_seconds": 7.42,
-      "last_success_at": "2026-11-08T20:56:33+00:00",
+      "last_checked_at": "2026-11-08T21:19:42+00:00",
+      "duration_seconds": 7.31,
+      "last_success_at": "2026-11-08T21:19:42+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 396.04,
+      "actual_interval_seconds": 527.18,
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-08T21:10:58+00:00",
+      "last_checked_at": "2026-11-08T21:19:45+00:00",
       "duration_seconds": 2.98,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 195,
+      "consecutive_failures": 196,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 330.67,
+      "actual_interval_seconds": 527.17,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
-      "last_checked_at": "2026-11-08T20:56:45+00:00",
-      "duration_seconds": 8.99,
-      "last_success_at": "2026-11-08T20:56:45+00:00",
+      "last_checked_at": "2026-11-08T21:20:00+00:00",
+      "duration_seconds": 15.0,
+      "last_success_at": "2026-11-08T21:20:00+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 372.05,
+      "actual_interval_seconds": 500.18,
       "status": "ok"
     },
     "variant-ae69f9c9aaefbd47": {
@@ -6269,7 +6269,7 @@
         },
         "https://www.chromehearts.com/boxers-leggings": {
           "url": "https://www.chromehearts.com/boxers-leggings",
-          "title": "BOXERS & LEGGINGS",
+          "title": "Korea",
           "kind": "category",
           "status": "configured",
           "sources": [
@@ -10634,7 +10634,7 @@
           "at": "2026-11-08T21:17:27+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-08T21:17:27+00:00"
     }
   },
