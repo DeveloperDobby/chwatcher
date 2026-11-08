@@ -850,12 +850,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T23:55:38+00:00",
+      "last_checked_at": "2026-11-08T00:01:46+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T23:55:38+00:00",
+      "last_attempt_at": "2026-11-08T00:01:46+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX271": {
@@ -886,12 +886,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T23:55:40+00:00",
+      "last_checked_at": "2026-11-08T00:01:47+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T23:55:40+00:00",
+      "last_attempt_at": "2026-11-08T00:01:47+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX272": {
@@ -1534,12 +1534,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T23:55:49+00:00",
+      "last_checked_at": "2026-11-08T00:01:56+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T23:55:49+00:00",
+      "last_attempt_at": "2026-11-08T00:01:56+00:00",
       "priority": false
     },
     "www.chromehearts.com:174310CRYXXX005": {
@@ -3613,7 +3613,7 @@
           "url": "https://www.chromehearts.com/intimates/ch-plus-tights/092826AI6XXXXXX.html?dwvar_092826AI6XXXXXX_size=SZ2&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ2&pid=092826AI6XXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-07T23:40:42+00:00"
+          "last_seen_at": "2026-11-08T00:01:44+00:00"
         }
       },
       "sources": {
@@ -3622,21 +3622,16 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T23:55:13+00:00",
+      "last_checked_at": "2026-11-08T00:01:44+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T23:55:13+00:00",
+      "last_attempt_at": "2026-11-08T00:01:44+00:00",
       "priority": false,
       "master_pid": "092826AI6XXXXXX",
-      "scan_queue": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ2&pid=092826AI6XXXXXX&quantity=1"
-      ],
-      "scan_seen": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ3&pid=092826AI6XXXXXX&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ4&pid=092826AI6XXXXXX&quantity=1"
-      ]
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201585AFWXXX030": {
       "pid": "201585AFWXXX030",
@@ -4621,12 +4616,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-07T23:55:47+00:00",
+      "last_checked_at": "2026-11-08T00:01:55+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-07T23:55:47+00:00",
+      "last_attempt_at": "2026-11-08T00:01:55+00:00",
       "priority": false,
       "master_pid": "176354XXXXXXXXX",
       "scan_queue": [],
@@ -5548,7 +5543,7 @@
       "status": "ok"
     },
     "ch-extra-t-shirts": {
-      "last_checked_at": "2026-11-07T23:46:34+00:00",
+      "last_checked_at": "2026-11-08T00:01:34+00:00",
       "duration_seconds": 0.16,
       "consecutive_failures": 0,
       "last_error": "HTTP 404: 카테고리 주소가 존재하지 않습니다",
@@ -5558,13 +5553,13 @@
       "expected_missing_status": 404
     },
     "ch-extra-shirt": {
-      "last_checked_at": "2026-11-07T23:46:37+00:00",
-      "duration_seconds": 3.03,
-      "last_success_at": "2026-11-07T23:46:37+00:00",
+      "last_checked_at": "2026-11-08T00:01:37+00:00",
+      "duration_seconds": 3.02,
+      "last_success_at": "2026-11-08T00:01:37+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.08,
+      "actual_interval_seconds": 900.17,
       "status": "ok"
     },
     "ch-extra-shirts": {
@@ -7024,7 +7019,7 @@
             "https://www.chromehearts.com/sitemap_0.xml"
           ],
           "first_seen_at": "2026-11-07T06:03:05+00:00",
-          "last_checked_at": "2026-11-07T23:46:38+00:00",
+          "last_checked_at": "2026-11-08T00:01:38+00:00",
           "notify": true,
           "render": "auto",
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인"
@@ -7059,9 +7054,9 @@
       "sources": {
         "https://www.chromehearts.com/robots.txt": {
           "kind": "robots",
-          "last_attempt_at": "2026-11-07T23:46:37+00:00",
+          "last_attempt_at": "2026-11-08T00:01:37+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-07T23:46:38+00:00",
+          "last_success_at": "2026-11-08T00:01:38+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
@@ -7148,27 +7143,6 @@
         }
       },
       "history": [
-        {
-          "code": "candidate_found",
-          "url": "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
-          "reason": "product",
-          "source": "https://www.chromehearts.com/scents",
-          "at": "2026-11-07T06:01:56+00:00"
-        },
-        {
-          "code": "candidate_found",
-          "url": "https://www.chromehearts.com/scents/33-eau-de-parfum/162006CRYXXX272.html",
-          "reason": "product",
-          "source": "https://www.chromehearts.com/scents",
-          "at": "2026-11-07T06:01:56+00:00"
-        },
-        {
-          "code": "candidate_found",
-          "url": "https://www.chromehearts.com/scents/22-roll-on-perfume/162008CRYXXX271.html",
-          "reason": "product",
-          "source": "https://www.chromehearts.com/scents",
-          "at": "2026-11-07T06:01:56+00:00"
-        },
         {
           "code": "candidate_found",
           "url": "https://www.chromehearts.com/scents/33-roll-on-perfume/162008CRYXXX272.html",
@@ -10647,10 +10621,31 @@
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
           "source": "https://www.chromehearts.com/sitemap_0.xml",
           "at": "2026-11-08T00:00:56+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/robots.txt",
+          "reason": "robots",
+          "source": "",
+          "at": "2026-11-08T00:01:38+00:00"
+        },
+        {
+          "code": "needs_review",
+          "url": "https://www.chromehearts.com/shop",
+          "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
+          "source": "https://www.chromehearts.com/sitemap_0.xml",
+          "at": "2026-11-08T00:01:41+00:00"
+        },
+        {
+          "code": "coverage",
+          "url": "https://www.chromehearts.com/",
+          "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
+          "source": "",
+          "at": "2026-11-08T00:01:41+00:00"
         }
       ],
-      "source_first": true,
-      "last_summary_at": "2026-11-07T23:46:41+00:00"
+      "source_first": false,
+      "last_summary_at": "2026-11-08T00:01:41+00:00"
     }
   },
   "optional_probes": {
@@ -10668,8 +10663,8 @@
     "ch-extra-belt": "2026-11-07T23:56:20+00:00",
     "ch-extra-earring": "2026-11-08T00:00:47+00:00",
     "ch-extra-t-shirt": "2026-11-08T00:00:50+00:00",
-    "ch-extra-t-shirts": "2026-11-07T23:46:32+00:00",
-    "ch-extra-shirt": "2026-11-07T23:46:34+00:00",
+    "ch-extra-t-shirts": "2026-11-08T00:01:32+00:00",
+    "ch-extra-shirt": "2026-11-08T00:01:34+00:00",
     "ch-extra-shirts": "2026-11-07T23:47:17+00:00",
     "ch-extra-hoodies": "2026-11-07T23:47:20+00:00",
     "ch-extra-sweatshirt": "2026-11-07T23:48:02+00:00",
