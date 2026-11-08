@@ -776,7 +776,24 @@
       "updated_at": "2026-11-08T18:16:33+00:00"
     }
   },
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "id": 47,
+      "monitor": {
+        "id": "variant-041436f097b4bc19",
+        "name": "Chrome Hearts 사이즈 HOTEL SLIPPERS",
+        "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED"
+      },
+      "event": {
+        "kind": "health",
+        "title": "Chrome Hearts 사이즈 HOTEL SLIPPERS 감시 오류",
+        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n404 Client Error: Not Found for url: https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
+        "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
+        "observed_at": "2026-11-08T18:22:00+00:00",
+        "_notification_id": 47
+      }
+    }
+  ],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
@@ -1022,12 +1039,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:06+00:00",
+      "last_checked_at": "2026-11-08T18:21:56+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T18:15:06+00:00",
+      "last_attempt_at": "2026-11-08T18:21:56+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX274": {
@@ -1058,12 +1075,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:08+00:00",
+      "last_checked_at": "2026-11-08T18:21:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T18:15:08+00:00",
+      "last_attempt_at": "2026-11-08T18:21:57+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX273": {
@@ -1301,7 +1318,7 @@
           "url": "https://www.chromehearts.com/baccarat/triple-old-fashion/207468CRYXXX055.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:00:22+00:00"
+          "last_seen_at": "2026-11-08T18:22:06+00:00"
         }
       },
       "sources": {
@@ -1310,12 +1327,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:17+00:00",
+      "last_checked_at": "2026-11-08T18:22:06+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T18:15:17+00:00",
+      "last_attempt_at": "2026-11-08T18:22:06+00:00",
       "priority": false
     },
     "www.chromehearts.com:207467CRYXXX054": {
@@ -1337,7 +1354,7 @@
           "url": "https://www.chromehearts.com/baccarat/shot-glass/207467CRYXXX054.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:00:19+00:00"
+          "last_seen_at": "2026-11-08T18:22:03+00:00"
         }
       },
       "sources": {
@@ -1346,12 +1363,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:14+00:00",
+      "last_checked_at": "2026-11-08T18:22:03+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T18:15:14+00:00",
+      "last_attempt_at": "2026-11-08T18:22:03+00:00",
       "priority": false
     },
     "www.chromehearts.com:177734CRYXXX042": {
@@ -4849,7 +4866,7 @@
           "url": "https://www.chromehearts.com/scarf/math-plus-scarf/222575AEGXXX059.html",
           "lookup_url": "",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-08T18:00:48+00:00"
+          "last_seen_at": "2026-11-08T18:22:11+00:00"
         }
       },
       "sources": {
@@ -4858,13 +4875,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:21+00:00",
+      "last_checked_at": "2026-11-08T18:22:11+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:21+00:00"
+      "last_attempt_at": "2026-11-08T18:22:11+00:00"
     },
     "www.chromehearts.com:204651B2UXXX07M": {
       "pid": "204651B2UXXX07M",
@@ -4979,7 +4996,7 @@
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:11+00:00",
+      "last_attempt_at": "2026-11-08T18:22:00+00:00",
       "master_pid": "204651B2UXXX07M",
       "scan_queue": [],
       "scan_seen": []
@@ -5075,7 +5092,7 @@
           "url": "https://www.chromehearts.com/scents/33-incense-set-with-holder/146053XXXXXX142.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:00:18+00:00"
+          "last_seen_at": "2026-11-08T18:22:02+00:00"
         }
       },
       "sources": {
@@ -5084,13 +5101,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:12+00:00",
+      "last_checked_at": "2026-11-08T18:22:02+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:12+00:00"
+      "last_attempt_at": "2026-11-08T18:22:02+00:00"
     },
     "www.chromehearts.com:151407XXXXXX169": {
       "pid": "151407XXXXXX169",
@@ -5111,7 +5128,7 @@
           "url": "https://www.chromehearts.com/scents/33-incense-refill/151407XXXXXX169.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:00:25+00:00"
+          "last_seen_at": "2026-11-08T18:22:09+00:00"
         }
       },
       "sources": {
@@ -5120,13 +5137,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:20+00:00",
+      "last_checked_at": "2026-11-08T18:22:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:20+00:00"
+      "last_attempt_at": "2026-11-08T18:22:09+00:00"
     },
     "www.chromehearts.com:146053XXXXXX00R": {
       "pid": "146053XXXXXX00R",
@@ -5156,13 +5173,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:09+00:00",
+      "last_checked_at": "2026-11-08T18:21:59+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:09+00:00"
+      "last_attempt_at": "2026-11-08T18:21:59+00:00"
     },
     "www.chromehearts.com:151407XXXXXX00S": {
       "pid": "151407XXXXXX00S",
@@ -5183,7 +5200,7 @@
           "url": "https://www.chromehearts.com/scents/22-incense-refill/151407XXXXXX00S.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:00:24+00:00"
+          "last_seen_at": "2026-11-08T18:22:08+00:00"
         }
       },
       "sources": {
@@ -5192,13 +5209,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:18+00:00",
+      "last_checked_at": "2026-11-08T18:22:08+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:18+00:00"
+      "last_attempt_at": "2026-11-08T18:22:08+00:00"
     },
     "www.chromehearts.com:208531PNKXXX751": {
       "pid": "208531PNKXXX751",
@@ -5255,7 +5272,7 @@
           "url": "https://www.chromehearts.com/scents/33-perfumed-hand-spray/208531BLUXXX752.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:00:50+00:00"
+          "last_seen_at": "2026-11-08T18:22:12+00:00"
         }
       },
       "sources": {
@@ -5264,13 +5281,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:23+00:00",
+      "last_checked_at": "2026-11-08T18:22:12+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:23+00:00"
+      "last_attempt_at": "2026-11-08T18:22:12+00:00"
     },
     "www.chromehearts.com:148310SLVXXX186": {
       "pid": "148310SLVXXX186",
@@ -5291,7 +5308,7 @@
           "url": "https://www.chromehearts.com/scents/matchstick-holder/148310SLVXXX186.html",
           "lookup_url": "",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-08T18:00:21+00:00"
+          "last_seen_at": "2026-11-08T18:22:05+00:00"
         }
       },
       "sources": {
@@ -5300,13 +5317,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T18:15:15+00:00",
+      "last_checked_at": "2026-11-08T18:22:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-08T18:15:15+00:00"
+      "last_attempt_at": "2026-11-08T18:22:05+00:00"
     }
   },
   "health": {
@@ -5441,13 +5458,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-08T18:20:57+00:00",
-      "duration_seconds": 2.88,
+      "last_checked_at": "2026-11-08T18:21:42+00:00",
+      "duration_seconds": 2.85,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 31,
+      "consecutive_failures": 32,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.67,
+      "actual_interval_seconds": 45.64,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5501,23 +5518,23 @@
       "status": "ok"
     },
     "ch-extra-earring": {
-      "last_checked_at": "2026-11-08T18:06:51+00:00",
-      "duration_seconds": 2.94,
-      "last_success_at": "2026-11-08T18:06:51+00:00",
+      "last_checked_at": "2026-11-08T18:21:51+00:00",
+      "duration_seconds": 2.87,
+      "last_success_at": "2026-11-08T18:21:51+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.64,
+      "actual_interval_seconds": 900.66,
       "status": "ok"
     },
     "ch-extra-t-shirt": {
-      "last_checked_at": "2026-11-08T18:06:54+00:00",
-      "duration_seconds": 2.97,
-      "last_success_at": "2026-11-08T18:06:54+00:00",
+      "last_checked_at": "2026-11-08T18:21:54+00:00",
+      "duration_seconds": 3.0,
+      "last_success_at": "2026-11-08T18:21:54+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.62,
+      "actual_interval_seconds": 900.67,
       "status": "ok"
     },
     "ch-extra-t-shirts": {
@@ -5651,13 +5668,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-08T18:21:00+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-08T18:21:45+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 29,
+      "consecutive_failures": 30,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.67,
+      "actual_interval_seconds": 45.66,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6051,23 +6068,23 @@
       "status": "ok"
     },
     "variant-ae69f9c9aaefbd47": {
-      "last_checked_at": "2026-11-08T18:00:19+00:00",
-      "duration_seconds": 1.46,
-      "last_success_at": "2026-11-08T18:00:19+00:00",
+      "last_checked_at": "2026-11-08T18:22:03+00:00",
+      "duration_seconds": 1.47,
+      "last_success_at": "2026-11-08T18:22:03+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 445.59,
+      "actual_interval_seconds": 409.71,
       "status": "ok"
     },
     "variant-9a74d9ee5ffcee1c": {
-      "last_checked_at": "2026-11-08T18:00:22+00:00",
-      "duration_seconds": 1.48,
-      "last_success_at": "2026-11-08T18:00:22+00:00",
+      "last_checked_at": "2026-11-08T18:22:06+00:00",
+      "duration_seconds": 1.51,
+      "last_success_at": "2026-11-08T18:22:06+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 418.6,
+      "actual_interval_seconds": 409.73,
       "status": "ok"
     },
     "variant-a4e2f598fc79f5b9": {
@@ -6091,23 +6108,23 @@
       "status": "ok"
     },
     "variant-041436f097b4bc19": {
-      "last_checked_at": "2026-11-08T18:15:11+00:00",
-      "duration_seconds": 1.45,
+      "last_checked_at": "2026-11-08T18:22:00+00:00",
+      "duration_seconds": 1.42,
       "last_success_at": "2026-11-08T18:00:16+00:00",
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "last_error": "404 Client Error: Not Found for url: https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
-      "alerted": false,
-      "actual_interval_seconds": 446.17,
+      "alerted": true,
+      "actual_interval_seconds": 409.65,
       "status": "ok"
     },
     "variant-b67c3ca4bc132fcc": {
-      "last_checked_at": "2026-11-08T18:00:48+00:00",
-      "duration_seconds": 1.37,
-      "last_success_at": "2026-11-08T18:00:48+00:00",
+      "last_checked_at": "2026-11-08T18:22:11+00:00",
+      "duration_seconds": 1.49,
+      "last_success_at": "2026-11-08T18:22:11+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 440.57,
+      "actual_interval_seconds": 410.21,
       "status": "ok"
     },
     "variant-0bcc2debb017897d": {
@@ -6121,54 +6138,54 @@
       "actual_interval_seconds": 445.71
     },
     "variant-1463705a2e9f7c5d": {
-      "last_checked_at": "2026-11-08T18:00:18+00:00",
-      "duration_seconds": 1.6,
-      "last_success_at": "2026-11-08T18:00:18+00:00",
+      "last_checked_at": "2026-11-08T18:22:02+00:00",
+      "duration_seconds": 1.57,
+      "last_success_at": "2026-11-08T18:22:02+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 446.12
+      "actual_interval_seconds": 410.23
     },
     "variant-06ad55485bbabb6e": {
-      "last_checked_at": "2026-11-08T18:00:21+00:00",
-      "duration_seconds": 1.52,
-      "last_success_at": "2026-11-08T18:00:21+00:00",
+      "last_checked_at": "2026-11-08T18:22:05+00:00",
+      "duration_seconds": 1.5,
+      "last_success_at": "2026-11-08T18:22:05+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 446.11
+      "actual_interval_seconds": 410.22
     },
     "variant-ace4f4571e46c780": {
-      "last_checked_at": "2026-11-08T18:00:24+00:00",
-      "duration_seconds": 1.49,
-      "last_success_at": "2026-11-08T18:00:24+00:00",
+      "last_checked_at": "2026-11-08T18:22:08+00:00",
+      "duration_seconds": 1.48,
+      "last_success_at": "2026-11-08T18:22:08+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 419.1
+      "actual_interval_seconds": 410.22
     },
     "variant-b9fc70a55c473b26": {
-      "last_checked_at": "2026-11-08T18:00:25+00:00",
-      "duration_seconds": 1.55,
-      "last_success_at": "2026-11-08T18:00:25+00:00",
+      "last_checked_at": "2026-11-08T18:22:09+00:00",
+      "duration_seconds": 1.49,
+      "last_success_at": "2026-11-08T18:22:09+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 418.66
+      "actual_interval_seconds": 409.72
     },
     "variant-ab68eb8ecff7a001": {
-      "last_checked_at": "2026-11-08T18:00:50+00:00",
-      "duration_seconds": 1.52,
-      "last_success_at": "2026-11-08T18:00:50+00:00",
+      "last_checked_at": "2026-11-08T18:22:12+00:00",
+      "duration_seconds": 1.54,
+      "last_success_at": "2026-11-08T18:22:12+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 440.1
+      "actual_interval_seconds": 409.76
     },
     "discovered-e833dda1298cc5af": {
       "last_checked_at": "2026-11-08T18:16:33+00:00",
@@ -6211,7 +6228,7 @@
       "actual_interval_seconds": 440.6
     }
   },
-  "notification_sequence": 46,
+  "notification_sequence": 47,
   "site_backoffs": {},
   "discovery_audit": {
     "ch-discovery": {
@@ -10622,7 +10639,7 @@
           "at": "2026-11-08T18:19:41+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-08T18:19:41+00:00"
     }
   },
@@ -10639,8 +10656,8 @@
     "ch-extra-bag": "2026-11-08T18:20:20+00:00",
     "ch-extra-bags": "2026-11-08T18:21:03+00:00",
     "ch-extra-belt": "2026-11-08T18:21:06+00:00",
-    "ch-extra-earring": "2026-11-08T18:06:48+00:00",
-    "ch-extra-t-shirt": "2026-11-08T18:06:51+00:00",
+    "ch-extra-earring": "2026-11-08T18:21:48+00:00",
+    "ch-extra-t-shirt": "2026-11-08T18:21:51+00:00",
     "ch-extra-t-shirts": "2026-11-08T18:07:33+00:00",
     "ch-extra-shirt": "2026-11-08T18:07:35+00:00",
     "ch-extra-shirts": "2026-11-08T18:08:18+00:00",
