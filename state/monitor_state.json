@@ -3674,12 +3674,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T20:14:42+00:00",
+      "last_checked_at": "2026-11-08T20:22:10+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T20:14:42+00:00",
+      "last_attempt_at": "2026-11-08T20:22:10+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4057,7 +4057,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=XSM&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T19:59:43+00:00"
+          "last_seen_at": "2026-11-08T20:22:03+00:00"
         }
       },
       "sources": {
@@ -4066,12 +4066,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T20:14:34+00:00",
+      "last_checked_at": "2026-11-08T20:22:03+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T20:14:34+00:00",
+      "last_attempt_at": "2026-11-08T20:22:03+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4170,7 +4170,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T20:14:45+00:00",
+      "last_attempt_at": "2026-11-08T20:22:13+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5395,29 +5395,29 @@
       "status": "ok"
     },
     "ch-extra-goggles": {
-      "last_checked_at": "2026-11-08T20:06:52+00:00",
+      "last_checked_at": "2026-11-08T20:21:52+00:00",
       "duration_seconds": 2.87,
-      "last_success_at": "2026-11-08T20:06:52+00:00",
+      "last_success_at": "2026-11-08T20:21:52+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.6,
+      "actual_interval_seconds": 900.59,
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-08T20:20:58+00:00",
-      "duration_seconds": 2.88,
+      "last_checked_at": "2026-11-08T20:21:43+00:00",
+      "duration_seconds": 2.91,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 160,
+      "consecutive_failures": 161,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.59,
+      "actual_interval_seconds": 45.6,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
-      "last_checked_at": "2026-11-08T20:06:55+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-08T20:06:55+00:00",
+      "last_checked_at": "2026-11-08T20:21:55+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-08T20:21:55+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
@@ -5615,13 +5615,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-08T20:21:01+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-08T20:21:46+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 158,
+      "consecutive_failures": 159,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.59,
+      "actual_interval_seconds": 45.6,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -5995,13 +5995,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-08T20:14:45+00:00",
-      "duration_seconds": 3.01,
+      "last_checked_at": "2026-11-08T20:22:13+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 187,
+      "consecutive_failures": 188,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 420.05,
+      "actual_interval_seconds": 448.53,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -6221,7 +6221,7 @@
         },
         "https://www.chromehearts.com/boxers-leggings": {
           "url": "https://www.chromehearts.com/boxers-leggings",
-          "title": "Korea",
+          "title": "BOXERS & LEGGINGS",
           "kind": "category",
           "status": "configured",
           "sources": [
@@ -10586,7 +10586,7 @@
           "at": "2026-11-08T20:16:01+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T20:16:01+00:00"
     }
   },
@@ -10597,8 +10597,8 @@
     "ch-extra-hat": "2026-11-08T20:18:52+00:00",
     "ch-extra-hoodie": "2026-11-08T20:20:19+00:00",
     "ch-extra-rib-tank": "2026-11-08T20:20:22+00:00",
-    "ch-extra-goggles": "2026-11-08T20:06:49+00:00",
-    "ch-extra-sunglasses": "2026-11-08T20:06:52+00:00",
+    "ch-extra-goggles": "2026-11-08T20:21:49+00:00",
+    "ch-extra-sunglasses": "2026-11-08T20:21:52+00:00",
     "ch-extra-eyewear-accessories": "2026-11-08T20:08:19+00:00",
     "ch-extra-bag": "2026-11-08T20:08:21+00:00",
     "ch-extra-bags": "2026-11-08T20:09:50+00:00",
