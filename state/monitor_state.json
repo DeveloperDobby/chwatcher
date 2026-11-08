@@ -3740,16 +3740,22 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:54+00:00",
+      "last_checked_at": "2026-11-08T10:45:37+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:54+00:00",
+      "last_attempt_at": "2026-11-08T10:45:37+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=SML&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1"
+      ]
     },
     "www.chromehearts.com:202334AFWXXX030": {
       "pid": "202334AFWXXX030",
@@ -4044,22 +4050,16 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:21+00:00",
+      "last_checked_at": "2026-11-08T10:45:26+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:21+00:00",
+      "last_attempt_at": "2026-11-08T10:45:26+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
-      "scan_queue": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=LRG&pid=201583AFWXXX033&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1"
-      ],
-      "scan_seen": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=MED&pid=201583AFWXXX033&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=SML&pid=201583AFWXXX033&quantity=1"
-      ]
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:201584AFWXXX030": {
       "pid": "201584AFWXXX030",
@@ -4149,12 +4149,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:48+00:00",
+      "last_checked_at": "2026-11-08T10:45:34+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:48+00:00",
+      "last_attempt_at": "2026-11-08T10:45:34+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4778,12 +4778,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:17+00:00",
+      "last_checked_at": "2026-11-08T10:45:22+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:17+00:00",
+      "last_attempt_at": "2026-11-08T10:45:22+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5433,23 +5433,23 @@
       "status": "ok"
     },
     "ch-extra-silichrome": {
-      "last_checked_at": "2026-11-08T10:30:14+00:00",
-      "duration_seconds": 2.83,
-      "last_success_at": "2026-11-08T10:30:14+00:00",
+      "last_checked_at": "2026-11-08T10:45:14+00:00",
+      "duration_seconds": 2.85,
+      "last_success_at": "2026-11-08T10:45:14+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.39,
+      "actual_interval_seconds": 900.78,
       "status": "ok"
     },
     "ch-extra-sports-mesh": {
-      "last_checked_at": "2026-11-08T10:30:17+00:00",
-      "duration_seconds": 3.01,
-      "last_success_at": "2026-11-08T10:30:17+00:00",
+      "last_checked_at": "2026-11-08T10:45:17+00:00",
+      "duration_seconds": 3.03,
+      "last_success_at": "2026-11-08T10:45:17+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.41,
+      "actual_interval_seconds": 900.82,
       "status": "ok"
     },
     "ch-extra-eyewear": {
@@ -10684,13 +10684,13 @@
           "at": "2026-11-08T10:43:04+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-08T10:43:04+00:00"
     }
   },
   "optional_probes": {
-    "ch-extra-silichrome": "2026-11-08T10:30:11+00:00",
-    "ch-extra-sports-mesh": "2026-11-08T10:30:14+00:00",
+    "ch-extra-silichrome": "2026-11-08T10:45:11+00:00",
+    "ch-extra-sports-mesh": "2026-11-08T10:45:14+00:00",
     "ch-extra-eyewear": "2026-11-08T10:30:56+00:00",
     "ch-extra-hat": "2026-11-08T10:30:59+00:00",
     "ch-extra-hoodie": "2026-11-08T10:31:41+00:00",
