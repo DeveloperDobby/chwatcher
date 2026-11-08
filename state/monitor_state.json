@@ -776,24 +776,7 @@
       "updated_at": "2026-11-08T18:16:33+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 47,
-      "monitor": {
-        "id": "variant-041436f097b4bc19",
-        "name": "Chrome Hearts 사이즈 HOTEL SLIPPERS",
-        "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts 사이즈 HOTEL SLIPPERS 감시 오류",
-        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n404 Client Error: Not Found for url: https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
-        "url": "https://www.chromehearts.com/slippers/hotel-slippers/204651B2UXXX07M.html?dwvar_204651B2UXXX07M_size=MED",
-        "observed_at": "2026-11-08T18:22:00+00:00",
-        "_notification_id": 47
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
