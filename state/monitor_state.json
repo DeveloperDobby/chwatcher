@@ -958,12 +958,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:01+00:00",
+      "last_checked_at": "2026-11-08T10:44:40+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:01+00:00",
+      "last_attempt_at": "2026-11-08T10:44:40+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX274": {
@@ -994,12 +994,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:02+00:00",
+      "last_checked_at": "2026-11-08T10:44:41+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:02+00:00",
+      "last_attempt_at": "2026-11-08T10:44:41+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX273": {
@@ -1390,12 +1390,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:36:59+00:00",
+      "last_checked_at": "2026-11-08T10:44:38+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:36:59+00:00",
+      "last_attempt_at": "2026-11-08T10:44:38+00:00",
       "priority": false
     },
     "www.chromehearts.com:177731CRYXXX042": {
@@ -1426,12 +1426,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:36:34+00:00",
+      "last_checked_at": "2026-11-08T10:44:34+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:36:34+00:00",
+      "last_attempt_at": "2026-11-08T10:44:34+00:00",
       "priority": false
     },
     "www.chromehearts.com:177732CRYXXX042": {
@@ -1462,12 +1462,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:36:35+00:00",
+      "last_checked_at": "2026-11-08T10:44:35+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:36:35+00:00",
+      "last_attempt_at": "2026-11-08T10:44:35+00:00",
       "priority": false
     },
     "www.chromehearts.com:177733CRYXXX042": {
@@ -1498,12 +1498,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:36:58+00:00",
+      "last_checked_at": "2026-11-08T10:44:37+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:36:58+00:00",
+      "last_attempt_at": "2026-11-08T10:44:37+00:00",
       "priority": false
     },
     "www.chromehearts.com:177730CRYXXX013": {
@@ -4713,16 +4713,20 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:12+00:00",
+      "last_checked_at": "2026-11-08T10:44:52+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:12+00:00",
+      "last_attempt_at": "2026-11-08T10:44:52+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=SML&pid=191715D5DXXX408&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1"
+      ]
     },
     "www.chromehearts.com:191716ADLXXX406": {
       "pid": "191716ADLXXX406",
@@ -4877,12 +4881,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T10:37:09+00:00",
+      "last_checked_at": "2026-11-08T10:44:49+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T10:37:09+00:00",
+      "last_attempt_at": "2026-11-08T10:44:49+00:00",
       "priority": false,
       "master_pid": "180459XXXXXX389",
       "scan_queue": [],
@@ -5729,23 +5733,23 @@
       "status": "ok"
     },
     "ch-extra-gloves": {
-      "last_checked_at": "2026-11-08T10:29:29+00:00",
+      "last_checked_at": "2026-11-08T10:44:29+00:00",
       "duration_seconds": 2.85,
-      "last_success_at": "2026-11-08T10:29:29+00:00",
+      "last_success_at": "2026-11-08T10:44:29+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.37,
+      "actual_interval_seconds": 900.77,
       "status": "ok"
     },
     "ch-extra-tie": {
-      "last_checked_at": "2026-11-08T10:29:32+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-08T10:29:32+00:00",
+      "last_checked_at": "2026-11-08T10:44:32+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-08T10:44:32+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.39,
+      "actual_interval_seconds": 900.77,
       "status": "ok"
     },
     "variant-da7fa697bf3d5517": {
@@ -10680,7 +10684,7 @@
           "at": "2026-11-08T10:43:04+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T10:43:04+00:00"
     }
   },
@@ -10713,8 +10717,8 @@
     "ch-extra-shoes": "2026-11-08T10:42:59+00:00",
     "ch-extra-boots": "2026-11-08T10:43:41+00:00",
     "ch-extra-home": "2026-11-08T10:43:44+00:00",
-    "ch-extra-gloves": "2026-11-08T10:29:26+00:00",
-    "ch-extra-tie": "2026-11-08T10:29:29+00:00"
+    "ch-extra-gloves": "2026-11-08T10:44:26+00:00",
+    "ch-extra-tie": "2026-11-08T10:44:29+00:00"
   },
   "detail_next_new": false
 }
