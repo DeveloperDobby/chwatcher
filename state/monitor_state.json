@@ -3820,7 +3820,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36B&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36B&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:41:44+00:00"
+          "last_seen_at": "2026-11-08T19:08:38+00:00"
         },
         "202334AFW36C030:en_US": {
           "pid": "202334AFW36C030",
@@ -3839,7 +3839,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36C&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36C&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-08T18:47:32+00:00"
+          "last_seen_at": "2026-11-08T19:08:40+00:00"
         },
         "202334AFW36D030:en_US": {
           "pid": "202334AFW36D030",
@@ -3858,7 +3858,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=36D&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=36D&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-08T18:47:34+00:00"
+          "last_seen_at": "2026-11-08T19:08:41+00:00"
         },
         "202334AFW34C030:en_US": {
           "pid": "202334AFW34C030",
@@ -3877,7 +3877,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=34C&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34C&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-08T18:47:35+00:00"
+          "last_seen_at": "2026-11-08T19:08:43+00:00"
         }
       },
       "sources": {
@@ -3886,12 +3886,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T19:01:49+00:00",
+      "last_checked_at": "2026-11-08T19:08:43+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T19:01:49+00:00",
+      "last_attempt_at": "2026-11-08T19:08:43+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -4188,7 +4188,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T19:01:14+00:00",
+      "last_attempt_at": "2026-11-08T19:08:28+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5438,10 +5438,10 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-08T19:07:28+00:00",
+      "last_checked_at": "2026-11-08T19:08:13+00:00",
       "duration_seconds": 2.88,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 93,
+      "consecutive_failures": 94,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.51,
@@ -5538,23 +5538,23 @@
       "status": "ok"
     },
     "ch-extra-shirts": {
-      "last_checked_at": "2026-11-08T18:53:22+00:00",
-      "duration_seconds": 3.14,
-      "last_success_at": "2026-11-08T18:53:22+00:00",
+      "last_checked_at": "2026-11-08T19:08:22+00:00",
+      "duration_seconds": 2.84,
+      "last_success_at": "2026-11-08T19:08:22+00:00",
+      "consecutive_failures": 0,
+      "last_error": "",
+      "alerted": false,
+      "actual_interval_seconds": 900.5,
+      "status": "ok"
+    },
+    "ch-extra-hoodies": {
+      "last_checked_at": "2026-11-08T19:08:25+00:00",
+      "duration_seconds": 3.0,
+      "last_success_at": "2026-11-08T19:08:25+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "actual_interval_seconds": 900.51,
-      "status": "ok"
-    },
-    "ch-extra-hoodies": {
-      "last_checked_at": "2026-11-08T18:53:25+00:00",
-      "duration_seconds": 2.7,
-      "last_success_at": "2026-11-08T18:53:25+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
-      "alerted": false,
-      "actual_interval_seconds": 900.21,
       "status": "ok"
     },
     "ch-extra-sweatshirt": {
@@ -5648,13 +5648,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-08T19:07:31+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-08T19:08:16+00:00",
+      "duration_seconds": 3.02,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 91,
+      "consecutive_failures": 92,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.51,
+      "actual_interval_seconds": 45.53,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6028,23 +6028,23 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-08T19:01:14+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-08T19:08:28+00:00",
+      "duration_seconds": 2.93,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 180,
+      "consecutive_failures": 181,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 415.97,
+      "actual_interval_seconds": 434.46,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
-      "last_checked_at": "2026-11-08T18:47:35+00:00",
-      "duration_seconds": 6.0,
-      "last_success_at": "2026-11-08T18:47:35+00:00",
+      "last_checked_at": "2026-11-08T19:08:43+00:00",
+      "duration_seconds": 15.0,
+      "last_success_at": "2026-11-08T19:08:43+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 351.56,
+      "actual_interval_seconds": 414.47,
       "status": "ok"
     },
     "variant-ae69f9c9aaefbd47": {
@@ -10619,7 +10619,7 @@
           "at": "2026-11-08T19:04:41+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-08T19:04:41+00:00"
     }
   },
@@ -10640,8 +10640,8 @@
     "ch-extra-t-shirt": "2026-11-08T19:06:52+00:00",
     "ch-extra-t-shirts": "2026-11-08T19:07:34+00:00",
     "ch-extra-shirt": "2026-11-08T19:07:35+00:00",
-    "ch-extra-shirts": "2026-11-08T18:53:19+00:00",
-    "ch-extra-hoodies": "2026-11-08T18:53:22+00:00",
+    "ch-extra-shirts": "2026-11-08T19:08:19+00:00",
+    "ch-extra-hoodies": "2026-11-08T19:08:22+00:00",
     "ch-extra-sweatshirt": "2026-11-08T18:54:04+00:00",
     "ch-extra-sweatshirts": "2026-11-08T18:54:07+00:00",
     "ch-extra-sweater": "2026-11-08T18:54:49+00:00",
