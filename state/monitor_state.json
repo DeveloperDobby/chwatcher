@@ -4015,12 +4015,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T01:04:06+00:00",
+      "last_checked_at": "2026-11-08T01:11:36+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T01:04:06+00:00",
+      "last_attempt_at": "2026-11-08T01:11:36+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4114,12 +4114,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T01:04:14+00:00",
+      "last_checked_at": "2026-11-08T01:11:44+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T01:04:14+00:00",
+      "last_attempt_at": "2026-11-08T01:11:44+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4738,12 +4738,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-08T01:03:59+00:00",
+      "last_checked_at": "2026-11-08T01:11:29+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-08T01:03:59+00:00",
+      "last_attempt_at": "2026-11-08T01:11:29+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5503,23 +5503,23 @@
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-08T00:56:21+00:00",
-      "duration_seconds": 2.76,
-      "last_success_at": "2026-11-08T00:56:21+00:00",
+      "last_checked_at": "2026-11-08T01:11:22+00:00",
+      "duration_seconds": 2.84,
+      "last_success_at": "2026-11-08T01:11:22+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.48,
+      "actual_interval_seconds": 901.01,
       "status": "ok"
     },
     "ch-extra-belt": {
-      "last_checked_at": "2026-11-08T00:56:24+00:00",
+      "last_checked_at": "2026-11-08T01:11:25+00:00",
       "duration_seconds": 2.99,
-      "last_success_at": "2026-11-08T00:56:24+00:00",
+      "last_success_at": "2026-11-08T01:11:25+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.48,
+      "actual_interval_seconds": 901.01,
       "status": "ok"
     },
     "ch-extra-earring": {
@@ -10644,7 +10644,7 @@
           "at": "2026-11-08T01:03:11+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-08T01:01:42+00:00"
     }
   },
@@ -10659,8 +10659,8 @@
     "ch-extra-sunglasses": "2026-11-08T01:09:52+00:00",
     "ch-extra-eyewear-accessories": "2026-11-08T01:10:34+00:00",
     "ch-extra-bag": "2026-11-08T01:10:35+00:00",
-    "ch-extra-bags": "2026-11-08T00:56:18+00:00",
-    "ch-extra-belt": "2026-11-08T00:56:21+00:00",
+    "ch-extra-bags": "2026-11-08T01:11:19+00:00",
+    "ch-extra-belt": "2026-11-08T01:11:22+00:00",
     "ch-extra-earring": "2026-11-08T01:00:48+00:00",
     "ch-extra-t-shirt": "2026-11-08T01:00:51+00:00",
     "ch-extra-t-shirts": "2026-11-08T01:01:34+00:00",
