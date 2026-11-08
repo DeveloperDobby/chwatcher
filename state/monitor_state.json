@@ -5341,13 +5341,13 @@
       "status": "ok"
     },
     "ch-discovery": {
-      "last_checked_at": "2026-11-08T19:02:01+00:00",
-      "duration_seconds": 0.1,
-      "last_success_at": "2026-11-08T19:02:01+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "last_checked_at": "2026-11-08T19:11:46+00:00",
+      "duration_seconds": 0.05,
+      "last_success_at": "2026-11-08T19:11:01+00:00",
+      "consecutive_failures": 1,
+      "last_error": "HTTP 503: www.chromehearts.com 응답으로 사이트 조회 대기 (900초)",
       "alerted": false,
-      "actual_interval_seconds": 45.5,
+      "actual_interval_seconds": 45.45,
       "status": "ok"
     },
     "ch-extra-silichrome": {
@@ -6192,7 +6192,9 @@
     }
   },
   "notification_sequence": 47,
-  "site_backoffs": {},
+  "site_backoffs": {
+    "www.chromehearts.com": 1794166006.4419878
+  },
   "discovery_audit": {
     "ch-discovery": {
       "initialized": true,
@@ -7101,13 +7103,6 @@
         }
       },
       "history": [
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_0.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-07T15:20:24+00:00"
-        },
         {
           "code": "coverage",
           "url": "https://www.chromehearts.com/",
@@ -10600,6 +10595,13 @@
           "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
           "source": "",
           "at": "2026-11-08T19:04:41+00:00"
+        },
+        {
+          "code": "paused",
+          "url": "https://www.chromehearts.com/",
+          "reason": "403/429 도메인 대기 중: 추가 탐색을 건너뜁니다",
+          "source": "",
+          "at": "2026-11-08T19:11:46+00:00"
         }
       ],
       "source_first": false,
@@ -10638,5 +10640,9 @@
     "ch-extra-gloves": "2026-11-08T19:01:34+00:00",
     "ch-extra-tie": "2026-11-08T19:01:37+00:00"
   },
-  "detail_next_new": false
+  "detail_next_new": false,
+  "site_recovery": {
+    "factor": 2,
+    "until": 1794166906.4419878
+  }
 }
