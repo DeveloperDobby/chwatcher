@@ -3975,12 +3975,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T08:40:53+00:00",
+      "last_checked_at": "2026-11-09T08:47:39+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T08:40:53+00:00",
+      "last_attempt_at": "2026-11-09T08:47:39+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4074,12 +4074,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T08:41:00+00:00",
+      "last_checked_at": "2026-11-09T08:47:47+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T08:41:00+00:00",
+      "last_attempt_at": "2026-11-09T08:47:47+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4699,12 +4699,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T08:40:45+00:00",
+      "last_checked_at": "2026-11-09T08:47:32+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T08:40:45+00:00",
+      "last_attempt_at": "2026-11-09T08:47:32+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5424,13 +5424,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-09T08:46:30+00:00",
-      "duration_seconds": 2.78,
+      "last_checked_at": "2026-11-09T08:47:15+00:00",
+      "duration_seconds": 2.85,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 818,
+      "consecutive_failures": 819,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.54,
+      "actual_interval_seconds": 45.75,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5484,23 +5484,23 @@
       "status": "ok"
     },
     "ch-extra-earring": {
-      "last_checked_at": "2026-11-09T04:52:52+00:00",
-      "duration_seconds": 2.82,
-      "last_success_at": "2026-11-09T04:52:52+00:00",
+      "last_checked_at": "2026-11-09T08:47:24+00:00",
+      "duration_seconds": 2.77,
+      "last_success_at": "2026-11-09T08:47:24+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.36,
+      "actual_interval_seconds": 14072.76,
       "status": "ok"
     },
     "ch-extra-t-shirt": {
-      "last_checked_at": "2026-11-09T04:52:55+00:00",
-      "duration_seconds": 3.02,
-      "last_success_at": "2026-11-09T04:52:55+00:00",
+      "last_checked_at": "2026-11-09T08:47:27+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-09T08:47:27+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.39,
+      "actual_interval_seconds": 14072.76,
       "status": "ok"
     },
     "ch-extra-t-shirts": {
@@ -5634,13 +5634,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-09T08:46:33+00:00",
-      "duration_seconds": 3.14,
+      "last_checked_at": "2026-11-09T08:47:18+00:00",
+      "duration_seconds": 3.0,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 816,
+      "consecutive_failures": 817,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.69,
+      "actual_interval_seconds": 45.76,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10605,7 +10605,7 @@
           "at": "2026-11-09T08:39:12+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-09T08:38:34+00:00"
     }
   },
@@ -10622,8 +10622,8 @@
     "ch-extra-bag": "2026-11-09T08:45:53+00:00",
     "ch-extra-bags": "2026-11-09T08:46:36+00:00",
     "ch-extra-belt": "2026-11-09T08:46:39+00:00",
-    "ch-extra-earring": "2026-11-09T04:52:49+00:00",
-    "ch-extra-t-shirt": "2026-11-09T04:52:52+00:00",
+    "ch-extra-earring": "2026-11-09T08:47:21+00:00",
+    "ch-extra-t-shirt": "2026-11-09T08:47:24+00:00",
     "ch-extra-t-shirts": "2026-11-09T04:53:34+00:00",
     "ch-extra-shirt": "2026-11-09T04:53:36+00:00",
     "ch-extra-shirts": "2026-11-09T04:54:19+00:00",
