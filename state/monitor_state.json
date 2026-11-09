@@ -1130,12 +1130,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T21:11:31+00:00",
+      "last_checked_at": "2026-11-09T21:17:44+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T21:11:31+00:00",
+      "last_attempt_at": "2026-11-09T21:17:44+00:00",
       "priority": false
     },
     "www.chromehearts.com:172571CRYXXX273": {
@@ -1593,7 +1593,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-09T14:09:28+00:00"
+          "last_seen_at": "2026-11-09T21:17:47+00:00"
         },
         "158552PNBSML152:en_US": {
           "pid": "158552PNBSML152",
@@ -1883,16 +1883,33 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T21:11:36+00:00",
+      "last_checked_at": "2026-11-09T21:18:01+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T21:11:36+00:00",
+      "last_attempt_at": "2026-11-09T21:18:01+00:00",
       "priority": false,
       "master_pid": "158552BLKXXXXXX",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:158553XXXXXXXXX": {
       "pid": "158553XXXXXXXXX",
@@ -5374,23 +5391,23 @@
       "status": "ok"
     },
     "ch-extra-silichrome": {
-      "last_checked_at": "2026-11-09T21:02:14+00:00",
-      "duration_seconds": 2.83,
-      "last_success_at": "2026-11-09T21:02:14+00:00",
+      "last_checked_at": "2026-11-09T21:17:38+00:00",
+      "duration_seconds": 2.78,
+      "last_success_at": "2026-11-09T21:17:38+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 24505.5,
+      "actual_interval_seconds": 924.71,
       "status": "ok"
     },
     "ch-extra-sports-mesh": {
-      "last_checked_at": "2026-11-09T21:02:17+00:00",
-      "duration_seconds": 2.97,
-      "last_success_at": "2026-11-09T21:02:17+00:00",
+      "last_checked_at": "2026-11-09T21:17:41+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-09T21:17:41+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 24505.48,
+      "actual_interval_seconds": 924.71,
       "status": "ok"
     },
     "ch-extra-eyewear": {
@@ -5444,13 +5461,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-09T21:16:43+00:00",
-      "duration_seconds": 2.84,
+      "last_checked_at": "2026-11-09T21:17:29+00:00",
+      "duration_seconds": 2.86,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 1293,
+      "consecutive_failures": 1294,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.27,
+      "actual_interval_seconds": 46.7,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5654,13 +5671,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-09T21:16:46+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-09T21:17:32+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 1290,
+      "consecutive_failures": 1291,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.27,
+      "actual_interval_seconds": 46.72,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -7049,9 +7066,9 @@
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-09T21:02:17+00:00",
+          "last_attempt_at": "2026-11-09T21:17:41+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-09T21:02:18+00:00",
+          "last_success_at": "2026-11-09T21:17:43+00:00",
           "error": ""
         }
       },
@@ -7124,13 +7141,6 @@
         }
       },
       "history": [
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_0.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-08T11:13:04+00:00"
-        },
         {
           "code": "coverage",
           "url": "https://www.chromehearts.com/",
@@ -10623,15 +10633,22 @@
           "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
           "source": "",
           "at": "2026-11-09T21:17:04+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_0.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-09T21:17:43+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-09T21:17:04+00:00"
     }
   },
   "optional_probes": {
-    "ch-extra-silichrome": "2026-11-09T21:02:11+00:00",
-    "ch-extra-sports-mesh": "2026-11-09T21:02:14+00:00",
+    "ch-extra-silichrome": "2026-11-09T21:17:35+00:00",
+    "ch-extra-sports-mesh": "2026-11-09T21:17:38+00:00",
     "ch-extra-eyewear": "2026-11-09T21:02:57+00:00",
     "ch-extra-hat": "2026-11-09T21:02:59+00:00",
     "ch-extra-hoodie": "2026-11-09T21:03:42+00:00",
