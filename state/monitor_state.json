@@ -3962,12 +3962,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T21:28:21+00:00",
+      "last_checked_at": "2026-11-09T21:34:32+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T21:28:21+00:00",
+      "last_attempt_at": "2026-11-09T21:34:32+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4061,16 +4061,22 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T21:28:29+00:00",
+      "last_checked_at": "2026-11-09T21:34:36+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T21:28:29+00:00",
+      "last_attempt_at": "2026-11-09T21:34:36+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=LRG&pid=201584AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=XSM&pid=201584AFWXXX030&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=MED&pid=201584AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=SML&pid=201584AFWXXX030&quantity=1"
+      ]
     },
     "www.chromehearts.com:201635AFWXXX033": {
       "pid": "201635AFWXXX033",
@@ -4616,7 +4622,7 @@
           "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=SML&pid=191715D5DXXX408&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-09T21:05:43+00:00"
+          "last_seen_at": "2026-11-09T21:34:20+00:00"
         }
       },
       "sources": {
@@ -4625,20 +4631,16 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T21:27:50+00:00",
+      "last_checked_at": "2026-11-09T21:34:20+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T21:27:50+00:00",
+      "last_attempt_at": "2026-11-09T21:34:20+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
-      "scan_queue": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=SML&pid=191715D5DXXX408&quantity=1"
-      ],
-      "scan_seen": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1"
-      ]
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:191716ADLXXX406": {
       "pid": "191716ADLXXX406",
@@ -4690,12 +4692,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-09T21:28:14+00:00",
+      "last_checked_at": "2026-11-09T21:34:24+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-09T21:28:14+00:00",
+      "last_attempt_at": "2026-11-09T21:34:24+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5385,23 +5387,23 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-09T21:19:09+00:00",
-      "duration_seconds": 2.75,
-      "last_success_at": "2026-11-09T21:19:09+00:00",
+      "last_checked_at": "2026-11-09T21:34:14+00:00",
+      "duration_seconds": 2.74,
+      "last_success_at": "2026-11-09T21:34:14+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 924.28,
+      "actual_interval_seconds": 905.25,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-09T21:19:12+00:00",
-      "duration_seconds": 3.01,
-      "last_success_at": "2026-11-09T21:19:12+00:00",
+      "last_checked_at": "2026-11-09T21:34:17+00:00",
+      "duration_seconds": 3.02,
+      "last_success_at": "2026-11-09T21:34:17+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 924.3,
+      "actual_interval_seconds": 905.28,
       "status": "ok"
     },
     "ch-extra-goggles": {
@@ -5415,13 +5417,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-09T21:33:20+00:00",
+      "last_checked_at": "2026-11-09T21:34:05+00:00",
       "duration_seconds": 2.83,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 1315,
+      "consecutive_failures": 1316,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.24,
+      "actual_interval_seconds": 45.23,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5625,10 +5627,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-09T21:33:23+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-09T21:34:08+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 1312,
+      "consecutive_failures": 1313,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.25,
@@ -10596,7 +10598,7 @@
           "at": "2026-11-09T21:32:48+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-09T21:32:11+00:00"
     }
   },
@@ -10605,8 +10607,8 @@
     "ch-extra-sports-mesh": "2026-11-09T21:32:44+00:00",
     "ch-extra-eyewear": "2026-11-09T21:33:26+00:00",
     "ch-extra-hat": "2026-11-09T21:33:29+00:00",
-    "ch-extra-hoodie": "2026-11-09T21:19:06+00:00",
-    "ch-extra-rib-tank": "2026-11-09T21:19:09+00:00",
+    "ch-extra-hoodie": "2026-11-09T21:34:11+00:00",
+    "ch-extra-rib-tank": "2026-11-09T21:34:14+00:00",
     "ch-extra-goggles": "2026-11-09T21:19:51+00:00",
     "ch-extra-sunglasses": "2026-11-09T21:19:54+00:00",
     "ch-extra-eyewear-accessories": "2026-11-09T21:20:36+00:00",
