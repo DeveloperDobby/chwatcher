@@ -3962,12 +3962,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T18:26:06+00:00",
+      "last_checked_at": "2026-11-10T18:33:37+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T18:26:06+00:00",
+      "last_attempt_at": "2026-11-10T18:33:37+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4061,12 +4061,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T18:26:13+00:00",
+      "last_checked_at": "2026-11-10T18:33:45+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T18:26:13+00:00",
+      "last_attempt_at": "2026-11-10T18:33:45+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4686,12 +4686,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T18:25:58+00:00",
+      "last_checked_at": "2026-11-10T18:33:30+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T18:25:58+00:00",
+      "last_attempt_at": "2026-11-10T18:33:30+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5361,23 +5361,23 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-10T18:18:22+00:00",
-      "duration_seconds": 2.8,
-      "last_success_at": "2026-11-10T18:18:22+00:00",
+      "last_checked_at": "2026-11-10T18:33:23+00:00",
+      "duration_seconds": 2.78,
+      "last_success_at": "2026-11-10T18:33:23+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 945.73,
+      "actual_interval_seconds": 901.03,
       "status": "ok"
     },
     "ch-extra-hat": {
-      "last_checked_at": "2026-11-10T18:18:25+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-10T18:18:25+00:00",
+      "last_checked_at": "2026-11-10T18:33:26+00:00",
+      "duration_seconds": 3.0,
+      "last_success_at": "2026-11-10T18:33:26+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 945.72,
+      "actual_interval_seconds": 901.04,
       "status": "ok"
     },
     "ch-extra-hoodie": {
@@ -5411,13 +5411,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-10T18:32:29+00:00",
+      "last_checked_at": "2026-11-10T18:33:14+00:00",
       "duration_seconds": 2.82,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 2650,
+      "consecutive_failures": 2651,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.04,
+      "actual_interval_seconds": 45.03,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5621,13 +5621,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-10T18:32:32+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-10T18:33:17+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 2647,
+      "consecutive_failures": 2648,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.05,
+      "actual_interval_seconds": 45.04,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10592,15 +10592,15 @@
           "at": "2026-11-10T18:31:57+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-10T18:31:57+00:00"
     }
   },
   "optional_probes": {
     "ch-extra-silichrome": "2026-11-10T18:32:35+00:00",
     "ch-extra-sports-mesh": "2026-11-10T18:32:38+00:00",
-    "ch-extra-eyewear": "2026-11-10T18:18:19+00:00",
-    "ch-extra-hat": "2026-11-10T18:18:22+00:00",
+    "ch-extra-eyewear": "2026-11-10T18:33:20+00:00",
+    "ch-extra-hat": "2026-11-10T18:33:23+00:00",
     "ch-extra-hoodie": "2026-11-10T18:19:04+00:00",
     "ch-extra-rib-tank": "2026-11-10T18:19:07+00:00",
     "ch-extra-goggles": "2026-11-10T18:19:49+00:00",
