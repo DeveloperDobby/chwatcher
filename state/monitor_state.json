@@ -3587,16 +3587,21 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T13:06:50+00:00",
+      "last_checked_at": "2026-11-10T13:12:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T13:06:50+00:00",
+      "last_attempt_at": "2026-11-10T13:12:09+00:00",
       "priority": false,
       "master_pid": "092826AI6XXXXXX",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ2&pid=092826AI6XXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ3&pid=092826AI6XXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_092826AI6XXXXXX_size=SZ4&pid=092826AI6XXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:201585AFWXXX030": {
       "pid": "201585AFWXXX030",
@@ -4393,12 +4398,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T13:06:44+00:00",
+      "last_checked_at": "2026-11-10T13:12:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T13:06:44+00:00",
+      "last_attempt_at": "2026-11-10T13:12:05+00:00",
       "priority": false,
       "master_pid": "176354XXXXXX349",
       "scan_queue": [],
@@ -4473,12 +4478,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T13:06:39+00:00",
+      "last_checked_at": "2026-11-10T13:11:50+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T13:06:39+00:00",
+      "last_attempt_at": "2026-11-10T13:11:50+00:00",
       "priority": false,
       "master_pid": "176354MB3XXX465",
       "scan_queue": [],
@@ -5423,10 +5428,10 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-10T13:10:53+00:00",
+      "last_checked_at": "2026-11-10T13:11:38+00:00",
       "duration_seconds": 2.81,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 2222,
+      "consecutive_failures": 2223,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.11,
@@ -5633,13 +5638,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-10T13:10:56+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-10T13:11:41+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 2219,
+      "consecutive_failures": 2220,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.11,
+      "actual_interval_seconds": 45.12,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10604,7 +10609,7 @@
           "at": "2026-11-10T12:58:21+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-10T12:57:44+00:00"
     }
   },
