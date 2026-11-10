@@ -914,12 +914,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T20:45:20+00:00",
+      "last_checked_at": "2026-11-10T20:52:05+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T20:45:20+00:00",
+      "last_attempt_at": "2026-11-10T20:52:05+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX273": {
@@ -3880,12 +3880,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T20:45:35+00:00",
+      "last_checked_at": "2026-11-10T20:52:20+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T20:45:35+00:00",
+      "last_attempt_at": "2026-11-10T20:52:20+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -5399,23 +5399,23 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-10T20:36:55+00:00",
-      "duration_seconds": 2.79,
-      "last_success_at": "2026-11-10T20:36:55+00:00",
+      "last_checked_at": "2026-11-10T20:51:59+00:00",
+      "duration_seconds": 2.84,
+      "last_success_at": "2026-11-10T20:51:59+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 7367.97,
+      "actual_interval_seconds": 904.66,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-10T20:36:58+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-10T20:36:58+00:00",
+      "last_checked_at": "2026-11-10T20:52:02+00:00",
+      "duration_seconds": 3.05,
+      "last_success_at": "2026-11-10T20:52:02+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 7367.96,
+      "actual_interval_seconds": 904.71,
       "status": "ok"
     },
     "ch-extra-goggles": {
@@ -5429,13 +5429,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-10T20:51:05+00:00",
-      "duration_seconds": 2.84,
+      "last_checked_at": "2026-11-10T20:51:50+00:00",
+      "duration_seconds": 2.89,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 2691,
+      "consecutive_failures": 2692,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.68,
+      "actual_interval_seconds": 45.69,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5639,13 +5639,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-10T20:51:08+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-10T20:51:53+00:00",
+      "duration_seconds": 2.96,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 2688,
+      "consecutive_failures": 2689,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.68,
+      "actual_interval_seconds": 45.66,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -7034,9 +7034,9 @@
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-10T20:36:13+00:00",
+          "last_attempt_at": "2026-11-10T20:52:02+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-10T20:36:15+00:00",
+          "last_success_at": "2026-11-10T20:52:04+00:00",
           "error": ""
         }
       },
@@ -7109,13 +7109,6 @@
         }
       },
       "history": [
-        {
-          "code": "needs_review",
-          "url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Search-Show?cgid=SWEATPANTS",
-          "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
-          "source": "https://www.chromehearts.com/sitemap_0.xml",
-          "at": "2026-11-09T12:09:48+00:00"
-        },
         {
           "code": "coverage",
           "url": "https://www.chromehearts.com/",
@@ -10608,9 +10601,16 @@
           "reason": "sitemap",
           "source": "",
           "at": "2026-11-10T20:51:20+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_0.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-10T20:52:04+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-10T20:50:38+00:00"
     }
   },
@@ -10619,8 +10619,8 @@
     "ch-extra-sports-mesh": "2026-11-10T20:50:29+00:00",
     "ch-extra-eyewear": "2026-11-10T20:51:11+00:00",
     "ch-extra-hat": "2026-11-10T20:51:14+00:00",
-    "ch-extra-hoodie": "2026-11-10T20:36:53+00:00",
-    "ch-extra-rib-tank": "2026-11-10T20:36:55+00:00",
+    "ch-extra-hoodie": "2026-11-10T20:51:56+00:00",
+    "ch-extra-rib-tank": "2026-11-10T20:51:59+00:00",
     "ch-extra-goggles": "2026-11-10T20:37:38+00:00",
     "ch-extra-sunglasses": "2026-11-10T20:37:40+00:00",
     "ch-extra-eyewear-accessories": "2026-11-10T20:38:23+00:00",
