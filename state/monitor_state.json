@@ -1094,12 +1094,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T04:48:55+00:00",
+      "last_checked_at": "2026-11-10T04:55:39+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T04:48:55+00:00",
+      "last_attempt_at": "2026-11-10T04:55:39+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX274": {
@@ -2972,12 +2972,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-10T04:49:10+00:00",
+      "last_checked_at": "2026-11-10T04:55:55+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-10T04:49:10+00:00",
+      "last_attempt_at": "2026-11-10T04:55:55+00:00",
       "priority": false,
       "master_pid": "208280XXXXXXXXX",
       "scan_queue": [],
@@ -5325,23 +5325,23 @@
       "status": "ok"
     },
     "ch-extra-silichrome": {
-      "last_checked_at": "2026-11-10T04:40:33+00:00",
-      "duration_seconds": 2.85,
-      "last_success_at": "2026-11-10T04:40:33+00:00",
+      "last_checked_at": "2026-11-10T04:55:34+00:00",
+      "duration_seconds": 2.83,
+      "last_success_at": "2026-11-10T04:55:34+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.1,
+      "actual_interval_seconds": 901.82,
       "status": "ok"
     },
     "ch-extra-sports-mesh": {
-      "last_checked_at": "2026-11-10T04:40:36+00:00",
-      "duration_seconds": 3.03,
-      "last_success_at": "2026-11-10T04:40:36+00:00",
+      "last_checked_at": "2026-11-10T04:55:37+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-10T04:55:37+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.14,
+      "actual_interval_seconds": 901.81,
       "status": "ok"
     },
     "ch-extra-eyewear": {
@@ -5395,10 +5395,10 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-10T04:54:40+00:00",
-      "duration_seconds": 2.9,
+      "last_checked_at": "2026-11-10T04:55:25+00:00",
+      "duration_seconds": 2.87,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 1788,
+      "consecutive_failures": 1789,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.81,
@@ -5605,10 +5605,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-10T04:54:43+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-10T04:55:28+00:00",
+      "duration_seconds": 2.98,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 1785,
+      "consecutive_failures": 1786,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.8,
@@ -10576,13 +10576,13 @@
           "at": "2026-11-10T04:48:53+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-10T04:48:13+00:00"
     }
   },
   "optional_probes": {
-    "ch-extra-silichrome": "2026-11-10T04:40:30+00:00",
-    "ch-extra-sports-mesh": "2026-11-10T04:40:33+00:00",
+    "ch-extra-silichrome": "2026-11-10T04:55:31+00:00",
+    "ch-extra-sports-mesh": "2026-11-10T04:55:34+00:00",
     "ch-extra-eyewear": "2026-11-10T04:41:15+00:00",
     "ch-extra-hat": "2026-11-10T04:41:18+00:00",
     "ch-extra-hoodie": "2026-11-10T04:42:00+00:00",
