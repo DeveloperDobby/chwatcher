@@ -914,12 +914,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T16:14:13+00:00",
+      "last_checked_at": "2026-11-11T16:21:42+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T16:14:13+00:00",
+      "last_attempt_at": "2026-11-11T16:21:42+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX273": {
@@ -3892,12 +3892,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T16:14:28+00:00",
+      "last_checked_at": "2026-11-11T16:21:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T16:14:28+00:00",
+      "last_attempt_at": "2026-11-11T16:21:57+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -5440,13 +5440,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-11T16:20:42+00:00",
-      "duration_seconds": 2.87,
+      "last_checked_at": "2026-11-11T16:21:27+00:00",
+      "duration_seconds": 2.86,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 3921,
+      "consecutive_failures": 3922,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.75,
+      "actual_interval_seconds": 45.76,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5600,23 +5600,23 @@
       "status": "ok"
     },
     "ch-extra-denim": {
-      "last_checked_at": "2026-11-11T16:06:35+00:00",
-      "duration_seconds": 2.79,
-      "last_success_at": "2026-11-11T16:06:35+00:00",
+      "last_checked_at": "2026-11-11T16:21:36+00:00",
+      "duration_seconds": 2.8,
+      "last_success_at": "2026-11-11T16:21:36+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.0,
+      "actual_interval_seconds": 901.75,
       "status": "ok"
     },
     "ch-extra-pants": {
-      "last_checked_at": "2026-11-11T16:06:38+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-11T16:06:38+00:00",
+      "last_checked_at": "2026-11-11T16:21:39+00:00",
+      "duration_seconds": 3.0,
+      "last_success_at": "2026-11-11T16:21:39+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.99,
+      "actual_interval_seconds": 901.76,
       "status": "ok"
     },
     "ch-extra-shorts": {
@@ -5650,13 +5650,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-11T16:20:45+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-11T16:21:30+00:00",
+      "duration_seconds": 2.94,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 3917,
+      "consecutive_failures": 3918,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.74,
+      "actual_interval_seconds": 45.75,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -7031,9 +7031,9 @@
       "sources": {
         "https://www.chromehearts.com/robots.txt": {
           "kind": "robots",
-          "last_attempt_at": "2026-11-11T16:06:38+00:00",
+          "last_attempt_at": "2026-11-11T16:21:39+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-11T16:06:40+00:00",
+          "last_success_at": "2026-11-11T16:21:41+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
@@ -7120,13 +7120,6 @@
         }
       },
       "history": [
-        {
-          "code": "coverage",
-          "url": "https://www.chromehearts.com/",
-          "reason": "{\"configured\": 9, \"tracked\": 51, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
-          "source": "",
-          "at": "2026-11-10T13:44:53+00:00"
-        },
         {
           "code": "needs_review",
           "url": "https://www.chromehearts.com/shop",
@@ -10619,9 +10612,16 @@
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
           "source": "https://www.chromehearts.com/sitemap_0.xml",
           "at": "2026-11-11T16:20:57+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/robots.txt",
+          "reason": "robots",
+          "source": "",
+          "at": "2026-11-11T16:21:41+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-11T16:08:04+00:00"
     }
   },
@@ -10648,8 +10648,8 @@
     "ch-extra-sweatshirts": "2026-11-11T16:18:36+00:00",
     "ch-extra-sweater": "2026-11-11T16:20:48+00:00",
     "ch-extra-jacket": "2026-11-11T16:20:51+00:00",
-    "ch-extra-denim": "2026-11-11T16:06:33+00:00",
-    "ch-extra-pants": "2026-11-11T16:06:36+00:00",
+    "ch-extra-denim": "2026-11-11T16:21:33+00:00",
+    "ch-extra-pants": "2026-11-11T16:21:36+00:00",
     "ch-extra-shorts": "2026-11-11T16:08:48+00:00",
     "ch-extra-shoes": "2026-11-11T16:08:51+00:00",
     "ch-extra-boots": "2026-11-11T16:10:18+00:00",
