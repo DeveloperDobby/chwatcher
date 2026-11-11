@@ -3687,7 +3687,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:57+00:00"
+          "last_seen_at": "2026-11-11T04:11:09+00:00"
         },
         "201585AFWMED030:en_US": {
           "pid": "201585AFWMED030",
@@ -3715,16 +3715,22 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T04:04:21+00:00",
+      "last_checked_at": "2026-11-11T04:11:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T04:04:21+00:00",
+      "last_attempt_at": "2026-11-11T04:11:09+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=SML&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1"
+      ]
     },
     "www.chromehearts.com:202334AFWXXX030": {
       "pid": "202334AFWXXX030",
@@ -3942,7 +3948,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=SML&pid=201583AFWXXX033&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:42+00:00"
+          "last_seen_at": "2026-11-11T04:10:51+00:00"
         },
         "201583AFWMED033:en_US": {
           "pid": "201583AFWMED033",
@@ -3961,7 +3967,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=MED&pid=201583AFWXXX033&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:44+00:00"
+          "last_seen_at": "2026-11-11T04:10:52+00:00"
         },
         "201583AFWLRG033:en_US": {
           "pid": "201583AFWLRG033",
@@ -3980,7 +3986,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=LRG&pid=201583AFWXXX033&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:45+00:00"
+          "last_seen_at": "2026-11-11T04:10:54+00:00"
         },
         "201583AFWXSM033:en_US": {
           "pid": "201583AFWXSM033",
@@ -3999,7 +4005,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:47+00:00"
+          "last_seen_at": "2026-11-11T04:10:55+00:00"
         }
       },
       "sources": {
@@ -4008,12 +4014,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T04:04:09+00:00",
+      "last_checked_at": "2026-11-11T04:10:55+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T04:04:09+00:00",
+      "last_attempt_at": "2026-11-11T04:10:55+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4060,7 +4066,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=MED&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-11T03:49:51+00:00"
+          "last_seen_at": "2026-11-11T04:11:00+00:00"
         },
         "201584AFWLRG030:en_US": {
           "pid": "201584AFWLRG030",
@@ -4079,7 +4085,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=LRG&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-11T03:49:53+00:00"
+          "last_seen_at": "2026-11-11T04:11:01+00:00"
         },
         "201584AFWXSM030:en_US": {
           "pid": "201584AFWXSM030",
@@ -4098,7 +4104,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=XSM&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:54+00:00"
+          "last_seen_at": "2026-11-11T04:11:03+00:00"
         }
       },
       "sources": {
@@ -4107,12 +4113,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T04:04:17+00:00",
+      "last_checked_at": "2026-11-11T04:11:03+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T04:04:17+00:00",
+      "last_attempt_at": "2026-11-11T04:11:03+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4699,7 +4705,7 @@
           "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191716ADLXXX406_size=LRG&pid=191716ADLXXX406&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:18+00:00"
+          "last_seen_at": "2026-11-11T04:10:46+00:00"
         },
         "191716ADLMED406:en_US": {
           "pid": "191716ADLMED406",
@@ -4718,7 +4724,7 @@
           "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191716ADLXXX406_size=MED&pid=191716ADLXXX406&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T03:49:19+00:00"
+          "last_seen_at": "2026-11-11T04:10:48+00:00"
         }
       },
       "sources": {
@@ -4727,12 +4733,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T04:04:02+00:00",
+      "last_checked_at": "2026-11-11T04:10:48+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T04:04:02+00:00",
+      "last_attempt_at": "2026-11-11T04:10:48+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5452,13 +5458,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-11T04:09:52+00:00",
-      "duration_seconds": 2.8,
+      "last_checked_at": "2026-11-11T04:10:37+00:00",
+      "duration_seconds": 2.82,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 3274,
+      "consecutive_failures": 3275,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.56,
+      "actual_interval_seconds": 45.64,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5662,13 +5668,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-11T04:09:55+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-11T04:10:40+00:00",
+      "duration_seconds": 3.0,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 3270,
+      "consecutive_failures": 3271,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.55,
+      "actual_interval_seconds": 45.65,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6002,43 +6008,43 @@
       "status": "ok"
     },
     "variant-2689d9ae00e00b11": {
-      "last_checked_at": "2026-11-11T03:49:19+00:00",
-      "duration_seconds": 4.5,
-      "last_success_at": "2026-11-11T03:49:19+00:00",
+      "last_checked_at": "2026-11-11T04:10:48+00:00",
+      "duration_seconds": 4.28,
+      "last_success_at": "2026-11-11T04:10:48+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 497.78,
+      "actual_interval_seconds": 406.09,
       "status": "ok"
     },
     "variant-c470b9e19737a400": {
-      "last_checked_at": "2026-11-11T03:49:47+00:00",
-      "duration_seconds": 7.28,
-      "last_success_at": "2026-11-11T03:49:47+00:00",
+      "last_checked_at": "2026-11-11T04:10:55+00:00",
+      "duration_seconds": 7.52,
+      "last_success_at": "2026-11-11T04:10:55+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 491.01,
+      "actual_interval_seconds": 406.62,
       "status": "ok"
     },
     "variant-ac3206ad3eca4fde": {
-      "last_checked_at": "2026-11-11T03:49:54+00:00",
-      "duration_seconds": 7.49,
-      "last_success_at": "2026-11-11T03:49:54+00:00",
+      "last_checked_at": "2026-11-11T04:11:03+00:00",
+      "duration_seconds": 7.47,
+      "last_success_at": "2026-11-11T04:11:03+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 490.52,
+      "actual_interval_seconds": 406.1,
       "status": "ok"
     },
     "variant-49a2cfa73ac49733": {
-      "last_checked_at": "2026-11-11T03:49:59+00:00",
-      "duration_seconds": 4.49,
-      "last_success_at": "2026-11-11T03:49:59+00:00",
+      "last_checked_at": "2026-11-11T04:11:09+00:00",
+      "duration_seconds": 5.98,
+      "last_success_at": "2026-11-11T04:11:09+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 491.02,
+      "actual_interval_seconds": 408.09,
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
@@ -6268,7 +6274,7 @@
         },
         "https://www.chromehearts.com/boxers-leggings": {
           "url": "https://www.chromehearts.com/boxers-leggings",
-          "title": "BOXERS & LEGGINGS",
+          "title": "Korea",
           "kind": "category",
           "status": "configured",
           "sources": [
@@ -10633,7 +10639,7 @@
           "at": "2026-11-11T04:09:20+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-11T04:08:37+00:00"
     }
   },
