@@ -3981,12 +3981,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T03:13:03+00:00",
+      "last_checked_at": "2026-11-11T03:19:49+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T03:13:03+00:00",
+      "last_attempt_at": "2026-11-11T03:19:49+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4014,7 +4014,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=SML&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T02:58:49+00:00"
+          "last_seen_at": "2026-11-11T03:19:52+00:00"
         },
         "201584AFWMED030:en_US": {
           "pid": "201584AFWMED030",
@@ -4080,12 +4080,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T03:13:11+00:00",
+      "last_checked_at": "2026-11-11T03:19:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T03:13:11+00:00",
+      "last_attempt_at": "2026-11-11T03:19:57+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4633,12 +4633,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T03:12:26+00:00",
+      "last_checked_at": "2026-11-11T03:19:37+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T03:12:26+00:00",
+      "last_attempt_at": "2026-11-11T03:19:37+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4694,12 +4694,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T03:12:56+00:00",
+      "last_checked_at": "2026-11-11T03:19:42+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T03:12:56+00:00",
+      "last_attempt_at": "2026-11-11T03:19:42+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5425,13 +5425,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-11T03:18:42+00:00",
-      "duration_seconds": 2.88,
+      "last_checked_at": "2026-11-11T03:19:27+00:00",
+      "duration_seconds": 2.94,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 3206,
+      "consecutive_failures": 3207,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.35,
+      "actual_interval_seconds": 45.58,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5635,13 +5635,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-11T03:18:45+00:00",
-      "duration_seconds": 3.03,
+      "last_checked_at": "2026-11-11T03:19:30+00:00",
+      "duration_seconds": 2.92,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 3202,
+      "consecutive_failures": 3203,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.39,
+      "actual_interval_seconds": 45.51,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10606,7 +10606,7 @@
           "at": "2026-11-11T03:09:09+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-11T03:08:25+00:00"
     }
   },
