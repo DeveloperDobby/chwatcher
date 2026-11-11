@@ -3703,12 +3703,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T05:57:13+00:00",
+      "last_checked_at": "2026-11-11T06:05:31+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T05:57:13+00:00",
+      "last_attempt_at": "2026-11-11T06:05:31+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -3987,7 +3987,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-high-waisted-brief/201583AFWXXX033.html?dwvar_201583AFWXXX033_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201583AFWXXX033_size=XSM&pid=201583AFWXXX033&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-11T05:42:11+00:00"
+          "last_seen_at": "2026-11-11T06:05:16+00:00"
         }
       },
       "sources": {
@@ -3996,12 +3996,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T05:56:31+00:00",
+      "last_checked_at": "2026-11-11T06:05:16+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T05:56:31+00:00",
+      "last_attempt_at": "2026-11-11T06:05:16+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4095,12 +4095,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-11T05:57:06+00:00",
+      "last_checked_at": "2026-11-11T06:05:23+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T05:57:06+00:00",
+      "last_attempt_at": "2026-11-11T06:05:23+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4199,7 +4199,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-11T05:57:16+00:00",
+      "last_attempt_at": "2026-11-11T06:05:34+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5445,10 +5445,10 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-11T06:04:17+00:00",
-      "duration_seconds": 2.87,
+      "last_checked_at": "2026-11-11T06:05:02+00:00",
+      "duration_seconds": 2.84,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 3426,
+      "consecutive_failures": 3427,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.9,
@@ -5655,10 +5655,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-11T06:04:20+00:00",
+      "last_checked_at": "2026-11-11T06:05:05+00:00",
       "duration_seconds": 2.99,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 3422,
+      "consecutive_failures": 3423,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.9,
@@ -6035,13 +6035,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-11T05:57:16+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-11T06:05:34+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 533,
+      "consecutive_failures": 534,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 427.59,
+      "actual_interval_seconds": 498.35,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10626,7 +10626,7 @@
           "at": "2026-11-11T05:54:44+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-11T05:54:01+00:00"
     }
   },
