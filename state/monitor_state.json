@@ -776,40 +776,7 @@
       "updated_at": "2026-11-12T03:18:58+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 49,
-      "monitor": {
-        "id": "variant-d79f99f50c4e91e1",
-        "name": "Chrome Hearts 사이즈 SPORT",
-        "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=MED&quantity=1"
-      },
-      "event": {
-        "kind": "variant",
-        "pid": "176354D5BLRG405",
-        "master_pid": "176354XXXXXXXXX",
-        "title": "SPORT",
-        "color": "White",
-        "size": "L",
-        "options": {
-          "color": "White",
-          "size": "L"
-        },
-        "status": "available",
-        "quantity": null,
-        "quantity_kind": "undisclosed",
-        "quantity_source": "",
-        "locale": "en_US",
-        "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=D5B&dwvar_176354XXXXXXXXX_size=LRG&quantity=1",
-        "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_176354XXXXXXXXX_color=D5B&dwvar_176354XXXXXXXXX_size=LRG&pid=176354XXXXXXXXX&quantity=1",
-        "last_known_status": "available",
-        "last_seen_at": "2026-11-12T03:24:35+00:00",
-        "previous_status": "sold_out",
-        "observed_at": "2026-11-12T03:24:35+00:00",
-        "_notification_id": 49
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
