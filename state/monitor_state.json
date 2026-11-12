@@ -1085,7 +1085,7 @@
           "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T03:43:23+00:00"
+          "last_seen_at": "2026-11-12T04:03:19+00:00"
         }
       },
       "sources": {
@@ -1094,12 +1094,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T03:57:25+00:00",
+      "last_checked_at": "2026-11-12T04:03:19+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T03:57:25+00:00",
+      "last_attempt_at": "2026-11-12T04:03:19+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX274": {
@@ -1121,7 +1121,7 @@
           "url": "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T03:43:53+00:00"
+          "last_seen_at": "2026-11-12T04:03:37+00:00"
         }
       },
       "sources": {
@@ -1130,12 +1130,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T03:57:31+00:00",
+      "last_checked_at": "2026-11-12T04:03:37+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T03:57:31+00:00",
+      "last_attempt_at": "2026-11-12T04:03:37+00:00",
       "priority": false
     },
     "www.chromehearts.com:172571CRYXXX273": {
@@ -1883,16 +1883,33 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T03:57:40+00:00",
+      "last_checked_at": "2026-11-12T04:03:43+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T03:57:40+00:00",
+      "last_attempt_at": "2026-11-12T04:03:43+00:00",
       "priority": false,
       "master_pid": "158552BLKXXXXXX",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:158553XXXXXXXXX": {
       "pid": "158553XXXXXXXXX",
@@ -2809,7 +2826,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&pid=208280XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T03:43:26+00:00"
+          "last_seen_at": "2026-11-12T04:03:22+00:00"
         },
         "208280AYNMED035:en_US": {
           "pid": "208280AYNMED035",
@@ -2999,12 +3016,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T03:57:29+00:00",
+      "last_checked_at": "2026-11-12T04:03:35+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T03:57:29+00:00",
+      "last_attempt_at": "2026-11-12T04:03:35+00:00",
       "priority": false,
       "master_pid": "208280XXXXXXXXX",
       "scan_queue": [],
@@ -5455,13 +5472,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-12T04:02:26+00:00",
-      "duration_seconds": 2.81,
+      "last_checked_at": "2026-11-12T04:03:11+00:00",
+      "duration_seconds": 2.79,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 4106,
+      "consecutive_failures": 4107,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.83,
+      "actual_interval_seconds": 45.84,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5665,10 +5682,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-12T04:02:29+00:00",
+      "last_checked_at": "2026-11-12T04:03:14+00:00",
       "duration_seconds": 2.99,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 4102,
+      "consecutive_failures": 4103,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.83,
@@ -5715,13 +5732,13 @@
       "status": "ok"
     },
     "variant-ba1420e9b1d109d4": {
-      "last_checked_at": "2026-11-12T03:44:05+00:00",
-      "duration_seconds": 11.8,
-      "last_success_at": "2026-11-12T03:44:05+00:00",
+      "last_checked_at": "2026-11-12T04:03:43+00:00",
+      "duration_seconds": 5.79,
+      "last_success_at": "2026-11-12T04:03:43+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 489.45,
+      "actual_interval_seconds": 363.28,
       "status": "ok"
     },
     "variant-06731c6edf68193b": {
@@ -5865,23 +5882,23 @@
       "status": "ok"
     },
     "variant-fd7e5ee3484aa685": {
-      "last_checked_at": "2026-11-12T03:43:23+00:00",
-      "duration_seconds": 1.67,
-      "last_success_at": "2026-11-12T03:43:23+00:00",
+      "last_checked_at": "2026-11-12T04:03:19+00:00",
+      "duration_seconds": 1.42,
+      "last_success_at": "2026-11-12T04:03:19+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 465.59,
+      "actual_interval_seconds": 354.48,
       "status": "ok"
     },
     "variant-8d892045d8c9942e": {
-      "last_checked_at": "2026-11-12T03:43:53+00:00",
-      "duration_seconds": 1.6,
-      "last_success_at": "2026-11-12T03:43:53+00:00",
+      "last_checked_at": "2026-11-12T04:03:37+00:00",
+      "duration_seconds": 1.68,
+      "last_success_at": "2026-11-12T04:03:37+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 490.64,
+      "actual_interval_seconds": 366.48,
       "status": "ok"
     },
     "variant-5a79bb95615712a4": {
@@ -6085,13 +6102,13 @@
       "status": "ok"
     },
     "variant-a4e2f598fc79f5b9": {
-      "last_checked_at": "2026-11-12T03:43:26+00:00",
-      "duration_seconds": 2.81,
-      "last_success_at": "2026-11-12T03:43:26+00:00",
+      "last_checked_at": "2026-11-12T04:03:35+00:00",
+      "duration_seconds": 16.3,
+      "last_success_at": "2026-11-12T04:03:35+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 465.41,
+      "actual_interval_seconds": 366.79,
       "status": "ok"
     },
     "variant-f35e547dffa7f8c7": {
@@ -10636,7 +10653,7 @@
           "at": "2026-11-12T03:50:40+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-12T03:49:59+00:00"
     }
   },
