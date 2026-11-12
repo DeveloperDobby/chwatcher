@@ -797,7 +797,7 @@
           "url": "https://www.chromehearts.com/scents/22-eau-de-parfum/162006CRYXXX271.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T18:32:08+00:00"
+          "last_seen_at": "2026-11-12T18:52:53+00:00"
         }
       },
       "sources": {
@@ -806,12 +806,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:29+00:00",
+      "last_checked_at": "2026-11-12T18:52:53+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T18:45:29+00:00",
+      "last_attempt_at": "2026-11-12T18:52:53+00:00",
       "priority": false
     },
     "www.chromehearts.com:162006CRYXXX272": {
@@ -1157,7 +1157,7 @@
           "url": "https://www.chromehearts.com/scents/22-scented-candle-100g/172571CRYXXX273.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T18:32:11+00:00"
+          "last_seen_at": "2026-11-12T18:52:56+00:00"
         }
       },
       "sources": {
@@ -1166,12 +1166,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:32+00:00",
+      "last_checked_at": "2026-11-12T18:52:56+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T18:45:32+00:00",
+      "last_attempt_at": "2026-11-12T18:52:56+00:00",
       "priority": false
     },
     "www.chromehearts.com:172571CRYXXX274": {
@@ -1202,12 +1202,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:35+00:00",
+      "last_checked_at": "2026-11-12T18:52:59+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T18:45:35+00:00",
+      "last_attempt_at": "2026-11-12T18:52:59+00:00",
       "priority": false
     },
     "www.chromehearts.com:174132CRYXXX015": {
@@ -2224,16 +2224,33 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:41+00:00",
+      "last_checked_at": "2026-11-12T18:53:15+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T18:45:41+00:00",
+      "last_attempt_at": "2026-11-12T18:53:15+00:00",
       "priority": false,
       "master_pid": "158553XXXXXXXXX",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=BLK&dwvar_158553XXXXXXXXX_size=2XL&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=F0K&dwvar_158553XXXXXXXXX_size=MED&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=F0K&dwvar_158553XXXXXXXXX_size=LRG&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=F0K&dwvar_158553XXXXXXXXX_size=1XL&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=F0K&dwvar_158553XXXXXXXXX_size=2XL&pid=158553XXXXXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=BLK&dwvar_158553XXXXXXXXX_size=1XL&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=BLK&dwvar_158553XXXXXXXXX_size=LRG&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=BLK&dwvar_158553XXXXXXXXX_size=MED&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=BLK&dwvar_158553XXXXXXXXX_size=SML&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=F0K&dwvar_158553XXXXXXXXX_size=SML&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=WNB&dwvar_158553XXXXXXXXX_size=1XL&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=WNB&dwvar_158553XXXXXXXXX_size=2XL&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=WNB&dwvar_158553XXXXXXXXX_size=LRG&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=WNB&dwvar_158553XXXXXXXXX_size=MED&pid=158553XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158553XXXXXXXXX_color=WNB&dwvar_158553XXXXXXXXX_size=SML&pid=158553XXXXXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:209670XXXXXXXXX": {
       "pid": "209670XXXXXXXXX",
@@ -5028,13 +5045,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:33+00:00",
+      "last_checked_at": "2026-11-12T18:52:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-12T18:45:33+00:00"
+      "last_attempt_at": "2026-11-12T18:52:57+00:00"
     },
     "www.chromehearts.com:214141D7BXXX01S": {
       "pid": "214141D7BXXX01S",
@@ -5055,7 +5072,7 @@
           "url": "https://www.chromehearts.com/scents/22-scented-candle-set-35g/214141D7BXXX01S.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T18:32:09+00:00"
+          "last_seen_at": "2026-11-12T18:52:54+00:00"
         }
       },
       "sources": {
@@ -5064,13 +5081,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:30+00:00",
+      "last_checked_at": "2026-11-12T18:52:54+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-12T18:45:30+00:00"
+      "last_attempt_at": "2026-11-12T18:52:54+00:00"
     },
     "www.chromehearts.com:146053XXXXXX142": {
       "pid": "146053XXXXXX142",
@@ -5235,7 +5252,7 @@
           "url": "https://www.chromehearts.com/scents/22-perfumed-hand-spray/208531PNKXXX751.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-12T18:32:06+00:00"
+          "last_seen_at": "2026-11-12T18:52:51+00:00"
         }
       },
       "sources": {
@@ -5244,13 +5261,13 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T18:45:27+00:00",
+      "last_checked_at": "2026-11-12T18:52:51+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
       "priority": false,
-      "last_attempt_at": "2026-11-12T18:45:27+00:00"
+      "last_attempt_at": "2026-11-12T18:52:51+00:00"
     },
     "www.chromehearts.com:208531BLUXXX752": {
       "pid": "208531BLUXXX752",
@@ -5457,13 +5474,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-12T18:51:59+00:00",
-      "duration_seconds": 2.82,
+      "last_checked_at": "2026-11-12T18:52:44+00:00",
+      "duration_seconds": 2.81,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 4970,
+      "consecutive_failures": 4971,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.32,
+      "actual_interval_seconds": 45.31,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5667,10 +5684,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-12T18:52:02+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-12T18:52:47+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 4966,
+      "consecutive_failures": 4967,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.31,
@@ -5737,13 +5754,13 @@
       "status": "ok"
     },
     "variant-04ca7e1b8da7032c": {
-      "last_checked_at": "2026-11-12T18:32:08+00:00",
-      "duration_seconds": 1.52,
-      "last_success_at": "2026-11-12T18:32:08+00:00",
+      "last_checked_at": "2026-11-12T18:52:53+00:00",
+      "duration_seconds": 1.49,
+      "last_success_at": "2026-11-12T18:52:53+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 492.46,
+      "actual_interval_seconds": 444.43,
       "status": "ok"
     },
     "variant-c1e28eb7caa192c0": {
@@ -5817,13 +5834,13 @@
       "status": "ok"
     },
     "variant-50b6ff762b69ec6d": {
-      "last_checked_at": "2026-11-12T18:32:11+00:00",
+      "last_checked_at": "2026-11-12T18:52:56+00:00",
       "duration_seconds": 1.5,
-      "last_success_at": "2026-11-12T18:32:11+00:00",
+      "last_success_at": "2026-11-12T18:52:56+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 492.43,
+      "actual_interval_seconds": 444.46,
       "status": "ok"
     },
     "variant-46f8f75f584e0ea5": {
@@ -6197,24 +6214,24 @@
       "actual_interval_seconds": 45.5
     },
     "variant-5cc7a1c4ec2ec777": {
-      "last_checked_at": "2026-11-12T18:32:06+00:00",
-      "duration_seconds": 1.48,
-      "last_success_at": "2026-11-12T18:32:06+00:00",
+      "last_checked_at": "2026-11-12T18:52:51+00:00",
+      "duration_seconds": 1.43,
+      "last_success_at": "2026-11-12T18:52:51+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 492.92
+      "actual_interval_seconds": 444.93
     },
     "variant-b69bd9140ac490a2": {
-      "last_checked_at": "2026-11-12T18:32:09+00:00",
-      "duration_seconds": 1.45,
-      "last_success_at": "2026-11-12T18:32:09+00:00",
+      "last_checked_at": "2026-11-12T18:52:54+00:00",
+      "duration_seconds": 1.5,
+      "last_success_at": "2026-11-12T18:52:54+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 492.91
+      "actual_interval_seconds": 444.94
     },
     "variant-80a6fe6efdb8b9d1": {
       "last_checked_at": "2026-11-12T18:38:36+00:00",
@@ -6273,7 +6290,7 @@
         },
         "https://www.chromehearts.com/boxers-leggings": {
           "url": "https://www.chromehearts.com/boxers-leggings",
-          "title": "BOXERS & LEGGINGS",
+          "title": "Korea",
           "kind": "category",
           "status": "configured",
           "sources": [
@@ -10638,7 +10655,7 @@
           "at": "2026-11-12T18:43:11+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-12T18:43:11+00:00"
     }
   },
