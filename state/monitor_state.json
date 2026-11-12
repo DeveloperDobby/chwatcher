@@ -3990,12 +3990,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T14:47:06+00:00",
+      "last_checked_at": "2026-11-12T14:53:04+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T14:47:06+00:00",
+      "last_attempt_at": "2026-11-12T14:53:04+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4089,12 +4089,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T14:47:13+00:00",
+      "last_checked_at": "2026-11-12T14:53:12+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T14:47:13+00:00",
+      "last_attempt_at": "2026-11-12T14:53:12+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4642,12 +4642,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T14:46:27+00:00",
+      "last_checked_at": "2026-11-12T14:52:52+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T14:46:27+00:00",
+      "last_attempt_at": "2026-11-12T14:52:52+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4703,12 +4703,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-12T14:46:58+00:00",
+      "last_checked_at": "2026-11-12T14:52:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-12T14:46:58+00:00",
+      "last_attempt_at": "2026-11-12T14:52:57+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5428,10 +5428,10 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-12T14:51:57+00:00",
-      "duration_seconds": 2.79,
+      "last_checked_at": "2026-11-12T14:52:42+00:00",
+      "duration_seconds": 2.78,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 4650,
+      "consecutive_failures": 4651,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.32,
@@ -5638,13 +5638,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-12T14:52:00+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-12T14:52:45+00:00",
+      "duration_seconds": 3.1,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 4646,
+      "consecutive_failures": 4647,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.33,
+      "actual_interval_seconds": 45.43,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10609,7 +10609,7 @@
           "at": "2026-11-12T14:43:09+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-12T14:43:09+00:00"
     }
   },
