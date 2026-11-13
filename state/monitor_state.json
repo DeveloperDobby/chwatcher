@@ -4002,12 +4002,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T07:34:33+00:00",
+      "last_checked_at": "2026-11-13T07:42:58+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T07:34:33+00:00",
+      "last_attempt_at": "2026-11-13T07:42:58+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4665,12 +4665,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T07:33:58+00:00",
+      "last_checked_at": "2026-11-13T07:42:46+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T07:33:58+00:00",
+      "last_attempt_at": "2026-11-13T07:42:46+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4726,12 +4726,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T07:34:25+00:00",
+      "last_checked_at": "2026-11-13T07:42:51+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T07:34:25+00:00",
+      "last_attempt_at": "2026-11-13T07:42:51+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5487,13 +5487,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-13T07:41:42+00:00",
-      "duration_seconds": 2.86,
+      "last_checked_at": "2026-11-13T07:42:27+00:00",
+      "duration_seconds": 2.9,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 5824,
+      "consecutive_failures": 5825,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.15,
+      "actual_interval_seconds": 45.18,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5517,23 +5517,23 @@
       "expected_missing_status": 404
     },
     "ch-extra-bag": {
-      "last_checked_at": "2026-11-13T07:27:38+00:00",
-      "duration_seconds": 2.91,
-      "last_success_at": "2026-11-13T07:27:38+00:00",
+      "last_checked_at": "2026-11-13T07:42:39+00:00",
+      "duration_seconds": 2.93,
+      "last_success_at": "2026-11-13T07:42:39+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.87,
+      "actual_interval_seconds": 901.15,
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-13T07:27:41+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-13T07:27:41+00:00",
+      "last_checked_at": "2026-11-13T07:42:42+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-13T07:42:42+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.87,
+      "actual_interval_seconds": 901.14,
       "status": "ok"
     },
     "ch-extra-belt": {
@@ -5697,13 +5697,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-13T07:41:45+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-13T07:42:30+00:00",
+      "duration_seconds": 2.97,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 5820,
+      "consecutive_failures": 5821,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.15,
+      "actual_interval_seconds": 45.16,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10708,7 +10708,7 @@
           "at": "2026-11-13T07:38:13+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-13T07:38:13+00:00"
     }
   },
@@ -10722,8 +10722,8 @@
     "ch-extra-goggles": "2026-11-13T07:41:09+00:00",
     "ch-extra-sunglasses": "2026-11-13T07:41:51+00:00",
     "ch-extra-eyewear-accessories": "2026-11-13T07:41:54+00:00",
-    "ch-extra-bag": "2026-11-13T07:27:35+00:00",
-    "ch-extra-bags": "2026-11-13T07:27:38+00:00",
+    "ch-extra-bag": "2026-11-13T07:42:36+00:00",
+    "ch-extra-bags": "2026-11-13T07:42:39+00:00",
     "ch-extra-belt": "2026-11-13T07:28:20+00:00",
     "ch-extra-earring": "2026-11-13T07:28:23+00:00",
     "ch-extra-t-shirt": "2026-11-13T07:29:05+00:00",
