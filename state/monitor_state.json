@@ -4421,12 +4421,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T20:45:34+00:00",
+      "last_checked_at": "2026-11-13T20:52:19+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T20:45:34+00:00",
+      "last_attempt_at": "2026-11-13T20:52:19+00:00",
       "priority": false,
       "master_pid": "176354XXXXXX349",
       "scan_queue": [],
@@ -4501,12 +4501,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T20:44:49+00:00",
+      "last_checked_at": "2026-11-13T20:52:04+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T20:44:49+00:00",
+      "last_attempt_at": "2026-11-13T20:52:04+00:00",
       "priority": false,
       "master_pid": "176354MB3XXX465",
       "scan_queue": [],
@@ -5487,13 +5487,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-13T20:51:04+00:00",
+      "last_checked_at": "2026-11-13T20:51:49+00:00",
       "duration_seconds": 2.88,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 6386,
+      "consecutive_failures": 6387,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.9,
+      "actual_interval_seconds": 45.93,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5697,10 +5697,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-13T20:51:07+00:00",
-      "duration_seconds": 3.01,
+      "last_checked_at": "2026-11-13T20:51:52+00:00",
+      "duration_seconds": 2.98,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 6381,
+      "consecutive_failures": 6382,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.92,
@@ -10709,7 +10709,7 @@
           "at": "2026-11-13T20:39:21+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-13T20:38:43+00:00"
     }
   },
