@@ -1579,12 +1579,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T12:35:20+00:00",
+      "last_checked_at": "2026-11-13T12:43:37+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T12:35:20+00:00",
+      "last_attempt_at": "2026-11-13T12:43:37+00:00",
       "priority": false
     },
     "www.chromehearts.com:158552BLKXXXXXX": {
@@ -3558,12 +3558,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T12:35:33+00:00",
+      "last_checked_at": "2026-11-13T12:43:50+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T12:35:33+00:00",
+      "last_attempt_at": "2026-11-13T12:43:50+00:00",
       "priority": false,
       "master_pid": "164943XXXXXX140",
       "scan_queue": [],
@@ -5489,23 +5489,23 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-13T08:40:29+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-13T08:40:29+00:00",
+      "last_checked_at": "2026-11-13T12:43:32+00:00",
+      "duration_seconds": 2.87,
+      "last_success_at": "2026-11-13T12:43:32+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.05,
+      "actual_interval_seconds": 14583.68,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-13T08:41:11+00:00",
-      "duration_seconds": 2.93,
-      "last_success_at": "2026-11-13T08:41:11+00:00",
+      "last_checked_at": "2026-11-13T12:43:35+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-13T12:43:35+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.06,
+      "actual_interval_seconds": 14544.67,
       "status": "ok"
     },
     "ch-extra-goggles": {
@@ -5519,13 +5519,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-13T12:42:35+00:00",
-      "duration_seconds": 2.88,
+      "last_checked_at": "2026-11-13T12:43:20+00:00",
+      "duration_seconds": 2.84,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 5917,
+      "consecutive_failures": 5918,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.4,
+      "actual_interval_seconds": 45.67,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5729,13 +5729,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-13T12:42:38+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-13T12:43:23+00:00",
+      "duration_seconds": 3.0,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 5912,
+      "consecutive_failures": 5913,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.38,
+      "actual_interval_seconds": 45.68,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10740,7 +10740,7 @@
           "at": "2026-11-13T12:34:34+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-13T12:33:55+00:00"
     }
   },
@@ -10749,8 +10749,8 @@
     "ch-extra-sports-mesh": "2026-11-13T12:42:44+00:00",
     "ch-extra-eyewear": "2026-11-12T18:49:53+00:00",
     "ch-extra-hat": "2026-11-13T12:42:47+00:00",
-    "ch-extra-hoodie": "2026-11-13T08:40:26+00:00",
-    "ch-extra-rib-tank": "2026-11-13T08:41:08+00:00",
+    "ch-extra-hoodie": "2026-11-13T12:43:29+00:00",
+    "ch-extra-rib-tank": "2026-11-13T12:43:32+00:00",
     "ch-extra-goggles": "2026-11-13T08:41:11+00:00",
     "ch-extra-sunglasses": "2026-11-13T12:33:42+00:00",
     "ch-extra-eyewear-accessories": "2026-11-13T12:33:45+00:00",
