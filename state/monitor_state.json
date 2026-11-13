@@ -3649,7 +3649,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-13T01:01:07+00:00"
+          "last_seen_at": "2026-11-13T01:16:53+00:00"
         },
         "201585AFWSML030:en_US": {
           "pid": "201585AFWSML030",
@@ -3668,7 +3668,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=SML&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-13T00:54:56+00:00"
+          "last_seen_at": "2026-11-13T01:16:54+00:00"
         },
         "201585AFWLRG030:en_US": {
           "pid": "201585AFWLRG030",
@@ -3687,7 +3687,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-13T00:54:57+00:00"
+          "last_seen_at": "2026-11-13T01:16:56+00:00"
         },
         "201585AFWMED030:en_US": {
           "pid": "201585AFWMED030",
@@ -3715,12 +3715,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T01:10:05+00:00",
+      "last_checked_at": "2026-11-13T01:16:57+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:10:05+00:00",
+      "last_attempt_at": "2026-11-13T01:16:57+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4008,12 +4008,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T01:09:26+00:00",
+      "last_checked_at": "2026-11-13T01:16:42+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:09:26+00:00",
+      "last_attempt_at": "2026-11-13T01:16:42+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4107,12 +4107,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T01:10:02+00:00",
+      "last_checked_at": "2026-11-13T01:16:50+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:10:02+00:00",
+      "last_attempt_at": "2026-11-13T01:16:50+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -5487,13 +5487,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-13T01:15:40+00:00",
-      "duration_seconds": 2.87,
+      "last_checked_at": "2026-11-13T01:16:26+00:00",
+      "duration_seconds": 2.86,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 5316,
+      "consecutive_failures": 5317,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.82,
+      "actual_interval_seconds": 46.45,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5697,13 +5697,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-13T01:15:43+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-13T01:16:29+00:00",
+      "duration_seconds": 3.03,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 5312,
+      "consecutive_failures": 5313,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.83,
+      "actual_interval_seconds": 46.48,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10708,7 +10708,7 @@
           "at": "2026-11-13T01:06:10+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-13T01:05:30+00:00"
     }
   },
