@@ -931,12 +931,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T01:10:09+00:00",
+      "last_checked_at": "2026-11-13T01:17:25+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:10:09+00:00",
+      "last_attempt_at": "2026-11-13T01:17:25+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX273": {
@@ -1039,12 +1039,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T01:10:55+00:00",
+      "last_checked_at": "2026-11-13T01:17:41+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:10:55+00:00",
+      "last_attempt_at": "2026-11-13T01:17:41+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX274": {
@@ -3900,7 +3900,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-underwire-bra/202334AFWXXX030.html?dwvar_202334AFWXXX030_size=34C&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_202334AFWXXX030_size=34C&pid=202334AFWXXX030&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-13T01:01:48+00:00"
+          "last_seen_at": "2026-11-13T01:17:40+00:00"
         }
       },
       "sources": {
@@ -3909,12 +3909,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T01:10:53+00:00",
+      "last_checked_at": "2026-11-13T01:17:40+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:10:53+00:00",
+      "last_attempt_at": "2026-11-13T01:17:40+00:00",
       "priority": false,
       "master_pid": "202334AFWXXX030",
       "scan_queue": [],
@@ -4211,7 +4211,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T01:10:08+00:00",
+      "last_attempt_at": "2026-11-13T01:17:23+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5487,13 +5487,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-13T01:16:26+00:00",
-      "duration_seconds": 2.86,
+      "last_checked_at": "2026-11-13T01:17:11+00:00",
+      "duration_seconds": 2.89,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 5317,
+      "consecutive_failures": 5318,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.45,
+      "actual_interval_seconds": 45.69,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5697,13 +5697,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-13T01:16:29+00:00",
-      "duration_seconds": 3.03,
+      "last_checked_at": "2026-11-13T01:17:14+00:00",
+      "duration_seconds": 2.98,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 5313,
+      "consecutive_failures": 5314,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.48,
+      "actual_interval_seconds": 45.67,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6077,13 +6077,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-13T01:10:08+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-13T01:17:23+00:00",
+      "duration_seconds": 2.87,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 729,
+      "consecutive_failures": 730,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 512.34,
+      "actual_interval_seconds": 435.61,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10708,7 +10708,7 @@
           "at": "2026-11-13T01:06:10+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-13T01:05:30+00:00"
     }
   },
