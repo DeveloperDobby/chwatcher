@@ -4025,12 +4025,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T07:18:43+00:00",
+      "last_checked_at": "2026-11-13T07:26:28+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T07:18:43+00:00",
+      "last_attempt_at": "2026-11-13T07:26:28+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4688,12 +4688,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T07:18:08+00:00",
+      "last_checked_at": "2026-11-13T07:26:16+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T07:18:08+00:00",
+      "last_attempt_at": "2026-11-13T07:26:16+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4749,12 +4749,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-13T07:18:13+00:00",
+      "last_checked_at": "2026-11-13T07:26:20+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-13T07:18:13+00:00",
+      "last_attempt_at": "2026-11-13T07:26:20+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5490,33 +5490,33 @@
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-13T07:11:08+00:00",
-      "duration_seconds": 2.92,
-      "last_success_at": "2026-11-13T07:11:08+00:00",
+      "last_checked_at": "2026-11-13T07:26:08+00:00",
+      "duration_seconds": 2.94,
+      "last_success_at": "2026-11-13T07:26:08+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.54,
+      "actual_interval_seconds": 900.88,
       "status": "ok"
     },
     "ch-extra-goggles": {
-      "last_checked_at": "2026-11-13T07:11:11+00:00",
+      "last_checked_at": "2026-11-13T07:26:11+00:00",
       "duration_seconds": 2.99,
-      "last_success_at": "2026-11-13T07:11:11+00:00",
+      "last_success_at": "2026-11-13T07:26:11+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.54,
+      "actual_interval_seconds": 900.87,
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-13T07:25:11+00:00",
-      "duration_seconds": 2.83,
+      "last_checked_at": "2026-11-13T07:25:56+00:00",
+      "duration_seconds": 2.86,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 5802,
+      "consecutive_failures": 5803,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.86,
+      "actual_interval_seconds": 45.88,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5720,10 +5720,10 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-13T07:25:14+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-13T07:25:59+00:00",
+      "duration_seconds": 2.98,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 5798,
+      "consecutive_failures": 5799,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.86,
@@ -10731,7 +10731,7 @@
           "at": "2026-11-13T07:23:13+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-13T07:23:13+00:00"
     }
   },
@@ -10741,8 +10741,8 @@
     "ch-extra-eyewear": "2026-11-12T18:49:53+00:00",
     "ch-extra-hat": "2026-11-13T07:25:20+00:00",
     "ch-extra-hoodie": "2026-11-13T07:25:23+00:00",
-    "ch-extra-rib-tank": "2026-11-13T07:11:05+00:00",
-    "ch-extra-goggles": "2026-11-13T07:11:08+00:00",
+    "ch-extra-rib-tank": "2026-11-13T07:26:05+00:00",
+    "ch-extra-goggles": "2026-11-13T07:26:08+00:00",
     "ch-extra-sunglasses": "2026-11-13T07:11:50+00:00",
     "ch-extra-eyewear-accessories": "2026-11-13T07:11:53+00:00",
     "ch-extra-bag": "2026-11-13T07:12:35+00:00",
