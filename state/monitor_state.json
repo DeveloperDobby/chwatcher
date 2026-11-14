@@ -789,24 +789,7 @@
       "updated_at": "2026-11-14T20:35:09+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 56,
-      "monitor": {
-        "id": "variant-6656e9a5f933b8b9",
-        "name": "Chrome Hearts 사이즈 MIO LORD",
-        "url": "https://www.chromehearts.com/eyewear/mio-lord/21978827FE50010.html"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts 사이즈 MIO LORD 감시 오류",
-        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n404 Client Error: Not Found for url: https://www.chromehearts.com/eyewear/mio-lord/21978827FE50010.html",
-        "url": "https://www.chromehearts.com/eyewear/mio-lord/21978827FE50010.html",
-        "observed_at": "2026-11-14T20:37:47+00:00",
-        "_notification_id": 56
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
