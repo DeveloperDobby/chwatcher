@@ -789,24 +789,7 @@
       "updated_at": "2026-11-14T19:50:07+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 55,
-      "monitor": {
-        "id": "ch-extra-eyewear",
-        "name": "Chrome Hearts eyewear",
-        "url": "https://www.chromehearts.com/eyewear"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts eyewear 감시 오류",
-        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
-        "url": "https://www.chromehearts.com/eyewear",
-        "observed_at": "2026-11-14T20:02:10+00:00",
-        "_notification_id": 55
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
