@@ -967,12 +967,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:37+00:00",
+      "last_checked_at": "2026-11-14T07:34:19+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:37+00:00",
+      "last_attempt_at": "2026-11-14T07:34:19+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX274": {
@@ -1003,12 +1003,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:39+00:00",
+      "last_checked_at": "2026-11-14T07:34:21+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:39+00:00",
+      "last_attempt_at": "2026-11-14T07:34:21+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX273": {
@@ -1399,12 +1399,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:36+00:00",
+      "last_checked_at": "2026-11-14T07:34:18+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:36+00:00",
+      "last_attempt_at": "2026-11-14T07:34:18+00:00",
       "priority": false
     },
     "www.chromehearts.com:177731CRYXXX042": {
@@ -1435,12 +1435,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:31+00:00",
+      "last_checked_at": "2026-11-14T07:34:13+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:31+00:00",
+      "last_attempt_at": "2026-11-14T07:34:13+00:00",
       "priority": false
     },
     "www.chromehearts.com:177732CRYXXX042": {
@@ -1471,12 +1471,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:33+00:00",
+      "last_checked_at": "2026-11-14T07:34:15+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:33+00:00",
+      "last_attempt_at": "2026-11-14T07:34:15+00:00",
       "priority": false
     },
     "www.chromehearts.com:177733CRYXXX042": {
@@ -1507,12 +1507,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:34+00:00",
+      "last_checked_at": "2026-11-14T07:34:16+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:34+00:00",
+      "last_attempt_at": "2026-11-14T07:34:16+00:00",
       "priority": false
     },
     "www.chromehearts.com:177730CRYXXX013": {
@@ -4693,16 +4693,20 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:28:13+00:00",
+      "last_checked_at": "2026-11-14T07:34:28+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:28:13+00:00",
+      "last_attempt_at": "2026-11-14T07:34:28+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=SML&pid=191715D5DXXX408&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1"
+      ]
     },
     "www.chromehearts.com:191716ADLXXX406": {
       "pid": "191716ADLXXX406",
@@ -4857,22 +4861,16 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-14T07:27:43+00:00",
+      "last_checked_at": "2026-11-14T07:34:25+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-14T07:27:43+00:00",
+      "last_attempt_at": "2026-11-14T07:34:25+00:00",
       "priority": false,
       "master_pid": "180459XXXXXX389",
-      "scan_queue": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=MED&pid=180459XXXXXX389&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=LRG&pid=180459XXXXXX389&quantity=1"
-      ],
-      "scan_seen": [
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&pid=180459XXXXXX389&quantity=1",
-        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&pid=180459XXXXXX389&quantity=1"
-      ]
+      "scan_queue": [],
+      "scan_seen": []
     },
     "www.chromehearts.com:222575AEGXXX059": {
       "pid": "222575AEGXXX059",
@@ -5521,13 +5519,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-14T07:33:12+00:00",
-      "duration_seconds": 2.8,
+      "last_checked_at": "2026-11-14T07:33:57+00:00",
+      "duration_seconds": 2.85,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 7227,
+      "consecutive_failures": 7228,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.11,
+      "actual_interval_seconds": 45.13,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5671,23 +5669,23 @@
       "status": "ok"
     },
     "ch-extra-jacket": {
-      "last_checked_at": "2026-11-14T07:19:09+00:00",
-      "duration_seconds": 2.9,
-      "last_success_at": "2026-11-14T07:19:09+00:00",
+      "last_checked_at": "2026-11-14T07:34:09+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-14T07:34:09+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.13,
+      "actual_interval_seconds": 900.12,
       "status": "ok"
     },
     "ch-extra-denim": {
-      "last_checked_at": "2026-11-14T07:19:12+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-14T07:19:12+00:00",
+      "last_checked_at": "2026-11-14T07:34:12+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-14T07:34:12+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 901.13,
+      "actual_interval_seconds": 900.11,
       "status": "ok"
     },
     "ch-extra-pants": {
@@ -5731,13 +5729,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-14T07:33:15+00:00",
-      "duration_seconds": 3.08,
+      "last_checked_at": "2026-11-14T07:34:00+00:00",
+      "duration_seconds": 2.97,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 7222,
+      "consecutive_failures": 7223,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.21,
+      "actual_interval_seconds": 45.11,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10743,7 +10741,7 @@
           "at": "2026-11-14T07:28:09+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-14T07:28:09+00:00"
     }
   },
@@ -10769,8 +10767,8 @@
     "ch-extra-sweatshirt": "2026-11-14T07:32:39+00:00",
     "ch-extra-sweatshirts": "2026-11-14T07:33:21+00:00",
     "ch-extra-sweater": "2026-11-14T07:33:24+00:00",
-    "ch-extra-jacket": "2026-11-14T07:19:06+00:00",
-    "ch-extra-denim": "2026-11-14T07:19:09+00:00",
+    "ch-extra-jacket": "2026-11-14T07:34:06+00:00",
+    "ch-extra-denim": "2026-11-14T07:34:09+00:00",
     "ch-extra-pants": "2026-11-14T07:19:51+00:00",
     "ch-extra-shorts": "2026-11-14T07:19:54+00:00",
     "ch-extra-shoes": "2026-11-14T07:20:36+00:00",
