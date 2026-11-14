@@ -5510,13 +5510,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-14T08:27:57+00:00",
-      "duration_seconds": 2.83,
+      "last_checked_at": "2026-11-14T08:28:42+00:00",
+      "duration_seconds": 2.82,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 7300,
+      "consecutive_failures": 7301,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.14,
+      "actual_interval_seconds": 45.12,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5540,23 +5540,23 @@
       "expected_missing_status": 404
     },
     "ch-extra-bag": {
-      "last_checked_at": "2026-11-14T08:13:54+00:00",
-      "duration_seconds": 2.94,
-      "last_success_at": "2026-11-14T08:13:54+00:00",
+      "last_checked_at": "2026-11-14T08:28:54+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-14T08:28:54+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.17,
+      "actual_interval_seconds": 900.13,
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-14T08:13:57+00:00",
-      "duration_seconds": 2.94,
-      "last_success_at": "2026-11-14T08:13:57+00:00",
+      "last_checked_at": "2026-11-14T08:28:57+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-14T08:28:57+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.12,
+      "actual_interval_seconds": 900.13,
       "status": "ok"
     },
     "ch-extra-belt": {
@@ -5720,13 +5720,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-14T08:28:00+00:00",
-      "duration_seconds": 2.96,
+      "last_checked_at": "2026-11-14T08:28:45+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 7295,
+      "consecutive_failures": 7296,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.11,
+      "actual_interval_seconds": 45.14,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10732,7 +10732,7 @@
           "at": "2026-11-14T08:28:09+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-14T08:28:09+00:00"
     }
   },
@@ -10746,8 +10746,8 @@
     "ch-extra-goggles": "2026-11-14T08:27:21+00:00",
     "ch-extra-sunglasses": "2026-11-14T08:27:24+00:00",
     "ch-extra-eyewear-accessories": "2026-11-14T08:28:06+00:00",
-    "ch-extra-bag": "2026-11-14T08:13:51+00:00",
-    "ch-extra-bags": "2026-11-14T08:13:54+00:00",
+    "ch-extra-bag": "2026-11-14T08:28:51+00:00",
+    "ch-extra-bags": "2026-11-14T08:28:54+00:00",
     "ch-extra-belt": "2026-11-14T08:14:36+00:00",
     "ch-extra-earring": "2026-11-14T08:14:39+00:00",
     "ch-extra-t-shirt": "2026-11-14T08:15:21+00:00",
