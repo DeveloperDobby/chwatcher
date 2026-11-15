@@ -7209,13 +7209,6 @@
       },
       "history": [
         {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_0.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-14T03:12:26+00:00"
-        },
-        {
           "code": "coverage",
           "url": "https://www.chromehearts.com/",
           "reason": "{\"configured\": 10, \"tracked\": 52, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
@@ -10707,6 +10700,13 @@
           "reason": "{\"configured\": 10, \"tracked\": 52, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
           "source": "",
           "at": "2026-11-15T04:26:38+00:00"
+        },
+        {
+          "code": "paused",
+          "url": "https://www.chromehearts.com/",
+          "reason": "403/429 도메인 대기 중: 추가 탐색을 건너뜁니다",
+          "source": "",
+          "at": "2026-11-15T04:34:05+00:00"
         }
       ],
       "source_first": false,
