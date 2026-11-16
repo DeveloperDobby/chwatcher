@@ -1098,7 +1098,7 @@
           "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T01:43:36+00:00"
+          "last_seen_at": "2026-11-16T01:59:51+00:00"
         }
       },
       "sources": {
@@ -1107,12 +1107,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-16T01:52:25+00:00",
+      "last_checked_at": "2026-11-16T01:59:51+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-16T01:52:25+00:00",
+      "last_attempt_at": "2026-11-16T01:59:51+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX274": {
@@ -1134,7 +1134,7 @@
           "url": "https://www.chromehearts.com/scents/33-scented-candle-refill-200g/175740XXXXXX274.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T01:43:40+00:00"
+          "last_seen_at": "2026-11-16T02:00:09+00:00"
         }
       },
       "sources": {
@@ -1143,12 +1143,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-16T01:53:12+00:00",
+      "last_checked_at": "2026-11-16T02:00:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-16T01:53:12+00:00",
+      "last_attempt_at": "2026-11-16T02:00:09+00:00",
       "priority": false
     },
     "www.chromehearts.com:172571CRYXXX273": {
@@ -1606,7 +1606,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/boxer-brief---shorts/158552BLKXXXXXX.html?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T01:44:07+00:00"
+          "last_seen_at": "2026-11-16T02:00:11+00:00"
         },
         "158552PNBSML152:en_US": {
           "pid": "158552PNBSML152",
@@ -1896,16 +1896,33 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-16T01:53:17+00:00",
+      "last_checked_at": "2026-11-16T02:00:11+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-16T01:53:17+00:00",
+      "last_attempt_at": "2026-11-16T02:00:11+00:00",
       "priority": false,
       "master_pid": "158552BLKXXXXXX",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=WNB&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=MED&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=LRG&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=1XL&pid=158552BLKXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=PNB&dwvar_158552BLKXXXXXX_size=2XL&pid=158552BLKXXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_158552BLKXXXXXX_colorVal=BLK&dwvar_158552BLKXXXXXX_size=SML&pid=158552BLKXXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:158553XXXXXXXXX": {
       "pid": "158553XXXXXXXXX",
@@ -2958,7 +2975,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=2XL&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=2XL&pid=208280XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T01:43:38+00:00"
+          "last_seen_at": "2026-11-16T02:00:07+00:00"
         }
       },
       "sources": {
@@ -2968,12 +2985,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-16T01:52:41+00:00",
+      "last_checked_at": "2026-11-16T02:00:07+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-16T01:52:41+00:00",
+      "last_attempt_at": "2026-11-16T02:00:07+00:00",
       "priority": false,
       "master_pid": "208280XXXXXXXXX",
       "scan_queue": [],
@@ -5410,13 +5427,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-16T01:59:04+00:00",
-      "duration_seconds": 2.77,
+      "last_checked_at": "2026-11-16T01:59:49+00:00",
+      "duration_seconds": 2.78,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 1809,
+      "consecutive_failures": 1810,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.55,
+      "actual_interval_seconds": 45.56,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5460,13 +5477,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-16T01:58:55+00:00",
-      "duration_seconds": 2.78,
+      "last_checked_at": "2026-11-16T01:59:40+00:00",
+      "duration_seconds": 2.81,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 9671,
+      "consecutive_failures": 9672,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.54,
+      "actual_interval_seconds": 45.57,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5670,13 +5687,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-16T01:58:58+00:00",
-      "duration_seconds": 3.01,
+      "last_checked_at": "2026-11-16T01:59:43+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 9666,
+      "consecutive_failures": 9667,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.56,
+      "actual_interval_seconds": 45.57,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -5720,13 +5737,13 @@
       "status": "ok"
     },
     "variant-ba1420e9b1d109d4": {
-      "last_checked_at": "2026-11-16T01:44:23+00:00",
-      "duration_seconds": 19.4,
-      "last_success_at": "2026-11-16T01:44:23+00:00",
+      "last_checked_at": "2026-11-16T02:00:11+00:00",
+      "duration_seconds": 2.73,
+      "last_success_at": "2026-11-16T02:00:11+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 455.98,
+      "actual_interval_seconds": 414.99,
       "status": "ok"
     },
     "variant-06731c6edf68193b": {
@@ -5870,23 +5887,23 @@
       "status": "ok"
     },
     "variant-fd7e5ee3484aa685": {
-      "last_checked_at": "2026-11-16T01:43:36+00:00",
-      "duration_seconds": 1.66,
-      "last_success_at": "2026-11-16T01:43:36+00:00",
+      "last_checked_at": "2026-11-16T01:59:51+00:00",
+      "duration_seconds": 1.62,
+      "last_success_at": "2026-11-16T01:59:51+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 459.16,
+      "actual_interval_seconds": 446.2,
       "status": "ok"
     },
     "variant-8d892045d8c9942e": {
-      "last_checked_at": "2026-11-16T01:43:40+00:00",
-      "duration_seconds": 1.7,
-      "last_success_at": "2026-11-16T01:43:40+00:00",
+      "last_checked_at": "2026-11-16T02:00:09+00:00",
+      "duration_seconds": 1.75,
+      "last_success_at": "2026-11-16T02:00:09+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 418.7,
+      "actual_interval_seconds": 417.25,
       "status": "ok"
     },
     "variant-5a79bb95615712a4": {
@@ -6090,13 +6107,13 @@
       "status": "ok"
     },
     "variant-a4e2f598fc79f5b9": {
-      "last_checked_at": "2026-11-16T01:43:38+00:00",
-      "duration_seconds": 2.81,
-      "last_success_at": "2026-11-16T01:43:38+00:00",
+      "last_checked_at": "2026-11-16T02:00:07+00:00",
+      "duration_seconds": 16.28,
+      "last_success_at": "2026-11-16T02:00:07+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 447.99,
+      "actual_interval_seconds": 446.49,
       "status": "ok"
     },
     "variant-f35e547dffa7f8c7": {
@@ -10682,7 +10699,7 @@
           "at": "2026-11-16T01:48:41+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-16T01:48:41+00:00"
     }
   },
