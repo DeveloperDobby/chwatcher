@@ -1575,12 +1575,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-16T04:23:58+00:00",
+      "last_checked_at": "2026-11-16T04:31:30+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-16T04:23:58+00:00",
+      "last_attempt_at": "2026-11-16T04:31:30+00:00",
       "priority": false
     },
     "www.chromehearts.com:158552BLKXXXXXX": {
@@ -3387,7 +3387,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html?dwvar_164943XXXXXX140_color=F0K&dwvar_164943XXXXXX140_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_164943XXXXXX140_color=F0K&dwvar_164943XXXXXX140_size=SML&pid=164943XXXXXX140&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T04:15:55+00:00"
+          "last_seen_at": "2026-11-16T04:31:33+00:00"
         },
         "164943BLKMED140:en_US": {
           "pid": "164943BLKMED140",
@@ -3407,7 +3407,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html?dwvar_164943XXXXXX140_color=BLK&dwvar_164943XXXXXX140_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_164943XXXXXX140_color=BLK&dwvar_164943XXXXXX140_size=MED&pid=164943XXXXXX140&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T04:15:56+00:00"
+          "last_seen_at": "2026-11-16T04:31:34+00:00"
         },
         "164943BLKLRG140:en_US": {
           "pid": "164943BLKLRG140",
@@ -3427,7 +3427,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/long-johns/164943XXXXXX140.html?dwvar_164943XXXXXX140_color=BLK&dwvar_164943XXXXXX140_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_164943XXXXXX140_color=BLK&dwvar_164943XXXXXX140_size=LRG&pid=164943XXXXXX140&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-16T04:15:58+00:00"
+          "last_seen_at": "2026-11-16T04:31:36+00:00"
         },
         "164943BLK1XL140:en_US": {
           "pid": "164943BLK1XL140",
@@ -3537,12 +3537,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-16T04:24:07+00:00",
+      "last_checked_at": "2026-11-16T04:31:43+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-16T04:24:07+00:00",
+      "last_attempt_at": "2026-11-16T04:31:43+00:00",
       "priority": false,
       "master_pid": "164943XXXXXX140",
       "scan_queue": [],
@@ -5455,13 +5455,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-16T04:30:36+00:00",
-      "duration_seconds": 2.78,
+      "last_checked_at": "2026-11-16T04:31:21+00:00",
+      "duration_seconds": 2.82,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 2011,
+      "consecutive_failures": 2012,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.15,
+      "actual_interval_seconds": 45.19,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5505,13 +5505,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-16T04:30:27+00:00",
-      "duration_seconds": 2.81,
+      "last_checked_at": "2026-11-16T04:31:12+00:00",
+      "duration_seconds": 2.86,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 9873,
+      "consecutive_failures": 9874,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.17,
+      "actual_interval_seconds": 45.22,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5655,23 +5655,23 @@
       "status": "ok"
     },
     "ch-extra-jacket": {
-      "last_checked_at": "2026-11-16T04:16:23+00:00",
+      "last_checked_at": "2026-11-16T04:31:24+00:00",
       "duration_seconds": 2.97,
-      "last_success_at": "2026-11-16T04:16:23+00:00",
+      "last_success_at": "2026-11-16T04:31:24+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.94,
+      "actual_interval_seconds": 901.17,
       "status": "ok"
     },
     "ch-extra-denim": {
-      "last_checked_at": "2026-11-16T04:16:26+00:00",
+      "last_checked_at": "2026-11-16T04:31:27+00:00",
       "duration_seconds": 3.01,
-      "last_success_at": "2026-11-16T04:16:26+00:00",
+      "last_success_at": "2026-11-16T04:31:27+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.96,
+      "actual_interval_seconds": 901.19,
       "status": "ok"
     },
     "ch-extra-pants": {
@@ -5715,13 +5715,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-16T04:30:30+00:00",
-      "duration_seconds": 2.99,
+      "last_checked_at": "2026-11-16T04:31:15+00:00",
+      "duration_seconds": 2.94,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 9868,
+      "consecutive_failures": 9869,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.17,
+      "actual_interval_seconds": 45.18,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -7144,9 +7144,9 @@
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-16T04:16:26+00:00",
+          "last_attempt_at": "2026-11-16T04:31:27+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-16T04:16:28+00:00",
+          "last_success_at": "2026-11-16T04:31:28+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
@@ -7226,13 +7226,6 @@
         }
       },
       "history": [
-        {
-          "code": "needs_review",
-          "url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Search-Show?cgid=SWEATPANTS",
-          "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
-          "source": "https://www.chromehearts.com/sitemap_0.xml",
-          "at": "2026-11-15T00:52:36+00:00"
-        },
         {
           "code": "source_checked",
           "url": "https://www.chromehearts.com/robots.txt",
@@ -10725,9 +10718,16 @@
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
           "source": "https://www.chromehearts.com/sitemap_0.xml",
           "at": "2026-11-16T04:30:45+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_index.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-16T04:31:28+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-16T04:19:22+00:00"
     }
   },
@@ -10753,8 +10753,8 @@
     "ch-extra-sweatshirt": "2026-11-16T04:26:51+00:00",
     "ch-extra-sweatshirts": "2026-11-16T04:30:36+00:00",
     "ch-extra-sweater": "2026-11-16T04:30:39+00:00",
-    "ch-extra-jacket": "2026-11-16T04:16:20+00:00",
-    "ch-extra-denim": "2026-11-16T04:16:23+00:00",
+    "ch-extra-jacket": "2026-11-16T04:31:21+00:00",
+    "ch-extra-denim": "2026-11-16T04:31:24+00:00",
     "ch-extra-pants": "2026-11-16T04:17:05+00:00",
     "ch-extra-shorts": "2026-11-16T04:17:08+00:00",
     "ch-extra-shoes": "2026-11-16T04:17:50+00:00",
