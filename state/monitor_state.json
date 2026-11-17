@@ -537,15 +537,15 @@
       "seen": {
         "f01b2b219b18c19c806e4e53cc1ed3e5": {
           "title": "BLUE GLITTER HOODIE",
-          "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
-          "status": "sold_out",
+          "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM",
+          "status": "available",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-17T19:57:45+00:00"
+          "last_seen_at": "2026-11-17T19:58:35+00:00"
         }
       },
       "last_count": 1,
-      "updated_at": "2026-11-17T19:57:45+00:00",
+      "updated_at": "2026-11-17T19:58:35+00:00",
       "initialized": true
     },
     "ch-extra-rib-tank": {
@@ -798,7 +798,29 @@
       "updated_at": "2026-11-17T19:47:50+00:00"
     }
   },
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "id": 58,
+      "monitor": {
+        "id": "ch-extra-hoodie",
+        "name": "Chrome Hearts hoodie",
+        "url": "https://www.chromehearts.com/hoodie"
+      },
+      "event": {
+        "kind": "restock",
+        "key": "f01b2b219b18c19c806e4e53cc1ed3e5",
+        "pid": "152701BLKXXX754",
+        "title": "BLUE GLITTER HOODIE",
+        "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM",
+        "price": "",
+        "image": "",
+        "status": "available",
+        "previous_status": "sold_out",
+        "observed_at": "2026-11-17T19:58:35+00:00",
+        "_notification_id": 58
+      }
+    }
+  ],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
@@ -864,12 +886,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-17T19:50:14+00:00",
+      "last_checked_at": "2026-11-17T19:58:36+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T19:50:14+00:00",
+      "last_attempt_at": "2026-11-17T19:58:36+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX271": {
@@ -900,12 +922,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-17T19:50:16+00:00",
+      "last_checked_at": "2026-11-17T19:58:38+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T19:50:16+00:00",
+      "last_attempt_at": "2026-11-17T19:58:38+00:00",
       "priority": false
     },
     "www.chromehearts.com:162008CRYXXX272": {
@@ -1548,12 +1570,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-17T19:50:25+00:00",
+      "last_checked_at": "2026-11-17T19:58:47+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T19:50:25+00:00",
+      "last_attempt_at": "2026-11-17T19:58:47+00:00",
       "priority": false
     },
     "www.chromehearts.com:174310CRYXXX005": {
@@ -4552,7 +4574,7 @@
           "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=D5B&dwvar_176354XXXXXXXXX_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_176354XXXXXXXXX_color=D5B&dwvar_176354XXXXXXXXX_size=MED&pid=176354XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-17T19:42:07+00:00"
+          "last_seen_at": "2026-11-17T19:58:40+00:00"
         },
         "176354AEJLRG435:en_US": {
           "pid": "176354AEJLRG435",
@@ -4572,7 +4594,7 @@
           "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=LRG&pid=176354XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-17T19:42:09+00:00"
+          "last_seen_at": "2026-11-17T19:58:42+00:00"
         },
         "176354AEJMED435:en_US": {
           "pid": "176354AEJMED435",
@@ -4592,7 +4614,7 @@
           "url": "https://www.chromehearts.com/socks/sport/176354XXXXXXXXX.html?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_176354XXXXXXXXX_color=AEJ&dwvar_176354XXXXXXXXX_size=MED&pid=176354XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-17T19:42:10+00:00"
+          "last_seen_at": "2026-11-17T19:58:44+00:00"
         },
         "176354D5BLRG405:en_US": {
           "pid": "176354D5BLRG405",
@@ -4621,12 +4643,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-17T19:50:23+00:00",
+      "last_checked_at": "2026-11-17T19:58:45+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T19:50:23+00:00",
+      "last_attempt_at": "2026-11-17T19:58:45+00:00",
       "priority": false,
       "master_pid": "176354XXXXXXXXX",
       "scan_queue": [],
@@ -5373,8 +5395,8 @@
     },
     "www.chromehearts.com:152701BLKXXX754": {
       "pid": "152701BLKXXX754",
-      "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
-      "title": "Korea",
+      "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM",
+      "title": "BLUE GLITTER HOODIE",
       "variants": {
         "152701BLKXSM754:en_US": {
           "pid": "152701BLKXSM754",
@@ -5591,13 +5613,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-17T19:57:39+00:00",
-      "duration_seconds": 2.84,
+      "last_checked_at": "2026-11-17T19:58:26+00:00",
+      "duration_seconds": 2.83,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 3708,
+      "consecutive_failures": 3709,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.03,
+      "actual_interval_seconds": 47.04,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5621,33 +5643,33 @@
       "status": "ok"
     },
     "ch-extra-rib-tank": {
-      "last_checked_at": "2026-11-17T19:43:26+00:00",
+      "last_checked_at": "2026-11-17T19:58:29+00:00",
       "duration_seconds": 3.01,
-      "last_success_at": "2026-11-17T19:43:26+00:00",
+      "last_success_at": "2026-11-17T19:58:29+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 944.01,
+      "actual_interval_seconds": 903.06,
       "status": "ok"
     },
     "ch-extra-goggles": {
-      "last_checked_at": "2026-11-17T19:43:28+00:00",
-      "duration_seconds": 2.97,
-      "last_success_at": "2026-11-17T19:43:28+00:00",
+      "last_checked_at": "2026-11-17T19:58:32+00:00",
+      "duration_seconds": 3.0,
+      "last_success_at": "2026-11-17T19:58:32+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 904.98,
+      "actual_interval_seconds": 904.07,
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-17T19:57:30+00:00",
+      "last_checked_at": "2026-11-17T19:58:17+00:00",
       "duration_seconds": 2.86,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 11571,
+      "consecutive_failures": 11572,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.03,
+      "actual_interval_seconds": 47.06,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5852,13 +5874,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-17T19:57:33+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-17T19:58:20+00:00",
+      "duration_seconds": 3.0,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 11566,
+      "consecutive_failures": 11567,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.03,
+      "actual_interval_seconds": 47.07,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6431,7 +6453,7 @@
       "status": "ok"
     }
   },
-  "notification_sequence": 57,
+  "notification_sequence": 58,
   "site_backoffs": {},
   "discovery_audit": {
     "ch-discovery": {
@@ -7285,7 +7307,8 @@
           "kind": "product",
           "status": "tracked",
           "sources": [
-            "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html"
+            "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
+            "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM"
           ],
           "first_seen_at": "2026-11-17T19:57:45+00:00",
           "last_checked_at": "",
@@ -7293,11 +7316,13 @@
         },
         "https://www.chromehearts.com/hoodie": {
           "url": "https://www.chromehearts.com/hoodie",
-          "title": "/hoodie",
+          "title": "Hoodie",
           "kind": "category",
           "status": "configured",
           "sources": [
-            "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html"
+            "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
+            "https://www.chromehearts.com/",
+            "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM"
           ],
           "first_seen_at": "2026-11-17T19:57:45+00:00",
           "last_checked_at": "",
@@ -10897,7 +10922,7 @@
           "at": "2026-11-17T19:57:45+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-17T19:48:50+00:00"
     }
   },
@@ -10907,8 +10932,8 @@
     "ch-extra-eyewear": "2026-11-12T18:49:53+00:00",
     "ch-extra-hat": "2026-11-17T19:57:39+00:00",
     "ch-extra-hoodie": "2026-11-17T19:57:42+00:00",
-    "ch-extra-rib-tank": "2026-11-17T19:43:22+00:00",
-    "ch-extra-goggles": "2026-11-17T19:43:26+00:00",
+    "ch-extra-rib-tank": "2026-11-17T19:58:26+00:00",
+    "ch-extra-goggles": "2026-11-17T19:58:29+00:00",
     "ch-extra-sunglasses": "2026-11-17T19:47:53+00:00",
     "ch-extra-eyewear-accessories": "2026-11-17T19:47:56+00:00",
     "ch-extra-bag": "2026-11-17T19:48:38+00:00",
