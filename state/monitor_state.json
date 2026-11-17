@@ -944,12 +944,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-17T20:29:37+00:00",
+      "last_checked_at": "2026-11-17T20:38:39+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T20:29:37+00:00",
+      "last_attempt_at": "2026-11-17T20:38:39+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX273": {
@@ -3726,7 +3726,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-teddy/201585AFWXXX030.html?dwvar_201585AFWXXX030_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-17T20:19:05+00:00"
+          "last_seen_at": "2026-11-17T20:38:35+00:00"
         }
       },
       "sources": {
@@ -3735,12 +3735,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-17T20:29:32+00:00",
+      "last_checked_at": "2026-11-17T20:38:35+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T20:29:32+00:00",
+      "last_attempt_at": "2026-11-17T20:38:35+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
       "scan_queue": [],
@@ -4248,7 +4248,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-17T20:29:35+00:00",
+      "last_attempt_at": "2026-11-17T20:38:38+00:00",
       "priority": false,
       "master_pid": "201635AFWXXX033",
       "scan_queue": [
@@ -5617,13 +5617,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-17T20:37:33+00:00",
-      "duration_seconds": 2.88,
+      "last_checked_at": "2026-11-17T20:38:18+00:00",
+      "duration_seconds": 2.83,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 3761,
+      "consecutive_failures": 3762,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.58,
+      "actual_interval_seconds": 45.63,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5667,13 +5667,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-17T20:37:24+00:00",
-      "duration_seconds": 2.84,
+      "last_checked_at": "2026-11-17T20:38:09+00:00",
+      "duration_seconds": 2.87,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 11624,
+      "consecutive_failures": 11625,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.55,
+      "actual_interval_seconds": 45.64,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5808,23 +5808,23 @@
       "status": "ok"
     },
     "ch-extra-sweater": {
-      "last_checked_at": "2026-11-17T20:23:23+00:00",
-      "duration_seconds": 2.87,
-      "last_success_at": "2026-11-17T20:23:23+00:00",
+      "last_checked_at": "2026-11-17T20:38:24+00:00",
+      "duration_seconds": 2.89,
+      "last_success_at": "2026-11-17T20:38:24+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 904.44,
+      "actual_interval_seconds": 901.66,
       "status": "ok"
     },
     "ch-extra-jacket": {
-      "last_checked_at": "2026-11-17T20:23:26+00:00",
-      "duration_seconds": 3.0,
-      "last_success_at": "2026-11-17T20:23:26+00:00",
+      "last_checked_at": "2026-11-17T20:38:27+00:00",
+      "duration_seconds": 2.98,
+      "last_success_at": "2026-11-17T20:38:27+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 904.45,
+      "actual_interval_seconds": 901.66,
       "status": "ok"
     },
     "ch-extra-denim": {
@@ -5878,13 +5878,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-17T20:37:27+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-17T20:38:12+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 11619,
+      "consecutive_failures": 11620,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.52,
+      "actual_interval_seconds": 45.66,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6258,13 +6258,13 @@
       "status": "ok"
     },
     "variant-65c0db576057c5dc": {
-      "last_checked_at": "2026-11-17T20:29:35+00:00",
+      "last_checked_at": "2026-11-17T20:38:38+00:00",
       "duration_seconds": 2.98,
       "last_success_at": "2026-11-07T13:49:53+00:00",
-      "consecutive_failures": 1313,
+      "consecutive_failures": 1314,
       "last_error": "완전히 선택된 상품 옵션 응답을 확인하지 못했습니다",
       "alerted": true,
-      "actual_interval_seconds": 627.92,
+      "actual_interval_seconds": 543.08,
       "status": "ok"
     },
     "variant-c4d4dbc9cdf0e19d": {
@@ -10932,7 +10932,7 @@
           "at": "2026-11-17T20:34:43+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-17T20:34:03+00:00"
     }
   },
@@ -10957,8 +10957,8 @@
     "ch-extra-hoodies": "2026-11-17T20:36:51+00:00",
     "ch-extra-sweatshirt": "2026-11-17T20:37:36+00:00",
     "ch-extra-sweatshirts": "2026-11-17T20:37:39+00:00",
-    "ch-extra-sweater": "2026-11-17T20:23:20+00:00",
-    "ch-extra-jacket": "2026-11-17T20:23:23+00:00",
+    "ch-extra-sweater": "2026-11-17T20:38:21+00:00",
+    "ch-extra-jacket": "2026-11-17T20:38:24+00:00",
     "ch-extra-denim": "2026-11-17T20:24:05+00:00",
     "ch-extra-pants": "2026-11-17T20:24:08+00:00",
     "ch-extra-shorts": "2026-11-17T20:24:50+00:00",
