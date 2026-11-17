@@ -806,70 +806,7 @@
       "updated_at": "2026-11-17T20:02:55+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 64,
-      "monitor": {
-        "id": "variant-66513c8534c0f772",
-        "name": "Chrome Hearts 사이즈 BLUE GLITTER HOODIE",
-        "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM"
-      },
-      "event": {
-        "kind": "variant",
-        "pid": "152701BLK1XL754",
-        "master_pid": "152701BLKXXX754",
-        "title": "BLUE GLITTER HOODIE",
-        "color": "",
-        "size": "XL",
-        "options": {
-          "size": "XL"
-        },
-        "status": "available",
-        "quantity": null,
-        "quantity_kind": "undisclosed",
-        "quantity_source": "",
-        "locale": "en_US",
-        "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=1XL&quantity=1",
-        "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_152701BLKXXX754_size=1XL&pid=152701BLKXXX754&quantity=1",
-        "last_known_status": "available",
-        "last_seen_at": "2026-11-17T20:16:37+00:00",
-        "previous_status": "sold_out",
-        "observed_at": "2026-11-17T20:16:37+00:00",
-        "_notification_id": 64
-      }
-    },
-    {
-      "id": 65,
-      "monitor": {
-        "id": "variant-66513c8534c0f772",
-        "name": "Chrome Hearts 사이즈 BLUE GLITTER HOODIE",
-        "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=XSM"
-      },
-      "event": {
-        "kind": "variant",
-        "pid": "152701BLK2XL754",
-        "master_pid": "152701BLKXXX754",
-        "title": "BLUE GLITTER HOODIE",
-        "color": "",
-        "size": "XXL",
-        "options": {
-          "size": "XXL"
-        },
-        "status": "available",
-        "quantity": null,
-        "quantity_kind": "undisclosed",
-        "quantity_source": "",
-        "locale": "en_US",
-        "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=2XL&quantity=1",
-        "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_152701BLKXXX754_size=2XL&pid=152701BLKXXX754&quantity=1",
-        "last_known_status": "available",
-        "last_seen_at": "2026-11-17T20:16:39+00:00",
-        "previous_status": "sold_out",
-        "observed_at": "2026-11-17T20:16:39+00:00",
-        "_notification_id": 65
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
