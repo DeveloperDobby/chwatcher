@@ -545,15 +545,15 @@
       "seen": {
         "f01b2b219b18c19c806e4e53cc1ed3e5": {
           "title": "BLUE GLITTER HOODIE",
-          "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
-          "status": "sold_out",
+          "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=2XL",
+          "status": "available",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-18T16:40:53+00:00"
+          "last_seen_at": "2026-11-18T16:44:38+00:00"
         }
       },
       "last_count": 1,
-      "updated_at": "2026-11-18T16:40:53+00:00",
+      "updated_at": "2026-11-18T16:44:38+00:00",
       "initialized": true
     },
     "ch-extra-rib-tank": {
@@ -806,7 +806,29 @@
       "updated_at": "2026-11-18T16:38:30+00:00"
     }
   },
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "id": 78,
+      "monitor": {
+        "id": "ch-extra-hoodie",
+        "name": "Chrome Hearts hoodie",
+        "url": "https://www.chromehearts.com/hoodie"
+      },
+      "event": {
+        "kind": "restock",
+        "key": "f01b2b219b18c19c806e4e53cc1ed3e5",
+        "pid": "152701BLKXXX754",
+        "title": "BLUE GLITTER HOODIE",
+        "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=2XL",
+        "price": "",
+        "image": "",
+        "status": "available",
+        "previous_status": "sold_out",
+        "observed_at": "2026-11-18T16:44:38+00:00",
+        "_notification_id": 78
+      }
+    }
+  ],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
@@ -3745,16 +3767,22 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T16:35:44+00:00",
+      "last_checked_at": "2026-11-18T16:44:58+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T16:35:44+00:00",
+      "last_attempt_at": "2026-11-18T16:44:58+00:00",
       "priority": false,
       "master_pid": "201585AFWXXX030",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=MED&pid=201585AFWXXX030&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=LRG&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=SML&pid=201585AFWXXX030&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201585AFWXXX030_size=XSM&pid=201585AFWXXX030&quantity=1"
+      ]
     },
     "www.chromehearts.com:202334AFWXXX030": {
       "pid": "202334AFWXXX030",
@@ -4126,7 +4154,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=LRG&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-18T16:25:24+00:00"
+          "last_seen_at": "2026-11-18T16:44:50+00:00"
         },
         "201584AFWXSM030:en_US": {
           "pid": "201584AFWXSM030",
@@ -4145,7 +4173,7 @@
           "url": "https://www.chromehearts.com/intimates/lace-g-string/201584AFWXXX030.html?dwvar_201584AFWXXX030_size=XSM&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_201584AFWXXX030_size=XSM&pid=201584AFWXXX030&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-18T16:25:26+00:00"
+          "last_seen_at": "2026-11-18T16:44:52+00:00"
         }
       },
       "sources": {
@@ -4154,12 +4182,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T16:35:11+00:00",
+      "last_checked_at": "2026-11-18T16:44:52+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T16:35:11+00:00",
+      "last_attempt_at": "2026-11-18T16:44:52+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -5415,7 +5443,7 @@
     },
     "www.chromehearts.com:152701BLKXXX754": {
       "pid": "152701BLKXXX754",
-      "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
+      "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=2XL",
       "title": "BLUE GLITTER HOODIE",
       "variants": {
         "152701BLKXSM754:en_US": {
@@ -5633,13 +5661,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-18T16:43:50+00:00",
-      "duration_seconds": 2.79,
+      "last_checked_at": "2026-11-18T16:44:35+00:00",
+      "duration_seconds": 2.78,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 4275,
+      "consecutive_failures": 4276,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.69,
+      "actual_interval_seconds": 45.7,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5683,13 +5711,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-18T16:43:41+00:00",
-      "duration_seconds": 2.81,
+      "last_checked_at": "2026-11-18T16:44:26+00:00",
+      "duration_seconds": 2.83,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 12138,
+      "consecutive_failures": 12139,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.69,
+      "actual_interval_seconds": 45.7,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5854,23 +5882,23 @@
       "status": "ok"
     },
     "ch-extra-pants": {
-      "last_checked_at": "2026-11-18T16:29:39+00:00",
-      "duration_seconds": 2.86,
-      "last_success_at": "2026-11-18T16:29:39+00:00",
+      "last_checked_at": "2026-11-18T16:44:41+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-18T16:44:41+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 905.7,
+      "actual_interval_seconds": 902.71,
       "status": "ok"
     },
     "ch-extra-shorts": {
-      "last_checked_at": "2026-11-18T16:29:42+00:00",
+      "last_checked_at": "2026-11-18T16:44:44+00:00",
       "duration_seconds": 2.98,
-      "last_success_at": "2026-11-18T16:29:42+00:00",
+      "last_success_at": "2026-11-18T16:44:44+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 905.68,
+      "actual_interval_seconds": 902.7,
       "status": "ok"
     },
     "ch-extra-shoes": {
@@ -5894,13 +5922,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-18T16:43:44+00:00",
-      "duration_seconds": 3.0,
+      "last_checked_at": "2026-11-18T16:44:29+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 12133,
+      "consecutive_failures": 12134,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.7,
+      "actual_interval_seconds": 45.69,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6474,7 +6502,7 @@
       "actual_interval_seconds": 632.16
     }
   },
-  "notification_sequence": 77,
+  "notification_sequence": 78,
   "site_backoffs": {},
   "discovery_audit": {
     "ch-discovery": {
@@ -10950,7 +10978,7 @@
           "at": "2026-11-18T16:40:14+00:00"
         }
       ],
-      "source_first": true,
+      "source_first": false,
       "last_summary_at": "2026-11-18T16:39:35+00:00"
     }
   },
@@ -10978,8 +11006,8 @@
     "ch-extra-sweater": "2026-11-18T16:43:11+00:00",
     "ch-extra-jacket": "2026-11-18T16:43:53+00:00",
     "ch-extra-denim": "2026-11-18T16:43:56+00:00",
-    "ch-extra-pants": "2026-11-18T16:29:36+00:00",
-    "ch-extra-shorts": "2026-11-18T16:29:39+00:00",
+    "ch-extra-pants": "2026-11-18T16:44:38+00:00",
+    "ch-extra-shorts": "2026-11-18T16:44:41+00:00",
     "ch-extra-shoes": "2026-11-18T16:30:21+00:00",
     "ch-extra-boots": "2026-11-18T16:30:24+00:00",
     "ch-extra-home": "2026-11-18T16:31:06+00:00",
