@@ -545,15 +545,15 @@
       "seen": {
         "f01b2b219b18c19c806e4e53cc1ed3e5": {
           "title": "BLUE GLITTER HOODIE",
-          "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=2XL",
-          "status": "available",
+          "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
+          "status": "sold_out",
           "present": true,
           "miss_count": 0,
-          "last_seen_at": "2026-11-18T16:23:36+00:00"
+          "last_seen_at": "2026-11-18T16:24:21+00:00"
         }
       },
       "last_count": 1,
-      "updated_at": "2026-11-18T16:23:36+00:00",
+      "updated_at": "2026-11-18T16:24:21+00:00",
       "initialized": true
     },
     "ch-extra-rib-tank": {
@@ -4662,7 +4662,7 @@
           "url": "https://www.chromehearts.com/socks/womens-sport/191715D5DXXX408.html?dwvar_191715D5DXXX408_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191715D5DXXX408_size=MED&pid=191715D5DXXX408&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-18T16:04:55+00:00"
+          "last_seen_at": "2026-11-18T16:24:33+00:00"
         },
         "191715D5DSML408:en_US": {
           "pid": "191715D5DSML408",
@@ -4690,12 +4690,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T16:14:41+00:00",
+      "last_checked_at": "2026-11-18T16:24:35+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T16:14:41+00:00",
+      "last_attempt_at": "2026-11-18T16:24:35+00:00",
       "priority": false,
       "master_pid": "191715D5DXXX408",
       "scan_queue": [],
@@ -4742,7 +4742,7 @@
           "url": "https://www.chromehearts.com/socks/executive-socks/191716ADLXXX406.html?dwvar_191716ADLXXX406_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_191716ADLXXX406_size=MED&pid=191716ADLXXX406&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-18T16:05:27+00:00"
+          "last_seen_at": "2026-11-18T16:24:39+00:00"
         }
       },
       "sources": {
@@ -4751,12 +4751,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T16:14:46+00:00",
+      "last_checked_at": "2026-11-18T16:24:39+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T16:14:46+00:00",
+      "last_attempt_at": "2026-11-18T16:24:39+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5381,7 +5381,7 @@
     },
     "www.chromehearts.com:152701BLKXXX754": {
       "pid": "152701BLKXXX754",
-      "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html?dwvar_152701BLKXXX754_size=2XL",
+      "url": "https://www.chromehearts.com/hoodie/blue-glitter-hoodie/152701BLKXXX754.html",
       "title": "BLUE GLITTER HOODIE",
       "variants": {
         "152701BLKXSM754:en_US": {
@@ -5599,13 +5599,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-18T16:23:33+00:00",
-      "duration_seconds": 2.79,
+      "last_checked_at": "2026-11-18T16:24:18+00:00",
+      "duration_seconds": 2.48,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 4248,
+      "consecutive_failures": 4249,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.58,
+      "actual_interval_seconds": 45.64,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5649,13 +5649,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-18T16:23:24+00:00",
+      "last_checked_at": "2026-11-18T16:24:09+00:00",
       "duration_seconds": 2.79,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 12111,
+      "consecutive_failures": 12112,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.58,
+      "actual_interval_seconds": 45.63,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5679,23 +5679,23 @@
       "expected_missing_status": 404
     },
     "ch-extra-bag": {
-      "last_checked_at": "2026-11-18T16:09:14+00:00",
-      "duration_seconds": 2.84,
-      "last_success_at": "2026-11-18T16:09:14+00:00",
+      "last_checked_at": "2026-11-18T16:24:24+00:00",
+      "duration_seconds": 2.88,
+      "last_success_at": "2026-11-18T16:24:24+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 907.44,
+      "actual_interval_seconds": 910.66,
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-18T16:09:17+00:00",
-      "duration_seconds": 2.99,
-      "last_success_at": "2026-11-18T16:09:17+00:00",
+      "last_checked_at": "2026-11-18T16:24:27+00:00",
+      "duration_seconds": 2.97,
+      "last_success_at": "2026-11-18T16:24:27+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 907.45,
+      "actual_interval_seconds": 910.64,
       "status": "ok"
     },
     "ch-extra-belt": {
@@ -5860,13 +5860,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-18T16:23:27+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-18T16:24:12+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 12106,
+      "consecutive_failures": 12107,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.57,
+      "actual_interval_seconds": 45.65,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -7200,7 +7200,7 @@
             "https://www.chromehearts.com/sitemap_0.xml"
           ],
           "first_seen_at": "2026-11-07T06:03:05+00:00",
-          "last_checked_at": "2026-11-18T16:09:17+00:00",
+          "last_checked_at": "2026-11-18T16:24:27+00:00",
           "notify": true,
           "render": "auto",
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인"
@@ -7415,20 +7415,6 @@
         }
       },
       "history": [
-        {
-          "code": "coverage",
-          "url": "https://www.chromehearts.com/",
-          "reason": "{\"configured\": 10, \"tracked\": 52, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
-          "source": "",
-          "at": "2026-11-16T21:40:58+00:00"
-        },
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/robots.txt",
-          "reason": "robots",
-          "source": "",
-          "at": "2026-11-16T21:41:40+00:00"
-        },
         {
           "code": "needs_review",
           "url": "https://www.chromehearts.com/shop",
@@ -10914,10 +10900,24 @@
           "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
           "source": "https://www.chromehearts.com/sitemap_0.xml",
           "at": "2026-11-18T16:23:47+00:00"
+        },
+        {
+          "code": "needs_review",
+          "url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Search-Show?cgid=SWEATPANTS",
+          "reason": "상품 목록 미확인/메인 리다이렉트: 자동 등록 보류, 다음 탐색에서 재확인",
+          "source": "https://www.chromehearts.com/sitemap_0.xml",
+          "at": "2026-11-18T16:24:30+00:00"
+        },
+        {
+          "code": "coverage",
+          "url": "https://www.chromehearts.com/",
+          "reason": "{\"configured\": 11, \"tracked\": 53, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
+          "source": "",
+          "at": "2026-11-18T16:24:30+00:00"
         }
       ],
-      "source_first": false,
-      "last_summary_at": "2026-11-18T16:09:20+00:00"
+      "source_first": true,
+      "last_summary_at": "2026-11-18T16:24:30+00:00"
     }
   },
   "optional_probes": {
@@ -10930,8 +10930,8 @@
     "ch-extra-goggles": "2026-11-18T16:18:19+00:00",
     "ch-extra-sunglasses": "2026-11-18T16:23:36+00:00",
     "ch-extra-eyewear-accessories": "2026-11-18T16:23:39+00:00",
-    "ch-extra-bag": "2026-11-18T16:09:11+00:00",
-    "ch-extra-bags": "2026-11-18T16:09:14+00:00",
+    "ch-extra-bag": "2026-11-18T16:24:21+00:00",
+    "ch-extra-bags": "2026-11-18T16:24:24+00:00",
     "ch-extra-belt": "2026-11-18T16:09:56+00:00",
     "ch-extra-earring": "2026-11-18T16:09:59+00:00",
     "ch-extra-t-shirt": "2026-11-18T16:10:42+00:00",
