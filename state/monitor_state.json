@@ -4038,12 +4038,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T21:34:26+00:00",
+      "last_checked_at": "2026-11-18T21:44:09+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T21:34:26+00:00",
+      "last_attempt_at": "2026-11-18T21:44:09+00:00",
       "priority": false,
       "master_pid": "201583AFWXXX033",
       "scan_queue": [],
@@ -4137,12 +4137,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T21:35:05+00:00",
+      "last_checked_at": "2026-11-18T21:44:17+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T21:35:05+00:00",
+      "last_attempt_at": "2026-11-18T21:44:17+00:00",
       "priority": false,
       "master_pid": "201584AFWXXX030",
       "scan_queue": [],
@@ -4755,12 +4755,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-18T21:34:19+00:00",
+      "last_checked_at": "2026-11-18T21:44:02+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-18T21:34:19+00:00",
+      "last_attempt_at": "2026-11-18T21:44:02+00:00",
       "priority": false,
       "master_pid": "191716ADLXXX406",
       "scan_queue": [],
@@ -5603,10 +5603,10 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-18T21:43:09+00:00",
-      "duration_seconds": 2.76,
+      "last_checked_at": "2026-11-18T21:43:54+00:00",
+      "duration_seconds": 2.78,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 4486,
+      "consecutive_failures": 4487,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
       "actual_interval_seconds": 45.57,
@@ -5623,13 +5623,13 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-18T21:43:12+00:00",
-      "duration_seconds": 3.01,
+      "last_checked_at": "2026-11-18T21:43:57+00:00",
+      "duration_seconds": 3.03,
       "last_success_at": "2026-11-18T16:58:12+00:00",
-      "consecutive_failures": 192,
+      "consecutive_failures": 193,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.59,
+      "actual_interval_seconds": 45.61,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
@@ -5653,13 +5653,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-18T21:43:00+00:00",
-      "duration_seconds": 2.81,
+      "last_checked_at": "2026-11-18T21:43:45+00:00",
+      "duration_seconds": 2.79,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 12349,
+      "consecutive_failures": 12350,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.59,
+      "actual_interval_seconds": 45.6,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5863,13 +5863,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-18T21:43:03+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-18T21:43:48+00:00",
+      "duration_seconds": 2.96,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 12344,
+      "consecutive_failures": 12345,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.58,
+      "actual_interval_seconds": 45.57,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10919,7 +10919,7 @@
           "at": "2026-11-18T21:34:14+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-18T21:33:37+00:00"
     }
   },
