@@ -802,7 +802,40 @@
       "updated_at": "2026-11-19T17:03:59+00:00"
     }
   },
-  "pending_notifications": [],
+  "pending_notifications": [
+    {
+      "id": 86,
+      "monitor": {
+        "id": "ch-scents",
+        "name": "Chrome Hearts Scents",
+        "url": "https://www.chromehearts.com/scents"
+      },
+      "event": {
+        "kind": "health",
+        "title": "Chrome Hearts Scents 감시 오류",
+        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n다음 상품 목록 조각을 검증하지 못했습니다",
+        "url": "https://www.chromehearts.com/scents",
+        "observed_at": "2026-11-19T17:35:23+00:00",
+        "_notification_id": 86
+      }
+    },
+    {
+      "id": 87,
+      "monitor": {
+        "id": "ch-baccarat",
+        "name": "Chrome Hearts Baccarat",
+        "url": "https://www.chromehearts.com/baccarat"
+      },
+      "event": {
+        "kind": "health",
+        "title": "Chrome Hearts Baccarat 감시 오류",
+        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\nPage.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/baccarat\", waiting until \"domcontentloaded\"\n",
+        "url": "https://www.chromehearts.com/baccarat",
+        "observed_at": "2026-11-19T17:36:39+00:00",
+        "_notification_id": 87
+      }
+    }
+  ],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
@@ -1111,7 +1144,7 @@
           "url": "https://www.chromehearts.com/scents/22-scented-candle-refill-200g/175740XXXXXX273.html",
           "lookup_url": "",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-19T16:57:17+00:00"
+          "last_seen_at": "2026-11-19T18:05:48+00:00"
         }
       },
       "sources": {
@@ -1120,12 +1153,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-19T16:57:17+00:00",
+      "last_checked_at": "2026-11-19T18:05:48+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T16:57:17+00:00",
+      "last_attempt_at": "2026-11-19T18:05:48+00:00",
       "priority": false
     },
     "www.chromehearts.com:175740XXXXXX274": {
@@ -2835,7 +2868,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&pid=208280XXXXXXXXX&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-19T16:46:49+00:00"
+          "last_seen_at": "2026-11-19T18:10:24+00:00"
         },
         "208280AYNMED035:en_US": {
           "pid": "208280AYNMED035",
@@ -2855,7 +2888,7 @@
           "url": "https://www.chromehearts.com/boxers-leggings/foti-boxer-brief---long/208280XXXXXXXXX.html?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=MED&pid=208280XXXXXXXXX&quantity=1",
           "last_known_status": "sold_out",
-          "last_seen_at": "2026-11-19T16:46:50+00:00"
+          "last_seen_at": "2026-11-19T18:12:42+00:00"
         },
         "208280AYNLRG035:en_US": {
           "pid": "208280AYNLRG035",
@@ -3025,16 +3058,28 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-19T16:57:22+00:00",
+      "last_checked_at": "2026-11-19T18:12:42+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T16:57:22+00:00",
+      "last_attempt_at": "2026-11-19T18:12:42+00:00",
       "priority": false,
       "master_pid": "208280XXXXXXXXX",
-      "scan_queue": [],
-      "scan_seen": []
+      "scan_queue": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=LRG&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=1XL&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=2XL&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=SML&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=MED&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=LRG&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=1XL&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=2XL&pid=208280XXXXXXXXX&quantity=1"
+      ],
+      "scan_seen": [
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYN&dwvar_208280XXXXXXXXX_size=MED&pid=208280XXXXXXXXX&quantity=1",
+        "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_208280XXXXXXXXX_color=AYO&dwvar_208280XXXXXXXXX_size=SML&pid=208280XXXXXXXXX&quantity=1"
+      ]
     },
     "www.chromehearts.com:165064XXXXXX140": {
       "pid": "165064XXXXXX140",
@@ -5524,63 +5569,63 @@
   },
   "health": {
     "ch-scents": {
-      "last_checked_at": "2026-11-19T17:12:14+00:00",
-      "duration_seconds": 3.67,
+      "last_checked_at": "2026-11-19T17:35:23+00:00",
+      "duration_seconds": 73.6,
       "last_success_at": "2026-11-19T17:09:51+00:00",
-      "consecutive_failures": 2,
+      "consecutive_failures": 3,
       "last_error": "다음 상품 목록 조각을 검증하지 못했습니다",
-      "alerted": false,
-      "actual_interval_seconds": 69.4,
+      "alerted": true,
+      "actual_interval_seconds": 1389.08,
       "status": "ok"
     },
     "ch-baccarat": {
-      "last_checked_at": "2026-11-19T17:13:04+00:00",
-      "duration_seconds": 50.52,
+      "last_checked_at": "2026-11-19T17:36:39+00:00",
+      "duration_seconds": 76.9,
       "last_success_at": "2026-11-19T17:09:53+00:00",
-      "consecutive_failures": 2,
-      "last_error": "Page.wait_for_function: Timeout 20000ms exceeded.",
-      "alerted": false,
-      "actual_interval_seconds": 93.93,
+      "consecutive_failures": 3,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/baccarat\", waiting until \"domcontentloaded\"\n",
+      "alerted": true,
+      "actual_interval_seconds": 1415.98,
       "status": "ok"
     },
     "ch-boxers-leggings": {
-      "last_checked_at": "2026-11-19T17:14:17+00:00",
-      "duration_seconds": 72.96,
+      "last_checked_at": "2026-11-19T17:38:03+00:00",
+      "duration_seconds": 83.31,
       "last_success_at": "2026-11-19T17:11:31+00:00",
-      "consecutive_failures": 1,
-      "last_error": "Page.wait_for_function: Timeout 20000ms exceeded.",
+      "consecutive_failures": 2,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/boxers-leggings\", waiting until \"domcontentloaded\"\n",
       "alerted": false,
-      "actual_interval_seconds": 166.9,
+      "actual_interval_seconds": 1426.31,
       "status": "ok"
     },
     "ch-intimates": {
-      "last_checked_at": "2026-11-19T17:15:40+00:00",
-      "duration_seconds": 82.35,
+      "last_checked_at": "2026-11-19T17:39:36+00:00",
+      "duration_seconds": 93.43,
       "last_success_at": "2026-11-19T17:11:33+00:00",
-      "consecutive_failures": 1,
-      "last_error": "Page.wait_for_function: Timeout 20000ms exceeded.",
+      "consecutive_failures": 2,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/intimates\", waiting until \"domcontentloaded\"\n",
       "alerted": false,
-      "actual_interval_seconds": 247.25,
+      "actual_interval_seconds": 1436.75,
       "status": "ok"
     },
     "ch-socks": {
-      "last_checked_at": "2026-11-19T17:17:08+00:00",
-      "duration_seconds": 88.25,
+      "last_checked_at": "2026-11-19T17:41:21+00:00",
+      "duration_seconds": 104.36,
       "last_success_at": "2026-11-19T17:11:35+00:00",
-      "consecutive_failures": 1,
-      "last_error": "Page.wait_for_function: Timeout 20000ms exceeded.",
+      "consecutive_failures": 2,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/socks\", waiting until \"domcontentloaded\"\n",
       "alerted": false,
-      "actual_interval_seconds": 333.5,
+      "actual_interval_seconds": 1453.11,
       "status": "ok"
     },
     "ch-discovery": {
-      "last_checked_at": "2026-11-19T17:12:10+00:00",
-      "duration_seconds": 0.37,
+      "last_checked_at": "2026-11-19T17:34:09+00:00",
+      "duration_seconds": 71.99,
       "last_success_at": "2026-11-19T17:12:10+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "consecutive_failures": 1,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/\", waiting until \"domcontentloaded\"\n",
       "alerted": false,
-      "actual_interval_seconds": 91.72,
+      "actual_interval_seconds": 1319.47,
       "status": "ok"
     },
     "ch-extra-silichrome": {
@@ -5604,13 +5649,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-19T17:24:22+00:00",
-      "duration_seconds": 117.33,
+      "last_checked_at": "2026-11-19T17:52:00+00:00",
+      "duration_seconds": 177.38,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 5667,
-      "last_error": "메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요",
+      "consecutive_failures": 5668,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/eyewear\", waiting until \"domcontentloaded\"\n",
       "alerted": true,
-      "actual_interval_seconds": 752.35,
+      "actual_interval_seconds": 1658.15,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5624,13 +5669,13 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-19T17:25:25+00:00",
-      "duration_seconds": 63.16,
+      "last_checked_at": "2026-11-19T17:55:17+00:00",
+      "duration_seconds": 197.27,
       "last_success_at": "2026-11-18T16:58:12+00:00",
-      "consecutive_failures": 1373,
+      "consecutive_failures": 1374,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 812.52,
+      "actual_interval_seconds": 1792.43,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
@@ -5654,13 +5699,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-19T17:18:23+00:00",
-      "duration_seconds": 75.33,
+      "last_checked_at": "2026-11-19T17:43:18+00:00",
+      "duration_seconds": 117.01,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 13532,
-      "last_error": "메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요",
+      "consecutive_failures": 13533,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/scarf\", waiting until \"domcontentloaded\"\n",
       "alerted": true,
-      "actual_interval_seconds": 405.84,
+      "actual_interval_seconds": 1495.13,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5824,23 +5869,23 @@
       "status": "ok"
     },
     "ch-extra-pants": {
-      "last_checked_at": "2026-11-19T16:52:44+00:00",
-      "duration_seconds": 3.01,
-      "last_success_at": "2026-11-19T16:52:44+00:00",
+      "last_checked_at": "2026-11-19T17:58:34+00:00",
+      "duration_seconds": 197.19,
+      "last_success_at": "2026-11-19T17:58:34+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.22,
+      "actual_interval_seconds": 3950.63,
       "status": "ok"
     },
     "ch-extra-shorts": {
-      "last_checked_at": "2026-11-19T16:52:47+00:00",
-      "duration_seconds": 2.98,
-      "last_success_at": "2026-11-19T16:52:47+00:00",
+      "last_checked_at": "2026-11-19T18:01:51+00:00",
+      "duration_seconds": 197.17,
+      "last_success_at": "2026-11-19T18:01:51+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 902.21,
+      "actual_interval_seconds": 4144.81,
       "status": "ok"
     },
     "ch-extra-shoes": {
@@ -5864,13 +5909,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-19T17:20:06+00:00",
-      "duration_seconds": 102.94,
+      "last_checked_at": "2026-11-19T17:45:28+00:00",
+      "duration_seconds": 130.59,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 13527,
-      "last_error": "메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요",
+      "consecutive_failures": 13528,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/slippers\", waiting until \"domcontentloaded\"\n",
       "alerted": true,
-      "actual_interval_seconds": 504.79,
+      "actual_interval_seconds": 1522.73,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6064,13 +6109,13 @@
       "status": "ok"
     },
     "variant-fd7e5ee3484aa685": {
-      "last_checked_at": "2026-11-19T16:57:17+00:00",
-      "duration_seconds": 1.57,
-      "last_success_at": "2026-11-19T16:57:17+00:00",
+      "last_checked_at": "2026-11-19T18:05:48+00:00",
+      "duration_seconds": 138.08,
+      "last_success_at": "2026-11-19T18:05:48+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 631.75,
+      "actual_interval_seconds": 4111.41,
       "status": "ok"
     },
     "variant-8d892045d8c9942e": {
@@ -6284,13 +6329,13 @@
       "status": "ok"
     },
     "variant-a4e2f598fc79f5b9": {
-      "last_checked_at": "2026-11-19T16:57:22+00:00",
-      "duration_seconds": 4.33,
-      "last_success_at": "2026-11-19T16:57:22+00:00",
+      "last_checked_at": "2026-11-19T18:12:42+00:00",
+      "duration_seconds": 413.65,
+      "last_success_at": "2026-11-19T18:12:42+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 623.09,
+      "actual_interval_seconds": 4520.07,
       "status": "ok"
     },
     "variant-f35e547dffa7f8c7": {
@@ -6384,14 +6429,14 @@
       "actual_interval_seconds": 589.33
     },
     "discovered-e833dda1298cc5af": {
-      "last_checked_at": "2026-11-19T17:22:25+00:00",
-      "duration_seconds": 138.21,
+      "last_checked_at": "2026-11-19T17:49:02+00:00",
+      "duration_seconds": 214.02,
       "last_success_at": "2026-11-19T17:11:46+00:00",
-      "consecutive_failures": 1,
-      "last_error": "메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요",
+      "consecutive_failures": 2,
+      "last_error": "Page.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/boxers-leggings\", waiting until \"domcontentloaded\"\n",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 639.0
+      "actual_interval_seconds": 1597.76
     },
     "variant-5cc7a1c4ec2ec777": {
       "last_checked_at": "2026-11-19T16:54:24+00:00",
@@ -6444,7 +6489,7 @@
       "actual_interval_seconds": 581.68
     }
   },
-  "notification_sequence": 85,
+  "notification_sequence": 87,
   "site_backoffs": {},
   "discovery_audit": {
     "ch-discovery": {
@@ -7337,9 +7382,9 @@
         },
         "https://www.chromehearts.com/sitemap_index.xml": {
           "kind": "sitemap",
-          "last_attempt_at": "2026-11-19T17:05:33+00:00",
+          "last_attempt_at": "2026-11-19T18:01:51+00:00",
           "status": "ok",
-          "last_success_at": "2026-11-19T17:05:45+00:00",
+          "last_success_at": "2026-11-19T18:03:30+00:00",
           "error": ""
         },
         "https://www.chromehearts.com/sitemap_0.xml": {
@@ -7419,20 +7464,6 @@
         }
       },
       "history": [
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_index.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-18T14:08:01+00:00"
-        },
-        {
-          "code": "source_checked",
-          "url": "https://www.chromehearts.com/sitemap_0.xml",
-          "reason": "sitemap",
-          "source": "",
-          "at": "2026-11-18T14:08:03+00:00"
-        },
         {
           "code": "needs_review",
           "url": "https://www.chromehearts.com/shop",
@@ -10918,10 +10949,24 @@
           "reason": "{\"configured\": 11, \"tracked\": 53, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
           "source": "",
           "at": "2026-11-19T17:31:30+00:00"
+        },
+        {
+          "code": "source_checked",
+          "url": "https://www.chromehearts.com/sitemap_index.xml",
+          "reason": "sitemap",
+          "source": "",
+          "at": "2026-11-19T18:03:30+00:00"
+        },
+        {
+          "code": "coverage",
+          "url": "https://www.chromehearts.com/",
+          "reason": "{\"configured\": 11, \"tracked\": 53, \"needs_review\": 2, \"monitoring\": 1}; source_errors=0; 공개 링크/sitemap 범위만 확인. 미공개 URL의 누락 여부는 판단 불가.",
+          "source": "",
+          "at": "2026-11-19T18:03:30+00:00"
         }
       ],
-      "source_first": true,
-      "last_summary_at": "2026-11-19T17:31:30+00:00"
+      "source_first": false,
+      "last_summary_at": "2026-11-19T18:03:30+00:00"
     }
   },
   "optional_probes": {
@@ -10948,8 +10993,8 @@
     "ch-extra-sweater": "2026-11-19T17:11:57+00:00",
     "ch-extra-jacket": "2026-11-19T17:25:25+00:00",
     "ch-extra-denim": "2026-11-19T17:27:35+00:00",
-    "ch-extra-pants": "2026-11-19T16:52:41+00:00",
-    "ch-extra-shorts": "2026-11-19T16:52:44+00:00",
+    "ch-extra-pants": "2026-11-19T17:55:17+00:00",
+    "ch-extra-shorts": "2026-11-19T17:58:34+00:00",
     "ch-extra-shoes": "2026-11-19T16:53:26+00:00",
     "ch-extra-boots": "2026-11-19T16:53:29+00:00",
     "ch-extra-home": "2026-11-19T16:54:11+00:00",
