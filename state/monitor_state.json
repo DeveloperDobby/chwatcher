@@ -804,22 +804,6 @@
   },
   "pending_notifications": [
     {
-      "id": 86,
-      "monitor": {
-        "id": "ch-scents",
-        "name": "Chrome Hearts Scents",
-        "url": "https://www.chromehearts.com/scents"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts Scents 감시 오류",
-        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\n다음 상품 목록 조각을 검증하지 못했습니다",
-        "url": "https://www.chromehearts.com/scents",
-        "observed_at": "2026-11-19T17:35:23+00:00",
-        "_notification_id": 86
-      }
-    },
-    {
       "id": 87,
       "monitor": {
         "id": "ch-baccarat",
