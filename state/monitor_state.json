@@ -5674,13 +5674,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-19T09:37:15+00:00",
-      "duration_seconds": 2.87,
+      "last_checked_at": "2026-11-19T09:38:00+00:00",
+      "duration_seconds": 2.85,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 13267,
+      "consecutive_failures": 13268,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.25,
+      "actual_interval_seconds": 45.37,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5884,13 +5884,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-19T09:37:18+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-19T09:38:03+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 13262,
+      "consecutive_failures": 13263,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 46.23,
+      "actual_interval_seconds": 45.38,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6404,14 +6404,14 @@
       "actual_interval_seconds": 580.68
     },
     "discovered-e833dda1298cc5af": {
-      "last_checked_at": "2026-11-19T09:34:20+00:00",
-      "duration_seconds": 3.15,
-      "last_success_at": "2026-11-19T09:34:20+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "last_checked_at": "2026-11-19T09:38:06+00:00",
+      "duration_seconds": 2.86,
+      "last_success_at": "2026-11-19T09:37:21+00:00",
+      "consecutive_failures": 1,
+      "last_error": "HTTPSConnectionPool(host='www.chromehearts.com', port=443): Read timed out. (read timeout=0.052756712000700645)",
       "alerted": false,
       "status": "ok",
-      "actual_interval_seconds": 45.75
+      "actual_interval_seconds": 45.25
     },
     "variant-5cc7a1c4ec2ec777": {
       "last_checked_at": "2026-11-19T09:31:33+00:00",
