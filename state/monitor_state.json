@@ -802,24 +802,7 @@
       "updated_at": "2026-11-19T17:03:59+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 87,
-      "monitor": {
-        "id": "ch-baccarat",
-        "name": "Chrome Hearts Baccarat",
-        "url": "https://www.chromehearts.com/baccarat"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts Baccarat 감시 오류",
-        "message": "연속 3회 확인 실패. 재고 없음으로 처리하지 않았습니다.\nPage.goto: Timeout 35000ms exceeded.\nCall log:\n  - navigating to \"https://www.chromehearts.com/baccarat\", waiting until \"domcontentloaded\"\n",
-        "url": "https://www.chromehearts.com/baccarat",
-        "observed_at": "2026-11-19T17:36:39+00:00",
-        "_notification_id": 87
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
