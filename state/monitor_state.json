@@ -804,22 +804,6 @@
   },
   "pending_notifications": [
     {
-      "id": 88,
-      "monitor": {
-        "id": "ch-scents",
-        "name": "Chrome Hearts Scents",
-        "url": "https://www.chromehearts.com/scents"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts Scents 감시 복구",
-        "message": "정상 응답 확인을 재개했습니다.",
-        "url": "https://www.chromehearts.com/scents",
-        "observed_at": "2026-11-19T18:46:32+00:00",
-        "_notification_id": 88
-      }
-    },
-    {
       "id": 89,
       "monitor": {
         "id": "ch-baccarat",
