@@ -802,24 +802,7 @@
       "updated_at": "2026-11-19T19:09:32+00:00"
     }
   },
-  "pending_notifications": [
-    {
-      "id": 89,
-      "monitor": {
-        "id": "ch-baccarat",
-        "name": "Chrome Hearts Baccarat",
-        "url": "https://www.chromehearts.com/baccarat"
-      },
-      "event": {
-        "kind": "health",
-        "title": "Chrome Hearts Baccarat 감시 복구",
-        "message": "정상 응답 확인을 재개했습니다.",
-        "url": "https://www.chromehearts.com/baccarat",
-        "observed_at": "2026-11-19T18:48:50+00:00",
-        "_notification_id": 89
-      }
-    }
-  ],
+  "pending_notifications": [],
   "tracked_products": {
     "www.chromehearts.com:162006CRYXXX271": {
       "pid": "162006CRYXXX271",
