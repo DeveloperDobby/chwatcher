@@ -1269,7 +1269,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T16:55:56+00:00",
+      "last_attempt_at": "2026-11-19T17:10:30+00:00",
       "priority": false
     },
     "www.chromehearts.com:174131CRYXXX013": {
@@ -1305,7 +1305,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T16:55:49+00:00",
+      "last_attempt_at": "2026-11-19T17:10:26+00:00",
       "priority": false
     },
     "www.chromehearts.com:207468CRYXXX055": {
@@ -3354,7 +3354,7 @@
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T16:55:54+00:00",
+      "last_attempt_at": "2026-11-19T17:10:29+00:00",
       "priority": false,
       "master_pid": "165064XXXXXX140",
       "scan_queue": [],
@@ -5604,13 +5604,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-19T17:09:24+00:00",
-      "duration_seconds": 2.74,
+      "last_checked_at": "2026-11-19T17:10:09+00:00",
+      "duration_seconds": 2.8,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 5664,
+      "consecutive_failures": 5665,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 44.47,
+      "actual_interval_seconds": 45.58,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5624,13 +5624,13 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-19T17:09:27+00:00",
-      "duration_seconds": 3.02,
+      "last_checked_at": "2026-11-19T17:10:12+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-18T16:58:12+00:00",
-      "consecutive_failures": 1370,
+      "consecutive_failures": 1371,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 44.5,
+      "actual_interval_seconds": 45.59,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
@@ -5654,13 +5654,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-19T17:09:15+00:00",
-      "duration_seconds": 2.82,
+      "last_checked_at": "2026-11-19T17:10:00+00:00",
+      "duration_seconds": 2.9,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 13529,
+      "consecutive_failures": 13530,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.5,
+      "actual_interval_seconds": 45.65,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5764,23 +5764,23 @@
       "status": "ok"
     },
     "ch-extra-hoodies": {
-      "last_checked_at": "2026-11-19T16:50:29+00:00",
-      "duration_seconds": 2.98,
+      "last_checked_at": "2026-11-19T17:10:19+00:00",
+      "duration_seconds": 7.1,
       "last_success_at": "2026-11-19T16:50:29+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "consecutive_failures": 1,
+      "last_error": "메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요",
       "alerted": false,
-      "actual_interval_seconds": 902.2,
+      "actual_interval_seconds": 1190.7,
       "status": "ok"
     },
     "ch-extra-sweatshirt": {
-      "last_checked_at": "2026-11-19T16:50:32+00:00",
-      "duration_seconds": 3.01,
+      "last_checked_at": "2026-11-19T17:10:25+00:00",
+      "duration_seconds": 5.98,
       "last_success_at": "2026-11-19T16:50:32+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "consecutive_failures": 1,
+      "last_error": "메인이 아닌 페이지에서 상품을 찾지 못했습니다: 구조 변경 또는 렌더링 확인 필요",
       "alerted": false,
-      "actual_interval_seconds": 902.21,
+      "actual_interval_seconds": 1193.69,
       "status": "ok"
     },
     "ch-extra-sweatshirts": {
@@ -5864,13 +5864,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-19T17:09:18+00:00",
-      "duration_seconds": 3.03,
+      "last_checked_at": "2026-11-19T17:10:03+00:00",
+      "duration_seconds": 2.94,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 13524,
+      "consecutive_failures": 13525,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 44.53,
+      "actual_interval_seconds": 45.6,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -6004,13 +6004,13 @@
       "status": "ok"
     },
     "variant-f83a3503e0cbd3aa": {
-      "last_checked_at": "2026-11-19T16:55:54+00:00",
-      "duration_seconds": 5.82,
+      "last_checked_at": "2026-11-19T17:10:29+00:00",
+      "duration_seconds": 2.99,
       "last_success_at": "2026-11-19T16:55:54+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "consecutive_failures": 1,
+      "last_error": "Expecting value: line 1 column 1 (char 0)",
       "alerted": false,
-      "actual_interval_seconds": 625.96,
+      "actual_interval_seconds": 875.01,
       "status": "ok"
     },
     "variant-50b6ff762b69ec6d": {
@@ -6034,23 +6034,23 @@
       "status": "ok"
     },
     "variant-02b61ba572436bee": {
-      "last_checked_at": "2026-11-19T16:55:49+00:00",
-      "duration_seconds": 1.57,
+      "last_checked_at": "2026-11-19T17:10:26+00:00",
+      "duration_seconds": 0.27,
       "last_success_at": "2026-11-19T16:55:49+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "consecutive_failures": 1,
+      "last_error": "정확한 상품코드 174131CRYXXX013를 확인하지 못했습니다. 차단/다른 상품/구조 변경 가능성",
       "alerted": false,
-      "actual_interval_seconds": 629.13,
+      "actual_interval_seconds": 877.01,
       "status": "ok"
     },
     "variant-9580e76774c22351": {
-      "last_checked_at": "2026-11-19T16:55:56+00:00",
-      "duration_seconds": 1.66,
+      "last_checked_at": "2026-11-19T17:10:30+00:00",
+      "duration_seconds": 1.5,
       "last_success_at": "2026-11-19T16:55:56+00:00",
-      "consecutive_failures": 0,
-      "last_error": "",
+      "consecutive_failures": 1,
+      "last_error": "정확한 상품코드 174132CRYXXX015를 확인하지 못했습니다. 차단/다른 상품/구조 변경 가능성",
       "alerted": false,
-      "actual_interval_seconds": 600.63,
+      "actual_interval_seconds": 874.51,
       "status": "ok"
     },
     "variant-3694eebcafcd60d8": {
@@ -10920,7 +10920,7 @@
           "at": "2026-11-19T17:08:52+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-19T17:06:20+00:00"
     }
   },
@@ -10942,8 +10942,8 @@
     "ch-extra-t-shirts": "2026-11-19T17:08:46+00:00",
     "ch-extra-shirt": "2026-11-19T17:09:27+00:00",
     "ch-extra-shirts": "2026-11-19T17:09:30+00:00",
-    "ch-extra-hoodies": "2026-11-19T16:50:26+00:00",
-    "ch-extra-sweatshirt": "2026-11-19T16:50:29+00:00",
+    "ch-extra-hoodies": "2026-11-19T17:10:12+00:00",
+    "ch-extra-sweatshirt": "2026-11-19T17:10:19+00:00",
     "ch-extra-sweatshirts": "2026-11-19T16:51:11+00:00",
     "ch-extra-sweater": "2026-11-19T16:51:14+00:00",
     "ch-extra-jacket": "2026-11-19T16:51:56+00:00",
