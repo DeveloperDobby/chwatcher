@@ -976,12 +976,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-19T23:55:15+00:00",
+      "last_checked_at": "2026-11-20T00:05:45+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T23:55:15+00:00",
+      "last_attempt_at": "2026-11-20T00:05:45+00:00",
       "priority": false
     },
     "www.chromehearts.com:179527XXXXXX274": {
@@ -1012,12 +1012,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-19T23:55:16+00:00",
+      "last_checked_at": "2026-11-20T00:05:46+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T23:55:16+00:00",
+      "last_attempt_at": "2026-11-20T00:05:46+00:00",
       "priority": false
     },
     "www.chromehearts.com:162045CRYXXX273": {
@@ -1408,12 +1408,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-19T23:55:13+00:00",
+      "last_checked_at": "2026-11-20T00:05:43+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T23:55:13+00:00",
+      "last_attempt_at": "2026-11-20T00:05:43+00:00",
       "priority": false
     },
     "www.chromehearts.com:177731CRYXXX042": {
@@ -4802,7 +4802,7 @@
           "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB7&dwvar_180459XXXXXX389_size=MED&pid=180459XXXXXX389&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-19T23:45:38+00:00"
+          "last_seen_at": "2026-11-20T00:05:49+00:00"
         },
         "180459MB3LRG389:en_US": {
           "pid": "180459MB3LRG389",
@@ -4822,7 +4822,7 @@
           "url": "https://www.chromehearts.com/socks/foti-socks/180459XXXXXX389.html?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&quantity=1",
           "lookup_url": "https://www.chromehearts.com/on/demandware.store/Sites-ChromeHearts-Site/en_US/Product-Variation?dwvar_180459XXXXXX389_color=MB3&dwvar_180459XXXXXX389_size=LRG&pid=180459XXXXXX389&quantity=1",
           "last_known_status": "available",
-          "last_seen_at": "2026-11-19T23:45:40+00:00"
+          "last_seen_at": "2026-11-20T00:05:51+00:00"
         },
         "180459MB3MED389:en_US": {
           "pid": "180459MB3MED389",
@@ -4871,12 +4871,12 @@
       },
       "baseline_complete": true,
       "notify_initial": false,
-      "last_checked_at": "2026-11-19T23:55:20+00:00",
+      "last_checked_at": "2026-11-20T00:05:54+00:00",
       "options": {
         "notify_on_sold_out": false,
         "notify_on_restock": true
       },
-      "last_attempt_at": "2026-11-19T23:55:20+00:00",
+      "last_attempt_at": "2026-11-20T00:05:54+00:00",
       "priority": false,
       "master_pid": "180459XXXXXX389",
       "scan_queue": [],
@@ -5616,13 +5616,13 @@
       "status": "ok"
     },
     "ch-extra-eyewear": {
-      "last_checked_at": "2026-11-20T00:04:48+00:00",
-      "duration_seconds": 2.8,
+      "last_checked_at": "2026-11-20T00:05:33+00:00",
+      "duration_seconds": 2.85,
       "last_success_at": "2026-11-14T19:59:55+00:00",
-      "consecutive_failures": 5748,
+      "consecutive_failures": 5749,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.15,
+      "actual_interval_seconds": 45.17,
       "status": "ok"
     },
     "ch-extra-hat": {
@@ -5636,13 +5636,13 @@
       "status": "ok"
     },
     "ch-extra-hoodie": {
-      "last_checked_at": "2026-11-20T00:04:51+00:00",
-      "duration_seconds": 3.02,
+      "last_checked_at": "2026-11-20T00:05:36+00:00",
+      "duration_seconds": 2.98,
       "last_success_at": "2026-11-18T16:58:12+00:00",
-      "consecutive_failures": 1454,
+      "consecutive_failures": 1455,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.17,
+      "actual_interval_seconds": 45.16,
       "status": "ok"
     },
     "ch-extra-rib-tank": {
@@ -5666,13 +5666,13 @@
       "status": "ok"
     },
     "ch-extra-scarf": {
-      "last_checked_at": "2026-11-20T00:04:39+00:00",
-      "duration_seconds": 2.88,
+      "last_checked_at": "2026-11-20T00:05:24+00:00",
+      "duration_seconds": 2.9,
       "last_success_at": "2026-11-08T17:57:40+00:00",
-      "consecutive_failures": 13614,
+      "consecutive_failures": 13615,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.19,
+      "actual_interval_seconds": 45.17,
       "status": "ok"
     },
     "ch-extra-sunglasses": {
@@ -5696,23 +5696,23 @@
       "expected_missing_status": 404
     },
     "ch-extra-bag": {
-      "last_checked_at": "2026-11-19T23:50:38+00:00",
-      "duration_seconds": 3.03,
-      "last_success_at": "2026-11-19T23:50:38+00:00",
+      "last_checked_at": "2026-11-20T00:05:39+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-20T00:05:39+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.92,
+      "actual_interval_seconds": 901.16,
       "status": "ok"
     },
     "ch-extra-bags": {
-      "last_checked_at": "2026-11-19T23:50:41+00:00",
-      "duration_seconds": 2.96,
-      "last_success_at": "2026-11-19T23:50:41+00:00",
+      "last_checked_at": "2026-11-20T00:05:42+00:00",
+      "duration_seconds": 2.99,
+      "last_success_at": "2026-11-20T00:05:42+00:00",
       "consecutive_failures": 0,
       "last_error": "",
       "alerted": false,
-      "actual_interval_seconds": 900.89,
+      "actual_interval_seconds": 901.16,
       "status": "ok"
     },
     "ch-extra-belt": {
@@ -5876,13 +5876,13 @@
       "status": "ok"
     },
     "ch-extra-slippers": {
-      "last_checked_at": "2026-11-20T00:04:42+00:00",
-      "duration_seconds": 2.97,
+      "last_checked_at": "2026-11-20T00:05:27+00:00",
+      "duration_seconds": 3.01,
       "last_success_at": "2026-11-08T17:59:13+00:00",
-      "consecutive_failures": 13608,
+      "consecutive_failures": 13609,
       "last_error": "게시된 카테고리가 홈페이지로 이동했습니다. 기존 상품을 유지합니다",
       "alerted": true,
-      "actual_interval_seconds": 45.17,
+      "actual_interval_seconds": 45.2,
       "status": "ok"
     },
     "ch-extra-home": {
@@ -10932,7 +10932,7 @@
           "at": "2026-11-19T23:59:46+00:00"
         }
       ],
-      "source_first": false,
+      "source_first": true,
       "last_summary_at": "2026-11-19T23:59:46+00:00"
     }
   },
@@ -10946,8 +10946,8 @@
     "ch-extra-goggles": "2026-11-20T00:04:09+00:00",
     "ch-extra-sunglasses": "2026-11-20T00:04:51+00:00",
     "ch-extra-eyewear-accessories": "2026-11-20T00:04:54+00:00",
-    "ch-extra-bag": "2026-11-19T23:50:35+00:00",
-    "ch-extra-bags": "2026-11-19T23:50:38+00:00",
+    "ch-extra-bag": "2026-11-20T00:05:36+00:00",
+    "ch-extra-bags": "2026-11-20T00:05:39+00:00",
     "ch-extra-belt": "2026-11-19T23:51:20+00:00",
     "ch-extra-earring": "2026-11-19T23:51:23+00:00",
     "ch-extra-t-shirt": "2026-11-19T23:52:05+00:00",
